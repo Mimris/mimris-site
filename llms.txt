@@ -1,0 +1,55 @@
+# Mimris
+
+Mimris combines graphical modelling and metamodelling with Mimris AI Workspace for structured AI-assisted project execution.
+
+Mimris connects:
+
+- graphical modelling and metamodelling
+- domain descriptions
+- functional models
+- work items
+- documents and implementation context
+- AI-assisted draft production
+
+Primary page:
+
+- https://site-swart-omega-89.vercel.app/
+
+Press kit:
+
+- https://site-swart-omega-89.vercel.app/press.html
+
+Public demos:
+
+- Mimris Modeling App: https://mimris.vercel.app
+- Mimris AI Workspace: https://mimris-ai-workspace.vercel.app
+
+GitHub:
+
+- Mimris Modeling App: https://github.com/Mimris/mimris
+- Mimris AI Workspace: repository is not public; use the public demo and combined overview for public references.
+
+Launch feedback:
+
+- Mimris and Mimris AI Workspace feedback: https://github.com/Mimris/mimris/issues/30
+
+Positioning:
+
+- Mimris provides the graphical modelling and metamodelling foundation.
+- Mimris AI Workspace extends that foundation into structured project execution.
+- The shared idea is that AI-assisted project work needs persistent structure across models, documents, work items, and implementation context.
+
+Primary audiences:
+
+- Builders using AI coding tools who need durable project context
+- Teams modelling domains, workflows, documents, and business processes
+- Consultants, analysts, product teams, and technical founders working on domain-heavy projects
+- Open-source and AI tooling communities interested in model-driven workspaces
+
+Share and directory summary:
+
+Mimris combines an open-source graphical modelling/metamodelling app with Mimris AI Workspace, a public demo of a structured project workspace for keeping domain descriptions, functional models, work items, documents, and AI-assisted drafts connected.
+
+Short listing summary:
+
+Graphical modelling plus AI-assisted project execution.
