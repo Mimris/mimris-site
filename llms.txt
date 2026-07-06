@@ -1,6 +1,6 @@
 # Mimris
 
-Mimris combines graphical modelling and metamodelling with Mimris AI Workspace for structured AI-assisted project execution.
+Mimris keeps AI-assisted project work connected to the domain model.
 
 Mimris connects:
 
@@ -8,16 +8,16 @@ Mimris connects:
 - domain descriptions
 - functional models
 - work items
-- documents and implementation context
+- documents, decisions, and implementation context
 - AI-assisted draft production
 
 Primary page:
 
-- https://site-swart-omega-89.vercel.app/
+- https://mimris-site.vercel.app/
 
 Press kit:
 
-- https://site-swart-omega-89.vercel.app/press.html
+- https://mimris-site.vercel.app/press.html
 
 Public demos:
 
@@ -38,6 +38,8 @@ Positioning:
 - Mimris provides the graphical modelling and metamodelling foundation.
 - Mimris AI Workspace extends that foundation into structured project execution.
 - The shared idea is that AI-assisted project work needs persistent structure across models, documents, work items, and implementation context.
+- The primary proof path is the sample contract-review workspace: select a high-risk indemnity clause and inspect its linked contract, risk, review task, and memo.
+- Diagrams.net helps users draw diagrams; BPMN and UML express known modelling languages; Mimris lets users define the domain language and keep its concepts connected to ongoing project execution.
 
 Primary audiences:
 
@@ -48,8 +50,8 @@ Primary audiences:
 
 Share and directory summary:
 
-Mimris combines an open-source graphical modelling/metamodelling app with Mimris AI Workspace, a public demo of a structured project workspace for keeping domain descriptions, functional models, work items, documents, and AI-assisted drafts connected.
+Mimris combines an open-source graphical modelling/metamodelling app with Mimris AI Workspace, a public demo of a structured project workspace for keeping concepts, documents, decisions, work items, and AI-assisted drafts connected.
 
 Short listing summary:
 
-Graphical modelling plus AI-assisted project execution.
+Keep AI-assisted project work connected to the domain model.

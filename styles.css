@@ -327,6 +327,60 @@ h3 {
   background: rgba(255, 255, 255, 0.55);
 }
 
+.proof-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.55fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.proof-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.proof-steps li,
+.proof-card {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.proof-steps span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--coral);
+  font-size: 13px;
+  font-weight: 780;
+}
+
+.proof-steps strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.proof-steps p,
+.proof-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.proof-card {
+  align-self: start;
+  background: var(--panel);
+  box-shadow: 0 14px 36px rgba(31, 37, 40, 0.1);
+}
+
+.proof-card .button {
+  margin-top: 22px;
+}
+
 .band {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
@@ -518,12 +572,17 @@ details p {
   }
 
   .preview-grid,
+  .proof-layout,
   .feature-grid,
   .fact-grid,
   .copy-grid,
   .link-grid,
   .screenshot-grid,
   .share-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-steps {
     grid-template-columns: 1fr;
   }
 
