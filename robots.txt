@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://site-swart-omega-89.vercel.app/sitemap.xml
+Sitemap: https://mimris-site.vercel.app/sitemap.xml

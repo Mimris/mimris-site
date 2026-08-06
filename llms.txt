@@ -19,6 +19,10 @@ Press kit:
 
 - https://mimris-site.vercel.app/press.html
 
+Documentation:
+
+- From Metis to Mimris: https://mimris-site.vercel.app/metis-legacy.html
+
 Public demos:
 
 - Mimris Modeling App: https://mimris.vercel.app

@@ -6,6 +6,7 @@ Public combined landing page and press kit for Mimris and Mimris AI Workspace.
 
 - Combined overview: `https://site-swart-omega-89.vercel.app`
 - Press kit: `https://site-swart-omega-89.vercel.app/press.html`
+- Metis legacy documentation: `https://mimris-site.vercel.app/metis-legacy.html`
 - Mimris demo: `https://mimris.vercel.app`
 - Mimris AI Workspace demo: `https://mimris-ai-workspace.vercel.app`
 - Public Mimris source: `https://github.com/Mimris/mimris`

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>From Metis to Mimris | Mimris Documentation</title>
+    <meta name="description" content="A historical and conceptual overview of the Metis enterprise modeling tool, its core capabilities, and its relationship to the Mimris vision.">
+    <link rel="canonical" href="https://mimris-site.vercel.app/metis-legacy.html">
+    <meta property="og:title" content="From Metis to Mimris">
+    <meta property="og:description" content="The modeling ideas pioneered by Metis and their evolution into the AI-native Mimris vision.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mimris-site.vercel.app/metis-legacy.html">
+    <meta property="og:site_name" content="Mimris">
+    <meta property="og:image" content="https://mimris-site.vercel.app/assets/social-card-1200x630.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="From Metis to Mimris">
+    <meta name="twitter:description" content="The modeling ideas pioneered by Metis and their evolution into the AI-native Mimris vision.">
+    <meta name="twitter:image" content="https://mimris-site.vercel.app/assets/social-card-1200x630.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>Mimris</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Overview</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#influence">Influence</a>
+        <a href="#mimris">Mimris</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="doc-article">
+        <header class="doc-hero">
+          <p class="eyebrow">Documentation · History and concepts</p>
+          <h1>From Metis to Mimris</h1>
+          <p class="subhead">A pioneering meta-modeling platform and the ideas that continue in an AI-native workspace.</p>
+          <p class="lede">The Metis modeling tool was one of the pioneering enterprise modeling environments developed in Norway during the 1990s. Unlike traditional CASE tools or UML-only modeling tools, Metis was designed as a meta-modeling platform: a system for defining modeling languages, methods, and analysis capabilities rather than being restricted to a single notation.</p>
+        </header>
+
+        <div class="doc-layout">
+          <aside class="doc-toc" aria-label="On this page">
+            <strong>On this page</strong>
+            <a href="#history">Product history</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="#concepts">Core concepts</a>
+            <a href="#methods">Modeling methods</a>
+            <a href="#capabilities">Analysis and collaboration</a>
+            <a href="#architecture">Technical architecture</a>
+            <a href="#influence">Influence</a>
+            <a href="#mimris">Relation to Mimris</a>
+          </aside>
+
+          <div class="doc-content">
+            <section id="history">
+              <h2>Product history</h2>
+              <p>The product evolved through several owners:</p>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Period</th><th>Company</th><th>Role</th></tr></thead>
+                  <tbody>
+                    <tr><td>Early 1990s</td><td>Metis AS</td><td>Original development</td></tr>
+                    <tr><td>Mid 1990s</td><td>Digital Equipment Corporation (DEC)</td><td>Acquisition and further development</td></tr>
+                    <tr><td>Later</td><td>AT&amp;T / NCR</td><td>Enterprise product</td></tr>
+                    <tr><td>2001</td><td>Computas AS</td><td>Acquired the Metis product and development team</td></tr>
+                    <tr><td>2005</td><td>Troux Technologies</td><td>Acquired Computas Technology and Metis</td></tr>
+                    <tr><td>Later</td><td>Troux, acquired by Planview</td><td>Enterprise Architecture portfolio evolution</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section id="philosophy">
+              <p class="eyebrow">The philosophy behind Metis</p>
+              <h2>Everything is a model</h2>
+              <blockquote>Even the modeling language itself is a model.</blockquote>
+              <p>Instead of hardcoding UML or BPMN, Metis separated the meta-model, model, and instances. This meant users could create entirely new modeling languages.</p>
+              <div class="flow-examples" aria-label="Examples of modeling layers">
+                <div><span>Meta-model</span><i>↓</i><span>Business process language</span><i>↓</i><span>Business process model</span><i>↓</i><span>Actual business process</span></div>
+                <div><span>Meta-model</span><i>↓</i><span>Electrical engineering language</span><i>↓</i><span>Circuit model</span><i>↓</i><span>Physical installation</span></div>
+              </div>
+              <p>This flexibility made Metis very different from tools such as Rational Rose or Visio.</p>
+            </section>
+
+            <section id="concepts">
+              <p class="eyebrow">Core concepts</p>
+              <h2>A repository of reusable meaning</h2>
+
+              <h3>1. Meta-modeling</h3>
+              <p>Meta-modeling was Metis’s strongest feature. Users could define object types, relationship types, properties, constraints, behaviors, graphical symbols, and modeling rules—effectively building their own modeling language.</p>
+              <p>The capability is similar to what is now found in Eclipse EMF, JetBrains MPS, Microsoft DSL Tools, MetaEdit+, and Sirius, although Metis predates many of them.</p>
+
+              <h3>2. Everything is an object</h3>
+              <p>Almost everything inside Metis was represented as an object: processes, documents, people, organizations, requirements, goals, applications, databases, and roles. Relationships were also first-class objects with their own properties.</p>
+              <div class="inline-model" aria-label="Employee works in department"><span>Employee</span><b>Works In</b><span>Department</span></div>
+              <p>The <em>Works In</em> relationship could itself contain a start date, responsibility, percentage, and comments.</p>
+
+              <h3>3. Multiple views</h3>
+              <p>A single object could appear in many diagrams. A Customer, for example, could appear in an organization model, CRM model, process model, and information model. Every reference pointed to the same underlying object, so changing it updated every view.</p>
+              <p>This idea has become common in modern digital twins and knowledge graphs.</p>
+
+              <h3>4. Repository-centric</h3>
+              <p>Unlike drawing tools, Metis stored objects, relationships, and attributes in a shared repository. Diagrams were merely different visualizations of the same underlying information.</p>
+              <div class="repository-model"><strong>Repository</strong><span>Diagram A</span><span>Diagram B</span><span>Diagram C</span><span>Reports</span><span>Queries</span></div>
+            </section>
+
+            <section id="methods">
+              <h2>Modeling methods and enterprise domains</h2>
+              <p>Metis was intentionally methodology-independent. It shipped with templates for methods including UML, EEML (Extended Enterprise Modeling Language), GEM, MEML, i*, and Misuse Cases. Users could also combine methods into hybrid modeling languages.</p>
+              <p>It was particularly strong in enterprise architecture, supporting domains such as:</p>
+              <ul class="doc-columns">
+                <li>Business processes</li><li>Organization</li><li>Information</li><li>Applications</li>
+                <li>Infrastructure</li><li>Requirements</li><li>Goals</li><li>Strategies</li>
+                <li>Risks</li><li>Products</li><li>Regulations</li>
+              </ul>
+              <p>Many Norwegian government organizations used Metis for enterprise modeling.</p>
+            </section>
+
+            <section id="capabilities">
+              <p class="eyebrow">Beyond diagramming</p>
+              <h2>Analysis, navigation, and collaboration</h2>
+
+              <h3>Impact and dependency analysis</h3>
+              <p>Models could be queried and analyzed. A change to one requirement could identify affected business processes, applications, databases, and servers. Dependencies could likewise be traced from applications through interfaces and services to business processes.</p>
+              <div class="flow-examples compact" aria-label="Analysis examples">
+                <div><span>Requirement</span><i>↓</i><span>Business process</span><i>↓</i><span>Application</span><i>↓</i><span>Database</span><i>↓</i><span>Server</span></div>
+                <div><span>Application</span><i>↓</i><span>Interfaces</span><i>↓</i><span>Services</span><i>↓</i><span>Business processes</span></div>
+              </div>
+
+              <h3>Completeness checking</h3>
+              <p>Rules could identify missing documents, orphan processes, missing owners, and invalid relationships.</p>
+
+              <h3>Report generation</h3>
+              <p>Reports could automatically generate documentation, HTML, specifications, inventories, and model catalogs.</p>
+
+              <h3>Hierarchical navigation</h3>
+              <p>Objects could contain sub-models. Double-clicking an object navigated deeper into the model—for example, from Company to Sales, Order Processing, Order Approval, and Invoice.</p>
+
+              <h3>Team collaboration</h3>
+              <p>Long before cloud collaboration became common, Metis supported shared repositories, versioning, distributed modeling, and sub-model merging, allowing multiple teams to work on different parts of a large enterprise model.</p>
+            </section>
+
+            <section id="architecture">
+              <h2>Technical architecture</h2>
+              <p>Internally, Metis was based on a graph model: objects connected to other objects through relationships. Every object had a unique identity, properties, methods, graphical representations, and relationships.</p>
+              <div class="inline-model graph-model" aria-label="Graph model"><span>Object</span><b>Relationship</b><span>Object</span><b>Relationship</b><span>Object</span></div>
+              <p>This architecture closely resembles today’s property graph databases such as Neo4j.</p>
+            </section>
+
+            <section id="influence">
+              <p class="eyebrow">Ahead of its time</p>
+              <h2>Metis and its modern equivalents</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Capability</th><th>Metis</th><th>Modern equivalent</th></tr></thead>
+                  <tbody>
+                    <tr><td>Repository modeling</td><td>✓</td><td>Sparx EA, Cameo</td></tr>
+                    <tr><td>Meta-modeling</td><td>✓</td><td>EMF, MPS</td></tr>
+                    <tr><td>Multiple diagram views</td><td>✓</td><td>Cameo, Enterprise Architect</td></tr>
+                    <tr><td>Traceability</td><td>✓</td><td>Jama, DOORS</td></tr>
+                    <tr><td>Knowledge graph concepts</td><td>✓</td><td>Neo4j, RDF</td></tr>
+                    <tr><td>Digital twin concepts</td><td>✓</td><td>Azure Digital Twins</td></tr>
+                    <tr><td>User-defined modeling languages</td><td>✓</td><td>Sirius, MetaEdit+</td></tr>
+                    <tr><td>Impact analysis</td><td>✓</td><td>Modern EA platforms</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>Metis significantly influenced Scandinavian enterprise architecture research, particularly Enterprise Engineering, EEML, UEML, collaborative enterprise modeling, and knowledge management. Many of these initiatives involved collaboration between industry—including Computas—universities, and European research projects.</p>
+            </section>
+
+            <section id="mimris" class="doc-conclusion">
+              <p class="eyebrow">Conceptual lineage</p>
+              <h2>How the vision evolves in Mimris</h2>
+              <p>There is a clear conceptual lineage from Metis to Mimris, but the current vision extends it substantially.</p>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Metis</th><th>Mimris vision</th></tr></thead>
+                  <tbody>
+                    <tr><td>Meta-modeling</td><td>AI-generated domain models</td></tr>
+                    <tr><td>Repository</td><td>Knowledge graph plus vector knowledge</td></tr>
+                    <tr><td>Multiple views</td><td>Domain, POPS, IRTV, TYPE, and BPMN layers</td></tr>
+                    <tr><td>Object repository</td><td>Living AI workspace</td></tr>
+                    <tr><td>Manual modeling</td><td>AI-assisted collaborative modeling</td></tr>
+                    <tr><td>Reports</td><td>Executable workspaces and generated artifacts</td></tr>
+                    <tr><td>Static model analysis</td><td>AI reasoning and autonomous generation</td></tr>
+                    <tr><td>Enterprise modeling</td><td>Domain engineering and execution platform</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="conclusion-callout">Mimris can be viewed not merely as a successor to Metis, but as an evolution from a meta-modeling platform into an AI-native knowledge engineering environment that combines modeling, reasoning, generation, and execution.</p>
+              <div class="actions">
+                <a class="button primary" href="https://mimris.vercel.app">Explore Mimris Modeling App</a>
+                <a class="button secondary" href="index.html">Return to Mimris overview</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
