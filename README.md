@@ -1,30 +1,46 @@
 # Mimris Site
 
-Public combined landing page and press kit for Mimris and Mimris AI Workspace.
+Public website and communication home for the Mimris ecosystem.
 
-## Public Surfaces
+## Repository responsibility
 
-- Combined overview: `https://site-swart-omega-89.vercel.app`
-- Press kit: `https://site-swart-omega-89.vercel.app/press.html`
-- Metis legacy documentation: `https://mimris-site.vercel.app/metis-legacy.html`
-- Mimris demo: `https://mimris.vercel.app`
+This repository owns public positioning, messaging, concepts, SEO/GEO content, examples, press material, and promotion strategy.
+
+- `Mimris/mimris` implements Mimris Modelling.
+- `Mimris/mimris-ai-workspace` implements Mimris AI Workspace.
+- `Mimris/mimris-site` explains the ecosystem and the relationship between the products.
+
+See [`docs/strategy/product-architecture.md`](docs/strategy/product-architecture.md) and [`docs/strategy/phase-1-positioning-and-web-foundation.md`](docs/strategy/phase-1-positioning-and-web-foundation.md).
+
+## Public surfaces
+
+- Ecosystem website: `https://mimris-site.vercel.app`
+- Press kit: `https://mimris-site.vercel.app/press.html`
+- From Metis to Mimris: `https://mimris-site.vercel.app/metis-legacy.html`
+- Mimris Modelling demo: `https://mimris.vercel.app`
 - Mimris AI Workspace demo: `https://mimris-ai-workspace.vercel.app`
-- Public Mimris source: `https://github.com/Mimris/mimris`
+- Public Mimris Modelling source: `https://github.com/Mimris/mimris`
+- Modelling videos by Snorre Fossland: `https://www.youtube.com/@SnorresModelBureau`
 
-## Repository Split
+Do not publish or link to the Mimris AI Workspace source repository until its owner changes its visibility.
 
-- `Mimris/mimris`: public source repository for the Mimris modelling app.
-- `Mimris/mimris-ai-workspace`: private/authenticated source repository for Mimris AI Workspace.
-- `Mimris/mimris-site`: public combined landing page and press kit source.
+## Application structure
 
-Public promotion should use this site, the public demos, and the public Mimris source link. Do not publish the private Mimris AI Workspace source repository until the owner changes its visibility.
+The canonical site uses application routes under `app/`. Root-level HTML files support retained public pages and migration history. The former homepage is preserved as `legacy-home.html` and published at `/legacy-home.html`.
 
-## Local Preview
+Public assets are generated into `public/` by `npm run sync:static` and are intentionally not committed.
 
-Open `index.html` directly, or serve the folder:
+## Local development
 
 ```bash
-python3 -m http.server 8765
+npm install
+npm run dev
 ```
 
-Then open `http://127.0.0.1:8765`.
+Open `http://localhost:3000`.
+
+## Verification
+
+```bash
+npm run build
+```

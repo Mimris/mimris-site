@@ -1,61 +1,53 @@
 # Mimris
 
-Mimris keeps AI-assisted project work connected to the domain model.
+Mimris is an approach and product ecosystem for turning domain knowledge into explicit models that people, software, and AI can understand and use.
 
-Mimris connects:
+Core proposition: Model the world. Work with it.
 
-- graphical modelling and metamodelling
-- domain descriptions
-- functional models
-- work items
-- documents, decisions, and implementation context
-- AI-assisted draft production
+## Core concepts
 
-Primary page:
+- Active Knowledge Modelling is the practice of creating connected, evolvable models that remain usable as context for exploration, decisions, applications, AI, and work.
+- A Universe is a bounded, coherent representation of a domain or world that humans and AI can work within.
+- Mimris Modelling is the specialist environment for creating, structuring, visualizing, inspecting, and evolving models of complex domains.
+- Mimris AI Workspace is the AI-enabled environment where structured models become context for documents, processes, tasks, decisions, and deliverables.
 
-- https://mimris-site.vercel.app/
+## Canonical pages
 
-Press kit:
-
-- https://mimris-site.vercel.app/press.html
-
-Documentation:
-
+- Mimris: https://mimris-site.vercel.app/
+- Why Mimris: https://mimris-site.vercel.app/why-mimris
+- Active Knowledge Modelling: https://mimris-site.vercel.app/active-knowledge-modelling
+- Products: https://mimris-site.vercel.app/products
+- Mimris Modelling: https://mimris-site.vercel.app/products/modelling
+- Mimris AI Workspace: https://mimris-site.vercel.app/products/ai-workspace
+- Coffee Shop Universe: https://mimris-site.vercel.app/examples/coffee-shop
+- Articles: https://mimris-site.vercel.app/articles
+- Why AI Needs Models, Not Just More Documents: https://mimris-site.vercel.app/articles/why-ai-needs-models
+- About: https://mimris-site.vercel.app/about
+- Press kit: https://mimris-site.vercel.app/press.html
 - From Metis to Mimris: https://mimris-site.vercel.app/metis-legacy.html
 
-Public demos:
+## Product boundary
 
-- Mimris Modeling App: https://mimris.vercel.app
-- Mimris AI Workspace: https://mimris-ai-workspace.vercel.app
+- Capabilities that primarily create or manipulate model structure belong in Mimris Modelling.
+- Capabilities that primarily help a person or AI perform work using models and context belong in Mimris AI Workspace.
+- The products are complementary and share the concept of a Universe; they are not two versions of the same application.
 
-GitHub:
+## Public demos and source
 
-- Mimris Modeling App: https://github.com/Mimris/mimris
-- Mimris AI Workspace: repository is not public; use the public demo and combined overview for public references.
+- Mimris Modelling demo: https://mimris.vercel.app
+- Mimris AI Workspace demo: https://mimris-ai-workspace.vercel.app
+- Mimris Modelling public source: https://github.com/Mimris/mimris
+- Mimris AI Workspace source is not public. Use the public demo and this site for public references.
+- Modelling videos by Snorre Fossland: https://www.youtube.com/@SnorresModelBureau
 
-Launch feedback:
+## Primary proof path
 
-- Mimris and Mimris AI Workspace feedback: https://github.com/Mimris/mimris/issues/30
+The Coffee Shop Universe shows a familiar domain moving from description and explicit model structure into connected work. It links people, products, systems, processes, information, model views, documents, decisions, and work items across both products.
 
-Positioning:
+## Primary audiences
 
-- Mimris provides the graphical modelling and metamodelling foundation.
-- Mimris AI Workspace extends that foundation into structured project execution.
-- The shared idea is that AI-assisted project work needs persistent structure across models, documents, work items, and implementation context.
-- The primary proof path is the sample coffee-shop workspace: inspect the End-to-End Store Flow and follow links across Order Entry, Payment Checkout, Production Routing, Inventory Ops, domain documents, and work items.
-- Diagrams.net helps users draw diagrams; BPMN and UML express known modelling languages; Mimris lets users define the domain language and keep its concepts connected to ongoing project execution.
-
-Primary audiences:
-
-- Builders using AI coding tools who need durable project context
-- Teams modelling domains, workflows, documents, and business processes
-- Consultants, analysts, product teams, and technical founders working on domain-heavy projects
-- Open-source and AI tooling communities interested in model-driven workspaces
-
-Share and directory summary:
-
-Mimris combines an open-source graphical modelling/metamodelling app with Mimris AI Workspace, a public demo of a structured project workspace for keeping concepts, documents, decisions, work items, and AI-assisted drafts connected.
-
-Short listing summary:
-
-Keep AI-assisted project work connected to the domain model.
+- Enterprise, process, and knowledge modellers
+- Solution and enterprise architects
+- Knowledge engineers and AI architects
+- AI application developers and technical founders
+- Business analysts, consultants, and digital-transformation specialists

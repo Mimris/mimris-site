@@ -4,7 +4,9 @@ dist
 .next
 .vinext
 .wrangler
+*.tsbuildinfo
 public/index.html
+public/legacy-home.html
 public/press.html
 public/metis-legacy.html
 public/styles.css
