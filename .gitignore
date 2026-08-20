@@ -1,9 +1,6 @@
 .vercel
 node_modules
-dist
 .next
-.vinext
-.wrangler
 *.tsbuildinfo
 public/index.html
 public/legacy-home.html

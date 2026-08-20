@@ -33,7 +33,7 @@ Public assets are generated into `public/` by `npm run sync:static` and are inte
 ## Local development
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -49,7 +49,6 @@ npm run dev -- --port 3002
 
 ```bash
 npm run build
-npm run vercel-build
 ```
 
-`npm run build` produces the Vinext/Sites build. `npm run vercel-build` produces the native Next.js build used by Vercel.
+The site uses native Next.js locally and on Vercel. Static legacy files are synchronised into `public/` automatically before development and production builds.
