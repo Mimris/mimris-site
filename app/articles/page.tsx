@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ArrowLink, PageHero } from "../_components/site-shell";
 
 export const metadata: Metadata = {
@@ -27,6 +28,11 @@ export default function ArticlesPage() {
           </div>
           <ArrowLink href="/articles/why-ai-needs-models">Read the article</ArrowLink>
         </article>
+        <div className="article-link-grid">
+          <Link href="/articles/active-knowledge-modelling"><h2>What Is Active Knowledge Modelling?</h2><p>Understand the approach behind Mimris.</p></Link>
+          <Link href="/articles/coffee-shop-universe"><h2>The Coffee Shop Universe</h2><p>Follow a familiar domain from model to work.</p></Link>
+          <Link href="/articles/modelling-and-workspace"><h2>Two Complementary Jobs</h2><p>See how the products divide responsibility.</p></Link>
+        </div>
       </section>
     </>
   );

@@ -21,6 +21,9 @@ Core proposition: Model the world. Work with it.
 - Mimris AI Workspace: https://mimris-site.vercel.app/products/ai-workspace
 - Coffee Shop Universe: https://mimris-site.vercel.app/examples/coffee-shop
 - Articles: https://mimris-site.vercel.app/articles
+- What Is Active Knowledge Modelling?: https://mimris-site.vercel.app/articles/active-knowledge-modelling
+- The Coffee Shop Universe: https://mimris-site.vercel.app/articles/coffee-shop-universe
+- Mimris Modelling and AI Workspace: https://mimris-site.vercel.app/articles/modelling-and-workspace
 - Why AI Needs Models, Not Just More Documents: https://mimris-site.vercel.app/articles/why-ai-needs-models
 - About: https://mimris-site.vercel.app/about
 - Press kit: https://mimris-site.vercel.app/press.html
