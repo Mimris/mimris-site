@@ -5,6 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mimris-site.vercel.app"),
+  alternates: { canonical: "/" },
   title: {
     default: "Mimris — Model the world. Work with it.",
     template: "%s | Mimris",
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Mimris",
+    url: "/",
     title: "Mimris — Model the world. Work with it.",
     description:
       "Active Knowledge Modelling for turning domain knowledge into durable context for people, software, and AI.",
