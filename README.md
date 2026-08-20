@@ -39,8 +39,17 @@ npm run dev
 
 Open `http://localhost:3000`.
 
+To use port 3002:
+
+```bash
+npm run dev -- --port 3002
+```
+
 ## Verification
 
 ```bash
 npm run build
+npm run vercel-build
 ```
+
+`npm run build` produces the Vinext/Sites build. `npm run vercel-build` produces the native Next.js build used by Vercel.
