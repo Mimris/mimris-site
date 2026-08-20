@@ -7,9 +7,9 @@
   },
   "scripts": {
     "sync:static": "mkdir -p public && rm -f public/index.html && rm -rf public/assets && cp legacy-home.html press.html metis-legacy.html styles.css robots.txt sitemap.xml llms.txt public/ && cp -R assets public/assets",
-    "predev": "npm run sync:static",
+    "predev": "pnpm sync:static",
     "dev": "next dev",
-    "prebuild": "npm run sync:static",
+    "prebuild": "pnpm sync:static",
     "build": "next build",
     "start": "next start"
   },
