@@ -42,7 +42,7 @@ Open `http://localhost:3000`.
 To use port 3002:
 
 ```bash
-pnpm dev -- --port 3002
+pnpm dev --port 3002
 ```
 
 ## Verification
