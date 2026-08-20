@@ -5,7 +5,7 @@ Status: Draft controlling specification
 Owner: Mimris
 
 Phase: 1
-Last updated: 2026-08-19
+Last updated: 2026-08-20
 
 ## 1. Purpose
 
@@ -135,7 +135,15 @@ The website is the public front door and canonical explanation of the ecosystem.
 - connect articles and promotional material to permanent canonical pages;
 - direct visitors to public demos and appropriate public source code.
 
-The current repository already contains a combined static landing page, press page, legacy documentation, discovery files, product imagery, and a React/Vite-based build. Phase 1 should evolve these assets without breaking published proof paths while establishing one canonical page and content architecture.
+The repository now uses native Next.js on Vercel as its canonical runtime. It retains the static press and legacy documentation surfaces, synchronises their assets during pnpm development and builds, and keeps published proof paths stable.
+
+### Current implementation status
+
+- The ecosystem homepage, concept pages, product pages, Coffee Shop proof, About page, and initial article are published.
+- The Coffee Shop CTA opens the `coffee-shop-generic` Universe in Mimris Modelling with the published IRTV model and End-to-End Store Flow view selected.
+- Markdown editorial sources live under `content/articles/` and are published through the article routes.
+- Information architecture, SEO/GEO, and analytics briefs live under `docs/website/`.
+- Vercel uses the native Next.js framework preset; Vite, Vinext, and Cloudflare build infrastructure have been removed.
 
 ## 8. Information architecture
 
@@ -152,9 +160,12 @@ Target public architecture:
 |-- /examples
 |   `-- /examples/coffee-shop
 |-- /articles
+|   |-- /articles/active-knowledge-modelling
+|   |-- /articles/coffee-shop-universe
+|   `-- /articles/modelling-and-workspace
 |-- /about
-|-- /press
-`-- /documentation/from-metis-to-mimris
+|-- /press.html
+`-- /metis-legacy.html
 ```
 
 Existing `.html` URLs should continue to work through stable pages or redirects during migration. The final route form and deployment runtime must be decided before implementing multiple new pages.
@@ -183,6 +194,9 @@ The first permanent content set is:
 | Mimris AI Workspace | Product definition and evidence |
 | Coffee Shop Universe | Accessible end-to-end demonstration |
 | Why AI Needs Models | Initial thought-leadership article |
+| Active Knowledge Modelling | Canonical concept explainer |
+| The Coffee Shop Universe | Editorial proof of the flagship example |
+| Mimris Modelling and Mimris AI Workspace | Product boundary explainer |
 | From Metis to Mimris | Heritage and credibility |
 
 The same source material should support the website, LinkedIn posts, demonstrations, YouTube material, and press references. Promotion should lead back to durable canonical content rather than create disconnected claims.
@@ -269,7 +283,7 @@ Analytics must respect applicable privacy requirements and should not be install
 - Coffee Shop guided proof page;
 - About/heritage and first thought-leadership article;
 - retained press and legacy documentation access;
-- working navigation, metadata, sitemap, discovery content, and social previews;
+- working navigation, metadata, sitemap, discovery content, social previews, and accessible responsive layout;
 - a truthful, working conversion or follow mechanism.
 
 ### Evidence and promotion
@@ -282,31 +296,31 @@ Analytics must respect applicable privacy requirements and should not be install
 
 ## 14. Implementation sequence
 
-### Step 1: Normalize the foundation
+### Step 1: Normalize the foundation — complete
 
-Choose the canonical runtime, routing model, and content source. Resolve the present split between root static files and the placeholder application route. Document how existing URLs and hosting continue to work.
+The canonical runtime is native Next.js on Vercel. Root static files remain supported through the pnpm synchronisation step, while application routes provide the canonical ecosystem experience.
 
-### Step 2: Turn this strategy into page briefs
+### Step 2: Turn this strategy into page briefs — complete
 
 Create the supporting specifications for positioning, audiences, messaging, information architecture, homepage, SEO/GEO, and analytics. Assign one canonical definition and CTA to each page.
 
-### Step 3: Establish the content and design system
+### Step 3: Establish the content and design system — substantially complete
 
 Create `content/concepts`, `content/products`, `content/examples`, and `content/articles`. Define typography, colors, page primitives, diagrams, screenshots, and responsive behavior using the useful elements of the current site.
 
-### Step 4: Build the core journey
+### Step 4: Build the core journey — complete
 
 Implement the homepage, product pages, Active Knowledge Modelling page, and global navigation. Keep public demos and source links accurate.
 
-### Step 5: Build the proof
+### Step 5: Build the proof — link complete; model-layout refinement pending
 
 Turn the current Coffee Shop material into a guided cross-product example with a clear start, expected observations, and next action.
 
-### Step 6: Add discovery and measurement
+### Step 6: Add discovery and measurement — discovery complete; measurement pending
 
 Complete canonical metadata, structured data, sitemap, robots policy, `llms.txt`, social previews, performance and accessibility checks, and privacy-appropriate analytics.
 
-### Step 7: Launch the first content cycle
+### Step 7: Launch the first content cycle — next
 
 Publish “Why AI Needs Models,” derive the first LinkedIn material and demo outline, verify all public links, and record baseline results.
 
