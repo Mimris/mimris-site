@@ -22,6 +22,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inte
 a { color: inherit; text-decoration: none; }
 p, h1, h2, h3 { margin-top: 0; }
 button, a { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
 
 .skip-link { position: fixed; left: 16px; top: -80px; z-index: 100; padding: 10px 14px; background: var(--ink); color: var(--white); border-radius: 8px; }
 .skip-link:focus { top: 16px; }
@@ -97,7 +98,7 @@ h3 { font-size: clamp(24px, 2.4vw, 34px); letter-spacing: -.025em; line-height: 
 .site-footer { display: grid; grid-template-columns: 1fr auto; gap: 50px; padding: 52px 0 70px; border-top: 1px solid var(--line); }.site-footer p { margin: 18px 0 0; color: var(--muted); }.footer-links { display: grid; grid-template-columns: repeat(2, auto); gap: 12px 32px; align-content: start; color: var(--muted); font-size: 14px; }
 
 @media (max-width: 940px) {
-  .site-header { grid-template-columns: 1fr auto; }.site-nav { display: none; }
+  .site-header { grid-template-columns: 1fr auto; }.site-nav { display: flex; grid-column: 1 / -1; justify-content: flex-start; gap: 20px; overflow-x: auto; padding: 2px 0 4px; white-space: nowrap; scrollbar-width: thin; }
   .home-hero { grid-template-columns: 1fr; min-height: auto; }.universe-card { max-width: 620px; transform: none; }
   .statement-section, .split-heading, .proof-section, .article-section, .video-section, .about-video-section, .product-showcase { grid-template-columns: 1fr; gap: 42px; }
   .knowledge-flow { grid-template-columns: repeat(3, 1fr); }.definition-callout { grid-template-columns: 1fr; }.product-grid, .product-detail-grid { grid-template-columns: 1fr; }.product-card { min-height: 360px; }
