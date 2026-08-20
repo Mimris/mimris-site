@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArticleMarkdown } from "@/app/_components/article-markdown";
+import { ArticleByline, ArticleLayout, ArticleMarkdown, AiDisclosure } from "@/app/_components/article-markdown";
 
 export const metadata: Metadata = {
   title: "The Coffee Shop Universe",
@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function CoffeeShopUniverseArticle() {
-  return <><header className="article-hero longform-article"><Link className="article-back" href="/articles">← All articles</Link><p className="eyebrow">Examples</p><h1>The Coffee Shop Universe: A Model-Driven Proof</h1><p className="hero-lead">One familiar domain, seen through two complementary products.</p></header><ArticleMarkdown file="coffee-shop-universe.md" /></>;
+  return <ArticleLayout currentPath="/articles/coffee-shop-universe"><header className="article-hero longform-article"><Link className="article-back" href="/articles">← All articles</Link><p className="eyebrow">Examples</p><h1>The Coffee Shop Universe: A Model-Driven Proof</h1><p className="hero-lead">One familiar domain, seen through two complementary products.</p><ArticleByline /></header><ArticleMarkdown file="coffee-shop-universe.md" /><AiDisclosure /></ArticleLayout>;
 }

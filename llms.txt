@@ -25,6 +25,8 @@ Core proposition: Model the world. Work with it.
 - The Coffee Shop Universe: https://mimris-site.vercel.app/articles/coffee-shop-universe
 - Mimris Modelling and AI Workspace: https://mimris-site.vercel.app/articles/modelling-and-workspace
 - Why AI Needs Models, Not Just More Documents: https://mimris-site.vercel.app/articles/why-ai-needs-models
+- Can AI Have Consciousness?: https://mimris-site.vercel.app/articles/from-biological-viability-to-artificial-consciousness
+- Infographic: Can AI Have Consciousness?: https://mimris-site.vercel.app/articles/can-ai-have-consciousness-infographic
 - About: https://mimris-site.vercel.app/about
 - Press kit: https://mimris-site.vercel.app/press.html
 - From Metis to Mimris: https://mimris-site.vercel.app/metis-legacy.html
