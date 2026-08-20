@@ -18,7 +18,7 @@ export default function CoffeeShopPage() {
   return (
     <>
       <PageHero eyebrow="Flagship example" title="The Coffee Shop Universe" lead="A familiar domain makes the Mimris approach concrete: describe a world, model its structure, then use that structure to guide work.">
-        <div className="button-row"><a className="button button-primary" href="https://mimris-ai-workspace.vercel.app">Open the workspace proof</a><a className="button button-secondary" href="https://mimris.vercel.app/model?universeSlug=template-default&amp;universeApi=https%3A%2F%2Fmimris-ai-workspace.vercel.app&amp;metisScope=world-model&amp;currentModelRef=itrv-coffee-shop-ops-model-v1&amp;currentModelviewRef=c0b26cc8-2a0b-4e30-a8a1-91ffe8a18708">Open the Coffee Shop IRTV model</a></div>
+        <div className="button-row"><a className="button button-primary" href="https://mimris-ai-workspace.vercel.app">Open the workspace proof</a><a className="button button-secondary" href="https://mimris.vercel.app/model?universeSlug=coffee-shop-generic&amp;universeApi=https%3A%2F%2Fmimris-ai-workspace.vercel.app&amp;metisScope=world-model&amp;currentModelRef=itrv-coffee-shop-ops-model-v1&amp;currentModelviewRef=c0b26cc8-2a0b-4e30-a8a1-91ffe8a18708">Open the Coffee Shop IRTV model</a></div>
       </PageHero>
       <section className="guided-proof">
         <div className="section-heading"><p className="section-number">A ten-minute proof path</p><h2>One Universe, seen through two complementary products.</h2></div>

@@ -33,8 +33,8 @@ Public assets are generated into `public/` by `npm run sync:static` and are inte
 ## Local development
 
 ```bash
-npm ci
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Open `http://localhost:3000`.
@@ -42,13 +42,13 @@ Open `http://localhost:3000`.
 To use port 3002:
 
 ```bash
-npm run dev -- --port 3002
+pnpm dev -- --port 3002
 ```
 
 ## Verification
 
 ```bash
-npm run build
+pnpm build
 ```
 
 The site uses native Next.js locally and on Vercel. Static legacy files are synchronised into `public/` automatically before development and production builds.
