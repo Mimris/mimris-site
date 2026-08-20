@@ -30,6 +30,21 @@ export function SiteHeader() {
       <a className="header-cta" href="https://mimris-ai-workspace.vercel.app">
         Open workspace
       </a>
+      <details className="mobile-menu">
+        <summary>Menu</summary>
+        <div className="mobile-menu-panel">
+          <nav aria-label="Mobile primary navigation">
+            {navigation.map((item) => (
+              <Link href={item.href} key={item.href}>
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+          <a className="mobile-menu-cta" href="https://mimris-ai-workspace.vercel.app">
+            Open workspace
+          </a>
+        </div>
+      </details>
     </header>
   );
 }

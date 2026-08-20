@@ -5,7 +5,7 @@ Status: Draft controlling specification
 Owner: Mimris
 
 Phase: 1
-Last updated: 2026-08-20
+Last updated: 2026-08-21
 
 ## 1. Purpose
 
@@ -141,7 +141,8 @@ The repository now uses native Next.js on Vercel as its canonical runtime. It re
 
 - The ecosystem homepage, concept pages, product pages, Coffee Shop proof, About page, and initial article are published.
 - The Coffee Shop CTA opens the `coffee-shop-generic` Universe in Mimris Modelling with the published IRTV model and End-to-End Store Flow view selected.
-- Markdown editorial sources live under `content/articles/` and are published through the article routes.
+- Markdown editorial sources live under `content/articles/` and are published through the article routes, with grouped article navigation, responsive mobile menus, author bylines, and end-of-article AI-assisted writing notes.
+- The current article set includes the modelling explainers, Coffee Shop proof, “Why AI Needs Models,” and the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page.
 - Information architecture, SEO/GEO, and analytics briefs live under `docs/website/`.
 - Vercel uses the native Next.js framework preset; Vite, Vinext, and Cloudflare build infrastructure have been removed.
 
@@ -162,7 +163,9 @@ Target public architecture:
 |-- /articles
 |   |-- /articles/active-knowledge-modelling
 |   |-- /articles/coffee-shop-universe
-|   `-- /articles/modelling-and-workspace
+|   |-- /articles/modelling-and-workspace
+|   |-- /articles/from-biological-viability-to-artificial-consciousness
+|   `-- /articles/can-ai-have-consciousness-infographic
 |-- /about
 |-- /press.html
 `-- /metis-legacy.html
@@ -198,6 +201,8 @@ The first permanent content set is:
 | The Coffee Shop Universe | Editorial proof of the flagship example |
 | Mimris Modelling and Mimris AI Workspace | Product boundary explainer |
 | From Metis to Mimris | Heritage and credibility |
+| Can AI Have Consciousness? | Exploratory AI News and Commentary article |
+| Consciousness infographic | Separate visual companion at readable scale |
 
 The same source material should support the website, LinkedIn posts, demonstrations, YouTube material, and press references. Promotion should lead back to durable canonical content rather than create disconnected claims.
 
@@ -290,7 +295,7 @@ Analytics must respect applicable privacy requirements and should not be install
 
 - current screenshots or short product demonstrations;
 - one coherent end-to-end Coffee Shop story across the website and products;
-- first LinkedIn launch package;
+- revised LinkedIn launch package with article-first approval workflow and publication log;
 - initial YouTube/demo outline;
 - documented baseline analytics and launch observations.
 
@@ -306,7 +311,7 @@ Create the supporting specifications for positioning, audiences, messaging, info
 
 ### Step 3: Establish the content and design system — substantially complete
 
-Create `content/concepts`, `content/products`, `content/examples`, and `content/articles`. Define typography, colors, page primitives, diagrams, screenshots, and responsive behavior using the useful elements of the current site.
+Create `content/concepts`, `content/products`, `content/examples`, and `content/articles`. Define typography, colors, page primitives, diagrams, screenshots, responsive behavior, grouped article navigation, and restrained editorial disclosures using the useful elements of the current site.
 
 ### Step 4: Build the core journey — complete
 
@@ -320,9 +325,9 @@ Turn the current Coffee Shop material into a guided cross-product example with a
 
 Complete canonical metadata, structured data, sitemap, robots policy, `llms.txt`, social previews, performance and accessibility checks, and privacy-appropriate analytics.
 
-### Step 7: Launch the first content cycle — next
+### Step 7: Launch the first content cycle — in progress
 
-Publish “Why AI Needs Models,” derive the first LinkedIn material and demo outline, verify all public links, and record baseline results.
+Approve the article set, derive LinkedIn material from canonical pages using [the launch package](../promotion/linkedin-launch-package.md), verify all public links, and record baseline results. The next publishable sequence starts with the ecosystem, Active Knowledge Modelling, Coffee Shop proof, product boundary, “Why AI Needs Models,” and then the exploratory AI commentary.
 
 ## 15. Definition of done
 
@@ -352,7 +357,7 @@ Phase 1 is complete when all of the following are true:
 
 - At least one real next-step mechanism is live and measurable.
 - Privacy and analytics behavior are documented and verified.
-- The first permanent article and launch promotion package are published or approved for publication.
+- The permanent article set and launch promotion package are published or approved for publication, with AI assistance disclosed without presenting AI as the author.
 - Baseline observations and the prioritized Phase 2 backlog are recorded.
 
 ## 16. Scope boundaries and risks

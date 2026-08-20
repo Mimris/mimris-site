@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
+import { ArticleByline, ArticleLayout, AiDisclosure } from "@/app/_components/article-markdown";
 
 export const metadata: Metadata = {
   title: "Why AI Needs Models, Not Just More Documents",
@@ -32,6 +33,7 @@ const articleSchema = {
 export default function WhyAiNeedsModelsPage() {
   return (
     <>
+      <ArticleLayout currentPath="/articles/why-ai-needs-models">
       <article className="longform-article">
         <header className="article-hero">
           <Link className="article-back" href="/articles">← All articles</Link>
@@ -40,7 +42,8 @@ export default function WhyAiNeedsModelsPage() {
           <p className="hero-lead">
             AI can process more information than any person. But access to information is not the same as understanding the world that information describes.
           </p>
-          <div className="article-meta"><span>19 August 2026</span><span>8 minute read</span></div>
+          <ArticleByline date="19 August 2026" />
+          <div className="article-meta"><span>8 minute read</span></div>
         </header>
 
         <div className="article-body">
@@ -116,8 +119,10 @@ export default function WhyAiNeedsModelsPage() {
             <p>Explore one familiar domain across structured modelling and AI-assisted work.</p>
             <Link className="button button-primary" href="/examples/coffee-shop">Open the guided proof</Link>
           </aside>
+          <AiDisclosure />
         </div>
       </article>
+      </ArticleLayout>
       <Script
         id="why-ai-needs-models-schema"
         type="application/ld+json"

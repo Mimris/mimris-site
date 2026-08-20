@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { SiteFooter, SiteHeader } from "./_components/site-shell";
+import { MermaidBootstrap } from "./_components/mermaid-bootstrap";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
+        <MermaidBootstrap />
         <Script
           id="mimris-website-schema"
           type="application/ld+json"
