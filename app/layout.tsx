@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import { SiteFooter, SiteHeader } from "./_components/site-shell";
 import { MermaidBootstrap } from "./_components/mermaid-bootstrap";
 import "./globals.css";
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
+        <Analytics />
         <MermaidBootstrap />
         <Script
           id="mimris-website-schema"
