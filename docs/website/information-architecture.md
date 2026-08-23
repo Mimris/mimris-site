@@ -27,6 +27,10 @@ The website is the canonical public explanation of the Mimris ecosystem. It shou
 | `/products/ai-workspace` | Mimris AI Workspace | Open the workspace demo |
 | `/examples/coffee-shop` | Guided Coffee Shop World proof | Follow the World through an AKM Universe |
 | `/articles` | Editorial index | Read an article |
+| `/articles/mimris-ecosystem` | Canonical ecosystem introduction | Continue to the approach, proof, or products |
+| `/articles/active-knowledge-modelling` | Article introduction to AKM | Continue to the canonical definition |
+| `/articles/coffee-shop-universe` | Article introduction to the proof | Continue to the guided Coffee Shop World |
+| `/articles/modelling-and-workspace` | Article introduction to the product boundary | Compare or open a product |
 | `/articles/why-ai-needs-models` | Thought leadership | Continue learning |
 | `/about` | Heritage and trust | Watch modelling material |
 | `/press.html` | Reusable public facts | Share or reference Mimris |

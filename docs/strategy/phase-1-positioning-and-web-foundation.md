@@ -144,7 +144,7 @@ The repository now uses native Next.js on Vercel as its canonical runtime. It re
 - The ecosystem homepage, concept pages, product pages, Coffee Shop proof, About page, and initial article are published.
 - The Coffee Shop CTA opens the `coffee-shop-generic` Universe in Mimris Modelling with the published IRTV model and End-to-End Store Flow view selected.
 - Markdown editorial sources live under `content/articles/` and are published through the article routes, with grouped article navigation, responsive mobile menus, author bylines, and end-of-article AI-assisted writing notes.
-- The current article set includes the modelling explainers, Coffee Shop proof, “Why AI Needs Models,” and the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page.
+- The current article set includes the Mimris ecosystem introduction, modelling explainers, Coffee Shop proof, “Why AI Needs Models,” and the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page.
 - Information architecture, SEO/GEO, and analytics briefs live under `docs/website/`.
 - Vercel uses the native Next.js framework preset; Vite, Vinext, and Cloudflare build infrastructure have been removed.
 
@@ -163,6 +163,7 @@ Target public architecture:
 |-- /examples
 |   `-- /examples/coffee-shop
 |-- /articles
+|   |-- /articles/mimris-ecosystem
 |   |-- /articles/active-knowledge-modelling
 |   |-- /articles/coffee-shop-universe
 |   |-- /articles/modelling-and-workspace
