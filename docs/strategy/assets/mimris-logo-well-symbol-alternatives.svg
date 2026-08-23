@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Six Mimris well symbol alternatives</title>
+  <desc id="desc">Six distinct source-of-knowledge symbols placed inside the lighter-blue graph M with green A and orange I.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.blue{fill:#36516b}.green{fill:#246a4b}.orange{fill:#d76532}.muted{fill:#56605c}.base{fill:none;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.cross{fill:none;stroke:#246a4b;stroke-width:6;stroke-linecap:round}.symbol{fill:none;stroke:#246a4b;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}.heading{font:800 34px Inter,system-ui,sans-serif;letter-spacing:-1px}.cardhead{font:800 23px Inter,system-ui,sans-serif;letter-spacing:-.6px}.body{font:500 16px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 13.5px Inter,system-ui,sans-serif}.word{font:800 31px Inter,system-ui,sans-serif;letter-spacing:-.9px}
+    </style>
+
+    <g id="base-mark">
+      <path d="M8 58V10l28 48" class="base" stroke="#36516b"/>
+      <path d="M36 58 64 10" class="base" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross"/>
+      <path d="M64 10v48" class="base" stroke="#d76532"/>
+      <circle cx="8" cy="58" r="6" class="blue"/><circle cx="8" cy="10" r="6" class="blue"/>
+      <circle cx="36" cy="58" r="6" class="green"/><circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+
+    <g id="alt-a"><use href="#base-mark"/><path d="M27 26c0 8 4 12 9 12s9-4 9-12M36 30v-7" class="symbol"/><circle cx="36" cy="19" r="3.5" class="green"/></g>
+    <g id="alt-b"><use href="#base-mark"/><path d="M27 25c0 9 4 14 9 14s9-5 9-14M29 25l7-7 7 7" class="symbol"/><circle cx="27" cy="25" r="3" class="green"/><circle cx="36" cy="18" r="3" class="green"/><circle cx="45" cy="25" r="3" class="green"/></g>
+    <g id="alt-c"><use href="#base-mark"/><path d="M26 22c0 11 4 17 10 17s10-6 10-17M29 25c0 7 3 11 7 11s7-4 7-11M32 28c0 3 1.5 5 4 5s4-2 4-5" class="symbol"/></g>
+    <g id="alt-d"><use href="#base-mark"/><ellipse cx="36" cy="25" rx="11" ry="5.5" class="symbol"/><path d="M25 25v6c0 5 5 8 11 8s11-3 11-8v-6" class="symbol"/><circle cx="36" cy="25" r="3" class="green"/></g>
+    <g id="alt-e"><use href="#base-mark"/><path d="M27 34c5-1 7-4 9-9 2 5 4 8 9 9M29 37h14M36 25v-6" class="symbol"/><circle cx="36" cy="16" r="3.5" class="green"/></g>
+    <g id="alt-f"><use href="#base-mark"/><path d="M27 22v7l9 10 9-10v-7M30 28h12" class="symbol"/><circle cx="36" cy="20" r="3.5" class="green"/></g>
+  </defs>
+
+  <rect class="bg" width="1440" height="1040"/>
+  <text x="72" y="72" class="label green">MIMRIS · EXTENDED WELL EXPLORATION</text>
+  <text x="72" y="120" class="heading blue">Six ways to hold the source of knowledge</text>
+  <text x="72" y="154" class="body muted">Every option preserves the same M–graph–A–I construction; only the source symbol inside the central V changes.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="410" height="336" rx="28"/>
+    <text x="28" y="43" class="label green">A · RISING SOURCE</text>
+    <g transform="translate(134 72) scale(2)"><use href="#alt-a"/></g>
+    <g transform="translate(38 228) scale(.7)"><use href="#alt-a"/></g><text x="108" y="269" class="word blue">Mimris</text>
+    <text x="28" y="311" class="note muted">Open vessel + knowledge drawn upward.</text>
+  </g>
+
+  <g transform="translate(515 202)">
+    <rect class="card" width="410" height="336" rx="28"/>
+    <text x="28" y="43" class="label green">B · CONNECTED SOURCE</text>
+    <g transform="translate(134 72) scale(2)"><use href="#alt-b"/></g>
+    <g transform="translate(38 228) scale(.7)"><use href="#alt-b"/></g><text x="108" y="269" class="word blue">Mimris</text>
+    <text x="28" y="311" class="note muted">The well itself becomes a three-node graph.</text>
+  </g>
+
+  <g transform="translate(958 202)">
+    <rect class="card" width="410" height="336" rx="28"/>
+    <text x="28" y="43" class="label green">C · DEPTH ECHOES</text>
+    <g transform="translate(134 72) scale(2)"><use href="#alt-c"/></g>
+    <g transform="translate(38 228) scale(.7)"><use href="#alt-c"/></g><text x="108" y="269" class="word blue">Mimris</text>
+    <text x="28" y="311" class="note muted">Nested depth rather than water or masonry.</text>
+  </g>
+
+  <g transform="translate(72 570)">
+    <rect class="card" width="410" height="336" rx="28"/>
+    <text x="28" y="43" class="label green">D · WELL MOUTH</text>
+    <g transform="translate(134 72) scale(2)"><use href="#alt-d"/></g>
+    <g transform="translate(38 228) scale(.7)"><use href="#alt-d"/></g><text x="108" y="269" class="word blue">Mimris</text>
+    <text x="28" y="311" class="note muted">Top-view opening; most recognizable as a well.</text>
+  </g>
+
+  <g transform="translate(515 570)">
+    <rect class="card" width="410" height="336" rx="28"/>
+    <text x="28" y="43" class="label green">E · WELLSPRING</text>
+    <g transform="translate(134 72) scale(2)"><use href="#alt-e"/></g>
+    <g transform="translate(38 228) scale(.7)"><use href="#alt-e"/></g><text x="108" y="269" class="word blue">Mimris</text>
+    <text x="28" y="311" class="note muted">Knowledge rises and spreads into active use.</text>
+  </g>
+
+  <g transform="translate(958 570)">
+    <rect class="card" width="410" height="336" rx="28"/>
+    <text x="28" y="43" class="label green">F · GEOMETRIC VESSEL</text>
+    <g transform="translate(134 72) scale(2)"><use href="#alt-f"/></g>
+    <g transform="translate(38 228) scale(.7)"><use href="#alt-f"/></g><text x="108" y="269" class="word blue">Mimris</text>
+    <text x="28" y="311" class="note muted">An angular well aligned with model geometry.</text>
+  </g>
+
+  <text x="72" y="962" class="body blue">Strongest candidates for refinement: A for simplicity and story; B for graph integration; F for geometric coherence.</text>
+  <text x="72" y="994" class="body muted">Concept drawings only · compare the symbol at actual header size before selecting a production direction.</text>
+</svg>

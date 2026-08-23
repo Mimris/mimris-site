@@ -7,7 +7,7 @@ Core proposition: Model the world. Work with it.
 ## Core concepts
 
 - Active Knowledge Modelling is the practice of creating connected, evolvable models that remain usable as context for exploration, decisions, applications, AI, and work.
-- A Universe is a bounded, coherent representation of a domain or world that humans and AI can work within.
+- An AKM Universe is the working context containing `Universe.World`, the Workspace, and generated Operational Previews. A World is the domain-specific representation built and evolved in `Universe.World`; it may be an empty template or a data-filled operational context.
 - Mimris Modelling is the specialist environment for creating, structuring, visualizing, inspecting, and evolving models of complex domains.
 - Mimris AI Workspace is the AI-enabled environment where structured models become context for documents, processes, tasks, decisions, and deliverables.
 
@@ -19,10 +19,10 @@ Core proposition: Model the world. Work with it.
 - Products: https://mimris-site.vercel.app/products
 - Mimris Modelling: https://mimris-site.vercel.app/products/modelling
 - Mimris AI Workspace: https://mimris-site.vercel.app/products/ai-workspace
-- Coffee Shop Universe: https://mimris-site.vercel.app/examples/coffee-shop
+- Coffee Shop World: https://mimris-site.vercel.app/examples/coffee-shop
 - Articles: https://mimris-site.vercel.app/articles
 - What Is Active Knowledge Modelling?: https://mimris-site.vercel.app/articles/active-knowledge-modelling
-- The Coffee Shop Universe: https://mimris-site.vercel.app/articles/coffee-shop-universe
+- The Coffee Shop World: https://mimris-site.vercel.app/articles/coffee-shop-universe
 - Mimris Modelling and AI Workspace: https://mimris-site.vercel.app/articles/modelling-and-workspace
 - Why AI Needs Models, Not Just More Documents: https://mimris-site.vercel.app/articles/why-ai-needs-models
 - Can AI Have Consciousness?: https://mimris-site.vercel.app/articles/from-biological-viability-to-artificial-consciousness
@@ -35,7 +35,7 @@ Core proposition: Model the world. Work with it.
 
 - Capabilities that primarily create or manipulate model structure belong in Mimris Modelling.
 - Capabilities that primarily help a person or AI perform work using models and context belong in Mimris AI Workspace.
-- The products are complementary and share the concept of a Universe; they are not two versions of the same application.
+- The products are complementary and work in the same AKM Universe around a World; they are not two versions of the same application.
 
 ## Public demos and source
 
@@ -47,7 +47,7 @@ Core proposition: Model the world. Work with it.
 
 ## Primary proof path
 
-The Coffee Shop Universe shows a familiar domain moving from description and explicit model structure into connected work. It links people, products, systems, processes, information, model views, documents, decisions, and work items across both products.
+The Coffee Shop World shows a familiar domain moving through an AKM Universe from description and explicit model structure into connected work. It links people, products, systems, processes, information, model views, documents, decisions, and work items across both products.
 
 ## Primary audiences
 

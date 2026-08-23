@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Selected Mimris Active Knowledge Modelling descriptor lockup</title>
+  <desc id="desc">Selected horizontal and stacked Mimris logo lockups with the Active Knowledge Modelling descriptor, plus the compact version without the descriptor.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.blue{fill:#36516b}.green{fill:#246a4b}.orange{fill:#d76532}.muted{fill:#56605c}.base{fill:none;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.cross{fill:none;stroke:#246a4b;stroke-width:6;stroke-linecap:round}.symbol{fill:none;stroke:#246a4b;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}.heading{font:800 34px Inter,system-ui,sans-serif;letter-spacing:-1px}.subheading{font:800 24px Inter,system-ui,sans-serif;letter-spacing:-.7px}.body{font:500 16px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 13.5px Inter,system-ui,sans-serif}.word{font:800 48px Inter,system-ui,sans-serif;letter-spacing:-1.5px}.word-small{font:800 28px Inter,system-ui,sans-serif;letter-spacing:-.8px}.descriptor{font:800 13px Inter,system-ui,sans-serif;letter-spacing:2.35px}.descriptor-small{font:800 9px Inter,system-ui,sans-serif;letter-spacing:1.55px}
+    </style>
+    <g id="selected-mark">
+      <path d="M8 58V10l28 48" class="base" stroke="#36516b"/>
+      <path d="M36 58 64 10" class="base" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross"/>
+      <path d="M64 10v48" class="base" stroke="#d76532"/>
+      <circle cx="8" cy="58" r="6" class="blue"/><circle cx="8" cy="10" r="6" class="blue"/>
+      <circle cx="36" cy="58" r="6" class="green"/><circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+      <path d="M27 26c0 8 4 12 9 12s9-4 9-12M36 30v-7" class="symbol"/>
+      <circle cx="36" cy="19" r="3.5" class="green"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+  <text x="72" y="72" class="label green">MIMRIS · SELECTED AKM TREATMENT</text>
+  <text x="72" y="120" class="heading blue">Endorsed descriptor lockup</text>
+  <text x="72" y="154" class="body muted">Selection C: make Active Knowledge Modelling explicit when context requires it, without burdening the compact application mark.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="1296" height="268" rx="28"/>
+    <text x="34" y="48" class="label green">PRIMARY HORIZONTAL LOCKUP</text>
+    <g transform="translate(78 94) scale(1.55)"><use href="#selected-mark"/></g>
+    <text x="211" y="167" class="word blue">Mimris</text>
+    <text x="214" y="203" class="descriptor green">ACTIVE KNOWLEDGE MODELLING</text>
+    <line x1="707" y1="78" x2="707" y2="226" stroke="#36516b" stroke-opacity=".14"/>
+    <text x="748" y="112" class="subheading blue">Use when AKM is the subject</text>
+    <text x="748" y="150" class="body muted">Public-site approach pages · learning material · talks</text>
+    <text x="748" y="181" class="body muted">method diagrams · articles · community resources</text>
+    <text x="748" y="220" class="note orange">Do not abbreviate the descriptor to “AKM” in this lockup.</text>
+  </g>
+
+  <g transform="translate(72 502)">
+    <rect class="card" width="632" height="326" rx="28"/>
+    <text x="30" y="45" class="label green">STACKED LOCKUP</text>
+    <g transform="translate(267 74) scale(1.35)"><use href="#selected-mark"/></g>
+    <text x="246" y="210" class="word blue">Mimris</text>
+    <text x="165" y="251" class="descriptor green">ACTIVE KNOWLEDGE MODELLING</text>
+    <text x="30" y="298" class="note muted">For centred covers, event slides, and square editorial layouts.</text>
+  </g>
+
+  <g transform="translate(736 502)">
+    <rect class="card" width="632" height="326" rx="28"/>
+    <text x="30" y="45" class="label green">COMPACT PRODUCT LOCKUP</text>
+    <g transform="translate(62 112) scale(.92)"><use href="#selected-mark"/></g>
+    <text x="147" y="165" class="word-small blue">Mimris</text>
+    <rect x="319" y="93" width="1" height="95" fill="#36516b" opacity=".14"/>
+    <text x="350" y="126" class="note blue">No descriptor in application headers</text>
+    <text x="350" y="154" class="note muted">Preserves product navigation space</text>
+    <text x="350" y="179" class="note muted">and remains legible at 24–28 px.</text>
+    <line x1="30" y1="230" x2="602" y2="230" stroke="#36516b" stroke-opacity=".14"/>
+    <text x="30" y="268" class="note orange">The compact mark still carries semantic AKM through colour and form.</text>
+    <text x="30" y="296" class="note muted">Accessible name remains “Mimris ecosystem home.”</text>
+  </g>
+
+  <text x="72" y="890" class="body blue">Decision recorded: endorsed “ACTIVE KNOWLEDGE MODELLING” descriptor selected for AKM-focused contexts.</text>
+  <text x="72" y="922" class="body muted">This selects the lockup relationship only; final optical correction of the core mark and product implementation remain separately gated.</text>
+</svg>

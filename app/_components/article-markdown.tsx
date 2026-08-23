@@ -19,8 +19,8 @@ const articleGroups = [
     ],
   },
   {
-    label: "Examples and universes",
-    links: [["/articles/coffee-shop-universe", "Coffee Shop Universe"]],
+    label: "Examples and worlds",
+    links: [["/articles/coffee-shop-universe", "Coffee Shop World"]],
   },
 ] as const;
 
@@ -156,7 +156,7 @@ export function ArticleIndex({ currentPath }: { currentPath: string }) {
       <p>{group.label}</p>
       <nav>
         {group.links.map(([href, label]) => (
-          <Link key={href} href={href} aria-current={href === currentPath ? "page" : undefined}>
+          <Link key={href} href={href} aria-current={href === currentPath ? "page" : undefined} data-analytics-event="article_opened" data-analytics-destination={href}>
             {label}
           </Link>
         ))}
@@ -184,7 +184,7 @@ export function ArticleDirectory() {
       <p>{group.label}</p>
       <nav>
         {group.links.map(([href, label]) => (
-          <Link href={href} key={href}>
+          <Link href={href} key={href} data-analytics-event="article_opened" data-analytics-destination={href}>
             {label}
           </Link>
         ))}

@@ -15,6 +15,8 @@ This repository is the home for the Mimris ecosystem's external communication: p
 
 This specification controls Phase 1. Detailed page, content, analytics, and promotion specifications may be added under `docs/`, but they should remain consistent with this document and [product-architecture.md](./product-architecture.md).
 
+Post-launch measurement and prioritization continue in [Phase 2: Post-launch learning](./phase-2-post-launch-learning.md).
+
 ## 2. Phase 1 objectives
 
 Phase 1 must make it possible for a new visitor to:
@@ -22,7 +24,7 @@ Phase 1 must make it possible for a new visitor to:
 1. understand what Mimris is and why it exists;
 2. understand Active Knowledge Modelling without prior knowledge of Mimris terminology;
 3. distinguish Mimris Modelling from Mimris AI Workspace;
-4. understand what a Universe is through a concrete example;
+4. understand the relationship between an AKM Universe and a World through a concrete example;
 5. choose a relevant next action: explore a product, follow a guided proof, read more, or express interest.
 
 It must also give search engines and generative systems clear, canonical, machine-readable explanations of the core concepts.
@@ -71,9 +73,9 @@ These definitions are canonical for Phase 1 public communication.
 
 **Active Knowledge Modelling (AKM)** is the practice of creating connected, evolvable models that remain usable as context for exploration, decisions, applications, AI, and work.
 
-### Universe
+### AKM Universe and World
 
-A **Universe** is a bounded, coherent representation of a domain or world. It connects domain descriptions, concepts, objects, relationships, processes, roles, systems, views, and relevant working context.
+An **AKM Universe** is the working context for an AKM World. `Universe.World` and the Workspace are where the World is built and evolved; export/generation produces an Operational Preview. A **World** may begin as an empty template or become a data-filled operational context.
 
 ### Mimris Modelling
 
@@ -131,7 +133,7 @@ The website is the public front door and canonical explanation of the ecosystem.
 - sell the ecosystem before either individual product;
 - define important terms directly and consistently;
 - provide visible product evidence, not only conceptual claims;
-- turn the Coffee Shop Universe into a guided proof path;
+- turn the Coffee Shop World into a guided proof path;
 - connect articles and promotional material to permanent canonical pages;
 - direct visitors to public demos and appropriate public source code.
 
@@ -181,7 +183,7 @@ The homepage should follow this sequence:
 2. **Problem:** Information is abundant, but domain meaning and relationships remain implicit.
 3. **Approach:** Introduce Active Knowledge Modelling through `Knowledge -> Models -> Context -> Action`.
 4. **Products:** Present Mimris Modelling and Mimris AI Workspace side by side.
-5. **Guided proof:** Use the Coffee Shop Universe to show the approach in a familiar domain.
+5. **Guided proof:** Use the Coffee Shop World in an AKM Universe to show the approach in a familiar domain.
 6. **Credibility:** Explain the modelling heritage and show real product screenshots or flows.
 7. **Next action:** Offer product demos, deeper reading, GitHub where public, and an interest/follow mechanism.
 
@@ -195,10 +197,10 @@ The first permanent content set is:
 | What is Active Knowledge Modelling? | Category and core concept |
 | Mimris Modelling | Product definition and evidence |
 | Mimris AI Workspace | Product definition and evidence |
-| Coffee Shop Universe | Accessible end-to-end demonstration |
+| Coffee Shop World | Accessible end-to-end demonstration |
 | Why AI Needs Models | Initial thought-leadership article |
 | Active Knowledge Modelling | Canonical concept explainer |
-| The Coffee Shop Universe | Editorial proof of the flagship example |
+| The Coffee Shop World | Editorial proof of the flagship example |
 | Mimris Modelling and Mimris AI Workspace | Product boundary explainer |
 | From Metis to Mimris | Heritage and credibility |
 | Can AI Have Consciousness? | Exploratory AI News and Commentary article |
@@ -208,7 +210,7 @@ The same source material should support the website, LinkedIn posts, demonstrati
 
 ## 10. Coffee Shop guided proof
 
-The Coffee Shop Universe is the initial flagship example because it is familiar enough that visitors can focus on the method rather than learning the domain.
+The Coffee Shop World is the initial flagship example because it is familiar enough that visitors can focus on the AKM Universe and method rather than learning the domain.
 
 It should connect:
 
@@ -222,7 +224,7 @@ Domain description
       -> deliverables
 ```
 
-The public proof should show both products doing their distinct jobs within the same Universe. It should be possible to follow the main path in about ten minutes, with shorter screenshots or clips available for first-time visitors.
+The public proof should show both products doing their distinct jobs in the same AKM Universe around the Coffee Shop World. It should be possible to follow the main path in about ten minutes, with shorter screenshots or clips available for first-time visitors.
 
 ## 11. SEO and GEO foundation
 
@@ -335,7 +337,7 @@ Phase 1 is complete when all of the following are true:
 
 ### Clarity
 
-- Mimris, Active Knowledge Modelling, Universe, Mimris Modelling, and Mimris AI Workspace each have an approved, consistently used definition.
+- Mimris, Active Knowledge Modelling, AKM Universe, World, Mimris Modelling, and Mimris AI Workspace each have an approved, consistently used definition.
 - The two products have distinct jobs, pages, and calls to action.
 - A representative first-time visitor can explain the ecosystem and choose the right product after reviewing the core journey.
 
@@ -344,7 +346,7 @@ Phase 1 is complete when all of the following are true:
 - The target pages are published, responsive, keyboard accessible, and free of known broken links.
 - Existing public entry points either remain valid or redirect intentionally.
 - Product claims, screenshots, demos, repository visibility, and calls to action are current and truthful.
-- The Coffee Shop example demonstrates the shared Universe and the distinct role of each product.
+- The Coffee Shop World demonstrates the AKM Universe lifecycle and the distinct role of each product.
 
 ### Discovery and quality
 

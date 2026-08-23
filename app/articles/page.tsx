@@ -34,7 +34,7 @@ export default function ArticlesPage() {
             </article>
             <div className="article-link-grid">
               <Link href="/articles/active-knowledge-modelling"><h2>What Is Active Knowledge Modelling?</h2><p>Understand the approach behind Mimris.</p></Link>
-              <Link href="/articles/coffee-shop-universe"><h2>The Coffee Shop Universe</h2><p>Follow a familiar domain from model to work.</p></Link>
+              <Link href="/articles/coffee-shop-universe"><h2>The Coffee Shop World</h2><p>Follow a familiar world from model to work inside an AKM Universe.</p></Link>
               <Link href="/articles/modelling-and-workspace"><h2>Two Complementary Jobs</h2><p>See how the products divide responsibility.</p></Link>
               <Link href="/articles/from-biological-viability-to-artificial-consciousness"><h2>Can AI Have Consciousness?</h2><p>An exploratory hypothesis about living and artificial systems.</p></Link>
             </div>

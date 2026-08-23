@@ -12,7 +12,7 @@ export default function ModellingPage() {
   return (
     <>
       <PageHero eyebrow="Mimris Modelling" title="Understand and model complex worlds." lead="A specialist modelling environment for defining model semantics and creating connected views of objects, relationships, processes, organizations, systems, and information.">
-        <div className="button-row"><a className="button button-primary" href="https://mimris.vercel.app">Open the modelling demo</a><a className="button button-secondary" href="https://github.com/Mimris/mimris">View public source</a></div>
+        <div className="button-row"><a className="button button-primary" href="https://mimris.vercel.app" target="_blank" rel="noreferrer" data-analytics-event="product_demo_clicked" data-analytics-destination="modelling">Open the modelling demo ↗</a><a className="button button-secondary" href="https://github.com/Mimris/mimris" target="_blank" rel="noreferrer" data-analytics-event="source_clicked" data-analytics-destination="mimris-github">View GitHub repo ↗</a></div>
       </PageHero>
       <section className="product-showcase">
         <div className="showcase-copy"><p className="section-number">Model the world</p><h2>Make structure visible and explorable.</h2><ul className="feature-list"><li>Define model types, structures, constraints, and semantics.</li><li>Create objects, relationships, hierarchies, diagrams, and views.</li><li>Navigate conceptual and instance models without losing context.</li><li>Work with Mimris constructs including TYPE, POPS, and IRTV.</li></ul></div>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Mimris lighter blue and open diamond refinement</title>
+  <desc id="desc">The preferred shared-stroke M A I mark in a lighter slate blue, with the open knowledge-model diamond restored inside the central V.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.blue{fill:#36516b}.green{fill:#246a4b}.orange{fill:#d76532}.muted{fill:#56605c}.line{fill:none;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.cross{fill:none;stroke:#246a4b;stroke-width:6;stroke-linecap:round}.diamond{fill:none;stroke:#246a4b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.heading{font:800 34px Inter,system-ui,sans-serif;letter-spacing:-1px}.subheading{font:800 24px Inter,system-ui,sans-serif;letter-spacing:-.7px}.body{font:500 17px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 14px Inter,system-ui,sans-serif}.word{font:800 44px Inter,system-ui,sans-serif;letter-spacing:-1.4px}.hex{font:700 12px ui-monospace,SFMono-Regular,Menlo,monospace}
+    </style>
+
+    <g id="diamond-mark">
+      <path d="M8 58V10l28 48" class="line" stroke="#36516b"/>
+      <path d="M36 58 64 10" class="line" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross"/>
+      <path d="M64 10v48" class="line" stroke="#d76532"/>
+      <path d="m36 19 9 9-9 9-9-9Z" class="diamond"/>
+      <circle cx="8" cy="58" r="6" class="blue"/><circle cx="8" cy="10" r="6" class="blue"/>
+      <circle cx="36" cy="58" r="6" class="green"/><circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+
+    <g id="small-diamond-mark">
+      <path d="M8 58V10l28 48" class="line" stroke="#36516b"/>
+      <path d="M36 58 64 10" class="line" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross"/>
+      <path d="M64 10v48" class="line" stroke="#d76532"/>
+      <path d="m36 22 6 6-6 6-6-6Z" class="diamond"/>
+      <circle cx="8" cy="58" r="6" class="blue"/><circle cx="8" cy="10" r="6" class="blue"/>
+      <circle cx="36" cy="58" r="6" class="green"/><circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+
+    <g id="diamond-node-mark">
+      <path d="M8 58V10l28 48" class="line" stroke="#36516b"/>
+      <path d="M36 58 64 10" class="line" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross"/>
+      <path d="M64 10v48" class="line" stroke="#d76532"/>
+      <circle cx="8" cy="58" r="6" class="blue"/><circle cx="8" cy="10" r="6" class="blue"/>
+      <path d="m36 50 8 8-8 8-8-8Z" fill="#246a4b"/>
+      <circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+  <text x="72" y="72" class="label green">MIMRIS · LIGHTER BLUE + MODEL CORE</text>
+  <text x="72" y="120" class="heading blue">Restore the open diamond inside the V</text>
+  <text x="72" y="154" class="body muted">The diamond is the original knowledge-model symbol: an open, coherent structure within the node-link M.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="850" height="620" rx="28"/>
+    <text x="34" y="48" class="label green">RECOMMENDED REFINEMENT</text>
+    <text x="34" y="88" class="subheading blue">Lighter slate + floating open diamond</text>
+    <g transform="translate(318 133) scale(3.1)"><use href="#diamond-mark"/></g>
+    <g transform="translate(225 398) scale(1.12)"><use href="#diamond-mark"/></g>
+    <text x="340" y="463" class="word blue">Mimris</text>
+    <line x1="34" y1="520" x2="816" y2="520" stroke="#36516b" stroke-opacity=".16"/>
+    <text x="34" y="558" class="note muted">The diamond floats in the open V: visible as a model core, but not another junction on the letter path.</text>
+    <text x="34" y="583" class="note muted">The A crossbar remains below it, and the orange I stays visually independent on the right.</text>
+  </g>
+
+  <g transform="translate(950 202)">
+    <rect class="card" width="418" height="360" rx="28"/>
+    <text x="30" y="45" class="label green">SYMBOL TREATMENTS</text>
+    <g transform="translate(42 82) scale(1.18)"><use href="#diamond-mark"/></g>
+    <text x="30" y="183" class="note blue">A · Open diamond</text>
+    <text x="30" y="206" class="note muted">Strongest model reading</text>
+    <g transform="translate(174 82) scale(1.18)"><use href="#small-diamond-mark"/></g>
+    <text x="163" y="183" class="note blue">B · Smaller core</text>
+    <text x="163" y="206" class="note muted">Calmer at medium size</text>
+    <g transform="translate(306 82) scale(1.18)"><use href="#diamond-node-mark"/></g>
+    <text x="294" y="183" class="note blue">C · Valley node</text>
+    <text x="294" y="206" class="note muted">Compact, less open</text>
+    <line x1="30" y1="244" x2="388" y2="244" stroke="#36516b" stroke-opacity=".14"/>
+    <text x="30" y="278" class="note green">Recommendation</text>
+    <text x="30" y="305" class="note muted">Use A above 32 px; consider B at 24–32 px.</text>
+    <text x="30" y="328" class="note muted">Avoid C if “open knowledge” remains important.</text>
+  </g>
+
+  <g transform="translate(950 594)">
+    <rect class="card" width="418" height="228" rx="28"/>
+    <text x="30" y="45" class="label green">LIGHTER BLUE RANGE</text>
+    <circle cx="46" cy="89" r="20" fill="#314a63"/><text x="78" y="94" class="hex" fill="#314a63">#314A63</text>
+    <circle cx="210" cy="89" r="20" fill="#36516b"/><text x="242" y="94" class="hex blue">#36516B</text>
+    <circle cx="46" cy="148" r="20" fill="#3b5872"/><text x="78" y="153" class="hex" fill="#3b5872">#3B5872</text>
+    <circle cx="210" cy="148" r="20" fill="#405f7a"/><text x="242" y="153" class="hex" fill="#405f7a">#405F7A</text>
+    <text x="30" y="199" class="note blue">#36516B balances softness with 7.26:1 contrast on cream.</text>
+  </g>
+
+  <text x="72" y="892" class="body blue">Current synthesis: lighter slate M · green model/A · open green diamond · orange I/AI.</text>
+  <text x="72" y="922" class="body muted">Concept refinement only · the diamond requires optical testing at actual 24 px application size.</text>
+</svg>

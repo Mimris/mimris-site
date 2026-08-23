@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         <div className="universe-card" aria-label="Mimris knowledge flow">
           <div className="universe-card-header">
-            <span>Coffee Shop Universe</span>
+            <span>AKM Universe</span>
             <span className="status">Active</span>
           </div>
           <div className="universe-core">
@@ -33,8 +33,8 @@ export default function Home() {
             <span className="orbit-label orbit-two">Models</span>
             <span className="orbit-label orbit-three">Work</span>
             <div className="core-node">
-              <span>Universe</span>
-              <small>shared context</small>
+              <span>Coffee Shop</span>
+              <small>World</small>
             </div>
           </div>
           <div className="universe-details">
@@ -81,7 +81,7 @@ export default function Home() {
       <section className="products-section">
         <div className="section-heading split-heading">
           <div>
-            <p className="section-number">03 / Two products, one Universe</p>
+            <p className="section-number">03 / Two products, one AKM Universe</p>
             <h2>Model the world. Work with it.</h2>
           </div>
           <p>
@@ -106,9 +106,9 @@ export default function Home() {
           <p className="section-number">04 / A shared proof</p>
           <h2>Start with a world you already understand.</h2>
           <p>
-            The Coffee Shop Universe connects people, products, systems, processes, model views, documents, decisions, and work in one familiar example.
+            The Coffee Shop World is built in an AKM Universe, connecting people, products, systems, processes, model views, documents, decisions, and work in one familiar example.
           </p>
-          <ArrowLink href="/examples/coffee-shop">Follow the Coffee Shop Universe</ArrowLink>
+          <a className="arrow-link" href="/examples/coffee-shop" data-analytics-event="proof_started" data-analytics-destination="coffee-shop-proof">Follow the Coffee Shop World <span aria-hidden="true">↗</span></a>
         </div>
         <ol className="proof-path">
           <li><span>01</span><strong>Describe</strong><small>Make the domain explicit</small></li>
@@ -122,10 +122,10 @@ export default function Home() {
         <p className="eyebrow">A shared world for human and artificial intelligence</p>
         <h2>Give AI more than information. Give it a world to work within.</h2>
         <div className="button-row">
-          <a className="button button-primary" href="https://mimris-ai-workspace.vercel.app">
-            Open the workspace demo
+          <a className="button button-primary" href="https://mimris-ai-workspace.vercel.app" target="_blank" rel="noreferrer" data-analytics-event="product_demo_clicked" data-analytics-destination="ai-workspace">
+            Open the workspace demo ↗
           </a>
-          <a className="button button-secondary" href="https://github.com/Mimris/mimris">
+          <a className="button button-secondary" href="https://github.com/Mimris/mimris" data-analytics-event="source_clicked" data-analytics-destination="mimris-github">
             View Mimris on GitHub
           </a>
         </div>

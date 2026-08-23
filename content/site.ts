@@ -4,7 +4,7 @@ export const coreDefinitions = {
   akm:
     "The practice of creating connected, evolvable models that remain usable as context for exploration, decisions, applications, AI, and work.",
   universe:
-    "A bounded, coherent representation of a domain or world that humans and AI can work within.",
+    "An AKM working context containing Universe.World, the Workspace, and generated Operational Previews.",
 } as const;
 
 export const products = [

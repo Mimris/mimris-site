@@ -19,7 +19,7 @@ Do not make a LinkedIn post carry a claim that is not supported by its linked Mi
 
 ## Publishing cadence
 
-Publish one post every three to five days. Begin with the ecosystem, then establish Active Knowledge Modelling, demonstrate the Coffee Shop Universe, explain the product boundary, and only then introduce the more exploratory AI commentary.
+Publish one post every three to five days. Begin with the ecosystem, then establish Active Knowledge Modelling, demonstrate the Coffee Shop World in an AKM Universe, explain the product boundary, and only then introduce the more exploratory AI commentary.
 
 ## Post 1 — Ecosystem launch
 
@@ -41,11 +41,11 @@ The model can be explored, challenged, connected to evidence, used in decisions,
 
 Read the definition and examples: https://mimris-site.vercel.app/active-knowledge-modelling
 
-## Post 3 — Coffee Shop Universe proof
+## Post 3 — Coffee Shop World proof
 
 A coffee shop is a useful test of model-driven work because everyone understands the domain.
 
-The Coffee Shop Universe connects customers, products, employees, payment, production, inventory, information, views, documents, and work items. The same Universe can be inspected in Mimris Modelling and used as context in Mimris AI Workspace.
+The Coffee Shop World connects customers, products, employees, payment, production, inventory, information, views, documents, and work items. It is built in an AKM Universe, where its structure can be inspected in Mimris Modelling and used as context in Mimris AI Workspace.
 
 Follow the proof path: https://mimris-site.vercel.app/examples/coffee-shop
 
@@ -89,7 +89,7 @@ We are looking for people who work with complex domains, specialized language, i
 
 Where would durable domain context make the biggest difference in your work?
 
-Start with the Coffee Shop Universe, then explore the modelling and workspace demos: https://mimris-site.vercel.app/examples/coffee-shop
+Start with the Coffee Shop World, then explore the modelling and workspace demos: https://mimris-site.vercel.app/examples/coffee-shop
 
 ## Review checklist
 
@@ -107,7 +107,7 @@ Start with the Coffee Shop Universe, then explore the modelling and workspace de
 |---|---|---|---|
 | Ecosystem launch |  |  |  |
 | Active Knowledge Modelling |  |  |  |
-| Coffee Shop Universe |  |  |  |
+| Coffee Shop World |  |  |  |
 | Product boundary |  |  |  |
 | Why AI needs models |  |  |  |
 | Can AI Have Consciousness? |  |  |  |

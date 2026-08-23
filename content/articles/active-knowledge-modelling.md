@@ -12,8 +12,8 @@ The progression is:
 Information -> Knowledge -> Models -> Context -> Human + AI work -> Results
 ```
 
-Mimris uses this approach across a shared Universe. Mimris Modelling creates and evolves the structure. Mimris AI Workspace uses that structure with documents, processes, tasks, decisions, and deliverables.
+Mimris uses this approach in an AKM Universe. `Universe.World` and the Workspace are where a World is created and evolved; export or generation produces an Operational Preview. Mimris Modelling creates and evolves the structure. Mimris AI Workspace uses that structure with documents, processes, tasks, decisions, and deliverables.
 
-The Coffee Shop Universe makes the idea concrete: a familiar domain connects people, products, systems, processes, information, views, and work instead of leaving them as disconnected fragments.
+The Coffee Shop World makes the idea concrete: a familiar world is built in an AKM Universe, connecting people, products, systems, processes, information, views, and work instead of leaving them as disconnected fragments.
 
-**Canonical links:** [Active Knowledge Modelling](https://mimris-site.vercel.app/active-knowledge-modelling) · [Coffee Shop Universe](https://mimris-site.vercel.app/examples/coffee-shop)
+**Canonical links:** [Active Knowledge Modelling](https://mimris-site.vercel.app/active-knowledge-modelling) · [Coffee Shop World](https://mimris-site.vercel.app/examples/coffee-shop)

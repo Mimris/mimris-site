@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Three Mimris logo concepts</title>
+  <desc id="desc">A review board comparing an abstract knowledge model mark, an M network mark, and a restrained source-of-knowledge mark.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.ink{fill:#17201d}.green{fill:#246a4b}.muted{fill:#56605c}.line{fill:none;stroke:#17201d;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.line-green{fill:none;stroke:#246a4b;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.hair{fill:none;stroke:#17201d;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.heading{font:800 32px Inter,system-ui,sans-serif;letter-spacing:-1px}.body{font:500 16px Inter,system-ui,sans-serif}.word{font:800 39px Inter,system-ui,sans-serif;letter-spacing:-1.3px}.smallword{font:800 21px Inter,system-ui,sans-serif;letter-spacing:-.6px}.note{font:650 13px Inter,system-ui,sans-serif;letter-spacing:.2px}.number{font:700 12px Inter,system-ui,sans-serif;letter-spacing:1px}.white{fill:#fffefa}
+    </style>
+    <g id="mark-knowledge">
+      <path class="line" d="M18 8 8 34l18 22h20l18-22L54 8M18 8h36M8 34h20m16 0h20M26 56l10-22 10 22"/>
+      <circle class="green" cx="18" cy="8" r="7"/><circle class="green" cx="54" cy="8" r="7"/><circle class="green" cx="8" cy="34" r="7"/><circle class="green" cx="64" cy="34" r="7"/><circle class="green" cx="26" cy="56" r="7"/><circle class="green" cx="46" cy="56" r="7"/>
+      <path class="bg" d="m36 22 10 12-10 12-10-12Z"/><path class="hair" d="m36 22 10 12-10 12-10-12Z"/>
+    </g>
+    <g id="mark-network">
+      <path class="line" d="M6 56V10l30 31 30-31v46"/>
+      <path class="line-green" d="M6 56V10l30 31 30-31v46"/>
+      <circle class="ink" cx="6" cy="56" r="7"/><circle class="ink" cx="6" cy="10" r="7"/><circle class="ink" cx="36" cy="41" r="7"/><circle class="ink" cx="66" cy="10" r="7"/><circle class="ink" cx="66" cy="56" r="7"/>
+    </g>
+    <g id="mark-source">
+      <path class="line" d="M8 31a28 28 0 0 1 56 0c0 22-12 31-28 31S8 53 8 31Z"/>
+      <path class="line-green" d="M36 46V18"/><circle class="green" cx="36" cy="12" r="7"/>
+      <path class="hair" d="M20 37c9 5 23 5 32 0M23 48c8 4 18 4 26 0"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+  <text x="72" y="72" class="label green">MIMRIS · CONCEPT REVIEW</text>
+  <text x="72" y="118" class="heading ink">Three distinct logo directions</text>
+  <text x="72" y="150" class="body muted">Mímir’s source of knowledge + Metis’s modelling lineage, made for public discovery and compact application headers.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="410" height="640" rx="28"/>
+    <text x="30" y="44" class="number green">01</text>
+    <text x="30" y="82" class="heading ink">Knowledge model</text>
+    <text x="30" y="111" class="body muted">Objects, relationships, open centre.</text>
+    <g transform="translate(145 167) scale(1.75)"><use href="#mark-knowledge"/></g>
+    <g transform="translate(57 323)"><use href="#mark-knowledge"/><text x="92" y="47" class="word ink">Mimris</text></g>
+    <line x1="30" y1="409" x2="380" y2="409" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="30" y="447" class="label green">SMALL-SIZE CHECK</text>
+    <g transform="translate(34 474) scale(.42)"><use href="#mark-knowledge"/></g>
+    <g transform="translate(95 468) scale(.58)"><use href="#mark-knowledge"/></g>
+    <g transform="translate(183 460) scale(.75)"><use href="#mark-knowledge"/></g>
+    <text x="30" y="559" class="note muted">Best semantic fit for Active Knowledge</text>
+    <text x="30" y="581" class="note muted">Modelling. The open diamond is the</text>
+    <text x="30" y="603" class="note muted">distinctive feature to protect.</text>
+  </g>
+
+  <g transform="translate(515 202)">
+    <rect class="card" width="410" height="640" rx="28"/>
+    <text x="30" y="44" class="number green">02</text>
+    <text x="30" y="82" class="heading ink">M network</text>
+    <text x="30" y="111" class="body muted">A recognizable initial made relational.</text>
+    <g transform="translate(143 167) scale(1.75)"><use href="#mark-network"/></g>
+    <g transform="translate(57 323)"><use href="#mark-network"/><text x="92" y="47" class="word ink">Mimris</text></g>
+    <line x1="30" y1="409" x2="380" y2="409" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="30" y="447" class="label green">SMALL-SIZE CHECK</text>
+    <g transform="translate(34 474) scale(.42)"><use href="#mark-network"/></g>
+    <g transform="translate(95 468) scale(.58)"><use href="#mark-network"/></g>
+    <g transform="translate(183 460) scale(.75)"><use href="#mark-network"/></g>
+    <text x="30" y="559" class="note muted">Most immediate name recognition and</text>
+    <text x="30" y="581" class="note muted">strongest compact-header silhouette.</text>
+    <text x="30" y="603" class="note muted">Quietly joins Mímir and Metis.</text>
+  </g>
+
+  <g transform="translate(958 202)">
+    <rect class="card" width="410" height="640" rx="28"/>
+    <text x="30" y="44" class="number green">03</text>
+    <text x="30" y="82" class="heading ink">Source of knowledge</text>
+    <text x="30" y="111" class="body muted">A well, a source, and quiet ripples.</text>
+    <g transform="translate(142 167) scale(1.75)"><use href="#mark-source"/></g>
+    <g transform="translate(57 323)"><use href="#mark-source"/><text x="92" y="47" class="word ink">Mimris</text></g>
+    <line x1="30" y1="409" x2="380" y2="409" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="30" y="447" class="label green">SMALL-SIZE CHECK</text>
+    <g transform="translate(34 474) scale(.42)"><use href="#mark-source"/></g>
+    <g transform="translate(95 468) scale(.58)"><use href="#mark-source"/></g>
+    <g transform="translate(183 460) scale(.75)"><use href="#mark-source"/></g>
+    <text x="30" y="559" class="note muted">Most ownable story and the warmest tone.</text>
+    <text x="30" y="581" class="note muted">References Mímir; its geometry retains</text>
+    <text x="30" y="603" class="note muted">the Metis modelling lineage.</text>
+  </g>
+
+  <text x="72" y="900" class="body ink">Shared constraints: one colour capable · no generic AI imagery · legible at 24 px · mark plus wordmark during initial adoption</text>
+</svg>

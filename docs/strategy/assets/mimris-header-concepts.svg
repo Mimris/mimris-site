@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="940" viewBox="0 0 1440 940" role="img" aria-labelledby="title desc">
+  <title id="title">Coordinated Mimris header concepts</title>
+  <desc id="desc">Concept headers for the Mimris public site, Mimris Modelling, and Mimris AI Workspace, showing a shared ecosystem zone and distinct application controls.</desc>
+  <defs>
+    <style>
+      .bg{fill:#e9e2d6}.paper{fill:#f4f0e8}.white{fill:#fffefa}.dark{fill:#17201d}.workspace{fill:#15181b}.ink{fill:#17201d}.muted{fill:#56605c}.green{fill:#246a4b}.coral{fill:#c75d42}.wtext{fill:#f7f7f4}.wmuted{fill:#aeb5b1}.outline{fill:none;stroke:#17201d;stroke-opacity:.16}.divider{stroke:#17201d;stroke-opacity:.18}.wdivider{stroke:#fff;stroke-opacity:.18}.heading{font:800 31px Inter,system-ui,sans-serif;letter-spacing:-.9px}.label{font:800 13px Inter,system-ui,sans-serif;letter-spacing:1.6px}.nav{font:700 15px Inter,system-ui,sans-serif}.small{font:650 12px Inter,system-ui,sans-serif}.word{font:800 22px Inter,system-ui,sans-serif;letter-spacing:-.7px}.control{font:650 12px Inter,system-ui,sans-serif}.markline{fill:none;stroke:#17201d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.marklinew{fill:none;stroke:#fffefa;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+    <g id="mark">
+      <path class="markline" d="M10 5 4 20l10 13h12l10-13-6-15M10 5h20M4 20h12m8 0h12M14 33l6-13 6 13"/>
+      <circle class="green" cx="10" cy="5" r="4"/><circle class="green" cx="30" cy="5" r="4"/><circle class="green" cx="4" cy="20" r="4"/><circle class="green" cx="36" cy="20" r="4"/><circle class="green" cx="14" cy="33" r="4"/><circle class="green" cx="26" cy="33" r="4"/>
+    </g>
+    <g id="mark-white">
+      <path class="marklinew" d="M10 5 4 20l10 13h12l10-13-6-15M10 5h20M4 20h12m8 0h12M14 33l6-13 6 13"/>
+      <circle class="green" cx="10" cy="5" r="4"/><circle class="green" cx="30" cy="5" r="4"/><circle class="green" cx="4" cy="20" r="4"/><circle class="green" cx="36" cy="20" r="4"/><circle class="green" cx="14" cy="33" r="4"/><circle class="green" cx="26" cy="33" r="4"/>
+    </g>
+  </defs>
+  <rect class="bg" width="1440" height="940"/>
+  <text x="72" y="68" class="label green">MIMRIS · CROSS-REPOSITORY HEADER SYSTEM</text>
+  <text x="72" y="112" class="heading ink">Shared ecosystem zone, product-owned controls</text>
+  <text x="72" y="144" class="small muted">Knowledge-model mark shown as a neutral placeholder; the structure works with any approved logo direction.</text>
+
+  <g transform="translate(72 190)">
+    <text x="0" y="0" class="label green">PUBLIC SITE · DISCOVERY</text>
+    <rect y="20" width="1296" height="104" rx="18" class="paper"/>
+    <g transform="translate(28 53)"><use href="#mark"/><text x="54" y="27" class="word ink">Mimris</text></g>
+    <g class="nav ink">
+      <text x="242" y="82">Product⌄</text><text x="350" y="82">Demo</text><text x="420" y="82">Learn</text><text x="489" y="82">About</text>
+    </g>
+    <rect x="1110" y="48" width="158" height="48" rx="24" class="dark"/>
+    <text x="1135" y="78" class="nav white">Open Workspace</text>
+    <path d="M242 99h77" stroke="#246a4b" stroke-width="3" stroke-linecap="round"/>
+    <rect x="223" y="114" width="270" height="136" rx="14" class="white" stroke="#17201d" stroke-opacity=".16"/>
+    <text x="243" y="148" class="small green">PRODUCTS &amp; APPROACH</text>
+    <text x="243" y="178" class="nav ink">Mimris Modelling</text>
+    <text x="243" y="207" class="nav ink">Mimris AI Workspace</text>
+    <text x="243" y="236" class="nav ink">Active Knowledge Modelling</text>
+  </g>
+
+  <g transform="translate(72 482)">
+    <text x="0" y="0" class="label green">MIMRIS MODELLING · WORK</text>
+    <rect y="20" width="1296" height="76" rx="14" class="white"/>
+    <g transform="translate(24 39) scale(.86)"><use href="#mark"/><text x="54" y="27" class="word ink">Mimris</text></g>
+    <text x="191" y="67" class="nav ink">Modelling</text>
+    <text x="284" y="67" class="nav muted">AI Workspace</text>
+    <path d="M191 84h71" stroke="#246a4b" stroke-width="3" stroke-linecap="round"/>
+    <line x1="405" y1="39" x2="405" y2="79" class="divider"/>
+    <rect x="430" y="41" width="112" height="34" rx="8" class="paper"/>
+    <text x="450" y="63" class="control ink">☰ Project</text>
+    <text x="565" y="63" class="control muted">Coffee Shop Universe</text>
+    <rect x="793" y="41" width="96" height="34" rx="8" class="paper"/>
+    <text x="815" y="63" class="control ink">Model ▾</text>
+    <rect x="900" y="41" width="96" height="34" rx="8" class="paper"/>
+    <text x="922" y="63" class="control ink">View ▾</text>
+    <text x="1125" y="63" class="control muted">Save</text>
+    <circle cx="1210" cy="58" r="17" fill="#dcecdf"/><text x="1204" y="63" class="control green">?</text>
+    <circle cx="1250" cy="58" r="17" fill="#f4f0e8"/><text x="1244" y="63" class="control ink">⋯</text>
+    <text x="430" y="121" class="small muted">Product controls stay here and can evolve independently.</text>
+  </g>
+
+  <g transform="translate(72 664)">
+    <text x="0" y="0" class="label green">MIMRIS AI WORKSPACE · WORK</text>
+    <rect y="20" width="1296" height="76" rx="14" class="workspace"/>
+    <g transform="translate(24 39) scale(.86)"><use href="#mark-white"/><text x="54" y="27" class="word wtext">Mimris</text></g>
+    <text x="191" y="67" class="nav wmuted">Modelling</text>
+    <text x="284" y="67" class="nav wtext">AI Workspace</text>
+    <path d="M284 84h100" stroke="#8bc9a5" stroke-width="3" stroke-linecap="round"/>
+    <line x1="418" y1="39" x2="418" y2="79" class="wdivider"/>
+    <rect x="440" y="41" width="41" height="34" rx="8" fill="#24292d" stroke="#fff" stroke-opacity=".14"/>
+    <text x="454" y="63" class="control wtext">☰</text>
+    <text x="503" y="55" class="small wmuted">WORLD</text>
+    <text x="503" y="72" class="control wtext">Coffee Shop</text>
+    <text x="633" y="55" class="small wmuted">CONTEXT</text>
+    <text x="633" y="72" class="control wtext">Order fulfilment</text>
+    <rect x="865" y="41" width="69" height="34" rx="8" fill="#24292d" stroke="#fff" stroke-opacity=".14"/>
+    <text x="882" y="63" class="control wtext">🇬🇧 EN</text>
+    <rect x="945" y="41" width="116" height="34" rx="8" fill="#24292d" stroke="#fff" stroke-opacity=".14"/>
+    <text x="966" y="63" class="control wtext">▢ Design ▾</text>
+    <circle cx="1110" cy="58" r="17" fill="#173b2b"/><text x="1105" y="63" class="control wtext">✦</text>
+    <circle cx="1151" cy="58" r="17" fill="#24292d"/><text x="1146" y="63" class="control wtext">◐</text>
+    <circle cx="1192" cy="58" r="17" fill="#24292d"/><text x="1187" y="63" class="control wtext">?</text>
+    <circle cx="1233" cy="58" r="17" fill="#24292d"/><text x="1228" y="63" class="control wtext">⋯</text>
+    <text x="440" y="121" class="small muted">World, context, mode, and utilities remain Workspace-owned.</text>
+  </g>
+
+  <g transform="translate(72 860)">
+    <rect width="1296" height="50" rx="25" class="paper"/>
+    <text x="24" y="31" class="small ink">Shared contract</text>
+    <text x="147" y="31" class="small muted">mark links to mimris-site</text><circle cx="332" cy="26" r="3" class="green"/>
+    <text x="350" y="31" class="small muted">same product order</text><circle cx="500" cy="26" r="3" class="green"/>
+    <text x="518" y="31" class="small muted">active state uses more than colour</text><circle cx="746" cy="26" r="3" class="green"/>
+    <text x="764" y="31" class="small muted">local controls remain local</text><circle cx="958" cy="26" r="3" class="green"/>
+    <text x="976" y="31" class="small muted">repositories stay independent</text>
+  </g>
+</svg>
