@@ -33,7 +33,7 @@ export default function WhyMimrisPage() {
       </section>
       <section className="contrast-section">
         <article><span>Without durable structure</span><h3>Every task rebuilds context.</h3><p>Definitions drift, decisions disconnect from evidence, and AI conversations become isolated snapshots.</p></article>
-        <article><span>With a Mimris Universe</span><h3>Context becomes a shared asset.</h3><p>People and AI can navigate the same concepts, relationships, processes, evidence, and work.</p></article>
+        <article><span>With an AKM Universe</span><h3>Context becomes a shared asset.</h3><p>People and AI can navigate the same World, concepts, relationships, processes, evidence, and work.</p></article>
       </section>
     </>
   );

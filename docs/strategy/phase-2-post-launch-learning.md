@@ -16,7 +16,7 @@ At the end of the first 30 days, we should know:
 
 - which pages introduce Mimris most effectively;
 - which articles lead visitors to a next step;
-- whether the Coffee Shop Universe helps visitors understand the product boundary;
+- whether the Coffee Shop World helps visitors understand the product boundary;
 - which referrals arrive from LinkedIn, YouTube, GitHub, and search;
 - what should be improved before adding more surface area.
 
@@ -62,7 +62,7 @@ Publish and promote permanent site content in this order:
 
 1. Mimris ecosystem and the problem it addresses.
 2. Active Knowledge Modelling.
-3. Coffee Shop Universe as a guided proof.
+3. Coffee Shop World as a guided proof.
 4. The boundary between Mimris Modelling and Mimris AI Workspace.
 5. “Why AI Needs Models, Not Just More Documents.”
 6. AI news and commentary, including the consciousness series.

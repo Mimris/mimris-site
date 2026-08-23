@@ -97,12 +97,12 @@ export default function WhyAiNeedsModelsPage() {
             <span>Describe</span><i>→</i><span>Structure</span><i>→</i><span>Use</span><i>→</i><span>Learn</span>
           </div>
 
-          <h2>A simple example: the Coffee Shop Universe</h2>
+          <h2>A simple example: the Coffee Shop World</h2>
           <p>
             Consider a coffee shop. Its documents might describe menus, payment procedures, staff responsibilities, inventory rules, and equipment. A model connects the underlying world: customers place orders; orders contain products; baristas prepare items; payment and production systems exchange information; inventory changes as work is performed.
           </p>
           <p>
-            Mimris Modelling is where that structure is deliberately created and explored. Mimris AI Workspace uses the structure alongside documents, decisions, processes, and tasks. The products do different jobs, but they operate within the same Universe.
+            Mimris Modelling is where that structure is deliberately created and explored. Mimris AI Workspace uses the structure alongside documents, decisions, processes, and tasks. The products do different jobs, but they operate in the same AKM Universe around the Coffee Shop World.
           </p>
 
           <h2>Give AI a world to work within</h2>
@@ -115,7 +115,7 @@ export default function WhyAiNeedsModelsPage() {
 
           <aside className="article-cta">
             <p className="eyebrow">See the idea in practice</p>
-            <h2>Follow the Coffee Shop Universe.</h2>
+            <h2>Follow the Coffee Shop World.</h2>
             <p>Explore one familiar domain across structured modelling and AI-assisted work.</p>
             <Link className="button button-primary" href="/examples/coffee-shop" data-analytics-event="proof_started" data-analytics-destination="coffee-shop-proof">Open the guided proof</Link>
           </aside>

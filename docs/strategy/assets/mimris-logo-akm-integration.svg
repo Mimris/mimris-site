@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Mimris Active Knowledge Modelling integration concepts</title>
+  <desc id="desc">Four ways to include Active Knowledge Modelling in the Mimris identity: semantic encoding, a hidden K source, a descriptor lockup, and a secondary AKM badge.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.blue{fill:#36516b}.green{fill:#246a4b}.orange{fill:#d76532}.muted{fill:#56605c}.base{fill:none;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.cross{fill:none;stroke:#246a4b;stroke-width:6;stroke-linecap:round}.symbol{fill:none;stroke:#246a4b;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}.heading{font:800 34px Inter,system-ui,sans-serif;letter-spacing:-1px}.cardhead{font:800 23px Inter,system-ui,sans-serif;letter-spacing:-.6px}.body{font:500 16px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 13.5px Inter,system-ui,sans-serif}.word{font:800 42px Inter,system-ui,sans-serif;letter-spacing:-1.3px}.descriptor{font:800 12px Inter,system-ui,sans-serif;letter-spacing:2.1px}.badgeletter{font:800 22px Inter,system-ui,sans-serif;letter-spacing:.6px}
+    </style>
+
+    <g id="base-mark">
+      <path d="M8 58V10l28 48" class="base" stroke="#36516b"/>
+      <path d="M36 58 64 10" class="base" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross"/>
+      <path d="M64 10v48" class="base" stroke="#d76532"/>
+      <circle cx="8" cy="58" r="6" class="blue"/><circle cx="8" cy="10" r="6" class="blue"/>
+      <circle cx="36" cy="58" r="6" class="green"/><circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+    <g id="well-mark"><use href="#base-mark"/><path d="M27 26c0 8 4 12 9 12s9-4 9-12M36 30v-7" class="symbol"/><circle cx="36" cy="19" r="3.5" class="green"/></g>
+    <g id="k-well-mark"><use href="#base-mark"/><path d="M29 18v19M29 28l13-10M29 28l13 10M26 36c3 4 7 5 10 5s7-1 10-5" class="symbol"/><circle cx="29" cy="18" r="3" class="green"/><circle cx="42" cy="18" r="3" class="green"/><circle cx="42" cy="38" r="3" class="green"/></g>
+    <g id="akm-badge">
+      <rect width="190" height="72" rx="36" fill="#fffefa" stroke="#36516b" stroke-opacity=".22"/>
+      <text x="26" y="44" class="badgeletter orange">A</text><circle cx="59" cy="36" r="4" class="orange"/>
+      <text x="75" y="44" class="badgeletter green">K</text><circle cx="108" cy="36" r="4" class="green"/>
+      <text x="124" y="44" class="badgeletter blue">M</text><circle cx="164" cy="36" r="4" class="blue"/>
+      <path d="M42 36h33M92 36h32" stroke="#36516b" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="1040"/>
+  <text x="72" y="72" class="label green">MIMRIS · AKM INTEGRATION</text>
+  <text x="72" y="120" class="heading blue">Include Active Knowledge Modelling at the right level</text>
+  <text x="72" y="154" class="body muted">AKM can be carried as meaning, hidden letter geometry, an endorsed descriptor, or a dedicated methodology badge.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="632" height="336" rx="28"/>
+    <text x="30" y="44" class="label green">A · RECOMMENDED CORE MARK</text>
+    <text x="30" y="80" class="cardhead blue">Semantic AKM</text>
+    <g transform="translate(55 112) scale(2.05)"><use href="#well-mark"/></g>
+    <text x="221" y="175" class="word blue">Mimris</text>
+    <circle cx="46" cy="239" r="8" class="orange"/><text x="64" y="244" class="note blue">Active — orange AI action</text>
+    <circle cx="274" cy="239" r="8" class="green"/><text x="292" y="244" class="note blue">Knowledge — green well</text>
+    <circle cx="492" cy="239" r="8" class="blue"/><text x="510" y="244" class="note blue">Modelling — graph M</text>
+    <text x="30" y="304" class="note muted">All three ideas are present without adding another visible acronym.</text>
+  </g>
+
+  <g transform="translate(736 202)">
+    <rect class="card" width="632" height="336" rx="28"/>
+    <text x="30" y="44" class="label green">B · LITERAL LETTER TEST</text>
+    <text x="30" y="80" class="cardhead blue">K-shaped knowledge source</text>
+    <g transform="translate(55 112) scale(2.05)"><use href="#k-well-mark"/></g>
+    <text x="221" y="175" class="word blue">Mimris</text>
+    <text x="30" y="239" class="note green">K is constructed as a three-node source graph inside the V.</text>
+    <text x="30" y="275" class="note muted">Strength: makes A–K–M discoverable in one symbol.</text>
+    <text x="30" y="304" class="note muted">Risk: the centre becomes dense and the well reading weakens.</text>
+  </g>
+
+  <g transform="translate(72 570)">
+    <rect class="card" width="632" height="336" rx="28"/>
+    <text x="30" y="44" class="label green">C · RECOMMENDED FULL LOCKUP</text>
+    <text x="30" y="80" class="cardhead blue">Endorsed AKM descriptor</text>
+    <g transform="translate(54 117) scale(1.35)"><use href="#well-mark"/></g>
+    <text x="174" y="174" class="word blue">Mimris</text>
+    <text x="176" y="207" class="descriptor green">ACTIVE KNOWLEDGE MODELLING</text>
+    <line x1="30" y1="240" x2="602" y2="240" stroke="#36516b" stroke-opacity=".14"/>
+    <text x="30" y="275" class="note muted">Use on the public site, learning material, talks, and AKM content.</text>
+    <text x="30" y="304" class="note muted">Compact product headers retain the core mark and wordmark only.</text>
+  </g>
+
+  <g transform="translate(736 570)">
+    <rect class="card" width="632" height="336" rx="28"/>
+    <text x="30" y="44" class="label green">D · SECONDARY IDENTITY</text>
+    <text x="30" y="80" class="cardhead blue">AKM methodology badge</text>
+    <g transform="translate(54 116)"><use href="#akm-badge"/></g>
+    <text x="274" y="156" class="word blue">Mimris</text>
+    <text x="276" y="190" class="descriptor green">ACTIVE KNOWLEDGE MODELLING</text>
+    <line x1="30" y1="240" x2="602" y2="240" stroke="#36516b" stroke-opacity=".14"/>
+    <text x="30" y="275" class="note muted">Useful for article labels, method diagrams, courses, and community work.</text>
+    <text x="30" y="304" class="note muted">Risk: a second mark needs strict rules so it does not compete with Mimris.</text>
+  </g>
+
+  <text x="72" y="962" class="body blue">Recommended system: semantic AKM in the core mark + explicit descriptor when the context is about the method.</text>
+  <text x="72" y="994" class="body muted">Avoid requiring a literal K in the compact logo unless testing shows it remains clear and calm at 24 px.</text>
+</svg>

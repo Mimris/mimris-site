@@ -1,50 +1,22 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { modellingVideoChannel } from "@/content/site";
-
-const navigation = [
-  { href: "/why-mimris", label: "Why Mimris" },
-  { href: "/active-knowledge-modelling", label: "Active Knowledge Modelling" },
-  { href: "/products", label: "Products" },
-  { href: "/examples/coffee-shop", label: "Coffee Shop" },
-  { href: "/articles", label: "Articles" },
-  { href: "/about", label: "About" },
-];
+import { MimrisMark } from "./mimris-mark";
+import { SiteNavigation } from "./site-navigation";
 
 export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" href="/" aria-label="Mimris ecosystem home">
         <span className="brand-mark" aria-hidden="true">
-          M
+          <MimrisMark />
         </span>
         <span>Mimris</span>
       </Link>
-      <nav className="site-nav" aria-label="Primary navigation">
-        {navigation.map((item) => (
-          <Link href={item.href} key={item.href}>
-            {item.label}
-          </Link>
-        ))}
-      </nav>
-      <a className="header-cta" href="https://mimris-ai-workspace.vercel.app" data-analytics-event="product_demo_clicked" data-analytics-destination="ai-workspace">
-        Open workspace
+      <SiteNavigation />
+      <a className="header-cta" href="https://mimris-ai-workspace.vercel.app" target="_blank" rel="noreferrer" data-analytics-event="product_demo_clicked" data-analytics-destination="ai-workspace">
+        Open Workspace ↗
       </a>
-      <details className="mobile-menu">
-        <summary>Menu</summary>
-        <div className="mobile-menu-panel">
-          <nav aria-label="Mobile primary navigation">
-            {navigation.map((item) => (
-              <Link href={item.href} key={item.href}>
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-          <a className="mobile-menu-cta" href="https://mimris-ai-workspace.vercel.app" data-analytics-event="product_demo_clicked" data-analytics-destination="ai-workspace">
-            Open workspace
-          </a>
-        </div>
-      </details>
     </header>
   );
 }
@@ -55,7 +27,7 @@ export function SiteFooter() {
       <div>
         <Link className="brand" href="/">
           <span className="brand-mark" aria-hidden="true">
-            M
+            <MimrisMark />
           </span>
           <span>Mimris</span>
         </Link>

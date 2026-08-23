@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Mimris shared-stroke M A I logo refinement</title>
+  <desc id="desc">A focused logo construction where the M is a node-link graph, its right half forms an A, and its right vertical also reads as I.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.ink{fill:#17201d}.green{fill:#246a4b}.coral{fill:#c75d42}.muted{fill:#56605c}.white{fill:#fffefa}.graph{fill:none;stroke:currentColor;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.cross{fill:none;stroke:currentColor;stroke-width:6;stroke-linecap:round}.node{fill:currentColor}.heading{font:800 34px Inter,system-ui,sans-serif;letter-spacing:-1px}.subheading{font:800 24px Inter,system-ui,sans-serif;letter-spacing:-.7px}.body{font:500 17px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 14px Inter,system-ui,sans-serif}.word{font:800 44px Inter,system-ui,sans-serif;letter-spacing:-1.4px}.construction{font:800 20px Inter,system-ui,sans-serif;letter-spacing:-.4px}
+    </style>
+    <g id="mai-mark">
+      <path class="graph" d="M8 58V10l28 48 28-48v48"/>
+      <path class="cross" d="M46.5 40H64"/>
+      <circle class="node" cx="8" cy="58" r="6"/><circle class="node" cx="8" cy="10" r="6"/>
+      <circle class="node" cx="36" cy="58" r="6"/><circle class="node" cx="64" cy="10" r="6"/><circle class="node" cx="64" cy="58" r="6"/>
+      <circle class="node" cx="46.5" cy="40" r="4"/>
+    </g>
+    <g id="mai-mark-accent">
+      <path d="M8 58V10l28 48" class="graph" style="color:#17201d"/>
+      <path d="M36 58 64 10v48" class="graph" style="color:#246a4b"/>
+      <path d="M46.5 40H64" class="cross" style="color:#246a4b"/>
+      <circle cx="8" cy="58" r="6" class="ink"/><circle cx="8" cy="10" r="6" class="ink"/>
+      <circle cx="36" cy="58" r="6" class="green"/><circle cx="64" cy="10" r="6" class="green"/><circle cx="64" cy="58" r="6" class="green"/>
+      <circle cx="46.5" cy="40" r="4" class="green"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+  <text x="72" y="72" class="label green">MIMRIS · SHARED-STROKE REFINEMENT</text>
+  <text x="72" y="120" class="heading ink">One graph, three readings: M · A · I</text>
+  <text x="72" y="154" class="body muted">The model graph draws the M. Its right triangle is the A. The final vertical is simultaneously the M stem, A leg, and I.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="850" height="620" rx="28"/>
+    <text x="34" y="48" class="label green">PROPOSED MARK</text>
+    <text x="34" y="88" class="subheading ink">Shared geometry instead of added symbols</text>
+    <g transform="translate(318 135) scale(3.1)" style="color:#17201d"><use href="#mai-mark-accent"/></g>
+    <g transform="translate(230 398) scale(1.12)" style="color:#17201d"><use href="#mai-mark"/></g>
+    <text x="340" y="463" class="word ink">Mimris</text>
+    <line x1="34" y1="520" x2="816" y2="520" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="34" y="558" class="note muted">The crossbar is the only added stroke. Nodes and relationships keep the construction visibly graph-based.</text>
+    <text x="34" y="583" class="note muted">In one colour, A and I become discoverable secondary readings rather than separate attached letters.</text>
+  </g>
+
+  <g transform="translate(950 202)">
+    <rect class="card" width="418" height="360" rx="28"/>
+    <text x="30" y="45" class="label green">CONSTRUCTION</text>
+    <g transform="translate(34 83) scale(1.12)" style="color:#17201d"><use href="#mai-mark"/></g>
+    <text x="35" y="186" class="construction ink">M</text>
+    <text x="59" y="186" class="body muted">is the graph</text>
+    <path d="M229 141 260 88v53Z" fill="none" stroke="#246a4b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M240.5 121H260" stroke="#246a4b" stroke-width="6" stroke-linecap="round"/>
+    <text x="229" y="186" class="construction green">A</text>
+    <text x="253" y="186" class="body muted">is its right half</text>
+    <path d="M88 239v72" stroke="#c75d42" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="88" cy="239" r="7" class="coral"/><circle cx="88" cy="311" r="7" class="coral"/>
+    <text x="113" y="283" class="construction coral">I</text>
+    <text x="127" y="283" class="body muted">is the shared right line</text>
+  </g>
+
+  <g transform="translate(950 594)">
+    <rect class="card" width="418" height="228" rx="28"/>
+    <text x="30" y="45" class="label green">ONE-COLOUR &amp; SMALL-SIZE CHECK</text>
+    <g transform="translate(34 78) scale(.25)" style="color:#17201d"><use href="#mai-mark"/></g>
+    <g transform="translate(106 72) scale(.375)" style="color:#17201d"><use href="#mai-mark"/></g>
+    <g transform="translate(195 64) scale(.5)" style="color:#246a4b"><use href="#mai-mark"/></g>
+    <g transform="translate(300 54) scale(.75)" style="color:#17201d"><use href="#mai-mark"/></g>
+    <text x="33" y="160" class="note muted">16</text><text x="105" y="160" class="note muted">24</text><text x="194" y="160" class="note muted">32</text><text x="299" y="160" class="note muted">48 px</text>
+    <text x="30" y="198" class="note ink">At 24 px the M and graph lead; A–I become a hidden reward.</text>
+  </g>
+
+  <text x="72" y="892" class="body ink">Design question: should the A be visibly accented in brand green, or should all three readings emerge from a strict one-colour mark?</text>
+  <text x="72" y="922" class="body muted">Focused concept only · optical correction and production assets remain deferred until selection.</text>
+</svg>

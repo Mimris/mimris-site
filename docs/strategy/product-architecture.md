@@ -3,7 +3,7 @@
 Status: Accepted for Phase 1
 
 Owner: Mimris
-Last updated: 2026-08-19
+Last updated: 2026-08-22
 
 ## Purpose
 
@@ -12,6 +12,10 @@ This document defines the Mimris ecosystem and the responsibility of each produc
 The central architectural principle is:
 
 > The website explains the ecosystem. The product repositories implement the products.
+
+The navigation consequence is:
+
+> `mimris-site` is the ecosystem home. In each product, the Mimris brand links to that public home, while product-specific start and dashboard routes use explicit internal labels.
 
 ## 1. Mimris ecosystem
 
@@ -39,7 +43,7 @@ The public story is:
      Mimris Modelling          Mimris AI Workspace
      Model the world.          Work with the modelled world.
              |                           |
-             +--------- Universe --------+
+             +------- AKM Universe -------+
 ```
 
 ## 2. Active Knowledge Modelling
@@ -56,11 +60,11 @@ Information -> Knowledge -> Models -> Context -> Human + AI work -> Results
 
 AKM does not mean that every document must be converted into a model or that AI replaces expert judgement. It provides an explicit structure within which evidence, assumptions, models, human decisions, and AI-generated work can remain connected.
 
-## 3. Universe
+## 3. AKM Universe, World, and Workspace
 
-A **Universe** is a bounded, coherent representation of a domain or world that humans and AI can work within.
+An **AKM Universe** is the bounded working context in which an AKM World is built, evolved, and used. It contains `Universe.World`, the domain world under development, and the `Workspace` used to work with that world.
 
-A Universe may include:
+An AKM Universe may include:
 
 - a domain description and vocabulary;
 - ontologies, model types, and model rules;
@@ -68,14 +72,25 @@ A Universe may include:
 - organizations, people, roles, products, systems, and information;
 - processes, activities, tasks, and views;
 - references to documents, evidence, decisions, and deliverables;
-- working context used by the AI Workspace.
+- `OriginWorld`, where a reusable starting structure is available;
+- `Universe.World`, whether it begins as an empty template or contains data, relationships, evidence, and work;
+- the `Workspace` used by people and AI;
+- an Operational Preview generated after export/generation.
 
-The distinction between products remains important inside a shared Universe:
+The lifecycle is:
+
+```text
+OriginWorld (when used)
+        ↓
+Universe.World + Workspace  →  export / generation  →  Operational Preview
+```
+
+A new World is built and refined in the current `Universe.World` and `Workspace`; it is not created by first creating another Universe. The distinction between products remains important inside the shared AKM Universe:
 
 - Mimris Modelling owns the deliberate creation and manipulation of model structure.
 - Mimris AI Workspace uses that structure as context and connects it to operational work.
 
-A Universe is therefore more than a diagram or a collection of files. It is a structured representation of a world, with explicit meaning and relationships, that can evolve over time.
+An AKM Universe is therefore more than a diagram or a collection of files. It is the working context around a World, with explicit meaning and relationships that can evolve over time.
 
 ## 4. Mimris Modelling
 
@@ -114,7 +129,7 @@ Mimris AI Workspace is responsible for:
 - generating, reviewing, and managing deliverables;
 - using models as durable context for AI;
 - proposing model changes as work reveals new knowledge;
-- connecting decisions and outputs back to the relevant Universe.
+- connecting decisions and outputs back to the relevant AKM Universe and World.
 
 Its primary question is:
 
@@ -199,7 +214,9 @@ Use these names consistently:
 
 - **Mimris**: the umbrella approach, brand, and ecosystem.
 - **Active Knowledge Modelling**: the core approach.
-- **Universe**: a bounded structured representation of a domain or world.
+- **AKM Universe**: the working context containing `Universe.World`, the Workspace, and generated Operational Previews.
+- **World**: the domain-specific representation built and evolved in `Universe.World`; it may be an empty template or a data-filled, operational context.
+- **OriginWorld**: a reusable starting World structure used when creating a new World.
 - **Mimris Modelling**: the dedicated modelling product in `mimris`.
 - **Mimris AI Workspace**: the AI-enabled working environment in `mimris-ai-workspace`.
 
@@ -220,20 +237,20 @@ The website must:
 
 - lead with Mimris as the ecosystem rather than making either product appear to be the whole ecosystem;
 - give each product a distinct page and clear call to action;
-- explain Active Knowledge Modelling and Universe in accessible language;
-- demonstrate the relationship through one shared example, initially the Coffee Shop Universe;
+- explain Active Knowledge Modelling, the AKM Universe, and World in accessible language;
+- demonstrate the relationship through one shared example: the Coffee Shop World in an AKM Universe;
 - link to the public product demos and only to source repositories that are public;
 - preserve room for future products without changing the brand architecture.
 
 ## 11. Future expansion
 
-The architecture permits future products, shared services, templates, and Universe libraries. Expansion should happen only when a new offering has a distinct user job and does not blur the Modelling/Workspace boundary.
+The architecture permits future products, shared services, templates, and AKM Universe libraries. Expansion should happen only when a new offering has a distinct user job and does not blur the Modelling/Workspace boundary.
 
 Questions that remain outside this Phase 1 decision include:
 
 - packaging and commercial tiers;
 - identity, permissions, and cross-product synchronization;
-- the technical format and lifecycle of a shared Universe;
+- the technical format and lifecycle of a shared AKM Universe;
 - the timing and shape of reusable modelling packages;
 - whether later product documentation uses the public site or dedicated documentation surfaces.
 

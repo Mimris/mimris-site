@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Mimris blue foundation colour exploration</title>
+  <desc id="desc">Four blue-toned replacements for Mimris ink in the preferred semantic triad logo, retaining the green A and orange I.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.green{fill:#246a4b}.orange{fill:#d76532}.muted{fill:#56605c}.line{fill:none;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.cross{fill:none;stroke:#246a4b;stroke-width:6;stroke-linecap:round}.heading{font:800 34px Inter,system-ui,sans-serif;letter-spacing:-1px}.cardhead{font:800 23px Inter,system-ui,sans-serif;letter-spacing:-.6px}.body{font:500 16px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 13.5px Inter,system-ui,sans-serif}.word{font:800 38px Inter,system-ui,sans-serif;letter-spacing:-1.1px}.hex{font:700 12px ui-monospace,SFMono-Regular,Menlo,monospace}
+    </style>
+    <g id="blue-semantic-mark">
+      <path d="M8 58V10l28 48" class="line" stroke="currentColor"/>
+      <path d="M36 58 64 10" class="line" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross"/>
+      <path d="M64 10v48" class="line" stroke="#d76532"/>
+      <circle cx="8" cy="58" r="6" fill="currentColor"/><circle cx="8" cy="10" r="6" fill="currentColor"/>
+      <circle cx="36" cy="58" r="6" class="green"/><circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+  <text x="72" y="72" class="label green">MIMRIS · BLUE FOUNDATION EXPLORATION</text>
+  <text x="72" y="120" class="heading" fill="#25364a">A blue-toned foundation for the semantic triad</text>
+  <text x="72" y="154" class="body muted">Green continues to express model/A; orange continues to reveal I/AI. Only the former ink role changes.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="632" height="286" rx="28"/>
+    <text x="30" y="44" class="label green">A · RECOMMENDED</text>
+    <text x="30" y="80" class="cardhead" fill="#25364a">Midnight slate</text>
+    <g transform="translate(46 111) scale(1.75)" style="color:#25364a"><use href="#blue-semantic-mark"/></g>
+    <text x="185" y="168" class="word" fill="#25364a">Mimris</text>
+    <text x="30" y="230" class="note muted">Blue-grey, calm, and neutral enough to anchor both accents.</text>
+    <text x="30" y="254" class="hex" fill="#25364a">#25364A · contrast on cream 10.83:1</text>
+  </g>
+
+  <g transform="translate(736 202)">
+    <rect class="card" width="632" height="286" rx="28"/>
+    <text x="30" y="44" class="label green">B · DARKEST</text>
+    <text x="30" y="80" class="cardhead" fill="#1b3444">Deep fjord</text>
+    <g transform="translate(46 111) scale(1.75)" style="color:#1b3444"><use href="#blue-semantic-mark"/></g>
+    <text x="185" y="168" class="word" fill="#1b3444">Mimris</text>
+    <text x="30" y="230" class="note muted">Subtle blue-green depth; sophisticated but close to the green.</text>
+    <text x="30" y="254" class="hex" fill="#1b3444">#1B3444 · contrast on cream 11.40:1</text>
+  </g>
+
+  <g transform="translate(72 520)">
+    <rect class="card" width="632" height="286" rx="28"/>
+    <text x="30" y="44" class="label green">C · BLUEST</text>
+    <text x="30" y="80" class="cardhead" fill="#203a5f">Atlantic navy</text>
+    <g transform="translate(46 111) scale(1.75)" style="color:#203a5f"><use href="#blue-semantic-mark"/></g>
+    <text x="185" y="168" class="word" fill="#203a5f">Mimris</text>
+    <text x="30" y="230" class="note muted">Makes the blue decision unmistakable and increases contrast with green.</text>
+    <text x="30" y="254" class="hex" fill="#203a5f">#203A5F · contrast on cream 10.09:1</text>
+  </g>
+
+  <g transform="translate(736 520)">
+    <rect class="card" width="632" height="286" rx="28"/>
+    <text x="30" y="44" class="label green">D · MOST EXPRESSIVE</text>
+    <text x="30" y="80" class="cardhead" fill="#303b66">Muted indigo</text>
+    <g transform="translate(46 111) scale(1.75)" style="color:#303b66"><use href="#blue-semantic-mark"/></g>
+    <text x="185" y="168" class="word" fill="#303b66">Mimris</text>
+    <text x="30" y="230" class="note muted">Distinctive and intelligent, with a slight violet character.</text>
+    <text x="30" y="254" class="hex" fill="#303b66">#303B66 · contrast on cream 9.51:1</text>
+  </g>
+
+  <g transform="translate(72 850)">
+    <circle cx="12" cy="12" r="12" fill="#25364a"/><text x="34" y="17" class="hex" fill="#25364a">FOUNDATION</text>
+    <circle cx="168" cy="12" r="12" class="green"/><text x="190" y="17" class="hex green">MODEL #246A4B</text>
+    <circle cx="393" cy="12" r="12" class="orange"/><text x="415" y="17" class="hex orange">AI #D76532</text>
+  </g>
+  <text x="72" y="916" class="body muted">Recommendation: begin optical refinement with Midnight slate; keep Atlantic navy as the clearer, more overtly blue alternative.</text>
+</svg>

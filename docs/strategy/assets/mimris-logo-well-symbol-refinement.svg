@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Mimris well symbol refinement</title>
+  <desc id="desc">The shared-stroke M A I graph logo with three restrained source-of-knowledge well symbols inside the central V.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.blue{fill:#36516b}.green{fill:#246a4b}.orange{fill:#d76532}.muted{fill:#56605c}.line{fill:none;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.cross{fill:none;stroke:#246a4b;stroke-width:6;stroke-linecap:round}.well{fill:none;stroke:#246a4b;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}.heading{font:800 34px Inter,system-ui,sans-serif;letter-spacing:-1px}.subheading{font:800 24px Inter,system-ui,sans-serif;letter-spacing:-.7px}.body{font:500 17px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 14px Inter,system-ui,sans-serif}.word{font:800 44px Inter,system-ui,sans-serif;letter-spacing:-1.4px}
+    </style>
+
+    <g id="base-mark">
+      <path d="M8 58V10l28 48" class="line" stroke="#36516b"/>
+      <path d="M36 58 64 10" class="line" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross"/>
+      <path d="M64 10v48" class="line" stroke="#d76532"/>
+      <circle cx="8" cy="58" r="6" class="blue"/><circle cx="8" cy="10" r="6" class="blue"/>
+      <circle cx="36" cy="58" r="6" class="green"/><circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+
+    <g id="source-well-mark">
+      <use href="#base-mark"/>
+      <path d="M27 26c0 8 4 12 9 12s9-4 9-12" class="well"/>
+      <path d="M36 30v-7" class="well"/>
+      <circle cx="36" cy="19" r="3.5" class="green"/>
+    </g>
+
+    <g id="ripple-well-mark">
+      <use href="#base-mark"/>
+      <path d="M27 24c0 9 4 14 9 14s9-5 9-14" class="well"/>
+      <path d="M30 28c3.5 2 8.5 2 12 0M32 33c2.5 1.2 5.5 1.2 8 0" class="well"/>
+    </g>
+
+    <g id="mouth-well-mark">
+      <use href="#base-mark"/>
+      <ellipse cx="36" cy="27" rx="10" ry="5.5" class="well"/>
+      <path d="M26 27v5c0 4 4.5 7 10 7s10-3 10-7v-5" class="well"/>
+      <circle cx="36" cy="27" r="3" class="green"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+  <text x="72" y="72" class="label green">MIMRIS · SOURCE-OF-KNOWLEDGE REFINEMENT</text>
+  <text x="72" y="120" class="heading blue">A well inside the model graph</text>
+  <text x="72" y="154" class="body muted">The source symbol reconnects the mark to Mímir while the graph-built M, shared A, and orange I retain modelling and AI.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="850" height="620" rx="28"/>
+    <text x="34" y="48" class="label green">RECOMMENDED TREATMENT</text>
+    <text x="34" y="88" class="subheading blue">Open vessel + rising source</text>
+    <g transform="translate(318 133) scale(3.1)"><use href="#source-well-mark"/></g>
+    <g transform="translate(225 398) scale(1.12)"><use href="#source-well-mark"/></g>
+    <text x="340" y="463" class="word blue">Mimris</text>
+    <line x1="34" y1="520" x2="816" y2="520" stroke="#36516b" stroke-opacity=".16"/>
+    <text x="34" y="558" class="note muted">The open vessel is the well; the rising point is knowledge drawn from the source.</text>
+    <text x="34" y="583" class="note muted">It stays abstract enough to avoid literal mythology and uses fewer strokes than ripples or masonry.</text>
+  </g>
+
+  <g transform="translate(950 202)">
+    <rect class="card" width="418" height="360" rx="28"/>
+    <text x="30" y="45" class="label green">WELL SYMBOL OPTIONS</text>
+    <g transform="translate(42 82) scale(1.18)"><use href="#source-well-mark"/></g>
+    <text x="30" y="183" class="note blue">A · Rising source</text>
+    <text x="30" y="206" class="note muted">Warmest, simplest story</text>
+    <g transform="translate(174 82) scale(1.18)"><use href="#ripple-well-mark"/></g>
+    <text x="163" y="183" class="note blue">B · Quiet ripples</text>
+    <text x="163" y="206" class="note muted">More water, more detail</text>
+    <g transform="translate(306 82) scale(1.18)"><use href="#mouth-well-mark"/></g>
+    <text x="294" y="183" class="note blue">C · Well mouth</text>
+    <text x="294" y="206" class="note muted">Clearest well, most literal</text>
+    <line x1="30" y1="244" x2="388" y2="244" stroke="#36516b" stroke-opacity=".14"/>
+    <text x="30" y="278" class="note green">Recommendation</text>
+    <text x="30" y="305" class="note muted">Develop A. It adds the name story without</text>
+    <text x="30" y="328" class="note muted">turning the mark into an illustration.</text>
+  </g>
+
+  <g transform="translate(950 594)">
+    <rect class="card" width="418" height="228" rx="28"/>
+    <text x="30" y="45" class="label green">SMALL-SIZE CHECK</text>
+    <g transform="translate(38 78) scale(.25)"><use href="#source-well-mark"/></g>
+    <g transform="translate(114 72) scale(.375)"><use href="#source-well-mark"/></g>
+    <g transform="translate(207 64) scale(.5)"><use href="#source-well-mark"/></g>
+    <g transform="translate(314 54) scale(.75)"><use href="#source-well-mark"/></g>
+    <text x="37" y="160" class="note muted">16</text><text x="113" y="160" class="note muted">24</text><text x="206" y="160" class="note muted">32</text><text x="313" y="160" class="note muted">48 px</text>
+    <text x="30" y="198" class="note blue">At 24 px, simplify to the vessel and point only.</text>
+  </g>
+
+  <text x="72" y="892" class="body blue">Brand story in one construction: Mímir’s well · Metis’s model graph · AI in the shared A–I geometry.</text>
+  <text x="72" y="922" class="body muted">Concept refinement only · the well symbol must remain secondary to the M silhouette at application size.</text>
+</svg>

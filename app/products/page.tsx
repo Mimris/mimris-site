@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ProductsPage() {
   return (
     <>
-      <PageHero eyebrow="Mimris products" title="Two different jobs. One shared Universe." lead="Mimris Modelling owns model structure. Mimris AI Workspace connects that structure to documents, decisions, processes, tasks, and results." />
+      <PageHero eyebrow="Mimris products" title="Two different jobs. One shared AKM Universe." lead="Mimris Modelling owns model structure. Mimris AI Workspace connects that structure to documents, decisions, processes, tasks, and results." />
       <section className="product-detail-grid">
         {products.map((product, index) => (
           <article className={`product-card product-${product.accent}`} key={product.name}>

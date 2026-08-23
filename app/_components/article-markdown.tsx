@@ -19,8 +19,8 @@ const articleGroups = [
     ],
   },
   {
-    label: "Examples and universes",
-    links: [["/articles/coffee-shop-universe", "Coffee Shop Universe"]],
+    label: "Examples and worlds",
+    links: [["/articles/coffee-shop-universe", "Coffee Shop World"]],
   },
 ] as const;
 

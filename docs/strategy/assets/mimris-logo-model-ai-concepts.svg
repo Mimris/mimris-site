@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Mimris model graph and AI logo concepts</title>
+  <desc id="desc">Three logo constructions in which the M is visibly built as a node-link model graph and the letters AI are explicitly integrated.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.ink{fill:#17201d}.green{fill:#246a4b}.muted{fill:#56605c}.white{fill:#fffefa}.graph{fill:none;stroke:currentColor;stroke-width:6.5;stroke-linecap:round;stroke-linejoin:round}.ai{fill:none;stroke:#246a4b;stroke-width:6.5;stroke-linecap:round;stroke-linejoin:round}.node{fill:currentColor}.ainode{fill:#246a4b}.heading{font:800 32px Inter,system-ui,sans-serif;letter-spacing:-1px}.cardhead{font:800 24px Inter,system-ui,sans-serif;letter-spacing:-.7px}.body{font:500 16px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 13.5px Inter,system-ui,sans-serif}.word{font:800 35px Inter,system-ui,sans-serif;letter-spacing:-1px}
+    </style>
+
+    <g id="connected-mai">
+      <path class="graph" d="M6 58V10l28 30 28-30v48"/>
+      <path class="ai" d="M62 58h13l16-48 16 48M80 42h22M119 10h18M128 10v48M119 58h18"/>
+      <circle class="node" cx="6" cy="58" r="5.5"/><circle class="node" cx="6" cy="10" r="5.5"/><circle class="node" cx="34" cy="40" r="5.5"/><circle class="node" cx="62" cy="10" r="5.5"/><circle class="node" cx="62" cy="58" r="5.5"/>
+      <circle class="ainode" cx="75" cy="58" r="5.5"/><circle class="ainode" cx="91" cy="10" r="5.5"/><circle class="ainode" cx="107" cy="58" r="5.5"/><circle class="ainode" cx="80" cy="42" r="4"/><circle class="ainode" cx="102" cy="42" r="4"/><circle class="ainode" cx="128" cy="10" r="5.5"/><circle class="ainode" cx="128" cy="58" r="5.5"/>
+    </g>
+
+    <g id="shared-mai">
+      <path class="graph" d="M6 58V10l28 30 28-30v48"/>
+      <path class="ai" d="M62 10 88 58M69 39h13M100 10h16M108 10v48M100 58h16"/>
+      <circle class="node" cx="6" cy="58" r="5.5"/><circle class="node" cx="6" cy="10" r="5.5"/><circle class="node" cx="34" cy="40" r="5.5"/><circle class="node" cx="62" cy="10" r="5.5"/><circle class="node" cx="62" cy="58" r="5.5"/>
+      <circle class="ainode" cx="69" cy="39" r="4"/><circle class="ainode" cx="82" cy="39" r="4"/><circle class="ainode" cx="88" cy="58" r="5.5"/><circle class="ainode" cx="108" cy="10" r="5.5"/><circle class="ainode" cx="108" cy="58" r="5.5"/>
+    </g>
+
+    <g id="enclosed-mai">
+      <path class="graph" d="M6 62V8l30 30L66 8v54"/>
+      <circle class="node" cx="6" cy="62" r="5.5"/><circle class="node" cx="6" cy="8" r="5.5"/><circle class="node" cx="36" cy="38" r="5.5"/><circle class="node" cx="66" cy="8" r="5.5"/><circle class="node" cx="66" cy="62" r="5.5"/>
+      <path class="ai" d="M19 58 28 40l9 18M23 51h10M46 42h9M50.5 42v16M46 58h9"/>
+      <circle class="ainode" cx="19" cy="58" r="3.8"/><circle class="ainode" cx="28" cy="40" r="3.8"/><circle class="ainode" cx="37" cy="58" r="3.8"/><circle class="ainode" cx="50.5" cy="42" r="3.8"/><circle class="ainode" cx="50.5" cy="58" r="3.8"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+  <text x="72" y="72" class="label green">MIMRIS · MODEL GRAPH + AI</text>
+  <text x="72" y="118" class="heading ink">Make both ideas visible</text>
+  <text x="72" y="151" class="body muted">The M is constructed as a node-link graph. AI is expressed as legible A–I geometry connected to the same system.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="410" height="654" rx="28"/>
+    <text x="30" y="45" class="label green">A · CLEAREST READING</text>
+    <text x="30" y="84" class="cardhead ink">Connected M–AI graph</text>
+    <text x="30" y="113" class="body muted">Three characters, one node-link network.</text>
+    <g transform="translate(54 168) scale(2.18)" style="color:#17201d"><use href="#connected-mai"/></g>
+    <g transform="translate(48 356) scale(.82)" style="color:#17201d"><use href="#connected-mai"/></g>
+    <text x="178" y="404" class="word ink">Mimris</text>
+    <line x1="30" y1="440" x2="380" y2="440" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="30" y="478" class="note green">TRADE-OFF</text>
+    <text x="30" y="507" class="note muted">The meaning is immediate: model graph plus AI.</text>
+    <text x="30" y="529" class="note muted">It also creates a memorable “M–AI” signature.</text>
+    <text x="30" y="568" class="note ink">Risk: it is a horizontal logo rather than a compact</text>
+    <text x="30" y="590" class="note ink">app icon, so it needs a simplified small mark.</text>
+  </g>
+
+  <g transform="translate(515 202)">
+    <rect class="card" width="410" height="654" rx="28"/>
+    <text x="30" y="45" class="label green">B · MOST INTEGRATED</text>
+    <text x="30" y="84" class="cardhead ink">Shared-leg MAI</text>
+    <text x="30" y="113" class="body muted">The M’s right diagonal also begins the A.</text>
+    <g transform="translate(82 168) scale(2.18)" style="color:#17201d"><use href="#shared-mai"/></g>
+    <g transform="translate(57 356) scale(.82)" style="color:#17201d"><use href="#shared-mai"/></g>
+    <text x="169" y="404" class="word ink">Mimris</text>
+    <line x1="30" y1="440" x2="380" y2="440" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="30" y="478" class="note green">TRADE-OFF</text>
+    <text x="30" y="507" class="note muted">Model and AI visibly share structure rather than</text>
+    <text x="30" y="529" class="note muted">sitting beside each other. It is more compact.</text>
+    <text x="30" y="568" class="note ink">Risk: the shared diagonal asks the viewer to resolve</text>
+    <text x="30" y="590" class="note ink">two letters from one stroke and needs refinement.</text>
+  </g>
+
+  <g transform="translate(958 202)">
+    <rect class="card" width="410" height="654" rx="28"/>
+    <text x="30" y="45" class="label green">C · COMPACT EMBLEM</text>
+    <text x="30" y="84" class="cardhead ink">AI subgraph inside M</text>
+    <text x="30" y="113" class="body muted">The M contains a smaller connected AI model.</text>
+    <g transform="translate(128 158) scale(2.25)" style="color:#17201d"><use href="#enclosed-mai"/></g>
+    <g transform="translate(66 350) scale(.86)" style="color:#17201d"><use href="#enclosed-mai"/></g>
+    <text x="146" y="404" class="word ink">Mimris</text>
+    <line x1="30" y1="440" x2="380" y2="440" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="30" y="478" class="note green">TRADE-OFF</text>
+    <text x="30" y="507" class="note muted">All three ideas fit in a square silhouette suited</text>
+    <text x="30" y="529" class="note muted">to favicons and application headers.</text>
+    <text x="30" y="568" class="note ink">Risk: AI becomes fine detail and will disappear</text>
+    <text x="30" y="590" class="note ink">first at small sizes; the emblem may feel crowded.</text>
+  </g>
+
+  <text x="72" y="910" class="body ink">Promising system direction: use the connected or shared-leg signature at full size, with the graph-built M alone as its compact derivative.</text>
+</svg>

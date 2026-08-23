@@ -6,6 +6,15 @@ Status: Phase 1 implementation brief
 
 The website is the canonical public explanation of the Mimris ecosystem. It should lead visitors from the problem of implicit domain knowledge to Active Knowledge Modelling, then to the right product or proof path.
 
+## Ecosystem navigation contract
+
+- `mimris-site` is the Mimris ecosystem and public home.
+- Its **Mimris** brand links to `/`.
+- Product application brands link back here rather than exposing a separate external `Home` control.
+- The product applications are consistently named **Mimris Modelling** and **Mimris AI Workspace**.
+- Application-specific start surfaces remain internal and use explicit labels such as **Modelling start** and **Workspace start**.
+- Cross-product links should help users move between the two products without making either application appear to own the ecosystem home.
+
 ## Canonical routes
 
 | Route | Role | Primary action |
@@ -16,7 +25,7 @@ The website is the canonical public explanation of the Mimris ecosystem. It shou
 | `/products` | Product comparison | Choose a product |
 | `/products/modelling` | Mimris Modelling | Open the modelling demo |
 | `/products/ai-workspace` | Mimris AI Workspace | Open the workspace demo |
-| `/examples/coffee-shop` | Guided Universe proof | Follow the end-to-end example |
+| `/examples/coffee-shop` | Guided Coffee Shop World proof | Follow the World through an AKM Universe |
 | `/articles` | Editorial index | Read an article |
 | `/articles/why-ai-needs-models` | Thought leadership | Continue learning |
 | `/about` | Heritage and trust | Watch modelling material |

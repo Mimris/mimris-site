@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Mimris shared-stroke logo colour exploration</title>
+  <desc id="desc">Four colour treatments for the graph-built M, shared A, and orange I, including a monochrome fallback.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.ink{fill:#17201d}.green{fill:#246a4b}.orange{fill:#d76532}.muted{fill:#56605c}.white{fill:#fffefa}.line{fill:none;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.cross{fill:none;stroke-width:6;stroke-linecap:round}.heading{font:800 34px Inter,system-ui,sans-serif;letter-spacing:-1px}.cardhead{font:800 23px Inter,system-ui,sans-serif;letter-spacing:-.6px}.body{font:500 16px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 13.5px Inter,system-ui,sans-serif}.word{font:800 37px Inter,system-ui,sans-serif;letter-spacing:-1.1px}.hex{font:700 12px ui-monospace,SFMono-Regular,Menlo,monospace}
+    </style>
+
+    <g id="semantic-mark">
+      <path d="M8 58V10l28 48" class="line" stroke="#17201d"/>
+      <path d="M36 58 64 10" class="line" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross" stroke="#246a4b"/>
+      <path d="M64 10v48" class="line" stroke="#d76532"/>
+      <circle cx="8" cy="58" r="6" class="ink"/><circle cx="8" cy="10" r="6" class="ink"/>
+      <circle cx="36" cy="58" r="6" class="green"/><circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+
+    <g id="green-orange-mark">
+      <path d="M8 58V10l28 48 28-48" class="line" stroke="#246a4b"/>
+      <path d="M46.5 40H64" class="cross" stroke="#246a4b"/>
+      <path d="M64 10v48" class="line" stroke="#d76532"/>
+      <circle cx="8" cy="58" r="6" class="green"/><circle cx="8" cy="10" r="6" class="green"/><circle cx="36" cy="58" r="6" class="green"/><circle cx="46.5" cy="40" r="4" class="green"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+
+    <g id="ink-orange-mark">
+      <path d="M8 58V10l28 48 28-48" class="line" stroke="#17201d"/>
+      <path d="M46.5 40H64" class="cross" stroke="#17201d"/>
+      <path d="M64 10v48" class="line" stroke="#d76532"/>
+      <circle cx="8" cy="58" r="6" class="ink"/><circle cx="8" cy="10" r="6" class="ink"/><circle cx="36" cy="58" r="6" class="ink"/><circle cx="46.5" cy="40" r="4" class="ink"/>
+      <circle cx="64" cy="10" r="6" class="orange"/><circle cx="64" cy="58" r="6" class="orange"/>
+    </g>
+
+    <g id="mono-mark">
+      <path d="M8 58V10l28 48 28-48v48" class="line" stroke="currentColor"/>
+      <path d="M46.5 40H64" class="cross" stroke="currentColor"/>
+      <circle cx="8" cy="58" r="6" fill="currentColor"/><circle cx="8" cy="10" r="6" fill="currentColor"/><circle cx="36" cy="58" r="6" fill="currentColor"/><circle cx="46.5" cy="40" r="4" fill="currentColor"/><circle cx="64" cy="10" r="6" fill="currentColor"/><circle cx="64" cy="58" r="6" fill="currentColor"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+  <text x="72" y="72" class="label green">MIMRIS · COLOUR EXPLORATION</text>
+  <text x="72" y="120" class="heading ink">Let the orange I reveal the AI reading</text>
+  <text x="72" y="154" class="body muted">Colour clarifies the shared geometry without adding another stroke: green carries model structure; orange identifies active intelligence.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="632" height="286" rx="28"/>
+    <text x="30" y="44" class="label green">A · RECOMMENDED</text>
+    <text x="30" y="80" class="cardhead ink">Semantic triad</text>
+    <g transform="translate(46 111) scale(1.75)"><use href="#semantic-mark"/></g>
+    <text x="185" y="168" class="word ink">Mimris</text>
+    <text x="30" y="230" class="note muted">Ink M · green A/model · orange I/AI</text>
+    <text x="30" y="254" class="note ink">Clearest separation while retaining one shared graph.</text>
+  </g>
+
+  <g transform="translate(736 202)">
+    <rect class="card" width="632" height="286" rx="28"/>
+    <text x="30" y="44" class="label green">B · BRAND-FORWARD</text>
+    <text x="30" y="80" class="cardhead ink">Knowledge green + AI orange</text>
+    <g transform="translate(46 111) scale(1.75)"><use href="#green-orange-mark"/></g>
+    <text x="185" y="168" class="word ink">Mimris</text>
+    <text x="30" y="230" class="note muted">Green graph · orange I</text>
+    <text x="30" y="254" class="note ink">Warm and distinctive, but less grounded than the ink-led mark.</text>
+  </g>
+
+  <g transform="translate(72 520)">
+    <rect class="card" width="632" height="286" rx="28"/>
+    <text x="30" y="44" class="label green">C · MOST RESTRAINED</text>
+    <text x="30" y="80" class="cardhead ink">Ink structure + orange signal</text>
+    <g transform="translate(46 111) scale(1.75)"><use href="#ink-orange-mark"/></g>
+    <text x="185" y="168" class="word ink">Mimris</text>
+    <text x="30" y="230" class="note muted">Ink graph · orange I</text>
+    <text x="30" y="254" class="note ink">The I is strongest; the A crossbar becomes a quieter discovery.</text>
+  </g>
+
+  <g transform="translate(736 520)">
+    <rect class="card" width="632" height="286" rx="28"/>
+    <text x="30" y="44" class="label green">D · REQUIRED FALLBACK</text>
+    <text x="30" y="80" class="cardhead ink">Monochrome</text>
+    <rect x="30" y="104" width="268" height="112" rx="18" fill="#17201d"/>
+    <g transform="translate(54 127) scale(.95)" style="color:#fffefa"><use href="#mono-mark"/></g>
+    <text x="138" y="169" class="word white">Mimris</text>
+    <rect x="316" y="104" width="286" height="112" rx="18" class="bg"/>
+    <g transform="translate(340 127) scale(.95)" style="color:#17201d"><use href="#mono-mark"/></g>
+    <text x="424" y="169" class="word ink">Mimris</text>
+    <text x="30" y="254" class="note ink">Shape remains complete when colour is unavailable.</text>
+  </g>
+
+  <g transform="translate(72 850)">
+    <circle cx="12" cy="12" r="12" class="ink"/><text x="34" y="17" class="hex ink">INK #17201D</text>
+    <circle cx="222" cy="12" r="12" class="green"/><text x="244" y="17" class="hex green">KNOWLEDGE #246A4B</text>
+    <circle cx="507" cy="12" r="12" class="orange"/><text x="529" y="17" class="hex orange">AI ORANGE #D76532</text>
+  </g>
+  <text x="72" y="916" class="body muted">The orange is intentionally earthy rather than neon, keeping it compatible with Mimris green and the warm public-site surfaces.</text>
+</svg>

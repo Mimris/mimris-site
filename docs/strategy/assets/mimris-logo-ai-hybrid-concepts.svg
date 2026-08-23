@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Mimris AI-integrated open-core M concepts</title>
+  <desc id="desc">Three focused refinements showing AI as a reasoning core, a knowledge transformation, or an explicit AI monogram within the open-core M.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e8}.card{fill:#fffefa;stroke:#17201d;stroke-opacity:.16}.ink{fill:#17201d}.green{fill:#246a4b}.muted{fill:#56605c}.white{fill:#fffefa}.line{fill:none;stroke:currentColor;stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:currentColor;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.node{fill:currentColor}.square{fill:currentColor}.heading{font:800 32px Inter,system-ui,sans-serif;letter-spacing:-1px}.cardhead{font:800 25px Inter,system-ui,sans-serif;letter-spacing:-.7px}.body{font:500 16px Inter,system-ui,sans-serif}.label{font:800 14px Inter,system-ui,sans-serif;letter-spacing:1.8px}.note{font:650 13.5px Inter,system-ui,sans-serif}.word{font:800 36px Inter,system-ui,sans-serif;letter-spacing:-1.1px}
+    </style>
+
+    <g id="reasoning-core">
+      <path class="line" d="M8 58V10l17 28 11 11 11-11 17-28v48"/>
+      <path class="line" d="m36 27 11 11-11 11-11-11Z"/>
+      <circle class="node" cx="8" cy="10" r="6.5"/><circle class="node" cx="8" cy="58" r="6.5"/>
+      <circle class="node" cx="64" cy="10" r="6.5"/><circle class="node" cx="64" cy="58" r="6.5"/>
+      <circle class="node" cx="25" cy="38" r="5"/><circle class="node" cx="47" cy="38" r="5"/>
+      <circle cx="36" cy="38" r="4.5" fill="#246a4b"/>
+    </g>
+
+    <g id="transformation-core">
+      <path class="line" d="M8 58V10l17 28 11 11 11-11 17-28v48"/>
+      <path class="line" d="m36 27 11 11-11 11-11-11Z"/>
+      <circle class="node" cx="8" cy="10" r="6.5"/><circle class="node" cx="8" cy="58" r="6.5"/>
+      <circle class="node" cx="25" cy="38" r="5"/>
+      <rect class="square" x="57.5" y="3.5" width="13" height="13" rx="2.5"/>
+      <rect class="square" x="57.5" y="51.5" width="13" height="13" rx="2.5"/>
+      <rect class="square" x="42" y="33" width="10" height="10" rx="2"/>
+      <circle cx="36" cy="38" r="4.5" fill="#246a4b"/>
+    </g>
+
+    <g id="literal-ai">
+      <path class="line" d="M8 58V10l18 28 10 11 10-11 18-28v48"/>
+      <circle class="node" cx="8" cy="10" r="6.5"/><circle class="node" cx="8" cy="58" r="6.5"/>
+      <circle class="node" cx="64" cy="10" r="6.5"/><circle class="node" cx="64" cy="58" r="6.5"/>
+      <path d="M27 44l8-17 8 17M30.5 37.5h9" class="thin" style="color:#246a4b"/>
+      <path d="M50 31v13" class="thin" style="color:#246a4b"/>
+      <circle cx="50" cy="25" r="3.5" fill="#246a4b"/>
+    </g>
+  </defs>
+
+  <rect class="bg" width="1440" height="960"/>
+  <text x="72" y="72" class="label green">MIMRIS · AI-INTEGRATED REFINEMENT</text>
+  <text x="72" y="118" class="heading ink">Let AI activate the knowledge model</text>
+  <text x="72" y="151" class="body muted">The M remains the brand silhouette. The open model remains the idea. These variants test how explicitly AI should appear inside that system.</text>
+
+  <g transform="translate(72 202)">
+    <rect class="card" width="410" height="654" rx="28"/>
+    <text x="30" y="45" class="label green">A · RECOMMENDED</text>
+    <text x="30" y="84" class="cardhead ink">Reasoning core</text>
+    <text x="30" y="113" class="body muted">AI as an active point inside the model.</text>
+    <g transform="translate(128 159) scale(2.15)" style="color:#17201d"><use href="#reasoning-core"/></g>
+    <g transform="translate(62 348) scale(.82)" style="color:#17201d"><use href="#reasoning-core"/></g>
+    <text x="142" y="395" class="word ink">Mimris</text>
+    <line x1="30" y1="440" x2="380" y2="440" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="30" y="478" class="note green">WHY IT WORKS</text>
+    <text x="30" y="507" class="note muted">The centre suggests inference, attention, or an</text>
+    <text x="30" y="529" class="note muted">agent using structured knowledge. The mark still</text>
+    <text x="30" y="551" class="note muted">works when the accent becomes one colour.</text>
+    <text x="30" y="590" class="note ink">Risk: the dot can feel generic unless the open</text>
+    <text x="30" y="612" class="note ink">diamond and M remain visibly dominant.</text>
+  </g>
+
+  <g transform="translate(515 202)">
+    <rect class="card" width="410" height="654" rx="28"/>
+    <text x="30" y="45" class="label green">B · MORE SEMANTIC</text>
+    <text x="30" y="84" class="cardhead ink">Knowledge transformation</text>
+    <text x="30" y="113" class="body muted">Inputs become structured outputs through AI.</text>
+    <g transform="translate(128 159) scale(2.15)" style="color:#17201d"><use href="#transformation-core"/></g>
+    <g transform="translate(62 348) scale(.82)" style="color:#17201d"><use href="#transformation-core"/></g>
+    <text x="142" y="395" class="word ink">Mimris</text>
+    <line x1="30" y1="440" x2="380" y2="440" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="30" y="478" class="note green">WHY IT WORKS</text>
+    <text x="30" y="507" class="note muted">Round knowledge inputs become square structured</text>
+    <text x="30" y="529" class="note muted">outputs. It expresses Mimris as usable modelling</text>
+    <text x="30" y="551" class="note muted">context for AI rather than an AI effect.</text>
+    <text x="30" y="590" class="note ink">Risk: mixed node shapes add asymmetry and may</text>
+    <text x="30" y="612" class="note ink">need explanation before the meaning is understood.</text>
+  </g>
+
+  <g transform="translate(958 202)">
+    <rect class="card" width="410" height="654" rx="28"/>
+    <text x="30" y="45" class="label green">C · EXPLICIT BOUNDARY TEST</text>
+    <text x="30" y="84" class="cardhead ink">Hidden AI monogram</text>
+    <text x="30" y="113" class="body muted">The letters A and I live inside the M.</text>
+    <g transform="translate(128 159) scale(2.15)" style="color:#17201d"><use href="#literal-ai"/></g>
+    <g transform="translate(62 348) scale(.82)" style="color:#17201d"><use href="#literal-ai"/></g>
+    <text x="142" y="395" class="word ink">Mimris</text>
+    <line x1="30" y1="440" x2="380" y2="440" stroke="#17201d" stroke-opacity=".14"/>
+    <text x="30" y="478" class="note green">WHY IT WORKS</text>
+    <text x="30" y="507" class="note muted">It makes the AI association immediate and creates</text>
+    <text x="30" y="529" class="note muted">a discoverable monogram inside the initial.</text>
+    <text x="30" y="568" class="note ink">Risk: it is busiest at 24 px, weakens the open-model</text>
+    <text x="30" y="590" class="note ink">idea, and may date the umbrella brand by making</text>
+    <text x="30" y="612" class="note ink">today’s technology label too literal.</text>
+  </g>
+
+  <text x="72" y="910" class="body ink">Recommended principle: Mimris is the durable knowledge system; AI is the active intelligence operating within it.</text>
+</svg>

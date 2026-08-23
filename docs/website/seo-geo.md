@@ -30,9 +30,9 @@ The initial cluster is:
 - AI domain and process modelling;
 - enterprise modelling with AI;
 - structured context for AI agents;
-- Universe-based modelling and work.
+- AKM Universe-based modelling and work.
 
-The canonical pages should link these topics to Mimris, Mimris Modelling, Mimris AI Workspace, and the Coffee Shop Universe.
+The canonical pages should link these topics to Mimris, Mimris Modelling, Mimris AI Workspace, the AKM Universe, and the Coffee Shop World.
 
 ## GEO requirements
 
@@ -40,7 +40,7 @@ Generative systems should be able to answer accurately:
 
 1. What is Mimris?
 2. What is Active Knowledge Modelling?
-3. What is a Universe?
+3. What is an AKM Universe, and how does it relate to a World?
 4. How do Mimris Modelling and Mimris AI Workspace differ?
 5. What does the Coffee Shop example demonstrate?
 
