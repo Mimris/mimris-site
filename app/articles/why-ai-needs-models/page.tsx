@@ -117,7 +117,7 @@ export default function WhyAiNeedsModelsPage() {
             <p className="eyebrow">See the idea in practice</p>
             <h2>Follow the Coffee Shop Universe.</h2>
             <p>Explore one familiar domain across structured modelling and AI-assisted work.</p>
-            <Link className="button button-primary" href="/examples/coffee-shop">Open the guided proof</Link>
+            <Link className="button button-primary" href="/examples/coffee-shop" data-analytics-event="proof_started" data-analytics-destination="coffee-shop-proof">Open the guided proof</Link>
           </aside>
           <AiDisclosure />
         </div>

@@ -108,7 +108,7 @@ export default function Home() {
           <p>
             The Coffee Shop Universe connects people, products, systems, processes, model views, documents, decisions, and work in one familiar example.
           </p>
-          <ArrowLink href="/examples/coffee-shop">Follow the Coffee Shop Universe</ArrowLink>
+          <a className="arrow-link" href="/examples/coffee-shop" data-analytics-event="proof_started" data-analytics-destination="coffee-shop-proof">Follow the Coffee Shop Universe <span aria-hidden="true">↗</span></a>
         </div>
         <ol className="proof-path">
           <li><span>01</span><strong>Describe</strong><small>Make the domain explicit</small></li>
@@ -122,10 +122,10 @@ export default function Home() {
         <p className="eyebrow">A shared world for human and artificial intelligence</p>
         <h2>Give AI more than information. Give it a world to work within.</h2>
         <div className="button-row">
-          <a className="button button-primary" href="https://mimris-ai-workspace.vercel.app">
+          <a className="button button-primary" href="https://mimris-ai-workspace.vercel.app" data-analytics-event="product_demo_clicked" data-analytics-destination="ai-workspace">
             Open the workspace demo
           </a>
-          <a className="button button-secondary" href="https://github.com/Mimris/mimris">
+          <a className="button button-secondary" href="https://github.com/Mimris/mimris" data-analytics-event="source_clicked" data-analytics-destination="mimris-github">
             View Mimris on GitHub
           </a>
         </div>

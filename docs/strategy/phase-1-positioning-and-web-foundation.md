@@ -15,6 +15,8 @@ This repository is the home for the Mimris ecosystem's external communication: p
 
 This specification controls Phase 1. Detailed page, content, analytics, and promotion specifications may be added under `docs/`, but they should remain consistent with this document and [product-architecture.md](./product-architecture.md).
 
+Post-launch measurement and prioritization continue in [Phase 2: Post-launch learning](./phase-2-post-launch-learning.md).
+
 ## 2. Phase 1 objectives
 
 Phase 1 must make it possible for a new visitor to:

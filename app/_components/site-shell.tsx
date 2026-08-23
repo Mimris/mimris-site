@@ -14,7 +14,7 @@ const navigation = [
 export function SiteHeader() {
   return (
     <header className="site-header">
-      <Link className="brand" href="/" aria-label="Mimris home">
+      <Link className="brand" href="/" aria-label="Mimris ecosystem home">
         <span className="brand-mark" aria-hidden="true">
           M
         </span>
@@ -27,7 +27,7 @@ export function SiteHeader() {
           </Link>
         ))}
       </nav>
-      <a className="header-cta" href="https://mimris-ai-workspace.vercel.app">
+      <a className="header-cta" href="https://mimris-ai-workspace.vercel.app" data-analytics-event="product_demo_clicked" data-analytics-destination="ai-workspace">
         Open workspace
       </a>
       <details className="mobile-menu">
@@ -40,7 +40,7 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
-          <a className="mobile-menu-cta" href="https://mimris-ai-workspace.vercel.app">
+          <a className="mobile-menu-cta" href="https://mimris-ai-workspace.vercel.app" data-analytics-event="product_demo_clicked" data-analytics-destination="ai-workspace">
             Open workspace
           </a>
         </div>
@@ -67,8 +67,8 @@ export function SiteFooter() {
         <Link href="/articles">Articles</Link>
         <a href="/press.html">Press kit</a>
         <a href="/metis-legacy.html">From Metis to Mimris</a>
-        <a href={modellingVideoChannel.url}>Modelling videos ↗</a>
-        <a href="https://github.com/Mimris/mimris">GitHub</a>
+        <a href={modellingVideoChannel.url} data-analytics-event="youtube_clicked" data-analytics-destination="modelling-channel">Modelling videos ↗</a>
+        <a href="https://github.com/Mimris/mimris" data-analytics-event="source_clicked" data-analytics-destination="mimris-github">GitHub</a>
       </div>
     </footer>
   );

@@ -18,7 +18,7 @@ export default function ActiveKnowledgeModellingPage() {
         lead={coreDefinitions.akm}
       >
         <div className="button-row">
-          <Link className="button button-primary" href="/examples/coffee-shop">See a Universe in practice</Link>
+          <Link className="button button-primary" href="/examples/coffee-shop" data-analytics-event="proof_started" data-analytics-destination="coffee-shop-proof">See a Universe in practice</Link>
         </div>
       </PageHero>
       <section className="article-section">
