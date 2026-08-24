@@ -20,6 +20,7 @@ Implementation sequencing, release gates, verification, and rollback are defined
 - **Mimris AI Workspace is free to explore and use manually.** Temporary Universes remain free and do not require login.
 - **A free Mimris account saves one Universe to Mimris** and includes a limited Mimris AI allowance.
 - **Mimris Pro saves multiple Universes**, includes an ongoing/larger Mimris AI entitlement or allowance, and unlocks My AI/BYO AI.
+- The initial Pro proposal limits an account to **10 persistent Universes**; temporary Universes remain unlimited.
 - The first **Save Universe** asks the user to sign up, not pay.
 - The primary contextual Pro prompt appears when a Free account attempts to save a second distinct Universe.
 - Signup and checkout must preserve the work already in progress.
@@ -33,7 +34,7 @@ Do not describe browser-local temporary work as cloud-saved, synced, backed up, 
 | Mimris Modelling             | Full; local persistence                                       | Same                | Same                                     |
 | Workspace manual use         | Included                                                      | Included            | Included                                 |
 | Temporary Universes          | Included                                                      | Included            | Included                                 |
-| Persistent Universes         | None                                                          | 1                   | Multiple, to the published service limit |
+| Persistent Universes         | None                                                          | 1                   | Up to 10 initially, to the published service limit |
 | Mimris AI                    | No guaranteed public allowance unless an active offer says so | Limited allowance   | Ongoing/larger allowance                 |
 | My AI / BYO AI               | Not included                                                  | Not included        | Included                                 |
 | User-selected provider/model | Not included                                                  | Not included        | Included                                 |
