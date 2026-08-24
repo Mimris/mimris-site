@@ -79,7 +79,7 @@ Do not send every product visitor directly to checkout. The public journey shoul
 
 ## 7. Pricing disclosure requirements
 
-The current working proposal is a **€9/month early-bird Pro offer**. Treat this as an approved direction, not a complete checkout contract. Before `/pricing` is indexable and checkout is live, approve and verify:
+The current launch proposal is a **€9/month early-bird Pro offer**, limited to the first 100 subscribers or six months, whichever comes first. Subscribers keep the early-bird price while continuously subscribed; it is not a lifetime price. Before `/pricing` is indexable and checkout is live, approve and verify:
 
 - amount, currency, billing interval, renewal wording, and tax treatment;
 - Free and Pro Mimris AI allowance, measurement unit, reset timing, expiry/rollover, and exhaustion behavior;
@@ -89,7 +89,7 @@ The current working proposal is a **€9/month early-bird Pro offer**. Treat thi
 - refund and consumer-right wording;
 - supported countries/regions.
 
-The early-bird offer should state whether it is time-limited or seat-limited, whether subscribers are grandfathered while continuously subscribed, and that it is not a lifetime price. Do not imply an annual price until one is separately approved.
+The current allowance proposal is **25 Mimris AI credits/month on Free** and **500 Mimris AI credits/month on Pro**. Credits reset monthly, do not roll over, and stop Mimris AI requests when exhausted; My AI/BYO AI usage is separately authorized and normally billed by the user’s provider. Do not imply an annual price until one is separately approved.
 
 Price and plan content should come from a single versioned site configuration or server-provided catalog. Structured data, visible copy, checkout, and social/search descriptions must agree.
 
