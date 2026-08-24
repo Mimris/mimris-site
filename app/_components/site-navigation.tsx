@@ -10,6 +10,7 @@ const productLinks = [
 ];
 
 const primaryLinks = [
+  { href: "/pricing", label: "Plans" },
   { href: "/examples/coffee-shop", label: "Demo" },
   { href: "/articles", label: "Articles" },
   { href: "/about", label: "About" },

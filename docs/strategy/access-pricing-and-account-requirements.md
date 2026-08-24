@@ -1,6 +1,6 @@
 # Mimris Public Access, Pricing and Account Requirements
 
-Status: Derived public-site requirements; implementation pending
+Status: Derived public-site requirements; pre-sale access page implemented, commercial values pending
 
 Owner: Mimris Site
 
