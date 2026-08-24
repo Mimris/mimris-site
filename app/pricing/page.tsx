@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "../_components/site-shell";
-
-const workspaceUrl = "https://mimris-ai-workspace.vercel.app";
+import { accessPlans, workspaceUrl } from "@/content/access";
 
 export const metadata: Metadata = {
   title: "Plans and access",
@@ -10,12 +9,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/pricing" },
   robots: { index: false, follow: true },
 };
-
-const plans = [
-  { name: "Modelling", label: "Free, no account required", description: "Create and evolve structured models with local persistence.", accent: "green", items: ["Full modelling functionality", "Save and reopen locally", "Import and export models", "No required sign-in"], href: "/products/modelling", cta: "Explore Modelling" },
-  { name: "Workspace Free", label: "Explore without a login", description: "Use the Workspace manually and keep temporary Universes in the browser.", accent: "coral", items: ["Manual Workspace use", "Temporary Universes", "One persistent Universe after signup", "Limited Mimris AI allowance"], href: workspaceUrl, cta: "Open Workspace" },
-  { name: "Mimris Pro", label: "For ongoing account-backed work", description: "Save multiple Universes and use the broader AI options when the deployed plan is available.", accent: "blue", items: ["Multiple persistent Universes", "Ongoing or larger Mimris AI allowance", "My AI / BYO AI", "User-selected provider authorization"], href: workspaceUrl, cta: "Open Workspace" },
-] as const;
 
 const faqs = [
   ["Do I need an account to start?", "No. Modelling remains local-first, and the Workspace can be explored manually with temporary browser-local Universes."],
@@ -32,7 +25,7 @@ export default function PricingPage() {
         <div className="button-row"><a className="button button-primary" href={workspaceUrl} target="_blank" rel="noreferrer" data-analytics-event="workspace_started" data-analytics-destination="pricing">Open the Workspace ↗</a><Link className="button button-secondary" href="/products/modelling">Explore Modelling</Link></div>
       </PageHero>
       <section className="access-plan-grid" aria-label="Mimris access plans">
-        {plans.map((plan, index) => <article className={`access-plan access-plan-${plan.accent}`} key={plan.name}><span className="card-index">0{index + 1}</span><p className="eyebrow">{plan.label}</p><h2>{plan.name}</h2><p>{plan.description}</p><ul>{plan.items.map((item) => <li key={item}>{item}</li>)}</ul><a className="arrow-link" href={plan.href} target={plan.href.startsWith("http") ? "_blank" : undefined} rel={plan.href.startsWith("http") ? "noreferrer" : undefined}>{plan.cta} <span aria-hidden="true">↗</span></a></article>)}
+        {accessPlans.map((plan, index) => <article className={`access-plan access-plan-${plan.accent}`} key={plan.name}><span className="card-index">0{index + 1}</span><p className="eyebrow">{plan.label}</p><h2>{plan.name}</h2><p>{plan.description}</p><ul>{plan.items.map((item) => <li key={item}>{item}</li>)}</ul><a className="arrow-link" href={plan.href} target={plan.href.startsWith("http") ? "_blank" : undefined} rel={plan.href.startsWith("http") ? "noreferrer" : undefined}>{plan.cta} <span aria-hidden="true">↗</span></a></article>)}
       </section>
       <section className="access-flow-section"><div className="section-heading"><p className="section-number">How access works</p><h2>Login appears at the moment persistence or AI service needs it.</h2></div><ol className="access-flow"><li><span>01</span><strong>Start anonymously</strong><p>Open Modelling or the Workspace without a mandatory launch login.</p></li><li><span>02</span><strong>Save Universe one</strong><p>Signup is the next step, not payment. Existing temporary work carries forward.</p></li><li><span>03</span><strong>Keep working on Free</strong><p>One account-backed Universe and a limited Mimris AI allowance are included.</p></li><li><span>04</span><strong>Upgrade for Universe two</strong><p>Pro is the contextual upgrade for another persistent Universe and My AI/BYO AI.</p></li></ol></section>
       <section className="access-definition-section"><div><p className="section-number">A useful distinction</p><h2>Temporary is browser-local. Persistent is account-backed.</h2></div><div className="access-definition-grid"><div><strong>Temporary Universe</strong><p>Free to create and use. It lives in the browser and may be lost if site data is cleared or you change device, so export is available.</p></div><div><strong>Persistent Universe</strong><p>Saved to your authenticated Mimris account and reopenable according to the Workspace service terms.</p></div></div></section>
