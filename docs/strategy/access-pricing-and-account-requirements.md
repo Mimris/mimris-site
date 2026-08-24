@@ -1,6 +1,6 @@
 # Mimris Public Access, Pricing and Account Requirements
 
-Status: Derived public-site requirements; pre-sale access page implemented, commercial values pending
+Status: Derived public-site requirements; pre-sale access page implemented, €9/month early-bird price agreed, remaining commercial values pending
 
 Owner: Mimris Site
 
@@ -78,7 +78,7 @@ Do not send every product visitor directly to checkout. The public journey shoul
 
 ## 7. Pricing disclosure requirements
 
-Do not publish a placeholder or historical pilot amount as the Pro price. Before `/pricing` is indexable and checkout is live, approve and verify:
+The current working proposal is a **€9/month early-bird Pro offer**. Treat this as an approved direction, not a complete checkout contract. Before `/pricing` is indexable and checkout is live, approve and verify:
 
 - amount, currency, billing interval, renewal wording, and tax treatment;
 - Free and Pro Mimris AI allowance, measurement unit, reset timing, expiry/rollover, and exhaustion behavior;
@@ -87,6 +87,8 @@ Do not publish a placeholder or historical pilot amount as the Pro price. Before
 - payment-failure grace behavior and cancellation effective date;
 - refund and consumer-right wording;
 - supported countries/regions.
+
+The early-bird offer should state whether it is time-limited or seat-limited, whether subscribers are grandfathered while continuously subscribed, and that it is not a lifetime price. Do not imply an annual price until one is separately approved.
 
 Price and plan content should come from a single versioned site configuration or server-provided catalog. Structured data, visible copy, checkout, and social/search descriptions must agree.
 
