@@ -1,0 +1,5 @@
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"COMPUTAS × MIMRIS × EQUINOR","textShapes":13}
+{"kind":"textbox","id":"sh/zadcv2p8","slide":1,"name":"cover-kicker","text":"COMPUTAS × MIMRIS × EQUINOR","textPreview":"COMPUTAS × MIMRIS × EQUINOR","textChars":27,"textLines":1,"bbox":[52,45,520,26]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"name":"cover-date","text":"Draft for Computas presentation · 28 August 2026","textPreview":"Draft for Computas presentation · 28 August 2026","textChars":48,"textLines":1,"bbox":[52,640,520,24]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"Use this as the handoff from process modelling to workplace modelling. It should make IRTV immediately practical for the Computas audience.\n\n[Sources]\n- User-provided Equinor OSDU Seismic Interpretation domain definition, 2026-05-13.\n- IRTV decomposition proposed in the referenced conversation.\n[/Sources]"}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"name":"s9-ph-0","text":"COMPUTAS","textPreview":"COMPUTAS","textChars":8,"textLines":1,"bbox":[68,210,322,32]}
