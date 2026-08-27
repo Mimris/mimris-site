@@ -1,7 +1,7 @@
 # Mimris LinkedIn Launch Package
 
 Status: Article-first launch sequence for approval
-Last updated: 23 August 2026
+Last updated: 27 August 2026
 
 This package turns approved Mimris articles into short LinkedIn posts. Every launch post has one canonical article as its source and destination. LinkedIn introduces the article's central idea; the article provides the complete argument and guides the reader onwards to a concept page, proof, or product.
 
@@ -14,6 +14,7 @@ This package turns approved Mimris articles into short LinkedIn posts. Every lau
 | Coffee Shop World | `/articles/coffee-shop-universe` |
 | Product boundary | `/articles/modelling-and-workspace` |
 | Why AI needs models | `/articles/why-ai-needs-models` |
+| AI-Assisted Task Execution | `/articles/ai-assisted-task-execution` |
 | Can AI Have Consciousness? | `/articles/from-biological-viability-to-artificial-consciousness` |
 
 ## Publication process
@@ -96,7 +97,7 @@ Do not make a LinkedIn post carry a claim that is not supported by its linked Mi
 
 ## Publishing cadence
 
-Publish one post every three to five days. Begin with the ecosystem, establish Active Knowledge Modelling, demonstrate the Coffee Shop World in an AKM Universe, explain the product boundary, then publish “Why AI Needs Models” before introducing exploratory AI commentary.
+Publish one post every three to five days. Begin with the ecosystem, establish Active Knowledge Modelling, demonstrate the Coffee Shop World in an AKM Universe, explain the product boundary, then publish “Why AI Needs Models.” Follow with the AI-Assisted Task Execution series before introducing exploratory AI commentary.
 
 ## Post 1 — Ecosystem launch
 
@@ -150,7 +151,83 @@ Documents remain essential evidence. Models add explicit concepts, relationships
 
 Read the article: https://mimris-site.vercel.app/articles/why-ai-needs-models?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=why_ai_needs_models
 
-## Post 6 — AI News and Commentary: Can AI Have Consciousness?
+## Post 6 — AI-Assisted Task Execution: Generic Task Execution
+
+What happens after you have modelled a process?
+
+In Mimris, the model can become the context for actually performing the work.
+
+**Process → Workplace → Task → AI-Assisted Execution → Result**
+
+The important part is that Task Execution is generic. A Task might create a document, develop a model, perform an analysis, create a diagram, review a result, support a decision, or interact with another system.
+
+The execution pattern remains essentially the same:
+
+**Task → Context → Perform → Result → Review → Complete**
+
+Because the Task belongs to a modelled Workplace, AI can receive relevant process, information, model and document context instead of starting from an isolated prompt.
+
+**The model provides the context. The Task defines the work. AI assists in performing it.**
+
+Read the article: https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=generic_task_execution
+
+#Mimris #AI #ProcessModelling
+
+## Post 7 — AI-Assisted Task Execution: Top-Down + Bottom-Up
+
+A new solution has to answer two different questions:
+
+**What do we want?**
+
+and
+
+**What do we already have?**
+
+Mimris approaches the first top-down:
+
+**Domain → Process → Workplace → Task**
+
+And the second bottom-up:
+
+**Existing systems + data + documents + models + working practices → As-Is**
+
+The future solution emerges between these perspectives.
+
+But there is another bottom-up flow. Once people start performing Tasks, execution tells us what actually happens:
+
+**Task → AI-Assisted Execution → As-Performed → Learning**
+
+So we can connect:
+
+**What exists → What we want → What actually happens**
+
+Read the article: https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=top_down_bottom_up
+
+#Mimris #EnterpriseModelling #AI
+
+## Post 8 — AI-Assisted Task Execution: Model-Driven AI
+
+Much of today's AI starts with a prompt.
+
+But what if AI already understood the work surrounding that prompt?
+
+A Mimris Task can exist within a modelled Workplace with knowledge about the process, Inputs, Controls, expected Outputs, available Mechanisms, Information, Roles, and related documents and models.
+
+Mimris can use this knowledge to assemble the context required for the Task.
+
+**Task + Model-Derived Context + User Request → AI-Assisted Execution**
+
+The same architecture can assist with creating a document, developing a model, analysing information, reviewing an output, or many other kinds of work.
+
+The objective is not simply AI added to process modelling.
+
+It is **model-driven, AI-assisted work**.
+
+Read the article: https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=model_driven_ai
+
+#Mimris #AI #KnowledgeModelling
+
+## Post 9 — AI News and Commentary: Can AI Have Consciousness?
 
 What would an artificial system need before it could be meaningfully compared with a conscious living system?
 
@@ -180,4 +257,7 @@ Read the article: https://mimris-site.vercel.app/articles/from-biological-viabil
 | Coffee Shop World |  |  |  |
 | Product boundary |  |  |  |
 | Why AI needs models |  |  |  |
+| AI-Assisted Task Execution — Generic Task Execution |  |  |  |
+| AI-Assisted Task Execution — Top-Down + Bottom-Up |  |  |  |
+| AI-Assisted Task Execution — Model-Driven AI |  |  |  |
 | Can AI Have Consciousness? |  |  |  |
