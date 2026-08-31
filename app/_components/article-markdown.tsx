@@ -11,6 +11,8 @@ const articleGroups = [
       ["/articles/why-ai-needs-models", "Why AI Needs Models"],
       ["/articles/active-knowledge-modelling", "Active Knowledge Modelling"],
       ["/articles/modelling-and-workspace", "Modelling and Workspace"],
+      ["/articles/ai-assisted-task-execution", "AI-Assisted Task Execution"],
+      ["/articles/when-ai-can-generate-the-software", "When AI Can Generate the Software"],
     ],
   },
   {

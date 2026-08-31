@@ -36,6 +36,7 @@ export function SiteFooter() {
       <div className="footer-links">
         <Link href="/products/modelling">Mimris Modelling</Link>
         <Link href="/products/ai-workspace">Mimris AI Workspace</Link>
+        <Link href="/pricing">Plans and access</Link>
         <Link href="/articles">Articles</Link>
         <a href="/press.html">Press kit</a>
         <a href="/metis-legacy.html">From Metis to Mimris</a>

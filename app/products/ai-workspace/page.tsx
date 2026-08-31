@@ -35,6 +35,7 @@ export default function AiWorkspacePage() {
       <PageHero eyebrow="Mimris AI Workspace" title="Put structured models to work." lead="An AI-enabled environment where an AKM Universe becomes durable context for understanding, planning, performing, and reviewing real work.">
         <div className="button-row"><a className="button button-primary" href="https://mimris-ai-workspace.vercel.app" target="_blank" rel="noreferrer" data-analytics-event="product_demo_clicked" data-analytics-destination="ai-workspace">Open the workspace demo ↗</a><a className="button button-secondary" href="/examples/coffee-shop" data-analytics-event="proof_started" data-analytics-destination="coffee-shop-proof">Follow the guided proof</a></div>
       </PageHero>
+      <section className="access-note access-note-coral"><strong>Explore free before you sign in.</strong><p>Manual Workspace use and temporary Universes remain free. Save your first persistent Universe to create a free account; Pro becomes relevant for a second distinct Universe, larger Mimris AI access, or My AI/BYO AI.</p><a className="arrow-link" href="/pricing">See plans and access <span aria-hidden="true">↗</span></a></section>
       <section className="product-showcase">
         <div className="showcase-copy">
           <p className="section-number">Product architecture</p>

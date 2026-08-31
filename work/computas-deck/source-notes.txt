@@ -1,0 +1,5 @@
+Revision source: Mimris_OSDU_Omega_Equinor_Draft.pptx, created in the referenced conversation.
+Requested change: replace visible Omega partner references and the related presenter-note reference with Computas.
+Follow-up change: slide 6, box 4 now states Process (IDEF0), with Activity model as its explanatory line.
+QA correction: slide 6 final workplace label resized to preserve clean two-line wrapping.
+No new claims or external assets added.

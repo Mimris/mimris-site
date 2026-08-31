@@ -5,7 +5,7 @@ Status: Draft controlling specification
 Owner: Mimris
 
 Phase: 1
-Last updated: 2026-08-21
+Last updated: 2026-08-27
 
 ## 1. Purpose
 
@@ -144,7 +144,7 @@ The repository now uses native Next.js on Vercel as its canonical runtime. It re
 - The ecosystem homepage, concept pages, product pages, Coffee Shop proof, About page, and initial article are published.
 - The Coffee Shop CTA opens the `coffee-shop-generic` Universe in Mimris Modelling with the published IRTV model and End-to-End Store Flow view selected.
 - Markdown editorial sources live under `content/articles/` and are published through the article routes, with grouped article navigation, responsive mobile menus, author bylines, and end-of-article AI-assisted writing notes.
-- The current article set includes the Mimris ecosystem introduction, modelling explainers, Coffee Shop proof, “Why AI Needs Models,” and the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page.
+- The current article set includes the Mimris ecosystem introduction, modelling explainers, Coffee Shop proof, “Why AI Needs Models,” the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page, and “From Process Models to AI-Assisted Task Execution.”
 - Information architecture, SEO/GEO, and analytics briefs live under `docs/website/`.
 - Vercel uses the native Next.js framework preset; Vite, Vinext, and Cloudflare build infrastructure have been removed.
 
@@ -167,6 +167,8 @@ Target public architecture:
 |   |-- /articles/active-knowledge-modelling
 |   |-- /articles/coffee-shop-universe
 |   |-- /articles/modelling-and-workspace
+|   |-- /articles/ai-assisted-task-execution
+|   |-- /articles/when-ai-can-generate-the-software
 |   |-- /articles/from-biological-viability-to-artificial-consciousness
 |   `-- /articles/can-ai-have-consciousness-infographic
 |-- /about
@@ -204,10 +206,28 @@ The first permanent content set is:
 | The Coffee Shop World | Editorial proof of the flagship example |
 | Mimris Modelling and Mimris AI Workspace | Product boundary explainer |
 | From Metis to Mimris | Heritage and credibility |
+| From Process Models to AI-Assisted Task Execution | Generic model-grounded Task Execution across documents, models, analysis, reviews, and other work |
+| When AI Can Generate the Software, the Model Becomes the Asset | AI-assisted software generation, Active Knowledge Modelling, and the model as durable specification |
 | Can AI Have Consciousness? | Exploratory AI News and Commentary article |
 | Consciousness infographic | Separate visual companion at readable scale |
 
 The same source material should support the website, LinkedIn posts, demonstrations, YouTube material, and press references. Promotion should lead back to durable canonical content rather than create disconnected claims.
+
+### Canonical publishing-asset convention
+
+Before creating any article companion content, LinkedIn post, launch copy, social post, infographic source, or other promotional asset, inspect the repository for the existing canonical publishing package and its naming and placement conventions.
+
+- Extend an existing canonical package when one exists; do not create a parallel per-article social-post or launch-package file merely because the expected path is not immediately known.
+- LinkedIn-ready posts associated with Mimris website articles belong in `docs/promotion/linkedin-launch-package.md` unless this specification explicitly establishes a replacement convention.
+- The LinkedIn launch package remains article-first: each post must identify and link back to one approved canonical website article.
+- Infographics and other visual companions belong in `assets/` using descriptive, stable filenames. Each visual must have an identified canonical article or campaign, an approved source file, and accompanying alt text or image description where the publishing channel supports it.
+- Do not leave the only copy of a publishable infographic in a chat, temporary output directory, or generated preview. If the source visual is unavailable locally, request it or regenerate it before publishing; do not reference an inaccessible chat attachment as the production asset.
+- Social copy may recommend a visual, but the launch package must name the asset path and record any required image description so the same approved visual can be reused across LinkedIn, YouTube, X, and the website.
+- If a referenced canonical publishing file appears to exist only in a local working tree and cannot be resolved from the remote repository, stop and request the exact path or synchronize the branch before creating a substitute.
+- New public articles belong in `content/articles/` with the corresponding route under `app/articles/`; strategy and internal planning material remains under `docs/`.
+- Before adding a new publishing asset, inspect adjacent existing content and follow its structure, metadata, disclosure, naming, and publication workflow.
+
+This convention is part of the Phase 1 definition of done: promotional material must extend the established content system rather than create competing sources of truth.
 
 ## 10. Coffee Shop guided proof
 
@@ -280,6 +300,7 @@ Analytics must respect applicable privacy requirements and should not be install
 - positioning, audience, and message hierarchy;
 - canonical information architecture and URL policy;
 - editorial structure separating internal `docs/` from publishable `content/`;
+- canonical publishing-asset convention requiring reuse of the established LinkedIn launch package and other existing publishing structures;
 - initial SEO/GEO and analytics specifications;
 - promotion plan derived from permanent site content.
 
@@ -298,7 +319,7 @@ Analytics must respect applicable privacy requirements and should not be install
 
 - current screenshots or short product demonstrations;
 - one coherent end-to-end Coffee Shop story across the website and products;
-- revised LinkedIn launch package with article-first approval workflow and publication log;
+- revised LinkedIn launch package with article-first approval workflow, visual-asset references, and publication log;
 - initial YouTube/demo outline;
 - documented baseline analytics and launch observations.
 
@@ -330,7 +351,7 @@ Complete canonical metadata, structured data, sitemap, robots policy, `llms.txt`
 
 ### Step 7: Launch the first content cycle — in progress
 
-Approve the article set, derive LinkedIn material from canonical pages using [the launch package](../promotion/linkedin-launch-package.md), verify all public links, and record baseline results. The next publishable sequence starts with the ecosystem, Active Knowledge Modelling, Coffee Shop proof, product boundary, “Why AI Needs Models,” and then the exploratory AI commentary.
+Approve the article set, derive LinkedIn material from canonical pages using [the launch package](../promotion/linkedin-launch-package.md), verify all public links, and record baseline results. Before creating any new promotion file, inspect and extend the existing launch package or other established publishing asset. The publishable sequence includes the ecosystem, Active Knowledge Modelling, Coffee Shop proof, product boundary, “Why AI Needs Models,” “From Process Models to AI-Assisted Task Execution,” and then exploratory AI commentary.
 
 ## 15. Definition of done
 
@@ -360,11 +381,12 @@ Phase 1 is complete when all of the following are true:
 
 - At least one real next-step mechanism is live and measurable.
 - Privacy and analytics behavior are documented and verified.
-- The permanent article set and launch promotion package are published or approved for publication, with AI assistance disclosed without presenting AI as the author.
+- The permanent article set and canonical LinkedIn launch package are published or approved for publication, with no competing per-article promotion packages unless explicitly specified.
+- AI assistance is disclosed without presenting AI as the author.
 - Baseline observations and the prioritized Phase 2 backlog are recorded.
 
 ## 16. Scope boundaries and risks
 
 Phase 1 does not require a full documentation portal, a second large Workspace marketing site, a complete corporate identity, a mature commercial funnel, or implementation of cross-product model synchronization.
 
-The principal risks are blurred product positioning, unexplained specialist vocabulary, parallel static and application architectures, stale demo links, claims that exceed working evidence, and promotion that does not lead to permanent useful content. The deliverables and definition of done above are designed to expose these risks early.
+The principal risks are blurred product positioning, unexplained specialist vocabulary, parallel static and application architectures, stale demo links, claims that exceed working evidence, competing publishing sources of truth, and promotion that does not lead to permanent useful content. The deliverables and definition of done above are designed to expose these risks early.

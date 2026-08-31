@@ -248,7 +248,7 @@ The architecture permits future products, shared services, templates, and AKM Un
 
 Questions that remain outside this Phase 1 decision include:
 
-- packaging and commercial tiers;
+- the approved price, allowance quantities, service limits, launch regions, and timing for the Free/Pro model defined in [access-pricing-and-account-requirements.md](./access-pricing-and-account-requirements.md);
 - identity, permissions, and cross-product synchronization;
 - the technical format and lifecycle of a shared AKM Universe;
 - the timing and shape of reusable modelling packages;

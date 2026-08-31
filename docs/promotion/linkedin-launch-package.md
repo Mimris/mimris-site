@@ -1,19 +1,23 @@
-# Mimris LinkedIn Launch Package
+# Mimris Social Launch Package
 
 Status: Article-first launch sequence for approval
-Last updated: 23 August 2026
+Last updated: 31 August 2026
 
-This package turns approved Mimris articles into short LinkedIn posts. Every launch post has one canonical article as its source and destination. LinkedIn introduces the article's central idea; the article provides the complete argument and guides the reader onwards to a concept page, proof, or product.
+This package turns approved Mimris articles into channel-specific social posts. Every launch post has one canonical article as its source and destination. LinkedIn, YouTube, and X introduce the article's central idea in formats suited to their audiences; the article provides the complete argument and guides the reader onwards to a concept page, proof, or product.
 
 ## Canonical article map
 
 | Post | Canonical article |
 |---|---|
-| Mimris ecosystem | `/articles/mimris-ecosystem` |
+| What Is Mimris? | `/articles/mimris-ecosystem` |
 | Active Knowledge Modelling | `/articles/active-knowledge-modelling` |
+| Mimris Modelling and Mimris AI Workspace | `/articles/modelling-and-workspace` |
+| Why AI Needs Models, Not Just More Documents | `/articles/why-ai-needs-models` |
+| When AI Can Generate the Software, the Model Becomes the Asset | `/articles/when-ai-can-generate-the-software` |
+| Generic Task Execution | `/articles/ai-assisted-task-execution` |
 | Coffee Shop World | `/articles/coffee-shop-universe` |
-| Product boundary | `/articles/modelling-and-workspace` |
-| Why AI needs models | `/articles/why-ai-needs-models` |
+| Top-Down + Bottom-Up | `/articles/ai-assisted-task-execution` |
+| Model-Driven AI | `/articles/ai-assisted-task-execution` |
 | Can AI Have Consciousness? | `/articles/from-biological-viability-to-artificial-consciousness` |
 
 ## Publication process
@@ -83,6 +87,34 @@ The current Vercel Hobby plan measures article visits and UTM traffic, but not t
 - Review results after 24 hours, but wait seven days before drawing conclusions about the launch sequence.
 - Use the seven-day review to improve the next article or its transition to the proof and products; do not rewrite several published pages at once.
 
+## YouTube Community posts and X posts
+
+Use the same article-first workflow for YouTube and X, but do not copy the full LinkedIn text unchanged. Keep the article as the canonical destination and give each channel its own UTM source.
+
+### YouTube Community post
+
+1. Sign in to the SnorresModelBureau channel. See [YouTube's Community posts guide](https://support.google.com/youtube/answer/7124474?hl=en_ID) for the current interface.
+2. Select **Create → Create post**.
+3. Paste the approved YouTube version below and publish or schedule it.
+4. Use a text-and-link post unless a square image variant has been approved. The current Mimris launch cards are landscape and may crop in a YouTube image post.
+5. Open the published post and test the article link.
+
+If **Create post** is unavailable for the channel, use the same copy and link in the description or pinned comment of a relevant modelling video.
+
+### X post
+
+1. Sign in to the Mimris account on X and select **Post**. See [X's posting guide](https://help.x.com/en/using-x/how-to-post) for current limits and controls.
+2. Paste the approved short version below.
+3. Attach the approved launch card and add an image description.
+4. Confirm the preview, link, and character count, then publish or schedule it.
+5. Open the published post and test the article link.
+
+X links are shortened by the platform for character-count purposes. Keep each X version concise; do not paste the longer LinkedIn copy into a standard post.
+
+### Cross-channel publication record
+
+Record each published URL and date in the publication log. Use `linkedin`, `youtube`, and `x` as the respective `utm_source` values. This keeps channel performance separate in Web Analytics while preserving a single article destination.
+
 ## Tool responsibilities
 
 | Tool | Responsibility |
@@ -90,17 +122,23 @@ The current Vercel Hobby plan measures article visits and UTM traffic, but not t
 | Repository and localhost | Drafting, article approval, links, metadata, and build verification |
 | Vercel production | Public canonical article and Web Analytics |
 | LinkedIn | Post composition, publication, comments, and native engagement figures |
+| YouTube | Community post composition, publication, comments, and native engagement figures |
+| X | Short post composition, publication, replies, and native engagement figures |
 | This launch package | Approved copy, canonical mapping, UTM links, and publication log |
 
 Do not make a LinkedIn post carry a claim that is not supported by its linked Mimris article. Reply to useful comments with the canonical article link instead of creating an unsupported follow-up claim.
 
 ## Publishing cadence
 
-Publish one post every three to five days. Begin with the ecosystem, establish Active Knowledge Modelling, demonstrate the Coffee Shop World in an AKM Universe, explain the product boundary, then publish “Why AI Needs Models” before introducing exploratory AI commentary.
+Publish one post every three to five days. Begin with the ecosystem, establish Active Knowledge Modelling, explain the product boundary, then publish “Why AI Needs Models, Not Just More Documents” and “When AI Can Generate the Software, the Model Becomes the Asset.” Continue with the Generic Task Execution theme, demonstrate the Coffee Shop World in an AKM Universe, then follow it with Top-Down + Bottom-Up and Model-Driven AI before introducing exploratory AI commentary.
 
-## Post 1 — Ecosystem launch
+## Post 1 — What Is Mimris?
 
-Mimris is built around a simple idea: **Model the world. Work with it.**
+### LinkedIn version
+
+What is Mimris?
+
+Mimris is built around a simple idea: Model the world. Work with it.
 
 Domain knowledge is spread across documents, conversations, systems, models, and people’s experience. AI can transform fragments of that information, but serious work also needs durable structure: concepts, relationships, decisions, and context that remain connected over time.
 
@@ -108,9 +146,35 @@ Mimris combines graphical modelling with an AI-enabled workspace so models can b
 
 Read the introduction: https://mimris-site.vercel.app/articles/mimris-ecosystem?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=mimris_ecosystem
 
-Recommended media: the approved Mimris social card.
+Publishing note: attach [`assets/mimris-ecosystem-launch-card.png`](../../assets/mimris-ecosystem-launch-card.png). Do not copy this note into LinkedIn.
+
+### YouTube version
+
+What is Mimris?
+
+Mimris connects domain models to AI-assisted work.
+
+The idea is simple: Model the world. Work with it.
+
+Read the introduction: https://mimris-site.vercel.app/articles/mimris-ecosystem?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=mimris_ecosystem
+
+Publishing note: use a text-and-link Community post unless a square image variant is approved.
+
+### X version
+
+What is Mimris?
+
+Model the world. Work with it.
+
+Mimris connects domain models to AI-assisted work, so concepts, relationships, decisions, and context stay connected.
+
+https://mimris-site.vercel.app/articles/mimris-ecosystem?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=mimris_ecosystem
+
+Publishing note: attach the approved launch card and add this image description: “Launch card reading ‘What Is Mimris? Model the world. Work with it.’ A circular diagram connects World, Model, AI, and Work.”
 
 ## Post 2 — Active Knowledge Modelling
+
+### LinkedIn version
 
 Active Knowledge Modelling treats a model as something that stays connected to the world it describes.
 
@@ -118,7 +182,149 @@ The model can be explored, challenged, connected to evidence, used in decisions,
 
 Read the article: https://mimris-site.vercel.app/articles/active-knowledge-modelling?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=active_knowledge_modelling
 
-## Post 3 — Coffee Shop World proof
+Publishing note: attach [`assets/mimris-akm-launch-card.png`](../../assets/mimris-akm-launch-card.png). Do not copy this note into LinkedIn.
+
+### YouTube version
+
+Active Knowledge Modelling treats a model as something that stays connected to the world it describes.
+
+Read the article: https://mimris-site.vercel.app/articles/active-knowledge-modelling?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=active_knowledge_modelling
+
+### X version
+
+Active Knowledge Modelling keeps a model connected to the world it describes—evidence, decisions, and learning included.
+
+https://mimris-site.vercel.app/articles/active-knowledge-modelling?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=active_knowledge_modelling
+
+## Post 3 — Mimris Modelling and Mimris AI Workspace
+
+### LinkedIn version
+
+Mimris Modelling and Mimris AI Workspace belong to one ecosystem, but they have different primary jobs.
+
+Mimris Modelling asks: **What is the world, and how is it structured?**
+
+Mimris AI Workspace asks: **How do we run the AKM method within the world we have modelled?**
+
+Mimris Modelling is the specialist environment for visualizing, managing, inspecting, and evolving model semantics, objects, relationships, diagrams, and views. Mimris AI Workspace runs the Active Knowledge Modelling method through documents, evidence, processes, tasks, decisions, deliverables, and AI-assisted work.
+
+The boundary is practical, not a hard wall: modelling capabilities primarily change model structure, while workspace capabilities primarily help people and AI perform work using models and context.
+
+Read how the responsibilities divide: https://mimris-site.vercel.app/articles/modelling-and-workspace?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=modelling_and_workspace
+
+Recommended media: the approved Mimris Modelling screenshot.
+
+### YouTube version
+
+Mimris Modelling visualizes and manages model structure. Mimris AI Workspace runs AKM in day-to-day work, turning models into context for documents, processes, tasks, decisions, deliverables, and AI-assisted collaboration.
+
+The boundary is about primary responsibility, not separation: work in the workspace can lead to new questions, decisions, and model changes.
+
+Read the product boundary: https://mimris-site.vercel.app/articles/modelling-and-workspace?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=modelling_and_workspace
+
+### X version
+
+Mimris Modelling asks: “What is the world, and how is it structured?”
+
+Mimris AI Workspace asks: “How do we run AKM within the world we have modelled?”
+
+They are complementary, not competing products.
+
+https://mimris-site.vercel.app/articles/modelling-and-workspace?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=modelling_and_workspace
+
+## Post 4 — Why AI Needs Models, Not Just More Documents
+
+### LinkedIn version
+
+AI can process more information than any person. But access to information is not the same as understanding the world that information describes.
+
+Documents remain essential evidence. Models add explicit concepts, relationships, constraints, and provenance that people and AI can inspect and use together.
+
+Read the article: https://mimris-site.vercel.app/articles/why-ai-needs-models?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=why_ai_needs_models
+
+### YouTube version
+
+AI can process information, but information is not the same as a shared model of the world it describes.
+
+Read the article: https://mimris-site.vercel.app/articles/why-ai-needs-models?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=why_ai_needs_models
+
+### X version
+
+AI can read more documents. Models make concepts, relationships, constraints, and provenance explicit.
+
+https://mimris-site.vercel.app/articles/why-ai-needs-models?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=why_ai_needs_models
+
+## Post 5 — When AI Can Generate the Software, the Model Becomes the Asset
+
+### LinkedIn version
+
+AI is changing the build-vs-buy decision.
+
+McKinsey reports that 32% of organisations have already decided not to buy at least one software product or feature because agentic coding tools made an internal build feasible.
+
+That changes where the value sits. If AI can increasingly generate the implementation, the scarce asset becomes the model of what should be built.
+
+This is where I see a strong role for Active Knowledge Modelling (AKM). AKM can describe:
+
+**Domain → Processes → Roles → Information → Tasks → Rules → Outcomes**
+
+From that, we can increasingly derive:
+
+**Specification → AI Agent Tasks → Generated Application → Verification**
+
+The model becomes the durable asset. The application becomes an implementation of that model.
+
+Software development moves upward—from producing code toward understanding the domain, modelling the work, specifying intent, and verifying outcomes.
+
+Read the article: https://mimris-site.vercel.app/articles/when-ai-can-generate-the-software?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=model_as_asset
+
+### YouTube version
+
+AI is changing the build-vs-buy decision. If AI can increasingly generate the implementation, the scarce asset becomes the model of what should be built.
+
+Active Knowledge Modelling can connect domain knowledge to processes, tasks, AI-assisted implementation, and verification.
+
+Read the article: https://mimris-site.vercel.app/articles/when-ai-can-generate-the-software?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=model_as_asset
+
+### X version
+
+AI can increasingly generate software implementation.
+
+The durable asset may be the model of what should be built:
+
+**Model → Specification → AI Agents → Application → Verification**
+
+https://mimris-site.vercel.app/articles/when-ai-can-generate-the-software?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=model_as_asset
+
+## Post 6 — Generic Task Execution
+
+### LinkedIn version
+
+What makes a task suitable for AI-assisted execution?
+
+In Mimris, a Task is a generic unit of work that produces or modifies something. It can create a document, change a model, perform an analysis, draw a diagram, review a result, or support a decision. The execution pattern stays consistent: assemble context, perform the work, produce a result, review it, and complete the Task.
+
+Read the article: https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=generic_task_execution
+
+### YouTube version
+
+Task Execution in Mimris is generic: the same pattern can create documents, models, analyses, diagrams, reviews, and decisions.
+
+The model provides context. The Task defines the work. AI assists in performing it.
+
+Read the article: https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=generic_task_execution
+
+### X version
+
+Task Execution does not need a separate architecture for every kind of work.
+
+In Mimris, one generic Task pattern can create documents, models, analyses, diagrams, and reviews—with model-grounded context and human review.
+
+https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=generic_task_execution
+
+## Post 7 — Coffee Shop World proof
+
+### LinkedIn version
 
 A coffee shop is a useful test of model-driven work because everyone understands the domain.
 
@@ -128,29 +334,81 @@ Read the proof story: https://mimris-site.vercel.app/articles/coffee-shop-univer
 
 Recommended media: an approved Coffee Shop or workspace screenshot.
 
-## Post 4 — Product boundary
+### YouTube version
 
-Mimris Modelling and Mimris AI Workspace are complementary products with different jobs.
+The Coffee Shop World is a practical demonstration of model-driven work: customers, products, employees, payment, inventory, information, and work in one connected universe.
 
-Mimris Modelling asks: **What is the world, and how is it structured?**
+Explore the proof story: https://mimris-site.vercel.app/articles/coffee-shop-universe?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=coffee_shop_universe
 
-Mimris AI Workspace asks: **What do we do within the world we have modelled?**
+### X version
 
-One creates and evolves model structure. The other uses that structure with documents, processes, tasks, decisions, and AI-assisted work.
+What happens when a familiar coffee shop becomes a connected model?
 
-Read how the responsibilities divide: https://mimris-site.vercel.app/articles/modelling-and-workspace?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=modelling_and_workspace
+The Coffee Shop World links people, products, processes, information, and work in one inspectable universe.
 
-Recommended media: the approved Mimris Modelling screenshot.
+https://mimris-site.vercel.app/articles/coffee-shop-universe?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=coffee_shop_universe
 
-## Post 5 — Why AI needs models
+## Post 8 — Top-Down + Bottom-Up
 
-AI can process more information than any person. But access to information is not the same as understanding the world that information describes.
+### LinkedIn version
 
-Documents remain essential evidence. Models add explicit concepts, relationships, constraints, and provenance that people and AI can inspect and use together.
+Model-driven work needs both direction and discovery.
 
-Read the article: https://mimris-site.vercel.app/articles/why-ai-needs-models?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=why_ai_needs_models
+Top-down modelling provides intent: Domain → Process → Workplace → Task. Bottom-up modelling captures existing systems, data, documents, working practices, and models. After execution, results and as-performed knowledge flow back into model improvement.
 
-## Post 6 — AI News and Commentary: Can AI Have Consciousness?
+Mimris connects these flows so Tasks can be grounded in both the work we intend to do and the reality we need to understand.
+
+Read the article: https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=top_down_bottom_up
+
+### YouTube version
+
+Top-down modelling gives work its intent. Bottom-up modelling captures existing reality—and what execution actually teaches us.
+
+Mimris connects Domain → Process → Workplace → Task with systems, data, documents, practices, results, and model improvement.
+
+Read the article: https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=top_down_bottom_up
+
+### X version
+
+Top-down: Domain → Process → Workplace → Task.
+
+Bottom-up: systems, data, documents, practices, and execution results feed knowledge back into the model.
+
+Mimris connects both directions.
+
+https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=top_down_bottom_up
+
+## Post 9 — Model-Driven AI
+
+### LinkedIn version
+
+AI assistance becomes more useful when the work has a modelled context.
+
+In Mimris, a Task belongs to a Workplace derived from a process model. Its execution context can include the Task, process and ICOMs, Workplace, relevant information, models, documents, and the user’s request. The model provides the context; the Task defines the work; AI assists in performing it.
+
+Read the article: https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=model_driven_ai
+
+### YouTube version
+
+Model-driven AI starts with context.
+
+Mimris assembles Task Execution context from the process, ICOMs, Workplace, information, models, documents, and the user’s request—so AI assists within the work being performed.
+
+Read the article: https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=model_driven_ai
+
+### X version
+
+The model provides the context.
+The Task defines the work.
+AI assists in performing it.
+
+That is the foundation of model-driven, AI-assisted Task Execution in Mimris.
+
+https://mimris-site.vercel.app/articles/ai-assisted-task-execution?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=model_driven_ai
+
+## Post 10 — AI News and Commentary: Can AI Have Consciousness?
+
+### LinkedIn version
 
 What would an artificial system need before it could be meaningfully compared with a conscious living system?
 
@@ -159,6 +417,19 @@ One exploratory hypothesis begins with viability: internal state, sensing, predi
 This is an exploratory essay, not a claim that an AI system is conscious or that the scientific questions are settled.
 
 Read the article: https://mimris-site.vercel.app/articles/from-biological-viability-to-artificial-consciousness?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=ai_consciousness
+
+### YouTube version
+
+Could artificial consciousness begin with viability—sensing, prediction, action, feedback, memory, and a continuing self-model? This is an exploratory essay, not a settled scientific conclusion.
+
+Read it here: https://mimris-site.vercel.app/articles/from-biological-viability-to-artificial-consciousness?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=ai_consciousness
+
+### X version
+
+Could artificial consciousness begin with viability: sensing, prediction, action, feedback, memory, and a continuing self-model?
+
+An exploratory essay, not a settled conclusion:
+https://mimris-site.vercel.app/articles/from-biological-viability-to-artificial-consciousness?utm_source=x&utm_medium=social&utm_campaign=public_launch&utm_content=ai_consciousness
 
 ## Review checklist
 
@@ -173,11 +444,15 @@ Read the article: https://mimris-site.vercel.app/articles/from-biological-viabil
 
 ## Publication log
 
-| Post | LinkedIn URL | Published date | Notes |
-|---|---|---|---|
-| Ecosystem launch |  |  |  |
-| Active Knowledge Modelling |  |  |  |
-| Coffee Shop World |  |  |  |
-| Product boundary |  |  |  |
-| Why AI needs models |  |  |  |
-| Can AI Have Consciousness? |  |  |  |
+| Post | LinkedIn URL | YouTube URL | X URL | Published date | Notes |
+|---|---|---|---|---|---|
+| What Is Mimris? | https://www.linkedin.com/posts/snorre-fossland-1b0897307_what-is-mimris-mimris-is-built-around-a-activity-7497309490845958144-curm | https://www.youtube.com/post/UgkxCiugxcpVipBqSEBIFIQT6ut7GYOMYxj2 | https://x.com/FosslandSnorre/status/2091555991150047677 | 23 August 2026 | LinkedIn published from Snorre Fossland’s account; link supplied for the launch log. |
+| Active Knowledge Modelling | https://www.linkedin.com/posts/snorre-fossland-1b0897307_active-knowledge-modelling-treats-a-model-share-7497985233284165633-Q-t6/ | https://www.youtube.com/post/UgkxdkAMVp1zuzVslKS0tL1RPK-sVzDn3OVT |  | 25 August 2026 | LinkedIn published from Snorre Fossland’s account; tracking parameters removed from the permanent URL. |
+| Mimris Modelling and Mimris AI Workspace | https://www.linkedin.com/feed/update/urn:li:activity:7498835091377348608/ |  |  |  |  |
+| Why AI Needs Models, Not Just More Documents |  |  |  |  |  |
+| When AI Can Generate the Software, the Model Becomes the Asset |  |  |  |  |  |
+| Generic Task Execution |  |  |  |  |  |
+| Coffee Shop World |  |  |  |  |  |
+| Top-Down + Bottom-Up |  |  |  |  |  |
+| Model-Driven AI |  |  |  |  |  |
+| Can AI Have Consciousness? |  |  |  |  |  |
