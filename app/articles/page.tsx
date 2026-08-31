@@ -32,6 +32,14 @@ export default function ArticlesPage() {
               </div>
               <ArrowLink href="/articles/ai-assisted-task-execution">Read the article</ArrowLink>
             </article>
+            <article className="editorial-card">
+              <div>
+                <p className="eyebrow">AI and Active Knowledge Modelling · 8 minute read</p>
+                <h2>When AI Can Generate the Software, the Model Becomes the Asset</h2>
+                <p>As implementation becomes easier to generate, structured knowledge about the domain, work, rules, and outcomes becomes more valuable.</p>
+              </div>
+              <ArrowLink href="/articles/when-ai-can-generate-the-software">Read the article</ArrowLink>
+            </article>
             <div className="article-link-grid">
               <Link href="/articles/why-ai-needs-models"><h2>Why AI Needs Models</h2><p>Why useful AI work depends on explicit concepts, relationships, rules, and context.</p></Link>
               <Link href="/articles/mimris-ecosystem"><h2>What Is Mimris?</h2><p>Meet the ecosystem for modelling a world and putting it to work.</p></Link>
