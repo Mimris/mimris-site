@@ -43,6 +43,7 @@ export default function ArticlesPage() {
             <div className="article-link-grid">
               <Link href="/articles/why-ai-needs-models"><h2>Why AI Needs Models</h2><p>Why useful AI work depends on explicit concepts, relationships, rules, and context.</p></Link>
               <Link href="/articles/mimris-ecosystem"><h2>What Is Mimris?</h2><p>Meet the ecosystem for modelling a world and putting it to work.</p></Link>
+              <Link href="/articles/why-ai-needs-models"><h2>Why AI Needs Models</h2><p>Why useful AI work depends on explicit concepts, relationships, rules, and context.</p></Link>
               <Link href="/articles/active-knowledge-modelling"><h2>What Is Active Knowledge Modelling?</h2><p>Understand the approach behind Mimris.</p></Link>
               <Link href="/articles/coffee-shop-universe"><h2>The Coffee Shop World</h2><p>Follow a familiar world from model to work inside an AKM Universe.</p></Link>
               <Link href="/articles/modelling-and-workspace"><h2>Two Complementary Jobs</h2><p>See how the products divide responsibility.</p></Link>

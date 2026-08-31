@@ -7,6 +7,7 @@ const articleGroups = [
     label: "Active Knowledge Modelling",
     links: [
       ["/articles/mimris-ecosystem", "What Is Mimris?"],
+      ["/articles/ai-assisted-task-execution", "AI-Assisted Task Execution"],
       ["/articles/why-ai-needs-models", "Why AI Needs Models"],
       ["/articles/active-knowledge-modelling", "Active Knowledge Modelling"],
       ["/articles/modelling-and-workspace", "Modelling and Workspace"],
