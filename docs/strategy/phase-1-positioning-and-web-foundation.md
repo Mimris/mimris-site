@@ -168,6 +168,7 @@ Target public architecture:
 |   |-- /articles/coffee-shop-universe
 |   |-- /articles/modelling-and-workspace
 |   |-- /articles/ai-assisted-task-execution
+|   |-- /articles/when-ai-can-generate-the-software
 |   |-- /articles/from-biological-viability-to-artificial-consciousness
 |   `-- /articles/can-ai-have-consciousness-infographic
 |-- /about
@@ -206,6 +207,7 @@ The first permanent content set is:
 | Mimris Modelling and Mimris AI Workspace | Product boundary explainer |
 | From Metis to Mimris | Heritage and credibility |
 | From Process Models to AI-Assisted Task Execution | Generic model-grounded Task Execution across documents, models, analysis, reviews, and other work |
+| When AI Can Generate the Software, the Model Becomes the Asset | AI-assisted software generation, Active Knowledge Modelling, and the model as durable specification |
 | Can AI Have Consciousness? | Exploratory AI News and Commentary article |
 | Consciousness infographic | Separate visual companion at readable scale |
 
@@ -218,6 +220,9 @@ Before creating any article companion content, LinkedIn post, launch copy, socia
 - Extend an existing canonical package when one exists; do not create a parallel per-article social-post or launch-package file merely because the expected path is not immediately known.
 - LinkedIn-ready posts associated with Mimris website articles belong in `docs/promotion/linkedin-launch-package.md` unless this specification explicitly establishes a replacement convention.
 - The LinkedIn launch package remains article-first: each post must identify and link back to one approved canonical website article.
+- Infographics and other visual companions belong in `assets/` using descriptive, stable filenames. Each visual must have an identified canonical article or campaign, an approved source file, and accompanying alt text or image description where the publishing channel supports it.
+- Do not leave the only copy of a publishable infographic in a chat, temporary output directory, or generated preview. If the source visual is unavailable locally, request it or regenerate it before publishing; do not reference an inaccessible chat attachment as the production asset.
+- Social copy may recommend a visual, but the launch package must name the asset path and record any required image description so the same approved visual can be reused across LinkedIn, YouTube, X, and the website.
 - If a referenced canonical publishing file appears to exist only in a local working tree and cannot be resolved from the remote repository, stop and request the exact path or synchronize the branch before creating a substitute.
 - New public articles belong in `content/articles/` with the corresponding route under `app/articles/`; strategy and internal planning material remains under `docs/`.
 - Before adding a new publishing asset, inspect adjacent existing content and follow its structure, metadata, disclosure, naming, and publication workflow.
@@ -314,7 +319,7 @@ Analytics must respect applicable privacy requirements and should not be install
 
 - current screenshots or short product demonstrations;
 - one coherent end-to-end Coffee Shop story across the website and products;
-- revised LinkedIn launch package with article-first approval workflow and publication log;
+- revised LinkedIn launch package with article-first approval workflow, visual-asset references, and publication log;
 - initial YouTube/demo outline;
 - documented baseline analytics and launch observations.
 
