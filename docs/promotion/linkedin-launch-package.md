@@ -1,7 +1,7 @@
 # Mimris LinkedIn Launch Package
 
 Status: Article-first launch sequence for approval
-Last updated: 23 August 2026
+Last updated: 9 September 2026
 
 This package turns approved Mimris articles into short LinkedIn posts. Every launch post has one canonical article as its source and destination. LinkedIn introduces the article's central idea; the article provides the complete argument and guides the reader onwards to a concept page, proof, or product.
 
@@ -181,6 +181,7 @@ Read the article: https://mimris-site.vercel.app/articles/from-biological-viabil
 | Product boundary |  |  |  |
 | Why AI needs models |  |  |  |
 | Can AI Have Consciousness? |  |  |  |
+| Governed AI execution |  |  | Source-based Meta Muse commentary |
 
 
 ## Post 7 — AI News Commentary: Governed AI Execution
@@ -214,7 +215,7 @@ The future of agent orchestration will depend not only on planning and tool use,
 
 Source: https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse
 
-Recommended media: `assets/mimris-governed-ai-execution-infographic.png`
+Recommended media: `assets/mimris-governed-ai-execution-infographic.jpg`
 
 ### YouTube Community
 
@@ -242,8 +243,9 @@ A separate policy layer should control permissions, credentials, human approval,
 
 For Mimris:
 
-The process model defines what should happen.  
-> The policy layer defines what AI may do.
+The process model defines what should happen.
+
+The policy layer defines what AI may do.
 
 https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse
 
@@ -251,7 +253,7 @@ https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-wit
 
 ### Visual specification
 
-- Asset: `assets/mimris-governed-ai-execution-infographic.png`
+- Asset: `assets/mimris-governed-ai-execution-infographic.jpg`
 - Subject: Mimris model → ContextPack → AI agent → independent policy layer → human approval and controlled execution.
 - Key message: “The model defines what should happen. The policy layer defines what AI may do.”
 - The policy layer is explicitly labelled “Future Mimris direction”.
