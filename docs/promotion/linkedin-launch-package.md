@@ -310,6 +310,31 @@ Meta AI Research — [How We Built Safety Into Muse](https://research.meta.ai/bl
 
 </details>
 
+<details>
+<summary><strong>Post 8 — When AI Can Generate the Software</strong></summary>
+
+AI is changing the build-vs-buy decision.
+
+McKinsey reports that 32% of organisations have already decided not to buy at least one software product or feature because agentic coding tools made an internal build feasible.
+
+That changes where the value sits. If AI can increasingly generate the implementation, the scarce asset becomes the model of what should be built.
+
+This is where I see a strong role for Active Knowledge Modelling (AKM). AKM can describe:
+
+**Domain → Processes → Roles → Information → Tasks → Rules → Outcomes**
+
+From that, we can increasingly derive:
+
+**Specification → AI Agent Tasks → Generated Application → Verification**
+
+The model becomes the durable asset. The application becomes an implementation of that model.
+
+Software development moves upward—from producing code toward understanding the domain, modelling the work, specifying intent, and verifying outcomes.
+
+Read the article: [https://lnkd.in/eVbwX3zZI](https://lnkd.in/eVbwX3zZI)
+
+</details>
+
 ## Review checklist
 
 - Confirm the linked article is approved and returns HTTP 200.
@@ -332,4 +357,5 @@ Meta AI Research — [How We Built Safety Into Muse](https://research.meta.ai/bl
 | Why AI needs models |  |  |  |
 | Can AI Have Consciousness? |  |  |  |
 | Governed AI execution |  |  | Source-based Meta Muse commentary |
+| When AI Can Generate the Software | https://lnkd.in/eVbwX3zZI | 2026-09-08 | Published LinkedIn post |
 
