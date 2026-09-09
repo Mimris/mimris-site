@@ -18,7 +18,9 @@ This package turns approved Mimris articles into short LinkedIn posts. Every lau
 
 ## Publication process
 
-### 1. Approve the canonical article
+<details>
+<summary><strong>1. Approve the canonical article</strong></summary>
+
 
 1. Draft or revise the article in `content/articles/` and its route under `app/articles/`.
 2. Run the site locally with `pnpm dev -- --port 3002`.
@@ -26,7 +28,12 @@ This package turns approved Mimris articles into short LinkedIn posts. Every lau
 4. Approve the title, lead, argument, links, byline, AI-assisted writing disclosure, mobile layout, and canonical URL.
 5. Confirm that the matching LinkedIn post below contains no claim or terminology that the article does not support.
 
-### 2. Deploy before preparing LinkedIn
+
+</details>
+
+<details>
+<summary><strong>2. Deploy before preparing LinkedIn</strong></summary>
+
 
 1. Run the production build and resolve any failure.
 2. Commit and push the approved article and launch-package changes.
@@ -36,7 +43,12 @@ This package turns approved Mimris articles into short LinkedIn posts. Every lau
 
 Never publish LinkedIn first and plan to deploy the destination afterwards. The public article must be the approved source at the moment the social post becomes visible.
 
-### 3. Prepare the LinkedIn draft
+
+</details>
+
+<details>
+<summary><strong>3. Prepare the LinkedIn draft</strong></summary>
+
 
 1. Open LinkedIn and start a new post from Snorre Fossland's account.
 2. Copy the matching approved post from this document.
@@ -48,7 +60,12 @@ Never publish LinkedIn first and plan to deploy the destination afterwards. The 
 
 The website carries the AI-assisted writing disclosure. The LinkedIn post should not present AI as the author or add a different authorship claim.
 
-### 4. Perform the final pre-publication check
+
+</details>
+
+<details>
+<summary><strong>4. Perform the final pre-publication check</strong></summary>
+
 
 - Open the UTM-tagged link in a new tab and confirm that it reaches the intended production article.
 - Confirm that there is exactly one canonical destination in the post.
@@ -56,7 +73,12 @@ The website carries the AI-assisted writing disclosure. The LinkedIn post should
 - Read the complete post once as it will appear to another person.
 - Publish manually for the first launch post so its final appearance can be checked immediately. Later posts may be scheduled after this workflow is proven.
 
-### 5. Publish and record
+
+</details>
+
+<details>
+<summary><strong>5. Publish and record</strong></summary>
+
 
 1. Publish the post.
 2. Open the published post and test its article link.
@@ -64,7 +86,12 @@ The website carries the AI-assisted writing disclosure. The LinkedIn post should
 4. Record the publication date and time, image used, and any intentional change from the approved copy.
 5. Do not substantially edit the post after publication unless correcting an actual error. Record any correction in the notes.
 
-### 6. Verify measurement
+
+</details>
+
+<details>
+<summary><strong>6. Verify measurement</strong></summary>
+
 
 Check Vercel Web Analytics after data has had time to appear:
 
@@ -75,13 +102,21 @@ Check Vercel Web Analytics after data has had time to appear:
 
 The current Vercel Hobby plan measures article visits and UTM traffic, but not the custom outbound-click events reserved for Pro. Treat visits to the article and progression to later internal pages as the initial evidence.
 
-### 7. Follow up and learn
+
+</details>
+
+<details>
+<summary><strong>7. Follow up and learn</strong></summary>
+
 
 - Respond to useful LinkedIn comments in Snorre's own voice.
 - Use the canonical article link when a response needs supporting context.
 - Record recurring questions, misunderstandings, or requests as qualitative evidence.
 - Review results after 24 hours, but wait seven days before drawing conclusions about the launch sequence.
 - Use the seven-day review to improve the next article or its transition to the proof and products; do not rewrite several published pages at once.
+
+</details>
+
 
 ## Tool responsibilities
 
