@@ -98,7 +98,9 @@ Do not make a LinkedIn post carry a claim that is not supported by its linked Mi
 
 Publish one post every three to five days. Begin with the ecosystem, establish Active Knowledge Modelling, demonstrate the Coffee Shop World in an AKM Universe, explain the product boundary, then publish “Why AI Needs Models” before introducing exploratory AI commentary.
 
-## Post 1 — Ecosystem launch
+<details>
+<summary><strong>Post 1 — Ecosystem launch</strong></summary>
+
 
 Mimris is built around a simple idea: **Model the world. Work with it.**
 
@@ -110,7 +112,12 @@ Read the introduction: https://mimris-site.vercel.app/articles/mimris-ecosystem?
 
 Recommended media: the approved Mimris social card.
 
-## Post 2 — Active Knowledge Modelling
+
+</details>
+
+<details>
+<summary><strong>Post 2 — Active Knowledge Modelling</strong></summary>
+
 
 Active Knowledge Modelling treats a model as something that stays connected to the world it describes.
 
@@ -118,7 +125,12 @@ The model can be explored, challenged, connected to evidence, used in decisions,
 
 Read the article: https://mimris-site.vercel.app/articles/active-knowledge-modelling?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=active_knowledge_modelling
 
-## Post 3 — Coffee Shop World proof
+
+</details>
+
+<details>
+<summary><strong>Post 3 — Coffee Shop World proof</strong></summary>
+
 
 A coffee shop is a useful test of model-driven work because everyone understands the domain.
 
@@ -128,7 +140,12 @@ Read the proof story: https://mimris-site.vercel.app/articles/coffee-shop-univer
 
 Recommended media: an approved Coffee Shop or workspace screenshot.
 
-## Post 4 — Product boundary
+
+</details>
+
+<details>
+<summary><strong>Post 4 — Product boundary</strong></summary>
+
 
 Mimris Modelling and Mimris AI Workspace are complementary products with different jobs.
 
@@ -142,7 +159,12 @@ Read how the responsibilities divide: https://mimris-site.vercel.app/articles/mo
 
 Recommended media: the approved Mimris Modelling screenshot.
 
-## Post 5 — Why AI needs models
+
+</details>
+
+<details>
+<summary><strong>Post 5 — Why AI needs models</strong></summary>
+
 
 AI can process more information than any person. But access to information is not the same as understanding the world that information describes.
 
@@ -150,7 +172,12 @@ Documents remain essential evidence. Models add explicit concepts, relationships
 
 Read the article: https://mimris-site.vercel.app/articles/why-ai-needs-models?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=why_ai_needs_models
 
-## Post 6 — AI News and Commentary: Can AI Have Consciousness?
+
+</details>
+
+<details>
+<summary><strong>Post 6 — AI News and Commentary: Can AI Have Consciousness?</strong></summary>
+
 
 What would an artificial system need before it could be meaningfully compared with a conscious living system?
 
@@ -184,7 +211,12 @@ Read the article: https://mimris-site.vercel.app/articles/from-biological-viabil
 | Governed AI execution |  |  | Source-based Meta Muse commentary |
 
 
-## Post 7 — AI News Commentary: Governed AI Execution
+
+</details>
+
+<details>
+<summary><strong>Post 7 — AI News Commentary: Governed AI Execution</strong></summary>
+
 
 Source development: Meta launched Muse and published its technical approach to agent safety on 8 September 2026.
 
@@ -262,4 +294,7 @@ https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-wit
 ### Source
 
 Meta AI Research — [How We Built Safety Into Muse](https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse)
+
+
+</details>
 
