@@ -311,7 +311,7 @@ Meta AI Research — [How We Built Safety Into Muse](https://research.meta.ai/bl
 </details>
 
 <details>
-<summary><strong>Post 8 — When AI Can Generate the Software</strong></summary>
+<summary><strong>Post 8 — When AI Can Generate the Software, the Enterprise Model Becomes the Asset</strong></summary>
 
 AI is changing the build-vs-buy decision.
 
@@ -331,7 +331,7 @@ The model becomes the durable asset. The application becomes an implementation o
 
 Software development moves upward—from producing code toward understanding the domain, modelling the work, specifying intent, and verifying outcomes.
 
-Read the article: [https://lnkd.in/eVbwX3zZI](https://lnkd.in/eVbwX3zZI)
+Read the article: [https://lnkd.in/eVbwX3zZ](https://lnkd.in/eVbwX3zZ)
 
 </details>
 
@@ -357,5 +357,5 @@ Read the article: [https://lnkd.in/eVbwX3zZI](https://lnkd.in/eVbwX3zZI)
 | Why AI needs models |  |  |  |
 | Can AI Have Consciousness? |  |  |  |
 | Governed AI execution |  |  | Source-based Meta Muse commentary |
-| When AI Can Generate the Software | https://lnkd.in/eVbwX3zZI | 2026-09-08 | Published LinkedIn post |
+| When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
 
