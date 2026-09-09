@@ -181,3 +181,83 @@ Read the article: https://mimris-site.vercel.app/articles/from-biological-viabil
 | Product boundary |  |  |  |
 | Why AI needs models |  |  |  |
 | Can AI Have Consciousness? |  |  |  |
+
+
+## Post 7 — AI News Commentary: Governed AI Execution
+
+Source development: Meta launched Muse and published its technical approach to agent safety on 8 September 2026.
+
+This is a source-based AI news commentary. It does not claim that Mimris currently implements Meta's Sentinel, isolated runtime, credential surrogation, or egress controls.
+
+### LinkedIn
+
+The most important development in autonomous AI agents may not be greater autonomy—but better control.
+
+Meta's new Muse agent is designed to run unattended, use connectors, launch subagents, and work with personal data. What makes the architecture particularly interesting is the separation between the agent that proposes actions and the security layer that authorizes them.
+
+Meta's Sentinel component determines whether an action should be allowed automatically, denied, or submitted for human approval. Credentials remain outside the agent runtime, and permissions can be scoped to a specific task or time period.
+
+This points to an important principle for enterprise AI:
+
+**The agent should not decide alone what it is allowed to do.**
+
+The process model, organizational roles, task definitions, permissions, and execution context should all contribute to that decision.
+
+This is highly relevant to Mimris and AKM. Mimris models processes, tasks, roles, information, views, and human–AI participation. The next architectural step is to connect those models to enforceable execution policies:
+
+> The process model defines what should happen.  
+> A separate policy layer determines what the AI is permitted to do.
+
+This is not yet a fully implemented Mimris capability. It is a direction I believe is essential for trustworthy AI-assisted task execution.
+
+The future of agent orchestration will depend not only on planning and tool use, but also on explicit authority, traceability, human approval, and model-derived boundaries.
+
+Source: https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse
+
+Recommended media: `assets/mimris-governed-ai-execution-infographic.png`
+
+### YouTube Community
+
+Meta's Muse shows that trustworthy AI agents need more than good reasoning.
+
+Its separate Sentinel security layer decides whether an agent action should be allowed, denied, or approved by a person. Credentials remain outside the agent, and permissions can be limited to a specific task or time period.
+
+This is highly relevant to Mimris:
+
+The process model should define what should happen, while a separate policy layer determines what the AI is allowed to do.
+
+That could become an important foundation for safe, AI-assisted task execution.
+
+Read Meta's technical explanation: https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse
+
+#AIAgents #Mimris #Orchestration
+
+### X
+
+Meta's Muse points to an important principle for AI agents:
+
+The agent may propose an action, but it should not decide alone whether it is allowed.
+
+A separate policy layer should control permissions, credentials, human approval, and provenance.
+
+For Mimris:
+
+The process model defines what should happen.  
+> The policy layer defines what AI may do.
+
+https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse
+
+#AIAgents #Mimris
+
+### Visual specification
+
+- Asset: `assets/mimris-governed-ai-execution-infographic.png`
+- Subject: Mimris model → ContextPack → AI agent → independent policy layer → human approval and controlled execution.
+- Key message: “The model defines what should happen. The policy layer defines what AI may do.”
+- The policy layer is explicitly labelled “Future Mimris direction”.
+- Recommended use: LinkedIn primary image; crop or resize for YouTube Community and X as needed.
+
+### Source
+
+Meta AI Research — [How We Built Safety Into Muse](https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse)
+
