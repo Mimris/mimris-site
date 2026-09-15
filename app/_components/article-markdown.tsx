@@ -101,6 +101,14 @@ export function ArticleMarkdown({ file }: { file: string }) {
       flushTable();
       continue;
     }
+    const image = line.match(/^!\[([^\]]*)\]\((\/assets\/[^)\s]+)\)$/);
+    if (image) {
+      flushParagraph();
+      flushList();
+      flushTable();
+      blocks.push(`<figure class="article-figure"><img src="${image[2]}" alt="${escapeHtml(image[1])}" loading="lazy" /></figure>`);
+      continue;
+    }
     if (line.startsWith("# ")) {
       flushParagraph();
       flushList();
