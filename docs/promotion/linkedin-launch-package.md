@@ -168,15 +168,57 @@ Read the article: https://mimris-site.vercel.app/articles/active-knowledge-model
 <details>
 <summary><strong>Post 3 — Coffee Shop World proof</strong></summary>
 
+### LinkedIn
 
+What does it take to turn a domain model into a working operational environment?
 
-A coffee shop is a useful test of model-driven work because everyone understands the domain.
+A coffee shop is a useful test because everyone understands the domain. Orders are taken, drinks are prepared, payments are processed, equipment is used, stock is replenished, and people need the right information at the right time.
 
-The Coffee Shop World connects customers, products, employees, payment, production, inventory, information, views, documents, and work items. It is built in an AKM Universe, where its structure can be inspected in Mimris Modelling and used as context in Mimris AI Workspace.
+In the Coffee Shop World, that familiar work is modelled as one connected progression:
 
-Read the proof story: https://mimris-site.vercel.app/articles/coffee-shop-universe?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=coffee_shop_universe
+**Domain Conceptual Description → Domain Ontology → POPS → IDEF0 with ICOMs → IRTV Workplaces → TYPE → OCIM instance configuration → Operational Preview**
 
-Recommended media: an approved Coffee Shop or workspace screenshot.
+The important point is that the Operational Preview is not designed separately as another application prototype. It is derived from the models and the configured resources that support the work: particular baristas, espresso machines, POS terminals, grinders, payment services, and other operational mechanisms.
+
+Human + AI is embedded throughout the World, not added as a separate step. The model provides the task context; people remain responsible for reviewing, deciding, and approving the work.
+
+Read the proof story: https://mimris-site.vercel.app/articles/coffee-shop-universe?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=coffee_shop_world_progression
+
+#ActiveKnowledgeModelling #EnterpriseArchitecture #AI
+
+### YouTube Community
+
+A coffee shop is a useful way to show how a model can become operational.
+
+The Coffee Shop World moves from domain understanding, ontology, POPS, IDEF0 and ICOMs, through workplaces, structured types, and configured resources, into an Operational Preview.
+
+The preview is derived from the World. It can provide task views, forms, checklists, documents, status, progress, and AI assistance using the context already connected to the task.
+
+Human + AI is embedded across the whole World—not a separate pipeline stage.
+
+Read the article: https://mimris-site.vercel.app/articles/coffee-shop-universe?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=coffee_shop_world_progression
+
+#Mimris #ActiveKnowledgeModelling #AI
+
+### X
+
+From coffee-shop domain to operational work:
+
+Domain → Ontology → IDEF0 → Workplaces → TYPE → OCIM → Preview.
+
+The Preview is derived from the model and resources. Human + AI is embedded throughout.
+
+https://mimris-site.vercel.app/articles/coffee-shop-universe
+
+#Mimris #AKM
+
+### Visual specification
+
+- LinkedIn primary image: `assets/coffee-shop-world-progression-infographic.png`
+- YouTube Community and X image: `assets/human-ai-across-world-infographic.png`
+- Image descriptions: “Illustrated progression from Coffee Shop domain description to an Operational Preview.” and “Human and AI embedded across every stage of the World, with feedback from operational work into improvement.”
+- Key message: the Operational Preview is derived from the connected model and configured operational resources; Human + AI is cross-cutting.
+
 
 </details>
 

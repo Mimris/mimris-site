@@ -220,6 +220,7 @@ Before creating any article companion content, LinkedIn post, launch copy, socia
 - Extend an existing canonical package when one exists; do not create a parallel per-article social-post or launch-package file merely because the expected path is not immediately known.
 - LinkedIn-ready posts associated with Mimris website articles belong in `docs/promotion/linkedin-launch-package.md` unless this specification explicitly establishes a replacement convention.
 - The LinkedIn launch package remains article-first: each post must identify and link back to one approved canonical website article.
+- The publication log must record the matching package sequence in a `Post No.` column, so every published URL can be reconciled directly with its numbered approved post.
 - Infographics and other visual companions belong in `assets/` using descriptive, stable filenames. Each visual must have an identified canonical article or campaign, an approved source file, and accompanying alt text or image description where the publishing channel supports it.
 - Do not leave the only copy of a publishable infographic in a chat, temporary output directory, or generated preview. If the source visual is unavailable locally, request it or regenerate it before publishing; do not reference an inaccessible chat attachment as the production asset.
 - Social copy may recommend a visual, but the launch package must name the asset path and record any required image description so the same approved visual can be reused across LinkedIn, YouTube, X, and the website.
