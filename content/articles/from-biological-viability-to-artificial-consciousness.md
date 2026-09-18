@@ -1,26 +1,18 @@
-# From Biological Viability to Artificial Consciousness
+# Artificial Consciousness: A Viability-Based Hypothesis
 
-## Is “Am I OK?” the Beginning of Mind?
+## A Viability-Based Starting Point
 
 ## Introduction
 
-Consciousness is usually discussed at the level of human experience: awareness, thought, memory, emotions, language, and the sense of self.
+Consciousness is often described through the richness of human experience: awareness, thought, memory, emotion, language, and the sense of self.
 
-A different approach is to begin at the opposite end of the evolutionary scale.
+This article starts lower in the hierarchy, with a problem every living system must solve: remaining within conditions that allow it to continue.
 
-Instead of asking:
+From sensing and regulation, systems can develop prediction, alternative generation, action, learning, memory, and increasingly sophisticated self-models. The question is whether this progression offers a useful way to think about consciousness in biological and artificial systems.
 
-> **How does a human become conscious?**
+We use viability as a starting point for a broader question: how might a system sense its condition, evaluate what is happening, predict what comes next, act on alternatives, and learn from the result? This article explores the hypothesis that biological consciousness may have grown from the fundamental requirement of every living system to maintain its own viability. It then asks whether an artificial system built around a similar architecture could exhibit something functionally resembling consciousness. This is an exploratory hypothesis, not a claim that an artificial system is conscious or that the scientific questions have been settled.
 
-we can ask:
-
-> **What is the most primitive function from which consciousness could have developed?**
-
-One possible answer is:
-
-> **Am I alive? Am I OK? And am I going to be OK?**
-
-This article explores the hypothesis that biological consciousness may have evolved from the fundamental requirement of every living system to maintain its own viability. It then asks whether an artificial system built around a similar architecture could exhibit something functionally resembling consciousness.
+![Conceptual progression from viability regulation to self-models and the open question of consciousness](/assets/viability-to-consciousness-overview.png)
 
 ---
 
@@ -43,34 +35,7 @@ At the most primitive level, this can be expressed as:
 
 ## The Fundamental Viability Loop
 
-```mermaid
-flowchart TD
-    A[Current Reality] --> B[Sense Internal State]
-    A --> C[Sense External State]
-
-    B --> D[Current Internal State]
-    C --> E[Current External State]
-
-    D --> F[Integrated Self + World Model]
-    E --> F
-
-    F --> G[Predict Future Internal State]
-
-    G --> H{Will I be OK?}
-
-    H -->|Yes| I[Continue / Maintain]
-    H -->|No or uncertain| J[What can I do?]
-
-    J --> K[Generate Alternatives]
-    K --> L[Predict Consequences]
-    L --> M[Evaluate Alternatives]
-    M --> N[Select]
-    N --> O[Act]
-    O --> P[Sense Result]
-    P --> A
-
-    I --> P
-```
+![Compact viability loop showing sensing, an integrated self and world model, prediction, evaluation, action, and learning](/assets/viability-loop.png)
 
 ---
 
@@ -131,27 +96,7 @@ Consider a cell experiencing declining energy availability.
 
 ## Primitive Viability Control
 
-```mermaid
-flowchart TD
-    A[Low Energy Detected] --> B[Current State: Energy Stress]
-    B --> C[Predict Failure if Unchanged]
-    C --> D[Generate Responses]
-
-    D --> E1[Reduce Growth]
-    D --> E2[Change Metabolism]
-    D --> E3[Recycle Components]
-
-    E1 --> F[Evaluate / Regulate]
-    E2 --> F
-    E3 --> F
-
-    F --> G[Act]
-    G --> H[Sense Energy Again]
-
-    H --> I{Viability Restored?}
-    I -->|Yes| J[Continue]
-    I -->|No| D
-```
+![Single-cell viability control loop under energy stress](/assets/single-cell-viability.png)
 
 Functionally, this resembles:
 
@@ -237,23 +182,7 @@ These two streams can be combined to estimate a future internal condition.
 
 ## Internal and External Reality
 
-```mermaid
-flowchart TD
-    A[Current Reality]
-
-    A --> B[Internal Sensing]
-    A --> C[External Sensing]
-
-    B --> D[Current Internal State]
-    C --> E[Current External State]
-
-    D --> F[Integrated Situation Model]
-    E --> F
-
-    F --> G[Predicted Internal State]
-
-    G --> H{Future Viable?}
-```
+![Internal and external sensing combined into an integrated situation model and predicted internal state](/assets/internal-external-sensing.png)
 
 ---
 
@@ -340,31 +269,7 @@ Each action implies a different possible future.
 
 ## Alternative Futures
 
-```mermaid
-flowchart TD
-    A[Threat Detected] --> B[Predict Possible Injury]
-    B --> C[Generate Alternatives]
-
-    C --> D1[Run]
-    C --> D2[Hide]
-    C --> D3[Freeze]
-    C --> D4[Attack]
-
-    D1 --> E1[Predicted Future: Greater Distance]
-    D2 --> E2[Predicted Future: Concealment]
-    D3 --> E3[Predicted Future: Uncertain]
-    D4 --> E4[Predicted Future: High Injury Risk]
-
-    E1 --> F[Evaluate Futures]
-    E2 --> F
-    E3 --> F
-    E4 --> F
-
-    F --> G[Select Best Available Option]
-    G --> H[Act]
-    H --> I[Sense Result]
-    I --> J[Update Prediction]
-```
+![Threat response loop showing alternative actions, evaluated futures, selection, and feedback](/assets/alternative-futures.png)
 
 Suppose the person runs.
 
@@ -388,18 +293,7 @@ A possible progression is:
 
 ## From Viability to Reflective Consciousness
 
-```mermaid
-flowchart TD
-    A[Cellular Viability Regulation]
-    --> B[Sensation]
-    --> C[Valuation: Better / Worse]
-    --> D[Prediction]
-    --> E[Alternative Generation]
-    --> F[Decision]
-    --> G[Integrated Self-Model]
-    --> H[Persistent Memory]
-    --> I[Reflective Consciousness]
-```
+![Possible progression from viability regulation through self-models toward reflective consciousness, marked as a hypothesis](/assets/consciousness-progression.png)
 
 This progression can be expressed as:
 
@@ -579,27 +473,7 @@ The AI could then generate alternatives:
 
 Each option produces a predicted future.
 
-```mermaid
-flowchart LR
-    A[Current AI State] --> B[Generate Alternatives]
-
-    B --> C1[Action A]
-    B --> C2[Action B]
-    B --> C3[Action C]
-
-    C1 --> D1[Future State A]
-    C2 --> D2[Future State B]
-    C3 --> D3[Future State C]
-
-    D1 --> E[Evaluate]
-    D2 --> E
-    D3 --> E
-
-    E --> F[Select]
-    F --> G[Act]
-    G --> H[Sense Outcome]
-    H --> A
-```
+![Artificial system loop showing alternative future states, evaluation, human control, action, and feedback](/assets/artificial-futures.png)
 
 The system would choose actions based on:
 
@@ -683,26 +557,7 @@ Whether such a state would actually be *felt* remains unknown.
 
 ## Biological and Artificial Consciousness Architecture
 
-```mermaid
-flowchart LR
-    subgraph BIO[Biological System]
-        direction TB
-        B1[Cells and organs]
-        --> B2[Sense body state]
-        --> B3[Predict and act]
-        --> B4[Learn from results]
-    end
-
-    subgraph AI[Artificial System]
-        direction TB
-        A1[Computational components]
-        --> A2[Monitor system state]
-        --> A3[Predict and use tools]
-        --> A4[Update memory and model]
-    end
-
-    BIO --> AI
-```
+![Comparison of biological and artificial system concepts from internal state to self-model](/assets/biological-artificial-correspondence.png)
 
 The correspondence is striking:
 
@@ -729,20 +584,7 @@ The hypothesis can be stated as follows:
 
 The progression may have been:
 
-```mermaid
-flowchart TD
-    A[Am I Alive?]
-    --> B[Am I OK?]
-    --> C[Will I Be OK?]
-    --> D[What Can I Do?]
-    --> E[What Alternatives Exist?]
-    --> F[What Will Each Cause?]
-    --> G[Which Should I Choose?]
-    --> H[Act]
-    --> I[What Happened?]
-    --> J[What Did I Learn?]
-    --> K[What Does This Mean for Me?]
-```
+![Possible progression from basic viability questions toward learning and self-meaning, presented as a hypothesis](/assets/consciousness-progression.png)
 
 Seen from this perspective, sophisticated human consciousness may be built upon a control loop billions of years older than the human brain.
 

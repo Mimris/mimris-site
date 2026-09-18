@@ -1,7 +1,7 @@
 # Mimris LinkedIn Launch Package
 
 Status: Article-first launch sequence for approval
-Last updated: 15 September 2026
+Last updated: 18 September 2026
 
 This package turns approved Mimris articles into short LinkedIn posts. Every launch post has one canonical article as its source and destination. LinkedIn introduces the article's central idea; the article provides the complete argument and guides the reader onwards to a concept page, proof, or product.
 
@@ -14,7 +14,7 @@ This package turns approved Mimris articles into short LinkedIn posts. Every lau
 | Coffee Shop World | `/articles/coffee-shop-universe` |
 | Product boundary | `/articles/modelling-and-workspace` |
 | Why AI needs models | `/articles/why-ai-needs-models` |
-| Can AI Have Consciousness? | `/articles/from-biological-viability-to-artificial-consciousness` |
+| Artificial Consciousness: A Viability-Based Hypothesis | `/articles/from-biological-viability-to-artificial-consciousness` |
 | Governed Agent Loops | `/articles/governed-agent-loops` |
 
 ## Publication process
@@ -166,19 +166,19 @@ Read the article: https://mimris-site.vercel.app/articles/active-knowledge-model
 </details>
 
 <details>
-<summary><strong>Post 3 — Coffee Shop World proof</strong></summary>
+<summary><strong>Post 3 — From Domain Understanding to Operational Work</strong></summary>
 
 ### LinkedIn
 
-What does it take to turn a domain model into a working operational environment?
+What does it take to turn shared domain understanding into operational work?
 
-A coffee shop is a useful test because everyone understands the domain. Orders are taken, drinks are prepared, payments are processed, equipment is used, stock is replenished, and people need the right information at the right time.
+We use a coffee shop as an example because it is familiar while still containing the essential elements of operational work. Customers place orders, employees prepare products, and payment, production, inventory, and service depend on one another.
 
-In the Coffee Shop World, that familiar work is modelled as one connected progression:
+The journey moves through six connected ideas:
 
-**Domain Conceptual Description → Domain Ontology → POPS → IDEF0 with ICOMs → IRTV Workplaces → TYPE → OCIM instance configuration → Operational Preview**
+**Understand the domain → Define concepts → Structure the process tree → Design workplaces and workflows → Define the operational model → Generate an operational preview**
 
-The important point is that the Operational Preview is not designed separately as another application prototype. It is derived from the models and the configured resources that support the work: particular baristas, espresso machines, POS terminals, grinders, payment services, and other operational mechanisms.
+The Operational Preview is not designed separately as another application prototype. It is derived from the connected model and the configured resources that support the work. In Mimris, the operational model brings together structured information and concrete resources, while the formal terms TYPE and OCIM describe those two aspects in more detail.
 
 Human + AI is embedded throughout the World, not added as a separate step. The model provides the task context; people remain responsible for reviewing, deciding, and approving the work.
 
@@ -188,11 +188,11 @@ Read the proof story: https://mimris-site.vercel.app/articles/coffee-shop-univer
 
 ### YouTube Community
 
-A coffee shop is a useful way to show how a model can become operational.
+A coffee shop is a useful way to show how shared understanding can become operational work.
 
-The Coffee Shop World moves from domain understanding, ontology, POPS, IDEF0 and ICOMs, through workplaces, structured types, and configured resources, into an Operational Preview.
+The journey moves from the domain, through concepts, a process tree, workplaces and workflows, into an operational model and an Operational Preview.
 
-The preview is derived from the World. It can provide task views, forms, checklists, documents, status, progress, and AI assistance using the context already connected to the task.
+The preview is derived from the connected model and resources. It can provide task views, forms, checklists, documents, status, progress, and AI assistance using the context already connected to the task.
 
 Human + AI is embedded across the whole World—not a separate pipeline stage.
 
@@ -202,9 +202,9 @@ Read the article: https://mimris-site.vercel.app/articles/coffee-shop-universe?u
 
 ### X
 
-From coffee-shop domain to operational work:
+From domain understanding to operational work:
 
-Domain → Ontology → IDEF0 → Workplaces → TYPE → OCIM → Preview.
+Domain → Concepts → Process Tree → Workplaces → Operational Model → Preview.
 
 The Preview is derived from the model and resources. Human + AI is embedded throughout.
 
@@ -214,9 +214,10 @@ https://mimris-site.vercel.app/articles/coffee-shop-universe
 
 ### Visual specification
 
-- LinkedIn primary image: `assets/coffee-shop-world-progression-infographic.png`
-- YouTube Community and X image: `assets/human-ai-across-world-infographic.png`
-- Image descriptions: “Illustrated progression from Coffee Shop domain description to an Operational Preview.” and “Human and AI embedded across every stage of the World, with feedback from operational work into improvement.”
+- LinkedIn primary image: `assets/coffee-shop-world-progression-general.png`
+- YouTube Community image: `assets/coffee-shop-operational-model-infographic.png`
+- X image: `assets/coffee-shop-top-down-bottom-up.png`
+- Image descriptions: “General modelling journey from understanding a coffee shop domain to an operational preview.”, “Information and resources combining into an operational model and contextual human work.”, and “Top-down intent and bottom-up reality connected through operational work and continuous model improvement.”
 - Key message: the Operational Preview is derived from the connected model and configured operational resources; Human + AI is cross-cutting.
 
 
@@ -255,17 +256,49 @@ Read the article: https://mimris-site.vercel.app/articles/why-ai-needs-models?ut
 </details>
 
 <details>
-<summary><strong>Post 6 — AI News and Commentary: Can AI Have Consciousness?</strong></summary>
+<summary><strong>Post 6 — Artificial Consciousness: A Viability-Based Hypothesis</strong></summary>
 
 
 
-What would an artificial system need before it could be meaningfully compared with a conscious living system?
+What if the study of consciousness began with a simpler question: how does a system continue to exist?
 
-One exploratory hypothesis begins with viability: internal state, sensing, prediction, alternatives, action, feedback, memory, and a continuing self-model. That architecture may be a more useful starting point than language alone.
+This exploratory article follows a possible progression from viability regulation to sensing, evaluation, prediction, alternatives, action, learning, memory, and a continuing self-model.
 
-This is an exploratory essay, not a claim that an AI system is conscious or that the scientific questions are settled.
+The same architecture can be considered across biological and artificial systems. But functional similarity is not proof of subjective experience. Whether an artificial system could actually be conscious remains an open scientific and philosophical question.
 
-Read the article: https://mimris-site.vercel.app/articles/from-biological-viability-to-artificial-consciousness?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=ai_consciousness
+Read the article: https://mimris-site.vercel.app/articles/from-biological-viability-to-artificial-consciousness?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=viability_to_consciousness
+
+#Consciousness #ArtificialIntelligence #ActiveKnowledgeModelling
+
+### YouTube Community
+
+What if consciousness began with the problem of staying viable?
+
+This exploratory article follows a possible path from sensing and regulation to prediction, action, memory, and a continuing self-model. It then asks whether a similar architecture could be built in an artificial system.
+
+The article does not claim that AI is conscious. Functional architecture and subjective experience are not the same thing.
+
+Read the article: https://mimris-site.vercel.app/articles/from-biological-viability-to-artificial-consciousness?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=viability_to_consciousness
+
+#Mimris #Consciousness #AI
+
+### X
+
+What if consciousness began with viability?
+
+Sense → evaluate → predict → act → learn → build a self-model.
+
+This is an exploratory hypothesis, not a claim that AI is conscious. Functional architecture is not proof of subjective experience.
+
+https://mimris-site.vercel.app/articles/from-biological-viability-to-artificial-consciousness
+
+#Mimris #AI
+
+### Visual specification
+
+- Primary image: `assets/viability-to-consciousness-overview.png`
+- Image description: “Conceptual progression from viability regulation through sensing, prediction, action, learning, and self-models, with consciousness remaining an open question.”
+- Key message: functional architecture can be explored without claiming subjective experience.
 
 </details>
 
@@ -398,7 +431,7 @@ Read the article: [https://lnkd.in/eVbwX3zZ](https://lnkd.in/eVbwX3zZ)
 | Coffee Shop World |  |  |  |
 | Product boundary |  |  |  |
 | Why AI needs models |  |  |  |
-| Can AI Have Consciousness? |  |  |  |
+| Artificial Consciousness: A Viability-Based Hypothesis |  |  |  |
 | Governed AI execution | https://www.linkedin.com/feed/update/urn:li:activity:7503551078349643776/ |  | Source-based Meta Muse commentary |
 | When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
 

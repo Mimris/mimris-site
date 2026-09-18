@@ -16,7 +16,7 @@ const articleGroups = [
   {
     label: "AI News and Commentary",
     links: [
-      ["/articles/from-biological-viability-to-artificial-consciousness", "Can AI Have Consciousness?"],
+      ["/articles/from-biological-viability-to-artificial-consciousness", "Artificial Consciousness: A Viability-Based Hypothesis"],
       ["/articles/can-ai-have-consciousness-infographic", "Infographic: Can AI Have Consciousness?"],
     ],
   },
@@ -221,6 +221,6 @@ export function AiDisclosure({ children }: { children?: React.ReactNode }) {
   return <aside className="article-disclosure"><strong>AI-assisted writing</strong><p>{children ?? "This article was developed with assistance from an AI system. The final arguments, examples, and editorial decisions are the author’s responsibility."}</p></aside>;
 }
 
-export function ArticleLayout({ currentPath, children }: { currentPath: string; children: React.ReactNode }) {
-  return <div className="article-page-layout"><ArticleIndex currentPath={currentPath} /><div className="article-page-content">{children}</div></div>;
+export function ArticleLayout({ currentPath, className = "", children }: { currentPath: string; className?: string; children: React.ReactNode }) {
+  return <div className={`article-page-layout ${className}`.trim()}><ArticleIndex currentPath={currentPath} /><div className="article-page-content">{children}</div></div>;
 }
