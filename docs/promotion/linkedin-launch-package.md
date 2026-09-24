@@ -424,79 +424,22 @@ Read the article: [https://lnkd.in/eVbwX3zZ](https://lnkd.in/eVbwX3zZ)
 
 ## Publication log
 
-| Post | LinkedIn URL | Published date | Notes |
-|---|---|---|---|
-| Ecosystem launch |  |  |  |
-| Active Knowledge Modelling |  |  |  |
-| Coffee Shop World |  |  |  |
-| Product boundary |  |  |  |
-| Why AI needs models |  |  |  |
-| Artificial Consciousness: A Viability-Based Hypothesis |  |  |  |
-| Governed AI execution | https://www.linkedin.com/feed/update/urn:li:activity:7503551078349643776/ |  | Source-based Meta Muse commentary |
-| When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
+| Post No. | Post | LinkedIn URL | Published date | Notes |
+|---:|---|---|---|---|
+| 1 | Ecosystem launch |  |  |  |
+| 2 | Active Knowledge Modelling |  |  |  |
+| 3 | Coffee Shop World | https://www.linkedin.com/posts/snorre-fossland-686885_activeknowledgemodelling-enterprisearchitecture-activity-7505260553645486080-KV8k?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAhDYYBYpz8Ha5vqDGKaZvBDb6joT0d-60 | 2026-09-15 |  |
+| 4 | Product boundary |  |  |  |
+| 5 | Why AI needs models |  |  |  |
+| 6 | Artificial Consciousness: A Viability-Based Hypothesis | https://www.linkedin.com/feed/update/urn:li:activity:7506662132390924289/ | 2026-09-19 |  |
+| 7 | Governed AI execution | https://www.linkedin.com/feed/update/urn:li:activity:7503551078349643776/ |  | Source-based Meta Muse commentary |
+| 8 | When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
+| 9 | Governed Agent Loops |  |  | Prepared for approval; not published |
 
 
 
 <details>
-<summary><strong>Post 8 — AI News Commentary: Governed Agent Loops</strong></summary>
-
-## Canonical article
-
-### When AI Agents Can Keep Working: Governed Loops for Model-Based Execution
-
-**Proposed route:** `/articles/governed-agent-loops`  
-**Source development:** Atlassian announcement, 10 September 2026  
-**Status:** Draft article and launch posts; not yet published
-
-AI agents are becoming good at producing useful outputs. The harder question is whether they can continue working over time without losing context, violating boundaries, or creating work that people cannot confidently review.
-
-Atlassian’s announcement of governed agent loops for the AI-native software development lifecycle is significant because it addresses this question at the level of the work system.
-
-The new capabilities connect Jira work items, organizational knowledge, coding agents, standards, review and measurement. Atlassian describes agent loops that can continuously identify sufficiently defined and unassigned backlog items, delegate them to a coding agent for implementation and testing, and open a pull request for human review.
-
-This is different from asking an AI assistant to write a piece of code. The agent is placed inside a continuing process:
-
-**Backlog item → Agent execution → Testing → Pull request → Human review**
-
-The loop is also grounded in context. Atlassian’s Code Context uses the Teamwork Graph to provide agents with information from repositories, architecture, documentation and organizational knowledge. Agent Context Controls determine which agents may operate in a space and what they are allowed to see.
-
-This matters because an agent can be technically capable and still be operationally unreliable. Without the right context, it may misunderstand the architecture. Without boundaries, it may access information or systems it should not use. Without a review point, it may produce changes that are difficult to trust. Without measurement, the organization cannot tell whether more agent activity is producing better results.
-
-Atlassian is therefore combining five elements that are often treated separately:
-
-1. Structured work that can be assigned.
-2. Context that explains the work and its environment.
-3. An agent that can perform a bounded task.
-4. Controls and standards that constrain execution.
-5. Human review and measurement of the result.
-
-This is closely related to the direction of Mimris AI Workspace.
-
-Mimris starts with a model of the domain and its work. Its intended refinement path is:
-
-**Domain Conceptual Description → Domain Ontology → IDEF0 → IRTV → Task Patterns → Project Plan → Workspace Execution**
-
-The purpose is not merely to document a process. The model should help generate an operational workspace in which people and AI can work with the process, its tasks, information and expected outcomes.
-
-Mimris already provides a Workbench for manual and AI-assisted draft production, with task context grounded in modeled process and activity semantics. Its AI iteration policy also supports stage-specific context, compact model representations, domain anchors and traceability during model generation.
-
-The Atlassian pattern suggests a possible next step: a model-derived task should be able to declare when it is ready for execution, what context is required, what actions are permitted, what output is expected and where human review is required.
-
-For Mimris, that could lead to a governed loop such as:
-
-**Modeled task → Readiness check → ContextPack → AI-assisted execution → Verification → Human approval**
-
-The model would remain the durable description of the work. The AI agent would be one possible participant in the task—alongside a human, a system or a combination of them. The resulting artifact, decision or model change would be linked back to the task and its originating process context.
-
-This distinction is important. Mimris does not currently provide a general autonomous agent loop that continuously scans tasks, delegates work and opens external pull requests. Those capabilities are a future or inferred integration direction. What is implemented today is the model-driven workspace foundation: domain and process structures, task-oriented execution, AI-assisted production and context-aware iteration.
-
-The architectural lesson is that autonomy should be attached to a well-defined task, not granted to an agent in isolation. A useful enterprise agent needs more than a prompt and a tool. It needs a model of the work, relevant context, explicit boundaries, a defined outcome and a reviewable record of what happened.
-
-The next phase of AI-assisted work may therefore be less about making agents act independently and more about making them part of processes that remain understandable, governed and improvable.
-
-**The strongest agent is not the one that works alone. It is the one that works inside a well-modeled loop.**
-
-**Primary source:** [Atlassian — We’re bringing governed agent loops to the AI-Native SDLC](https://www.atlassian.com/blog/jira/governed-agent-loops)
+<summary><strong>Post 9 — AI News Commentary: Governed Agent Loops</strong></summary>
 
 ## LinkedIn
 
@@ -521,13 +464,13 @@ That is more than asking an AI assistant to write code. It places the agent insi
 
 This has a strong connection to Mimris.
 
-Mimris starts with a model of the domain and its work:
+Mimris starts with an AKM enterprise model of the domain and its work:
 
 **Domain → Processes → Roles → Information → Tasks → Outcomes**
 
 The intended refinement path continues through IDEF0, IRTV, task patterns, project planning and workspace execution.
 
-The model should not only describe what work exists. It should help define:
+The AKM enterprise model should not only describe what work exists. It should help define:
 
 - when a task is ready for execution;
 - what context the task requires;
@@ -537,7 +480,7 @@ The model should not only describe what work exists. It should help define:
 
 A possible future loop is:
 
-**Modeled task → Readiness check → ContextPack → AI-assisted execution → Verification → Human approval**
+**AKM enterprise task → Readiness check → ContextPack → AI-assisted execution → Verification → Human approval**
 
 Mimris already provides a Workbench for manual and AI-assisted task production, grounded in modeled process and activity semantics. Its context policy also supports stage-specific context and traceability during model generation.
 
@@ -565,7 +508,7 @@ The important pattern is:
 
 This is close to the direction of Mimris AI Workspace.
 
-Mimris uses modeled processes, tasks, roles and information to provide context for manual and AI-assisted work. A future Mimris task agent could use the same pattern: execute a well-defined task, produce a reviewable result and return evidence to the human participant.
+Mimris uses AKM enterprise-modelled processes, tasks, roles and information to provide context for manual and AI-assisted work. A future Mimris task agent could use the same pattern: execute a well-defined task, produce a reviewable result and return evidence to the human participant.
 
 The key question is not whether agents can work alone.
 
@@ -585,31 +528,16 @@ Structured work → Context → Agent execution → Testing → Human review
 
 That is close to the direction of Mimris AI Workspace.
 
-A future Mimris task agent could execute a model-defined task using a focused ContextPack, verify the result and return evidence to a human.
+A future Mimris task agent could execute an AKM enterprise-model-defined task using a focused ContextPack, verify the result and return evidence to a human.
 
 Autonomy should be attached to a well-defined task—not granted to an agent in isolation.
 
 Source: https://www.atlassian.com/blog/jira/governed-agent-loops
 
-## Visual concept
+## Visual asset
 
-Create an explanatory diagram showing two contrasting paths:
-
-**Unstructured agent**
-Prompt → Unbounded action → Unclear result
-
-**Governed model-based agent**
-Modeled task → Required context → Permitted action → AI-assisted execution → Verification → Human review → Learning
-
-Suggested overlay:
-
-**From AI prompts to governed work loops**
-
-Use a clean editorial diagram rather than a product screenshot.
-
-- LinkedIn: 1200 × 1200 square or 1200 × 627 landscape
-- YouTube Community: 1080 × 1080 square
-
-The visual should use Mimris’s model-to-execution language without suggesting that the full autonomous loop is already implemented.
-
+- Asset: `assets/governed-agent-loops-infographic.png`
+- Image description: “Governed AI work loop showing an AKM enterprise task moving through readiness check, ContextPack, AI-assisted execution, verification, human approval, and learning.”
+- Key message: “The AKM enterprise model defines the work. Governance keeps execution reviewable.”
+- The “Future direction” label makes clear that the general autonomous loop is not currently implemented in Mimris.
 </details>

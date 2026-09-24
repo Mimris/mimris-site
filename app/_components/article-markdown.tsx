@@ -18,6 +18,7 @@ const articleGroups = [
     links: [
       ["/articles/from-biological-viability-to-artificial-consciousness", "Artificial Consciousness: A Viability-Based Hypothesis"],
       ["/articles/can-ai-have-consciousness-infographic", "Infographic: Can AI Have Consciousness?"],
+      ["/articles/governed-agent-loops", "Governed Agent Loops"],
     ],
   },
   {
