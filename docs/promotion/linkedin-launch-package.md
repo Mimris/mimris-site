@@ -518,7 +518,15 @@ Source: https://www.atlassian.com/blog/jira/governed-agent-loops
 
 #AIagents #Mimris #AKM
 
-## X
+## Visual asset
+
+- Asset: `assets/governed-agent-loops-infographic.png`
+- Image description: “Governed AI work loop showing an AKM enterprise task moving through readiness check, ContextPack, AI-assisted execution, verification, human approval, and learning.”
+- Key message: “The AKM enterprise model defines the work. Governance keeps execution reviewable.”
+- The “Future direction” label makes clear that the general autonomous loop is not currently implemented in Mimris.
+
+
+## X post (copy only)
 
 AI agents need governed work loops:
 
@@ -530,10 +538,4 @@ https://www.atlassian.com/blog/jira/governed-agent-loops
 
 #AIagents #Mimris
 
-## Visual asset
-
-- Asset: `assets/governed-agent-loops-infographic.png`
-- Image description: “Governed AI work loop showing an AKM enterprise task moving through readiness check, ContextPack, AI-assisted execution, verification, human approval, and learning.”
-- Key message: “The AKM enterprise model defines the work. Governance keeps execution reviewable.”
-- The “Future direction” label makes clear that the general autonomous loop is not currently implemented in Mimris.
 </details>
