@@ -492,6 +492,8 @@ The broader lesson is this:
 
 The strongest agent is not the one that works alone. It is the one that works inside a well-modeled loop.
 
+Read the Mimris article: https://mimris-site.vercel.app/articles/governed-agent-loops
+
 Source: https://www.atlassian.com/blog/jira/governed-agent-loops
 
 #AI #AIagents #Mimris #AKM #EnterpriseAI
@@ -514,6 +516,8 @@ The key question is not whether agents can work alone.
 
 It is whether they can work reliably inside a process that remains understandable and governed.
 
+Read the Mimris article: https://mimris-site.vercel.app/articles/governed-agent-loops
+
 Source: https://www.atlassian.com/blog/jira/governed-agent-loops
 
 #AIagents #Mimris #AKM
@@ -532,9 +536,9 @@ AI agents need governed work loops:
 
 Structured work → Context → Agent execution → Testing → Human review.
 
-For Mimris, an AKM enterprise task provides ContextPack, verification, and human approval.
+Mimris: AKM enterprise tasks provide ContextPack, verification, and human approval.
 
-https://www.atlassian.com/blog/jira/governed-agent-loops
+https://mimris-site.vercel.app/articles/governed-agent-loops
 
 #AIagents #Mimris
 
