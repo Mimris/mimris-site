@@ -520,19 +520,15 @@ Source: https://www.atlassian.com/blog/jira/governed-agent-loops
 
 ## X
 
-AI agents are moving from one-off prompts to governed work loops.
+AI agents need governed work loops:
 
-Atlassian’s new Jira agent loops connect:
+Structured work → Context → Agent execution → Testing → Human review.
 
-Structured work → Context → Agent execution → Testing → Human review
+For Mimris, an AKM enterprise task provides ContextPack, verification, and human approval.
 
-That is close to the direction of Mimris AI Workspace.
+https://www.atlassian.com/blog/jira/governed-agent-loops
 
-A future Mimris task agent could execute an AKM enterprise-model-defined task using a focused ContextPack, verify the result and return evidence to a human.
-
-Autonomy should be attached to a well-defined task—not granted to an agent in isolation.
-
-Source: https://www.atlassian.com/blog/jira/governed-agent-loops
+#AIagents #Mimris
 
 ## Visual asset
 
