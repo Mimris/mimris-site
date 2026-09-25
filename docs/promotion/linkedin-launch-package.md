@@ -414,7 +414,7 @@ Read the article: [https://lnkd.in/eVbwX3zZ](https://lnkd.in/eVbwX3zZ)
 
 
 <details>
-<summary><strong>Post 9 — AI Can Generate the Code—But Who Defines What Is Correct?</strong></summary>
+<summary><strong>Post 10 — AI Can Generate the Code—But Who Defines What Is Correct?</strong></summary>
 
 ### LinkedIn
 
@@ -509,7 +509,7 @@ https://mimris-site.vercel.app/articles/ai-defines-correctness
 </details>
 
 <details>
-<summary><strong>Post 10 — AI News Commentary: Governed Agent Loops</strong></summary>
+<summary><strong>Post 9 — AI News Commentary: Governed Agent Loops</strong></summary>
 
 ## LinkedIn
 
@@ -637,5 +637,5 @@ https://mimris-site.vercel.app/articles/governed-agent-loops
 | Can AI Have Consciousness? |  |  |  |
 | Governed AI execution | https://www.linkedin.com/feed/update/urn:li:activity:7503551078349643776/ |  | Source-based Meta Muse commentary |
 | When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
+| Governed Agent Loops | https://www.linkedin.com/posts/snorre-fossland-686885_ai-aiagents-mimris-activity-7508831305246359553-dZdV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAhDYYBYpz8Ha5vqDGKaZvBDb6joT0d-60 | 2026-09-24 | Published |
 | AI Can Generate the Code—But Who Defines What Is Correct? |  |  | Draft; publish after canonical article is deployed |
-| Governed Agent Loops |  |  | Prepared for approval; not published |
