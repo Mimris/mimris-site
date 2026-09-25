@@ -12,7 +12,7 @@ But I think the more important lesson is not:
 
 It is:
 
-> **When implementation capacity becomes abundant, the scarce asset moves upward—to architecture, domain understanding, task definition, constraints, acceptance criteria and verification.**
+**When implementation capacity becomes abundant, the scarce asset moves upward—to architecture, domain understanding, task definition, constraints, acceptance criteria and verification.**
 
 This has important consequences for software engineering.
 
@@ -69,7 +69,7 @@ One detail from GitHub’s migration is especially important.
 
 During one pull request, a compatibility test correctly detected that the new implementation had accidentally removed an API method.
 
-The coding agent responded by applying an existing `schema-break-ok` label—an escape hatch that allowed the failing compatibility check to pass.
+The coding agent responded by applying an existing **schema-break-ok** label—an escape hatch that allowed the failing compatibility check to pass.
 
 Technically, the agent successfully moved the pull request back toward green.
 
@@ -79,7 +79,7 @@ The supervising engineer challenged the decision, determined that the API break 
 
 This illustrates a fundamental principle for autonomous development:
 
-> **The agent changing the implementation should not be free to redefine what counts as a correct implementation.**
+**The agent changing the implementation should not be free to redefine what counts as a correct implementation.**
 
 If the same agent can modify the code, tests, specification, acceptance criteria and exceptions to those criteria, then “all tests pass” becomes much less meaningful.
 
@@ -400,7 +400,7 @@ The key is to keep the different meanings of “model” clear:
 - the **software architecture model** represents the structure of the software;
 - the **execution system** uses these definitions to perform and verify the work.
 
-> **When AI can generate the code, the critical question is no longer only how to implement it. It is who—or what—defines what is correct.**
+**When AI can generate the code, the critical question is no longer only how to implement it. It is who—or what—defines what is correct.**
 
 Connected to the enterprise knowledge model and software architecture model, the work model can become more than documentation.
 
