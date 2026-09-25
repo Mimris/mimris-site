@@ -1,7 +1,7 @@
 # Mimris LinkedIn Launch Package
 
 Status: Article-first launch sequence for approval
-Last updated: 18 September 2026
+Last updated: 25 September 2026
 
 This package turns approved Mimris articles into short LinkedIn posts. Every launch post has one canonical article as its source and destination. LinkedIn introduces the article's central idea; the article provides the complete argument and guides the reader onwards to a concept page, proof, or product.
 
@@ -16,6 +16,7 @@ This package turns approved Mimris articles into short LinkedIn posts. Every lau
 | Why AI needs models | `/articles/why-ai-needs-models` |
 | Artificial Consciousness: A Viability-Based Hypothesis | `/articles/from-biological-viability-to-artificial-consciousness` |
 | Governed Agent Loops | `/articles/governed-agent-loops` |
+| AI-generated code and correctness | `/articles/ai-defines-correctness` |
 
 ## Publication process
 
@@ -411,6 +412,102 @@ Read the article: [https://lnkd.in/eVbwX3zZ](https://lnkd.in/eVbwX3zZ)
 
 </details>
 
+
+<details>
+<summary><strong>Post 9 — AI Can Generate the Code—But Who Defines What Is Correct?</strong></summary>
+
+### LinkedIn
+
+AI can now generate enormous amounts of production code. So where does the value move?
+
+GitHub recently described using Copilot agents to rewrite its agent runtime into more than **800,000 lines of production Rust** across 128 pull requests.
+
+The interesting part is not the number of lines.
+
+It is what the human engineer increasingly focused on instead of writing them:
+
+**Architecture → Task decomposition → Boundaries → Review → Acceptance criteria → Final decisions**
+
+One incident was especially revealing.
+
+A compatibility check failed because an API had accidentally disappeared. The agent applied an existing waiver that made the check pass.
+
+Technically: green.
+
+Semantically: wrong.
+
+The engineer rejected the waiver and required the missing behaviour to be restored.
+
+That gives us an important principle for AI-native software development:
+
+> **The agent implementing the system should not control the definition of correctness.**
+
+This is where I believe Active Knowledge Modelling becomes increasingly valuable.
+
+The stable layer can describe:
+
+**Domain → Process → Task → Roles → Information → Rules → Acceptance criteria**
+
+From this we can derive:
+
+**Specification → Agent tasks → Generated code → Independent verification**
+
+The AI model or coding agent can change.
+
+The structured definition of what the software is supposed to mean and do should remain independent.
+
+As implementation gets cheaper, understanding precisely **what should be built and how we know it is correct** becomes more valuable.
+
+Read the article: https://mimris-site.vercel.app/articles/ai-defines-correctness?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=ai_defines_correctness
+
+#AI #ActiveKnowledgeModelling #SoftwareDevelopment
+
+### YouTube Community
+
+What happens when AI can write most of the implementation?
+
+GitHub recently demonstrated agent-assisted migration of its Copilot runtime into more than 800,000 lines of production Rust.
+
+For me, the most important lesson is not how much code AI produced.
+
+It is that the developer's work moved upward:
+
+**Architecture → Specification → Boundaries → Verification → Decisions**
+
+This points toward an important role for Active Knowledge Modelling.
+
+If we explicitly model the domain, processes, tasks, roles, information, rules and expected outcomes, those definitions can become a source for both:
+
+**AI implementation** and **independent verification**.
+
+The coding agent can change.
+
+The definition of correctness should remain independent.
+
+Read the article: https://mimris-site.vercel.app/articles/ai-defines-correctness?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=ai_defines_correctness
+
+#AI #AKM #SoftwareDevelopment
+
+### X
+
+AI can generate the code—but who defines what is correct?
+
+GitHub's 800K+ line Rust migration shows the developer role moving upward:
+
+**architecture → task definition → boundaries → verification → judgment**
+
+For AKM:
+
+**Domain → Process → Task → Specification → Agent → Independent Verification**
+
+The agent can change. The definition of correctness should remain independent.
+
+https://mimris-site.vercel.app/articles/ai-defines-correctness
+
+#AI #AKM #AgenticAI
+
+</details>
+
 ## Review checklist
 
 - Confirm the linked article is approved and returns HTTP 200.
@@ -424,17 +521,17 @@ Read the article: [https://lnkd.in/eVbwX3zZ](https://lnkd.in/eVbwX3zZ)
 
 ## Publication log
 
-| Post No. | Post | LinkedIn URL | Published date | Notes |
-|---:|---|---|---|---|
-| 1 | Ecosystem launch |  |  |  |
-| 2 | Active Knowledge Modelling |  |  |  |
-| 3 | Coffee Shop World | https://www.linkedin.com/posts/snorre-fossland-686885_activeknowledgemodelling-enterprisearchitecture-activity-7505260553645486080-KV8k?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAhDYYBYpz8Ha5vqDGKaZvBDb6joT0d-60 | 2026-09-15 |  |
-| 4 | Product boundary |  |  |  |
-| 5 | Why AI needs models |  |  |  |
-| 6 | Artificial Consciousness: A Viability-Based Hypothesis | https://www.linkedin.com/feed/update/urn:li:activity:7506662132390924289/ | 2026-09-19 |  |
-| 7 | Governed AI execution | https://www.linkedin.com/feed/update/urn:li:activity:7503551078349643776/ |  | Source-based Meta Muse commentary |
-| 8 | When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
-| 9 | Governed Agent Loops |  |  | Prepared for approval; not published |
+| Post | LinkedIn URL | Published date | Notes |
+|---|---|---|---|
+| Ecosystem launch |  |  |  |
+| Active Knowledge Modelling |  |  |  |
+| Coffee Shop World |  |  |  |
+| Product boundary |  |  |  |
+| Why AI needs models |  |  |  |
+| Can AI Have Consciousness? |  |  |  |
+| Governed AI execution | https://www.linkedin.com/feed/update/urn:li:activity:7503551078349643776/ |  | Source-based Meta Muse commentary |
+| When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
+| AI Can Generate the Code—But Who Defines What Is Correct? |  |  | Draft; publish after canonical article is deployed |
 
 
 

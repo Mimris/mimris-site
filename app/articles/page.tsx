@@ -24,15 +24,16 @@ export default function ArticlesPage() {
           <div className="article-index-main">
             <article className="editorial-card">
               <div>
-                <p className="eyebrow">Model-driven work · 5 minute read</p>
-                <h2>From Process Models to AI-Assisted Task Execution</h2>
+                <p className="eyebrow">AI-native software development · 10 minute read</p>
+                <h2>AI Can Generate the Code—But Who Defines What Is Correct?</h2>
                 <p>
-                  See how Mimris turns process context and model-grounded Tasks into a generic execution pattern for documents, models, analysis, and other work.
+                  Why rapidly scaling AI implementation makes independent work models, acceptance criteria, architecture, and semantic verification increasingly important.
                 </p>
               </div>
-              <ArrowLink href="/articles/ai-assisted-task-execution">Read the article</ArrowLink>
+              <ArrowLink href="/articles/ai-defines-correctness">Read the article</ArrowLink>
             </article>
             <div className="article-link-grid">
+              <Link href="/articles/ai-assisted-task-execution"><h2>From Process Models to AI-Assisted Task Execution</h2><p>See how Mimris turns process context and model-grounded Tasks into a generic execution pattern.</p></Link>
               <Link href="/articles/mimris-ecosystem"><h2>What Is Mimris?</h2><p>Meet the ecosystem for modelling a world and putting it to work.</p></Link>
               <Link href="/articles/why-ai-needs-models"><h2>Why AI Needs Models</h2><p>Why useful AI work depends on explicit concepts, relationships, rules, and context.</p></Link>
               <Link href="/articles/active-knowledge-modelling"><h2>What Is Active Knowledge Modelling?</h2><p>Understand the approach behind Mimris.</p></Link>
