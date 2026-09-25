@@ -151,3 +151,6 @@ h3 { font-size: clamp(19px, 1.6vw, 25px); letter-spacing: -.015em; line-height: 
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition-duration: .01ms !important; } }
+/* Dated article directory entries keep the newest publication visible first. */
+.article-directory-group a time { display: block; margin-top: 3px; color: var(--subtle); font-size: 11px; font-weight: 500; }
+.article-directory-group a:hover time, .article-directory-group a[aria-current="page"] time { color: inherit; }
