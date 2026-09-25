@@ -39,6 +39,7 @@ export default function ArticlesPage() {
               <Link href="/articles/coffee-shop-universe"><h2>The Coffee Shop World</h2><p>Follow a familiar world from model to work inside an AKM Universe.</p></Link>
               <Link href="/articles/modelling-and-workspace"><h2>Two Complementary Jobs</h2><p>See how the products divide responsibility.</p></Link>
               <Link href="/articles/from-biological-viability-to-artificial-consciousness"><h2>Can AI Have Consciousness?</h2><p>An exploratory hypothesis about living and artificial systems.</p></Link>
+              <Link href="/articles/governed-agent-loops"><h2>Governed Agent Loops</h2><p>Why model-based context, controls, verification, and human review matter when agents keep working.</p></Link>
             </div>
           </div>
         </div>

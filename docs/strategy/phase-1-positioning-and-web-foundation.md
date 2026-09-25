@@ -144,7 +144,7 @@ The repository now uses native Next.js on Vercel as its canonical runtime. It re
 - The ecosystem homepage, concept pages, product pages, Coffee Shop proof, About page, and initial article are published.
 - The Coffee Shop CTA opens the `coffee-shop-generic` Universe in Mimris Modelling with the published IRTV model and End-to-End Store Flow view selected.
 - Markdown editorial sources live under `content/articles/` and are published through the article routes, with grouped article navigation, responsive mobile menus, author bylines, and end-of-article AI-assisted writing notes.
-- The current article set includes the Mimris ecosystem introduction, modelling explainers, Coffee Shop proof, “Why AI Needs Models,” the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page, and “From Process Models to AI-Assisted Task Execution.”
+- The current article set includes the Mimris ecosystem introduction, modelling explainers, Coffee Shop proof, “Why AI Needs Models,” the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page, “From Process Models to AI-Assisted Task Execution,” and the Governed Agent Loops commentary article with its AKM enterprise task infographic.
 - Information architecture, SEO/GEO, and analytics briefs live under `docs/website/`.
 - Vercel uses the native Next.js framework preset; Vite, Vinext, and Cloudflare build infrastructure have been removed.
 
@@ -170,6 +170,7 @@ Target public architecture:
 |   |-- /articles/ai-assisted-task-execution
 |   |-- /articles/when-ai-can-generate-the-software
 |   |-- /articles/from-biological-viability-to-artificial-consciousness
+|   |-- /articles/governed-agent-loops
 |   `-- /articles/can-ai-have-consciousness-infographic
 |-- /about
 |-- /press.html
@@ -210,6 +211,7 @@ The first permanent content set is:
 | When AI Can Generate the Software, the Model Becomes the Asset | AI-assisted software generation, Active Knowledge Modelling, and the model as durable specification |
 | Can AI Have Consciousness? | Exploratory AI News and Commentary article |
 | Consciousness infographic | Separate visual companion at readable scale |
+| Governed Agent Loops | AI News and Commentary on AKM enterprise-model-based agent execution and human review |
 
 The same source material should support the website, LinkedIn posts, demonstrations, YouTube material, and press references. Promotion should lead back to durable canonical content rather than create disconnected claims.
 
@@ -352,7 +354,7 @@ Complete canonical metadata, structured data, sitemap, robots policy, `llms.txt`
 
 ### Step 7: Launch the first content cycle — in progress
 
-Approve the article set, derive LinkedIn material from canonical pages using [the launch package](../promotion/linkedin-launch-package.md), verify all public links, and record baseline results. Before creating any new promotion file, inspect and extend the existing launch package or other established publishing asset. The publishable sequence includes the ecosystem, Active Knowledge Modelling, Coffee Shop proof, product boundary, “Why AI Needs Models,” “From Process Models to AI-Assisted Task Execution,” and then exploratory AI commentary.
+Approve the article set, derive LinkedIn material from canonical pages using [the launch package](../promotion/linkedin-launch-package.md), verify all public links, and record baseline results. Before creating any new promotion file, inspect and extend the existing launch package or other established publishing asset. The publishable sequence includes the ecosystem, Active Knowledge Modelling, Coffee Shop proof, product boundary, “Why AI Needs Models,” “From Process Models to AI-Assisted Task Execution,” and then exploratory AI commentary including Governed Agent Loops.
 
 ## 15. Definition of done
 

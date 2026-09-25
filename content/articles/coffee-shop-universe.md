@@ -1,96 +1,100 @@
-# The Coffee Shop World: An AKM Universe Proof
+# From Domain Understanding to Operational Work
 
 > Draft canonical article for `/examples/coffee-shop` and future editorial use.
 
-A coffee shop is familiar enough to make the modelling method visible. Customers place orders. Employees prepare products. Payment, production, inventory, and service work depend on one another.
+Understanding a world starts with the work people are trying to do. We use a coffee shop as an example because it is familiar while still containing the essential elements of operational work. Customers place orders, employees prepare products, and payment, production, inventory, and service depend on one another. This provides a concrete setting for seeing how a connected model grows from shared understanding into operational work.
 
-The Coffee Shop World is built in an AKM Universe as one connected progression. Each stage adds enough structure for the next one, so the Operational Preview is not designed separately as an application prototype. It is derived from the modelled World and its configured operational reality.
+The article follows that progression from shared understanding to useful work. Each stage adds enough structure for the next one. The Operational Preview is therefore not designed as a separate application prototype; it is derived from the modelled World and its configured operational reality.
 
-![Illustrated progression from Coffee Shop domain description to an Operational Preview](/assets/coffee-shop-world-progression-infographic.png)
+![General modelling journey from understanding a coffee shop domain to an operational preview](/assets/coffee-shop-world-progression-general.png)
 
 ```text
-Domain Conceptual Description
-  -> Domain Ontology
-  -> POPS
-  -> IDEF0 with ICOMs
-  -> IRTV Workplaces
-  -> TYPE
-  -> OCIM instance configuration
-  -> Operational Preview
+Understand the domain
+  -> Define concepts and boundaries
+  -> Structure the process tree
+  -> Design workplaces and workflows
+  -> Define the operational model
+  -> Generate an operational preview
 ```
 
-## 1. Describe the Coffee Shop Domain
+## 1. Understand the Domain
 
-The journey starts with a **Domain Conceptual Description**: what a coffee shop is, what it is trying to achieve, and the vocabulary people use when they work in it. It describes the scope, rules, customers, products, orders, payment, drink preparation, service, inventory, and the environment in which the shop operates.
+The journey starts by describing what the coffee shop is, what it is trying to achieve, and how people talk about the work. The description establishes the scope: customers, products, orders, payment, preparation, service, inventory, and the surrounding environment.
 
-This is deliberately understandable before it is technical. It gives the model a shared meaning and makes later choices traceable to the business situation they are intended to improve. People can use AI to help synthesize interviews, procedures, and existing material into a first draft, but the domain description remains a reviewed expression of the business understanding.
+This first step should be understandable before it is technical. It creates shared meaning and makes later choices traceable to the business situation they are intended to improve. People can use AI to synthesize interviews, procedures, and existing material into a first draft, but the domain understanding remains a reviewed expression of the business.
 
-## 2. Make Meaning Explicit in the Domain Ontology
+## 2. Define Concepts and Boundaries
 
-The **Domain Ontology** turns the conceptual description into explicit concepts and semantic relationships. In the Coffee Shop World, this can include Customer, Order, Order Line, Product, Drink, Payment, Barista, Shift, Coffee Bean, and Inventory Item.
+Next, the important concepts and their relationships are made explicit. A Coffee Shop World may include Customer, Order, Order Line, Product, Drink, Payment, Barista, Shift, Coffee Bean, and Inventory Item.
 
-For example, a Customer places an Order; an Order contains Order Lines; an Order requests Products; a Payment settles an Order; and a Barista prepares a Drink. AI can help propose relationships or identify inconsistent terminology, while people review and adopt the resulting ontology. The ontology then ensures that the same concepts are understood consistently across process models, workspaces, data structures, and operational views.
+A Customer places an Order. An Order contains Order Lines. An Order requests Products. A Payment settles an Order. A Barista prepares a Drink. These relationships give the rest of the model a common vocabulary.
 
-## 3. Organize the World with POPS
+In Mimris, this stage is supported by domain ontology and context definitions. The specific terminology matters, but the general purpose is simple: decide what the concepts mean, where they belong, and how they relate to one another. AI can suggest relationships or identify inconsistent terms; people review and adopt the result.
 
-**POPS** brings together the Processes, Organization, Products, and Systems that shape the coffee shop. It identifies the store flow and its participants: customers and staff; products such as drinks and food; and systems such as a point-of-sale service, payment service, inventory source, or kitchen display.
+## 3. Structure the Process Tree
 
-POPS connects the semantic vocabulary to the operating environment. It makes it possible to ask not only “what is an Order?” but also “which process handles it, who is responsible, which product is being delivered, and which systems are involved?” AI can help analyze existing procedures, system descriptions, and data sources, but the resulting model remains grounded in the people and systems that actually operate the shop.
+The process tree organizes the work and the capabilities of the coffee shop. It shows how broad responsibilities such as serving customers, preparing products, handling payment, and replenishing stock are related and can be decomposed into more concrete activities.
 
-## 4. Model Work with IDEF0 and ICOMs
+For example, the tree can lead to activities such as *Take Order*, *Accept Payment*, *Prepare Drink*, *Hand Over Order*, and *Replenish Stock*. It helps answer a practical question: what work must exist for the coffee shop to achieve its purpose?
 
-The **IDEF0 process model** describes how the work is performed. Activities such as *Take Order*, *Accept Payment*, *Prepare Drink*, *Hand Over Order*, and *Replenish Stock* can be decomposed until the required work is sufficiently concrete.
+Mimris currently represents this process-oriented structure through **POPS**. POPS is therefore a formal implementation term for a broader idea: organizing processes together with the people, products, and systems that surround them. The general concept comes first; the notation can evolve without changing the underlying process structure.
 
-Each activity uses ICOMs to show its operational context:
+## 4. Design Workplaces and Workflows
 
-- **Inputs** are what the activity works on, such as an order or selected product.
-- **Controls** govern the work, such as recipes, pricing, food-safety rules, and customer requests.
-- **Outputs** are what the activity produces, such as a paid order, prepared drink, receipt, or updated stock position.
-- **Mechanisms** are the people, systems, equipment, and services that enable the work.
+A process tree explains what work exists. A workplace explains how a person or team can carry out one part of that work. A workflow explains the ordered path through activities, including what happens next, what information is needed, and where decisions or handovers occur.
 
-For *Prepare Drink*, a paid order may be the input; the recipe and quality standard are controls; the completed drink is the output; and the barista, espresso machine, grinder, order display, and ingredients are mechanisms. AI can help draft or check the ICOM description, but people validate the controls, responsibilities, and intended outcomes. This makes the process model more than a sequence of boxes: it captures what work needs and what it produces.
+The *Prepare Drink* workplace can give a Barista the active order, recipe, allergy notes, preparation tasks, quality controls, and a view of order status. The *Take Order* workplace can give a cashier the menu, customer request, pricing rules, payment task, and order-confirmation view.
 
-## 5. Derive IRTV Workplaces from Leaf Activities
+In Mimris, **IRTV** is the formal structure used to describe information, roles, tasks, and views in a workplace. More detailed process notation such as **IDEF0** and **ICOMs** can describe what an activity receives, what controls it, what it produces, and which people or systems enable it. These are supporting notations for the broader workplace and workflow concepts.
 
-When an IDEF0 activity reaches a leaf level, it can provide the basis for an **IRTV Workplace**. A workplace brings together the Information, Roles, Tasks, and Views required to carry out that specific area of work.
+Human and AI task execution is present across these workplaces rather than being a separate step. AI can help explain a procedure, identify missing information, or prepare a draft, while the person remains responsible for direction, review, and approval.
 
-The *Prepare Drink* workplace, for example, can give a Barista the active order, recipe, allergy notes, quality controls, preparation tasks, and a view of order status. The *Take Order* workplace can give a cashier or service employee the menu, customer request, pricing rules, payment task, and order-confirmation view.
+## 5. Define the Operational Model
 
-The workplace is therefore an execution-oriented view of a modelled process, not a separate design exercise. It gives both the person performing the task and any AI assistance the right model-derived context: the activity, its ICOMs, information, role, task, and view.
+The operational model brings together two closely related questions:
 
-## 6. Define the Information with TYPE
+- What information exists, and how is it structured?
+- Which concrete resources are available, and where are they used?
 
-The **TYPE model** defines the structured information the workplaces and tasks manipulate: types, properties, and relationships for Orders, Payments, Products, Drinks, Employees, Equipment, and other operational objects.
+![Information and resources combining into an operational model and contextual human work](/assets/coffee-shop-operational-model-infographic.png)
 
-TYPE provides the reliable shape for the data behind a task view or form. An order-status view can therefore use defined Order and Order Line relationships; a drink-preparation checklist can refer to product, recipe, and allergy properties; and a document or AI-assisted task can draw on the same modelled information rather than an isolated template.
+### Information
 
-## 7. Configure Concrete Resources in OCIM
+Information includes Orders, Products, Payments, Drinks, Employees, Equipment, properties, and relationships. It gives a task view or form a reliable shape and allows different workplaces to refer to the same meaning rather than inventing isolated fields.
 
-The **OCIM model** bridges abstract design and a configured operational World. IDEF0 Mechanisms and TYPE definitions state the kinds of capability that work requires. OCIM configures the concrete instances that are actually available and assigns them to the tasks and workplaces they support.
+In Mimris, **TYPE** is the formal model used for this information structure. TYPE defines the kinds of things, their properties, and their relationships. An order-status view can therefore use defined Order and Order Line relationships, while a preparation checklist can refer to product, recipe, and allergy properties.
 
-For the Coffee Shop World, that means configuring specific baristas, espresso machines, POS terminals, grinders, payment services, order displays, inventory sources, and other resources from their mechanism or type definitions. Each instance can carry its relevant properties and configuration: a barista's role or shift, an espresso machine's location and supported settings, a POS terminal's store and connection, a grinder's calibration, or a payment service's supported payment methods and integration details.
+### Resources
 
-Those configured instances are then assigned to the relevant work. A particular barista and espresso machine can support the *Prepare Drink* workplace; a particular POS terminal and payment service can support *Take Order* and *Accept Payment*. AI assistance uses that assignment as context; it does not invent resources or bypass the systems, integrations, access arrangements, and human responsibilities governing the task. This is how abstract mechanisms become usable, accountable resources in a real operational setting.
+Resources are the concrete people, equipment, systems, and services that make the work possible. The model can describe an Espresso Machine as a kind of resource; the operational configuration identifies the actual machine in the shop, its settings, and the workplace where it is used.
 
-## 8. Generate an Operational Preview
+In Mimris, **OCIM** provides the formal configuration layer for this reality. It connects abstract capabilities to concrete instances and assignments: a particular Barista and espresso machine can support *Prepare Drink*, while a particular POS terminal and payment service can support *Take Order* and *Accept Payment*.
 
-The **Operational Preview** is derived from the connected models and configured instances. It can generate task views, forms, checklists, documents, status and progress, and AI-assisted actions that use the relevant process, workplace, information, controls, and assigned resources as context.
+TYPE and OCIM are therefore presented together here because both contribute to the operational model, while retaining their different responsibilities: TYPE describes information semantics; OCIM configures concrete resources and their assignments.
 
-For a barista, this might be a preparation view with the current order, recipe, equipment, checklist, and completion status. For a supervisor, it might be a view of operational progress, exceptions, and available resources. AI assistance is embedded in these views and tasks wherever it is useful: it can explain a recipe or allergen control, summarize a handover, identify missing information, draft a stock request, or prepare a customer-facing update from the relevant modelled context. The human directs the work, checks suggestions against the controls, decides what to do, and approves the result.
+AI assistance uses this modelled context. It does not invent resources, bypass integrations, or replace the access arrangements and human responsibilities governing the work.
 
-![Human and AI embedded across every stage of the World, with feedback from operational work into improvement](/assets/human-ai-across-world-infographic.png)
+## 6. Generate an Operational Preview
+
+The Operational Preview is derived from the connected models and configured resources. It can generate task views, forms, checklists, documents, status and progress, and AI-assisted actions that use the relevant process, workplace, information, controls, and assignments as context.
+
+For a Barista, this might be a preparation view with the current order, recipe, equipment, checklist, and completion status. For a supervisor, it might be a view of progress, exceptions, and available resources.
+
+AI can explain a recipe or allergen control, summarize a handover, identify missing information, draft a stock request, or prepare a customer-facing update. The human directs the work, checks suggestions against the controls, decides what to do, and approves the result.
 
 ## Top-Down Intent, Bottom-Up Reality
 
-The Coffee Shop World works in both directions. Top-down modelling expresses the future intent:
+![Top-down intent and bottom-up reality connected through operational work and continuous model improvement](/assets/coffee-shop-top-down-bottom-up.png)
+
+The Coffee Shop World works in both directions. Top-down modelling expresses future intent:
 
 ```text
-Domain -> Ontology -> Process -> Workplace -> Task
+Domain -> Concepts -> Process Tree -> Workplace -> Workflow -> Operational Model
 ```
 
-Bottom-up modelling captures the existing reality that the future design must adapt to: current systems, equipment, data, integrations, documents, and working practices. A shop may already have a POS platform, particular espresso machines, a payment provider, spreadsheets, supplier data, and established ways of working. These are not ignored; they are understood, represented where relevant, and connected to the intended World.
+Bottom-up modelling captures the existing reality that the future design must adapt to: current systems, equipment, data, integrations, documents, and working practices. A shop may already have a POS platform, espresso machines, a payment provider, spreadsheets, supplier data, and established ways of working. These are not ignored; they are understood, represented where relevant, and connected to the intended World.
 
-Work also feeds knowledge back upward. Human and AI execution produces results, decisions, and evidence about how work was actually performed. That learning can improve the processes, workplaces, types, and configurations over time.
+Work also feeds knowledge back upward. Human and AI execution produces results, decisions, and evidence about how work was actually performed. That learning can improve the process tree, workplaces, information, and resource configuration over time.
 
 The point is not the coffee shop itself. It is the continuity from domain understanding to model structure, configured resources, and contextualized human + AI action.
 
