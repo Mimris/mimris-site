@@ -10,7 +10,8 @@ export function MermaidBootstrap() {
     const render = () => {
       const mermaid = (window as typeof window & { mermaid?: { initialize: (options: object) => void; run: (options: object) => Promise<void> } }).mermaid;
       if (!mermaid) return;
-      mermaid.initialize({ startOnLoad: false, securityLevel: "strict", theme: "base", themeVariables: { primaryColor: "#eef5ee", primaryTextColor: "#17302a", primaryBorderColor: "#176b50", lineColor: "#176b50", fontFamily: "Arial, sans-serif", fontSize: "20px", nodePadding: "14" } });
+      const compact = pathname === "/articles/from-biological-viability-to-artificial-consciousness";
+      mermaid.initialize({ startOnLoad: false, securityLevel: "strict", theme: "base", themeVariables: { primaryColor: "#eef5ee", primaryTextColor: "#17302a", primaryBorderColor: "#176b50", lineColor: "#176b50", fontFamily: "Arial, sans-serif", fontSize: compact ? "16px" : "20px", nodePadding: compact ? "8" : "14" } });
       const nodes = Array.from(document.querySelectorAll<HTMLElement>(".mermaid:not([data-mermaid-rendered])"));
       if (!nodes.length) return;
       nodes.forEach((node) => node.dataset.mermaidRendered = "true");
