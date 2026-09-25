@@ -8,6 +8,7 @@ const articleGroups = [
     links: [
       ["/articles/mimris-ecosystem", "What Is Mimris?"],
       ["/articles/ai-assisted-task-execution", "AI-Assisted Task Execution"],
+      ["/articles/ai-defines-correctness", "Who Defines What Is Correct?"],
       ["/articles/why-ai-needs-models", "Why AI Needs Models"],
       ["/articles/active-knowledge-modelling", "Active Knowledge Modelling"],
       ["/articles/modelling-and-workspace", "Modelling and Workspace"],
