@@ -13,14 +13,16 @@ export const metadata: Metadata = {
 export default function ArticlesPage() {
   return (
     <>
-      <PageHero
-        eyebrow="Mimris articles · AI news and commentary"
-        title="Ideas for working with knowledge, models, and AI."
-        lead="Long-form explanations, news, and commentary about AI, grounded in practical modelling and the work of understanding complex domains."
-      />
+      <div className="articles-hero-layout">
+        <ArticleDirectory />
+        <PageHero
+          eyebrow="Mimris articles · AI news and commentary"
+          title="Ideas for working with knowledge, models, and AI."
+          lead="Long-form explanations, news, and commentary about AI, grounded in practical modelling and the work of understanding complex domains."
+        />
+      </div>
       <section className="article-index">
         <div className="article-index-page-layout">
-          <ArticleDirectory />
           <div className="article-index-main">
             <article className="editorial-card">
               <div>

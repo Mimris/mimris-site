@@ -2,18 +2,28 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import Link from "next/link";
 
-const articleEntries = [
-  { href: "/articles/ai-defines-correctness", label: "AI Can Generate the Code—But Who Defines What Is Correct?", date: "25 September 2026", dateTime: "2026-09-25" },
-  { href: "/articles/governed-agent-loops", label: "Governed Agent Loops", date: "24 September 2026", dateTime: "2026-09-24" },
-  { href: "/articles/ai-assisted-task-execution", label: "AI-Assisted Task Execution", date: "27 August 2026", dateTime: "2026-08-27" },
-  { href: "/articles/mimris-ecosystem", label: "What Is Mimris?", date: "23 August 2026", dateTime: "2026-08-23" },
-  { href: "/articles/active-knowledge-modelling", label: "What Is Active Knowledge Modelling?", date: "20 August 2026", dateTime: "2026-08-20" },
-  { href: "/articles/coffee-shop-universe", label: "The Coffee Shop World", date: "20 August 2026", dateTime: "2026-08-20" },
-  { href: "/articles/modelling-and-workspace", label: "Mimris Modelling and Mimris AI Workspace", date: "20 August 2026", dateTime: "2026-08-20" },
-  { href: "/articles/from-biological-viability-to-artificial-consciousness", label: "Artificial Consciousness: A Viability-Based Hypothesis", date: "20 August 2026", dateTime: "2026-08-20" },
-  { href: "/articles/can-ai-have-consciousness-infographic", label: "Infographic: Can AI Have Consciousness?", date: "20 August 2026", dateTime: "2026-08-20" },
-  { href: "/articles/why-ai-needs-models", label: "Why AI Needs Models", date: "19 August 2026", dateTime: "2026-08-19" },
-].sort((a, b) => b.dateTime.localeCompare(a.dateTime) || a.label.localeCompare(b.label));
+const articleGroups = [
+  { label: "Active Knowledge Modelling", links: [
+    { href: "/articles/ai-defines-correctness", label: "AI Can Generate the Code—But Who Defines What Is Correct?", date: "25 September 2026", dateTime: "2026-09-25" },
+    { href: "/articles/ai-assisted-task-execution", label: "AI-Assisted Task Execution", date: "27 August 2026", dateTime: "2026-08-27" },
+    { href: "/articles/mimris-ecosystem", label: "What Is Mimris?", date: "23 August 2026", dateTime: "2026-08-23" },
+    { href: "/articles/active-knowledge-modelling", label: "What Is Active Knowledge Modelling?", date: "20 August 2026", dateTime: "2026-08-20" },
+    { href: "/articles/modelling-and-workspace", label: "Mimris Modelling and Mimris AI Workspace", date: "20 August 2026", dateTime: "2026-08-20" },
+    { href: "/articles/why-ai-needs-models", label: "Why AI Needs Models", date: "19 August 2026", dateTime: "2026-08-19" },
+  ] },
+  { label: "AI News and Commentary", links: [
+    { href: "/articles/governed-agent-loops", label: "Governed Agent Loops", date: "24 September 2026", dateTime: "2026-09-24" },
+    { href: "/articles/from-biological-viability-to-artificial-consciousness", label: "Artificial Consciousness: A Viability-Based Hypothesis", date: "20 August 2026", dateTime: "2026-08-20" },
+    { href: "/articles/can-ai-have-consciousness-infographic", label: "Infographic: Can AI Have Consciousness?", date: "20 August 2026", dateTime: "2026-08-20" },
+  ] },
+  { label: "Examples and worlds", links: [
+    { href: "/articles/coffee-shop-universe", label: "The Coffee Shop World", date: "20 August 2026", dateTime: "2026-08-20" },
+  ] },
+].map((group) => ({ ...group, links: group.links.sort((a, b) => b.dateTime.localeCompare(a.dateTime) || a.label.localeCompare(b.label)) }));
+
+function renderArticleGroups(currentPath?: string) {
+  return articleGroups.map((group) => <div className="article-directory-group" key={group.label}><p>{group.label}</p><nav>{group.links.map(({ href, label, date, dateTime }) => <Link key={href} href={href} aria-current={href === currentPath ? "page" : undefined} data-analytics-event="article_opened" data-analytics-destination={href}><span>{label}</span><time dateTime={dateTime}>{date}</time></Link>)}</nav></div>);
+}
 
 function escapeHtml(value: string) {
   return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -150,7 +160,7 @@ export function ArticleMarkdown({ file }: { file: string }) {
 }
 
 export function ArticleIndex({ currentPath }: { currentPath: string }) {
-  const groups = <div className="article-directory-group"><p>All articles</p><nav>{articleEntries.map(({ href, label, date, dateTime }) => <Link key={href} href={href} aria-current={href === currentPath ? "page" : undefined} data-analytics-event="article_opened" data-analytics-destination={href}><span>{label}</span><time dateTime={dateTime}>{date}</time></Link>)}</nav></div>;
+  const groups = renderArticleGroups(currentPath);
 
   return (
     <>
@@ -167,7 +177,7 @@ export function ArticleIndex({ currentPath }: { currentPath: string }) {
 }
 
 export function ArticleDirectory() {
-  const groups = <div className="article-directory-group"><p>All articles</p><nav>{articleEntries.map(({ href, label, date, dateTime }) => <Link href={href} key={href} data-analytics-event="article_opened" data-analytics-destination={href}><span>{label}</span><time dateTime={dateTime}>{date}</time></Link>)}</nav></div>;
+  const groups = renderArticleGroups();
 
   return (
     <>
