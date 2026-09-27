@@ -16,10 +16,15 @@ export default function ArticlesPage() {
       <div className="articles-hero-layout">
         <ArticleDirectory />
         <PageHero
-          eyebrow="Mimris articles · AI news and commentary"
-          title="Ideas for working with knowledge, models, and AI."
-          lead="Long-form explanations, news, and commentary about AI, grounded in practical modelling and the work of understanding complex domains."
-        />
+          eyebrow="Mimris articles · Ideas for model-driven work"
+          title="Understand the work before you ask AI to do it."
+          lead="Explore practical explanations, product thinking, and AI commentary from Mimris. These articles follow knowledge from the world people understand, through models and processes, into work that people and AI can perform together."
+        >
+          <div className="page-hero-note">
+            <p><strong>Read across three chapters.</strong> Active Knowledge Modelling explains the foundations, AI News and Commentary examines current developments, and Examples and worlds connect the ideas to familiar domains.</p>
+            <p>Start with the latest article or follow a chapter from its foundations to applied work.</p>
+          </div>
+        </PageHero>
       </div>
       <section className="article-index">
         <div className="article-index-page-layout">
