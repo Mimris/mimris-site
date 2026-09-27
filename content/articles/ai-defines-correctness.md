@@ -37,6 +37,8 @@ The work model describes what needs to be done and how we determine whether it h
 
 The central argument of this article concerns the **work model**, supported by the enterprise knowledge model and connected to the software architecture model. It does not refer to the AI model itself.
 
+![Work model, AI-assisted implementation, technical tests, semantic verification, and human acceptance, grounded in enterprise knowledge and software architecture](/assets/ai-correctness-work-model-infographic.png)
+
 ## The Developer Role Is Moving Upward
 
 The GitHub example gives us a useful picture of what agentic software development can look like at scale.
