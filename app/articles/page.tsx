@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLink, PageHero } from "../_components/site-shell";
 import { ArticleDirectory } from "../_components/article-markdown";
@@ -23,6 +24,10 @@ export default function ArticlesPage() {
           <div className="page-hero-note">
             <p><strong>Read across three chapters.</strong> Active Knowledge Modelling explains the foundations, AI News and Commentary examines current developments, and Examples and worlds connect the ideas to familiar domains.</p>
             <p>Start with the latest article or follow a chapter from its foundations to applied work.</p>
+            <figure className="articles-hero-infographic">
+              <Image src="/assets/articles-understand-before-execute-infographic.png" alt="A governed AI work loop from understanding the work and defining the enterprise model to preparing context, asking AI to execute, and reviewing the result" width={1672} height={942} sizes="(max-width: 720px) 100vw, 720px" />
+              <figcaption>Use AI to understand the work before asking it to execute.</figcaption>
+            </figure>
           </div>
         </PageHero>
       </div>

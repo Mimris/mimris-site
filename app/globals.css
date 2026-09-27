@@ -160,6 +160,9 @@ h3 { font-size: clamp(19px, 1.6vw, 25px); letter-spacing: -.015em; line-height: 
 .page-hero-note { max-width: 720px; margin-top: 34px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 16px; line-height: 1.6; }
 .page-hero-note p { margin: 0 0 12px; }
 .page-hero-note p:last-child { margin-bottom: 0; color: var(--ink); }
+.articles-hero-infographic { margin: 32px 0 0; }
+.articles-hero-infographic img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+.articles-hero-infographic figcaption { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.45; }
 .article-index-main { grid-column: 2; }
 @media (max-width: 720px) {
   .articles-hero-layout { display: block; width: min(100% - 28px, 780px); }
