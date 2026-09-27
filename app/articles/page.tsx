@@ -17,7 +17,7 @@ export default function ArticlesPage() {
         <ArticleDirectory />
         <PageHero
           eyebrow="Mimris articles · Ideas for model-driven work"
-          title="Understand the work before you ask AI to do it."
+          title="Use AI to help you understand your work before you ask it to execute."
           lead="Explore practical explanations, product thinking, and AI commentary from Mimris. These articles follow knowledge from the world people understand, through models and processes, into work that people and AI can perform together."
         >
           <div className="page-hero-note">
