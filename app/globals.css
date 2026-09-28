@@ -151,3 +151,23 @@ h3 { font-size: clamp(19px, 1.6vw, 25px); letter-spacing: -.015em; line-height: 
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition-duration: .01ms !important; } }
+/* Dated article directory entries keep the newest publication visible first. */
+.article-directory-group a time { display: block; margin-top: 3px; color: var(--subtle); font-size: 11px; font-weight: 500; }
+.article-directory-group a:hover time, .article-directory-group a[aria-current="page"] time { color: inherit; }
+.articles-hero-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 64px; width: min(1300px, calc(100% - 40px)); margin: 0 auto; }
+.articles-hero-layout > .article-directory { display: block; position: sticky; top: 100px; align-self: start; margin: 0; padding-top: 76px; }
+.articles-hero-layout > .page-hero { width: auto; margin: 0; }
+.page-hero-note { max-width: 720px; margin-top: 34px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 16px; line-height: 1.6; }
+.page-hero-note p { margin: 0 0 12px; }
+.page-hero-note p:last-child { margin-bottom: 0; color: var(--ink); }
+.articles-hero-infographic { margin: 32px 0 0; }
+.articles-hero-infographic img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+.articles-hero-infographic figcaption { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.article-index-main { grid-column: 2; }
+@media (max-width: 720px) {
+  .articles-hero-layout { display: block; width: min(100% - 28px, 780px); }
+  .articles-hero-layout > .article-directory { display: none; }
+  .articles-hero-layout > .mobile-article-directory { display: block; }
+  .articles-hero-layout > .page-hero { width: 100%; }
+  .article-index-main { grid-column: auto; }
+}

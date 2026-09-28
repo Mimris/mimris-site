@@ -5,7 +5,7 @@ Status: Draft controlling specification
 Owner: Mimris
 
 Phase: 1
-Last updated: 2026-08-27
+Last updated: 2026-09-27
 
 ## 1. Purpose
 
@@ -144,7 +144,7 @@ The repository now uses native Next.js on Vercel as its canonical runtime. It re
 - The ecosystem homepage, concept pages, product pages, Coffee Shop proof, About page, and initial article are published.
 - The Coffee Shop CTA opens the `coffee-shop-generic` Universe in Mimris Modelling with the published IRTV model and End-to-End Store Flow view selected.
 - Markdown editorial sources live under `content/articles/` and are published through the article routes, with grouped article navigation, responsive mobile menus, author bylines, and end-of-article AI-assisted writing notes.
-- The current article set includes the Mimris ecosystem introduction, modelling explainers, Coffee Shop proof, “Why AI Needs Models,” the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page, “From Process Models to AI-Assisted Task Execution,” and the Governed Agent Loops commentary article with its AKM enterprise task infographic.
+- The current article set includes the Mimris ecosystem introduction, modelling explainers, Coffee Shop proof, “Why AI Needs Models,” the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page, “From Process Models to AI-Assisted Task Execution,” the Governed Agent Loops commentary article with its AKM enterprise task infographic, and “AI Can Generate the Code—But Who Defines What Is Correct?” with a work-model and independent-verification infographic.
 - Information architecture, SEO/GEO, and analytics briefs live under `docs/website/`.
 - Vercel uses the native Next.js framework preset; Vite, Vinext, and Cloudflare build infrastructure have been removed.
 
@@ -212,6 +212,8 @@ The first permanent content set is:
 | Can AI Have Consciousness? | Exploratory AI News and Commentary article |
 | Consciousness infographic | Separate visual companion at readable scale |
 | Governed Agent Loops | AI News and Commentary on AKM enterprise-model-based agent execution and human review |
+| AI Can Generate the Code—But Who Defines What Is Correct? | AI-assisted implementation, independent correctness, and semantic verification |
+| Correctness infographic | Visual companion showing the work model, AI-assisted implementation, technical tests, semantic verification, and human acceptance |
 
 The same source material should support the website, LinkedIn posts, demonstrations, YouTube material, and press references. Promotion should lead back to durable canonical content rather than create disconnected claims.
 

@@ -414,7 +414,7 @@ Read the article: [https://lnkd.in/eVbwX3zZ](https://lnkd.in/eVbwX3zZ)
 
 
 <details>
-<summary><strong>Post 9 — AI Can Generate the Code—But Who Defines What Is Correct?</strong></summary>
+<summary><strong>Post 10 — AI Can Generate the Code—But Who Defines What Is Correct?</strong></summary>
 
 ### LinkedIn
 
@@ -507,33 +507,6 @@ https://mimris-site.vercel.app/articles/ai-defines-correctness
 #AI #AKM #AgenticAI
 
 </details>
-
-## Review checklist
-
-- Confirm the linked article is approved and returns HTTP 200.
-- Check that the post title and wording match the current article.
-- Confirm that the post has exactly one canonical article destination.
-- Use the website’s canonical URL, not a local URL or deployment preview.
-- Attach only approved screenshots or the approved social card.
-- Keep the AI disclosure on the article page; do not imply that AI is the author of the post.
-- Add a small number of relevant hashtags only after the copy is approved.
-- Record the published post URL and date below.
-
-## Publication log
-
-| Post | LinkedIn URL | Published date | Notes |
-|---|---|---|---|
-| Ecosystem launch |  |  |  |
-| Active Knowledge Modelling |  |  |  |
-| Coffee Shop World |  |  |  |
-| Product boundary |  |  |  |
-| Why AI needs models |  |  |  |
-| Can AI Have Consciousness? |  |  |  |
-| Governed AI execution | https://www.linkedin.com/feed/update/urn:li:activity:7503551078349643776/ |  | Source-based Meta Muse commentary |
-| When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
-| AI Can Generate the Code—But Who Defines What Is Correct? |  |  | Draft; publish after canonical article is deployed |
-
-
 
 <details>
 <summary><strong>Post 9 — AI News Commentary: Governed Agent Loops</strong></summary>
@@ -640,3 +613,29 @@ https://mimris-site.vercel.app/articles/governed-agent-loops
 #AIagents #Mimris
 
 </details>
+
+## Review checklist
+
+- Confirm the linked article is approved and returns HTTP 200.
+- Check that the post title and wording match the current article.
+- Confirm that the post has exactly one canonical article destination.
+- Use the website’s canonical URL, not a local URL or deployment preview.
+- Attach only approved screenshots or the approved social card.
+- Keep the AI disclosure on the article page; do not imply that AI is the author of the post.
+- Add a small number of relevant hashtags only after the copy is approved.
+- Record the published post URL and date below.
+
+## Publication log
+
+| Post | LinkedIn URL | Published date | Notes |
+|---|---|---|---|
+| Ecosystem launch |  |  |  |
+| Active Knowledge Modelling |  |  |  |
+| Coffee Shop World |  |  |  |
+| Product boundary |  |  |  |
+| Why AI needs models |  |  |  |
+| Can AI Have Consciousness? |  |  |  |
+| Governed AI execution | https://www.linkedin.com/feed/update/urn:li:activity:7503551078349643776/ |  | Source-based Meta Muse commentary |
+| When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
+| Governed Agent Loops | https://www.linkedin.com/posts/snorre-fossland-686885_ai-aiagents-mimris-activity-7508831305246359553-dZdV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAhDYYBYpz8Ha5vqDGKaZvBDb6joT0d-60 | 2026-09-24 | Published |
+| AI Can Generate the Code—But Who Defines What Is Correct? |  |  | Draft; publish after canonical article is deployed |
