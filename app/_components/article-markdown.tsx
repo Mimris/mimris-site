@@ -20,6 +20,7 @@ const articleGroups = [
       ["/articles/from-biological-viability-to-artificial-consciousness", "Artificial Consciousness: A Viability-Based Hypothesis"],
       ["/articles/can-ai-have-consciousness-infographic", "Infographic: Can AI Have Consciousness?"],
       ["/articles/governed-agent-loops", "Governed Agent Loops"],
+      ["/articles/agent-authority-is-more-than-tools", "An Agent’s Authority Is More Than Its Tools"],
     ],
   },
   {

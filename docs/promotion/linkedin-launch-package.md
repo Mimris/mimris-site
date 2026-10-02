@@ -16,7 +16,8 @@ This package turns approved Mimris articles into short LinkedIn posts. Every lau
 | Why AI needs models | `/articles/why-ai-needs-models` |
 | Artificial Consciousness: A Viability-Based Hypothesis | `/articles/from-biological-viability-to-artificial-consciousness` |
 | Governed Agent Loops | `/articles/governed-agent-loops` |
-| AI-generated code and correctness | `/articles/ai-defines-correctness` |\n| Agent authority and runtime boundaries | `/articles/agent-authority-is-more-than-tools` |
+| AI-generated code and correctness | `/articles/ai-defines-correctness` |
+| Agent authority and runtime boundaries | `/articles/agent-authority-is-more-than-tools` |
 
 ## Publication process
 
