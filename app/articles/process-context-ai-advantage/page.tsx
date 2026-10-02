@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import { ArticleByline, ArticleLayout, ArticleMarkdown, AiDisclosure } from "@/app/_components/article-markdown";
 
@@ -48,7 +49,7 @@ export default function ProcessContextAiAdvantagePage() {
           <AiDisclosure />
         </article>
       </ArticleLayout>
-      <script id="process-context-ai-advantage-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <Script id="process-context-ai-advantage-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
     </>
   );
 }
