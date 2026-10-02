@@ -53,6 +53,7 @@ export default function ArticlesPage() {
               <Link href="/articles/modelling-and-workspace"><h2>Two Complementary Jobs</h2><p>See how the products divide responsibility.</p></Link>
               <Link href="/articles/from-biological-viability-to-artificial-consciousness"><h2>Can AI Have Consciousness?</h2><p>An exploratory hypothesis about living and artificial systems.</p></Link>
               <Link href="/articles/governed-agent-loops"><h2>Governed Agent Loops</h2><p>Why model-based context, controls, verification, and human review matter when agents keep working.</p></Link>
+              <Link href="/articles/process-context-ai-advantage"><h2>Why Process Context Matters</h2><p>Why reliable enterprise agents need structured context about how work is organised.</p></Link>
             </div>
           </div>
         </div>
