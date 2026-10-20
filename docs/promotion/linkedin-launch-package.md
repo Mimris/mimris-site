@@ -1,7 +1,7 @@
 # Mimris LinkedIn Launch Package
 
 Status: Article-first launch sequence for approval
-Last updated: 2 October 2026
+Last updated: 20 October 2026
 
 This package turns approved Mimris articles into short LinkedIn posts. Every launch post has one canonical article as its source and destination. LinkedIn introduces the article's central idea; the article provides the complete argument and guides the reader onwards to a concept page, proof, or product.
 
@@ -17,6 +17,7 @@ This package turns approved Mimris articles into short LinkedIn posts. Every lau
 | Artificial Consciousness: A Viability-Based Hypothesis | `/articles/from-biological-viability-to-artificial-consciousness` |
 | Governed Agent Loops | `/articles/governed-agent-loops` |
 | AI-generated code and correctness | `/articles/ai-defines-correctness` |
+| My New Coding Language | `/articles/my-new-coding-language` |
 
 ## Publication process
 
@@ -615,6 +616,84 @@ https://mimris-site.vercel.app/articles/ai-defines-correctness
 </details>
 
 
+<details>
+<summary><strong>Post 11 — My New Coding Language: “Let’s Discuss” and “Proceed”</strong></summary>
+
+Status: Social drafts for review. Website release authorised on 20 October 2026; confirm the production article before social publication. No social posts have been sent.
+
+### LinkedIn
+
+I now remember all the commands in my new coding language:
+
+“Let’s discuss my app…”
+…
+“Can you pls change that?”
+…
+“Can you make a discussion note?”
+…
+“Can you make an implementation plan?”
+…
+“Can you implement the plan?”
+…
+“Proceed.”
+…
+“Proceed.”
+
+Yes, “Proceed” is doing a lot of work. 😄
+
+But behind those few commands are the decisions that matter: what we want to build, which alternative we choose, what we authorise, and how we know the result is right.
+
+For me, vibe coding and spec-driven development fit together. Exploration finds the direction. Notes and specifications preserve the decisions. The plan guides implementation. Evidence shows whether it worked.
+
+Fewer commands to remember. Still plenty of judgement required.
+
+Read the article: https://mimris-site.vercel.app/articles/my-new-coding-language?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=my_new_coding_language
+
+#VibeCoding #SpecDrivenDevelopment #AI
+
+### YouTube Community
+
+My new coding language has a very small vocabulary:
+
+“Let’s discuss.” → “Make a note.” → “Make a plan.” → “Implement it.” → “Proceed.”
+
+And then, quite often: “Proceed.” 😄
+
+The short commands work because the conversation carries the context. Discussion explores alternatives, the specification records what we mean, and verification checks the result.
+
+I wrote a short article about how I combine vibe coding and spec-driven development—with an infographic featuring my most-used key.
+
+https://mimris-site.vercel.app/articles/my-new-coding-language?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=my_new_coding_language
+
+#VibeCoding #AI #SoftwareDevelopment
+
+### X
+
+My new coding language:
+
+“Let’s discuss.”
+“Make a plan.”
+“Implement it.”
+“Proceed.”
+“Proceed.” 😄
+
+Fewer commands. Still plenty of decisions.
+
+https://mimris-site.vercel.app/articles/my-new-coding-language
+
+#VibeCoding
+
+### Visual asset
+
+- Canonical article: `/articles/my-new-coding-language`.
+- Image: `assets/my-new-coding-language-infographic.png`.
+- Generation prompt: `assets/my-new-coding-language-infographic.prompt.txt`.
+- Image description: “A human with an oversized Proceed key and an AI robot move through discussion, revised alternatives, notes, planning, implementation, and verification. Caption: Yes, Proceed is doing a lot of work.”
+- Review the visual alongside the article before publishing. Use the same approved image for LinkedIn and YouTube Community; optional for X.
+
+</details>
+
+
 ## Review checklist
 
 - Confirm the linked article is approved and returns HTTP 200.
@@ -640,3 +719,4 @@ https://mimris-site.vercel.app/articles/ai-defines-correctness
 | 8 | When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
 | 9 | Governed Agent Loops | https://www.linkedin.com/posts/snorre-fossland-686885_ai-aiagents-mimris-activity-7508831305246359553-dZdV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAhDYYBYpz8Ha5vqDGKaZvBDb6joT0d-60 | 2026-09-24 | Published |
 | 10 | AI Can Generate the Code—But Who Defines What Is Correct? | https://www.linkedin.com/feed/update/urn:li:activity:7510090372098879488/ https://www.youtube.com/post/Ugkx6ml--tQmuMtn0xhtFugzbOPu6JZ23IcW  https://x.com/FosslandSnorre/status/2104326071042949364 | 2026-09-27 | Draft; publish after canonical article is deployed |
+| 11 | My New Coding Language: “Let’s Discuss” and “Proceed” |  |  | Social drafts; website release authorised on 20 October 2026. Confirm deployment evidence before posting; no social publication. |

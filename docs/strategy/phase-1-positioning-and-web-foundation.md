@@ -5,7 +5,7 @@ Status: Draft controlling specification
 Owner: Mimris
 
 Phase: 1
-Last updated: 2026-10-02
+Last updated: 2026-10-20
 
 ## 1. Purpose
 
@@ -144,6 +144,10 @@ The repository now uses native Next.js on Vercel as its canonical runtime. It re
 - The ecosystem homepage, concept pages, product pages, Coffee Shop proof, About page, and initial article are published.
 - The Coffee Shop CTA opens the `coffee-shop-generic` Universe in Mimris Modelling with the published IRTV model and End-to-End Store Flow view selected.
 - Markdown editorial sources live under `content/articles/` and are published through the article routes, with grouped article navigation, responsive mobile menus, author bylines, and end-of-article AI-assisted writing notes.
+- “My New Coding Language: ‘Let’s Discuss’ and ‘Proceed’” adds a personal commentary on vibe coding and spec-driven development, connecting conversational commands to explicit decisions, scoped implementation authority, and verification. Its source is `content/articles/my-new-coding-language.md`, with the route `/articles/my-new-coding-language` (release authorised on 20 October 2026; deployment verification is recorded separately).
+- Its humorous visual companion is `assets/my-new-coding-language-infographic.png`, generated with the built-in image tool; the generation prompt is retained in `assets/my-new-coding-language-infographic.prompt.txt`. The article supplies descriptive alt text. The visual follows discussion through verification, with an oversized “Proceed” key as the central joke.
+- The article opens with the infographic, followed by dialogue with Me and AI on separate lines and ellipses between exchanges. It appears in the article directory, article index, sitemap, and `llms.txt`. Post 11 in the canonical launch package contains LinkedIn, YouTube Community, and X drafts with article links; social publication remains a separate action.
+- Release acceptance: the production article and infographic return HTTP 200; the article renders the infographic above the dialogue, preserves separate speaker paragraphs, and exposes the correct canonical URL. Verify navigation and the public sitemap/`llms.txt` entries after deployment.
 - The current article set includes the Mimris ecosystem introduction, modelling explainers, Coffee Shop proof, “Why AI Needs Models,” the exploratory “Can AI Have Consciousness?” article with a separate full-scale infographic page, “From Process Models to AI-Assisted Task Execution,” the Governed Agent Loops commentary article with its AKM enterprise task infographic, and “AI Can Generate the Code—But Who Defines What Is Correct?” with a work-model and independent-verification infographic.
 - Information architecture, SEO/GEO, and analytics briefs live under `docs/website/`.
 - Vercel uses the native Next.js framework preset; Vite, Vinext, and Cloudflare build infrastructure have been removed.
@@ -163,6 +167,7 @@ Target public architecture:
 |-- /examples
 |   `-- /examples/coffee-shop
 |-- /articles
+|   |-- /articles/my-new-coding-language
 |   |-- /articles/mimris-ecosystem
 |   |-- /articles/active-knowledge-modelling
 |   |-- /articles/coffee-shop-universe

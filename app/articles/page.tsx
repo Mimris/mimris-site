@@ -45,6 +45,7 @@ export default function ArticlesPage() {
               <ArrowLink href="/articles/ai-defines-correctness">Read the article</ArrowLink>
             </article>
             <div className="article-link-grid">
+              <Link href="/articles/my-new-coding-language"><h2>My New Coding Language: “Let’s Discuss” and “Proceed”</h2><p>A personal take on vibe coding, spec-driven development, and the decisions behind a few simple commands.</p></Link>
               <Link href="/articles/ai-assisted-task-execution"><h2>From Process Models to AI-Assisted Task Execution</h2><p>See how Mimris turns process context and model-grounded Tasks into a generic execution pattern.</p></Link>
               <Link href="/articles/mimris-ecosystem"><h2>What Is Mimris?</h2><p>Meet the ecosystem for modelling a world and putting it to work.</p></Link>
               <Link href="/articles/why-ai-needs-models"><h2>Why AI Needs Models</h2><p>Why useful AI work depends on explicit concepts, relationships, rules, and context.</p></Link>

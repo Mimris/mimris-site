@@ -12,6 +12,7 @@ const articleGroups = [
     { href: "/articles/why-ai-needs-models", label: "Why AI Needs Models", date: "19 August 2026", dateTime: "2026-08-19" },
   ] },
   { label: "AI News and Commentary", links: [
+    { href: "/articles/my-new-coding-language", label: "My New Coding Language: “Let’s Discuss” and “Proceed”", date: "20 October 2026", dateTime: "2026-10-20" },
     { href: "/articles/governed-agent-loops", label: "Governed Agent Loops", date: "24 September 2026", dateTime: "2026-09-24" },
     { href: "/articles/from-biological-viability-to-artificial-consciousness", label: "Artificial Consciousness: A Viability-Based Hypothesis", date: "20 August 2026", dateTime: "2026-08-20" },
     { href: "/articles/can-ai-have-consciousness-infographic", label: "Infographic: Can AI Have Consciousness?", date: "20 August 2026", dateTime: "2026-08-20" },
