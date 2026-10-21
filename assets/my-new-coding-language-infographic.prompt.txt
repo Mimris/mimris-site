@@ -1,0 +1,14 @@
+Use case: infographic-diagram.
+Create a humorous editorial infographic accompanying the article "My New Coding Language: Let’s Discuss and Proceed". Landscape composition, polished hand-drawn cartoon meets clean infographic, warm paper background, dark ink, restrained teal and orange accents. Big beautifully readable title: "MY NEW CODING LANGUAGE". Subtitle: "Small vocabulary. Plenty of decisions."
+Main visual: a smiling human at a comically simple keyboard opposite a friendly AI robot at a screen. The keyboard has several ordinary small keys and one giant worn orange key marked "PROCEED". Friendly humour, thoughtful rather than mocking.
+Across the middle a clear six-stage illustrated flow, readable left to right, each stage has a short speech bubble with exact text:
+1 "Let’s discuss my app…" — human and robot exploring a cloud of ideas.
+2 "Can you pls change that?" — robot revises its own suggested alternative on a small sketch.
+3 "Make a discussion note." — notebook preserving decisions.
+4 "Make an implementation plan." — simple blueprint and checklist.
+5 "Implement the plan." — robot building an app.
+6 "Show me the evidence." — human and robot inspect checks together.
+Below the flow, three small chat bubbles "Go on…" / "Select no. 1." / "Proceed."
+Bottom punchline in large readable type: "Yes, ‘Proceed’ is doing a lot of work."
+Small footer: "Explore → Specify → Implement → Verify"
+Keep copy minimal, generous spacing, no extra prose, no fabricated metrics, no logos or watermarks. Make all lettering crisp and exact. A charming publishable infographic, not a screenshot, not photorealistic.
