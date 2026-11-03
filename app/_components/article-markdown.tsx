@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const articleGroups = [
   { label: "Active Knowledge Modelling", links: [
+    { href: "/articles/the-app-that-creates-the-app", label: "Mimris: The App That Creates the App", date: "25 October 2026", dateTime: "2026-10-25" },
     { href: "/articles/ai-defines-correctness", label: "AI Can Generate the Code—But Who Defines What Is Correct?", date: "25 September 2026", dateTime: "2026-09-25" },
     { href: "/articles/ai-assisted-task-execution", label: "AI-Assisted Task Execution", date: "27 August 2026", dateTime: "2026-08-27" },
     { href: "/articles/mimris-ecosystem", label: "What Is Mimris?", date: "23 August 2026", dateTime: "2026-08-23" },

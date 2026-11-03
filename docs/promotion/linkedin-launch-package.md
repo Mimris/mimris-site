@@ -1,7 +1,7 @@
 # Mimris LinkedIn Launch Package
 
 Status: Article-first launch sequence for approval
-Last updated: 20 October 2026
+Last updated: 29 October 2026
 
 This package turns approved Mimris articles into short LinkedIn posts. Every launch post has one canonical article as its source and destination. LinkedIn introduces the article's central idea; the article provides the complete argument and guides the reader onwards to a concept page, proof, or product.
 
@@ -18,6 +18,7 @@ This package turns approved Mimris articles into short LinkedIn posts. Every lau
 | Governed Agent Loops | `/articles/governed-agent-loops` |
 | AI-generated code and correctness | `/articles/ai-defines-correctness` |
 | My New Coding Language | `/articles/my-new-coding-language` |
+| The App That Creates the App | `/articles/the-app-that-creates-the-app` |
 
 ## Publication process
 
@@ -619,7 +620,7 @@ https://mimris-site.vercel.app/articles/ai-defines-correctness
 <details>
 <summary><strong>Post 11 — My New Coding Language: “Let’s Discuss” and “Proceed”</strong></summary>
 
-Status: Social drafts for review. Website release authorised on 20 October 2026; confirm the production article before social publication. No social posts have been sent.
+Status: Published on 20 October 2026. The permanent social-post URLs and canonical article link are recorded in the publication log.
 
 ### LinkedIn
 
@@ -694,6 +695,66 @@ https://mimris-site.vercel.app/articles/my-new-coding-language
 </details>
 
 
+<details>
+<summary><strong>Post 12 — Mimris: The App That Creates the App</strong></summary>
+
+Status: Social drafts for review. Confirm the approved article is deployed and accessible before publishing.
+
+### LinkedIn
+
+What if the application that helps you understand your work could also help create the application you use to do it?
+
+That is the ambition behind Mimris.
+
+Start by describing the work: the tasks, people, information, and rules. Organise that understanding into models. Then use those models to design an application that brings the right information and tools together around each task.
+
+Take a coffee shop. An order moves from the cashier to payment, preparation, and handover. What does the barista need to know? What happens when an order contains several drinks? When is it really complete?
+
+Those questions shape the application. In Operational Preview, people can walk through the proposed design, spot gaps, and return to the model to improve it.
+
+The longer-term cycle is:
+
+**Goal → Generate → Review → Learn → Refine**
+
+AI can help people describe the work and propose a design. People review the assumptions, approve changes, and check the result. Engineers still need to make the application secure, reliable, and connected to other systems.
+
+Mimris already supports models, workspace screens, and manual and AI-assisted task drafting. The broader application-generation process described in the article is still being developed.
+
+Read the article: https://mimris-site.vercel.app/articles/the-app-that-creates-the-app?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=the_app_that_creates_the_app
+
+#AI #ActiveKnowledgeModelling #SoftwareDevelopment
+
+### YouTube Community
+
+An app that helps create another app starts with a question: how does the work actually happen?
+
+In the Coffee Shop World, that means understanding how an order moves from the cashier to payment, preparation, and handover—and what each person needs along the way.
+
+Mimris’s ambition is to turn that understanding into models, use them to design a task-oriented application, and let people try and improve the design in Operational Preview.
+
+AI can help propose a design; people review the assumptions and approve changes. The broader generation process is still in development.
+
+Read the article: https://mimris-site.vercel.app/articles/the-app-that-creates-the-app?utm_source=youtube&utm_medium=social&utm_campaign=public_launch&utm_content=the_app_that_creates_the_app
+
+#AI #Mimris #SoftwareDevelopment
+
+### X
+
+What if an app could help you understand the work—and create an app for doing it?
+
+Mimris’s ambition: model the work, review the design, and improve it with people and AI. The broader generation process is still in development.
+
+https://mimris-site.vercel.app/articles/the-app-that-creates-the-app
+
+### Visual asset
+
+- Canonical article: `/articles/the-app-that-creates-the-app`.
+- Image: `assets/app-creates-app-coffee-shop-infographic.png`.
+- Image description: The coffee-shop journey from understanding and modelling work to Operational Preview and a Generated Application, with a human-reviewed improvement loop.
+- Review the image alongside the article before publishing. Use the same approved image for LinkedIn and YouTube Community; optional for X.
+
+</details>
+
 ## Review checklist
 
 - Confirm the linked article is approved and returns HTTP 200.
@@ -718,5 +779,6 @@ https://mimris-site.vercel.app/articles/my-new-coding-language
 | 7 | Governed AI execution | https://www.linkedin.com/feed/update/urn:li:activity:7503551078349643776/ |  | Source-based Meta Muse commentary |
 | 8 | When AI Can Generate the Software, the Enterprise Model Becomes the Asset | https://lnkd.in/eVbwX3zZ | 2026-09-08 | Published LinkedIn post |
 | 9 | Governed Agent Loops | https://www.linkedin.com/posts/snorre-fossland-686885_ai-aiagents-mimris-activity-7508831305246359553-dZdV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAhDYYBYpz8Ha5vqDGKaZvBDb6joT0d-60 | 2026-09-24 | Published |
-| 10 | AI Can Generate the Code—But Who Defines What Is Correct? | https://www.linkedin.com/feed/update/urn:li:activity:7510090372098879488/ https://www.youtube.com/post/Ugkx6ml--tQmuMtn0xhtFugzbOPu6JZ23IcW  https://x.com/FosslandSnorre/status/2104326071042949364 | 2026-09-27 | Draft; publish after canonical article is deployed |
-| 11 | My New Coding Language: “Let’s Discuss” and “Proceed” |  |  | Social drafts; website release authorised on 20 October 2026. Confirm deployment evidence before posting; no social publication. |
+| 10 | AI Can Generate the Code—But Who Defines What Is Correct? | https://www.linkedin.com/feed/update/urn:li:activity:7510090372098879488/ https://www.youtube.com/post/Ugkx6ml--tQmuMtn0xhtFugzbOPu6JZ23IcW  https://x.com/FosslandSnorre/status/2104326071042949364 | 2026-09-27 | Published; canonical article: https://mimris-site.vercel.app/articles/ai-defines-correctness?utm_source=linkedin&utm_medium=social&utm_campaign=public_launch&utm_content=ai_defines_correctness |
+| 11 | My New Coding Language: “Let’s Discuss” and “Proceed” | https://www.linkedin.com/feed/update/urn:li:share:7518265154673745920/ https://www.youtube.com/post/Ugkxq55t7YqGBiVnmTBrnrMX7tPdf9JZq72w https://x.com/FosslandSnorre/status/2112500747866898469 | 2026-10-20 | Published |
+| 12 | Mimris: The App That Creates the App |  |  | Social drafts for review; confirm approved article is deployed before publishing. |
