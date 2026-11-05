@@ -1,0 +1,890 @@
+<nav class="share-toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#purpose">Purpose</a></li><li><a href="#versioned-akm-authority-phase-1-target">Versioned AKM authority (Phase 1 target)</a></li><li><a href="#core-description">Core Description</a></li><li><a href="#model-hierarchy-purpose">Model Hierarchy Purpose</a></li><li><a href="#current-architectural-framing">Current Architectural Framing</a></li><li><a href="#layer-structure">Layer Structure</a></li><li><a href="#layer-definitions">Layer Definitions</a></li><li><a href="#modeling-outputs-and-productuniverse-export">Modeling Outputs And Product-Universe Export</a></li><li><a href="#todo-artifact-lifecycle-and-baseline-handling">TODO: Artifact Lifecycle And Baseline Handling</a></li><li><a href="#complementary-role-of-idef0-and-irtv">Complementary Role Of IDEF0 And IRTV</a></li><li><a href="#traceability-principle">Traceability Principle</a></li><li><a href="#implementation-alignment">Implementation Alignment</a></li><li><a href="#scope-notes">Scope Notes</a></li><li><a href="#references-to-modeled-entities">References to modeled entities</a></li></ul></nav><div class="share-copy"><h2 id="purpose">Purpose</h2>
+<p>This specification defines the core semantic structure of Mimris AI Workspace.</p>
+<p>It explains how Mimris connects domain understanding, formal modelling, reusable work structures, project planning, and collaborative execution.</p>
+<p>This specification is the conceptual authority for the Mimris layer model.</p>
+<p>Execution UI behavior belongs in the Workplace and Workspace specifications and is out of scope here unless needed for semantic alignment.</p>
+<h2 id="versioned-akm-authority-phase-1-target">Versioned AKM authority (Phase 1 target)</h2>
+<p>The Versioned AKM Publication and Consumer Adoption Contracts are authoritative for the planned immutable baseline format. Dedicated source universes author foundation components; <code>akm-foundation</code> aggregates approved exact component publications; <code>akm-world-designer-method</code> authors Method publications against approved foundation sets; starters are generated from approved Method membership. The current scaffold remains authoritative until the contract&#39;s transition gates pass.</p>
+<p>For explicitly versioned consumers, Origin is an immutable adopted/effective baseline, not a live reference to mutable source content. Current consumer definitions/models/blueprint remain World-owned; Workspace retains execution. Exact locks and explicit adoption replace mutable fallback semantics for that format only. This reuses the existing Universe/Origin/World/Workspace architecture and does not introduce a second execution model. Shared code upgrades never adopt newer Method/foundation content implicitly. Existing IDs and references are preserved; new identities use UUIDv4 through persisted mapping.</p>
+<h2 id="core-description">Core Description</h2>
+<p>Mimris AI Workspace is a modelling and collaboration environment in which a Universe carries an <code>originWorld</code>, an active <code>workspace</code> generated or configured from the Origin World&#39;s blueprint, and an active subject <code>world</code> being observed, modeled, previewed, or realized.</p>
+<p>Short form:</p>
+<p>Mimris AI Workspace connects <code>originWorld</code>, its workspace-generating blueprint, the active <code>workspace</code>, a subject <code>world</code>, structured world modelling, blueprint derivation, and collaborative execution to support reflective world understanding, design, and realization.</p>
+<h2 id="model-hierarchy-purpose">Model Hierarchy Purpose</h2>
+<p>The Mimris model hierarchy exists to turn AKM/Mimris models into generated <strong>Operational Workspace Applications</strong> for target-domain tasks.</p>
+<p>The hierarchy preserves the current refinement chain:</p>
+<p><code>Domain Conceptual Description -&gt; Domain Ontology -&gt; Functional Structure (IDEF0) -&gt; Work Context (IRTV) -&gt; Task Patterns -&gt; Project Plan -&gt; Workspace Execution</code></p>
+<p>Each layer adds structure needed for generation, traceability, and validation. <code>Workspace Execution</code> is the operational realization layer of the generated Operational Workspace Application, while <code>Operational Preview</code> remains a validation and feedback mechanism used before final generation/export.</p>
+<h2 id="current-architectural-framing">Current Architectural Framing</h2>
+<p>The current repository is converging on a reflective AKM framing centered on a canonical <code>Universe -&gt; originWorld + workspace + world</code> split. The <code>originWorld</code> provides the approved AKM source and blueprint for generating or configuring the current <code>workspace</code>; the <code>workspace</code> works on the active subject <code>world</code>; the subject World contains its definition, model, focus, and blueprint; and AI-assisted feedback flows back from preview/generated instances into review.</p>
+<p>For the current AKM universe discussion, <code>Universe</code> and <code>World</code> must be kept distinct:</p>
+<ul>
+<li><code>Universe</code><ul>
+<li>the whole AKM reflective container</li>
+<li>contains the inherited <code>originWorld</code>, active <code>workspace</code>, active subject <code>world</code>, and persistence metadata</li>
+</ul>
+</li>
+<li><code>World</code><ul>
+<li>the subject being observed or designed through the workspace</li>
+<li>contains <code>worldDefinition</code>, <code>worldModel</code>, <code>focus</code>, and <code>blueprint</code></li>
+</ul>
+</li>
+</ul>
+<h3>Core Terms</h3>
+<ul>
+<li><p><code>AKM Universe</code></p>
+<ul>
+<li>the full reflective container for modeling, generation, configuration, and operational use</li>
+</ul>
+</li>
+<li><p><code>Origin World</code></p>
+<ul>
+<li>the inherited AKM source world carried by or referenced from the universe</li>
+<li>has a blueprint that defines the basis for generating or configuring the current workspace</li>
+<li>may itself be generated and promoted from an approved AKM World revision</li>
+<li>contains lightweight world-definition guidance plus an <code>originRef</code> to the shared foundation source or approved AKM World revision</li>
+<li>provides both provenance and configuration context to the active workspace and guide flows</li>
+<li>is not itself the live runnable execution state</li>
+<li>may include foundation models, templates, vocabulary, and method assumptions</li>
+</ul>
+</li>
+<li><p><code>Subject World</code></p>
+<ul>
+<li>the domain World opened and worked on through the current workspace</li>
+<li>may represent the active <code>As-Is</code>, active <code>Ought-To-Be</code>, a candidate <code>To-Be</code>, or the selected <code>To-Be</code></li>
+<li>is exposed through the current singular runtime field <code>world</code></li>
+<li>is distinct from the <code>originWorld</code> that generated or configured the workspace</li>
+</ul>
+</li>
+<li><p><code>World Definition</code></p>
+<ul>
+<li>the early definition layer that establishes the intended world/app context</li>
+<li>currently includes:<ul>
+<li><code>Domain</code></li>
+<li><code>Plan</code></li>
+<li><code>Site Content</code></li>
+</ul>
+</li>
+<li><code>Domain</code> and <code>Plan</code> should carry the world&#39;s intent, purpose, goals, and dream</li>
+<li><code>Plan</code> is the authoritative overall plan from which more detailed plans and checklists may be derived</li>
+<li><code>Site Content</code> is a derived orientation and entry-content layer extracted from <code>Domain</code>, <code>Plan</code>, and other helpful universe information</li>
+<li><code>Site Content</code> should include:<ul>
+<li>a public landing page / homepage</li>
+<li>a dashboard landing page with guidance for using the universe dashboard</li>
+<li>starter guides</li>
+<li>menus and navigation copy</li>
+<li>helpful universe usage information</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>World Model</code></p>
+<ul>
+<li>the canonical modeled definition of the world</li>
+<li>maintained through the AKM modeling method</li>
+<li>evolves from product definition into richer modeled structures such as POPS, IRTV, TYPE, and related design outputs</li>
+<li>in persisted server-storage shape, the target world&#39;s modeled structures belong under <code>world.worldModel</code></li>
+<li>models belong within <code>metis</code></li>
+</ul>
+</li>
+<li><p><code>Foundation Universe</code></p>
+<ul>
+<li>a special shared universe root storing canonical foundation models and promoted baseline blueprint packages</li>
+<li>referenced from ordinary universes through <code>originWorld.originRef</code></li>
+<li>should not be fully copied into every ordinary project manifest</li>
+</ul>
+</li>
+<li><p><code>Metis Selection</code></p>
+<ul>
+<li>Mimris may expose multiple metis-bearing model sources from the same universe</li>
+<li>the canonical selectable locations are:<ul>
+<li><code>world.worldModel.metis</code></li>
+<li>foundation-universe TYPE metis resolved via <code>originWorld.originRef</code></li>
+<li>foundation-universe TEMPLATE metis resolved via <code>originWorld.originRef</code></li>
+</ul>
+</li>
+<li>default selection is <code>world.worldModel.metis</code></li>
+<li>fallback order when target-world metis is missing:<ul>
+<li>foundation-universe TYPE metis resolved via <code>originWorld.originRef</code></li>
+<li>foundation-universe TEMPLATE metis resolved via <code>originWorld.originRef</code></li>
+<li>legacy top-level <code>metis</code> only as compatibility fallback</li>
+</ul>
+</li>
+<li>legacy top-level <code>metis</code> is a transitional compatibility source and must not remain the preferred selector default when canonical locations exist</li>
+<li>remote clients should open these model scopes through explicit scoped universe URIs</li>
+<li>the canonical remote scope ids are:<ul>
+<li><code>world-model</code></li>
+<li><code>origin-type-foundation</code></li>
+<li><code>origin-template-foundation</code></li>
+</ul>
+</li>
+<li>see adr-mimris-remote-universe-metis-api.md</li>
+</ul>
+</li>
+<li><p><code>Operational Preview</code></p>
+<ul>
+<li>an intermediate operational projection of the process/task model</li>
+<li>belongs conceptually to the target world&#39;s <code>Blueprint</code>, not to the <code>originWorld</code> or active <code>workspace</code></li>
+<li>renders <code>world.blueprint.operationalModel</code> for validation</li>
+<li>supports two preview profiles:<ul>
+<li><code>execution-app</code>, which compiles POPS activity structure and IRTV workplace realization into a simulated execution-app context and may require BPMN and TYPE overlays before app generation</li>
+<li><code>artifact-workflow</code>, which uses IRTV as the operational frame for mixed workflow-step previews of documents, models, traces, state records, decisions, generated outputs, and other artifacts that do not require TYPE/forms UI by default</li>
+</ul>
+</li>
+<li>currently exposes <code>Workspace</code>, <code>Flow</code>, and <code>Inspect</code> runtime modes for walkthrough and validation</li>
+<li>should keep <code>Preview</code> in the name of the overall projection layer, but not necessarily in the inner runtime entities</li>
+<li>distinguishes between:<ul>
+<li>global structural preview navigation (<code>Operations Map</code> / process tree)</li>
+<li>local runtime app navigation (process/workflow/step switching inside the simulated app)</li>
+</ul>
+</li>
+<li>carries explicit preview trace metadata between POPS activity selection and the resolved IRTV workspace, rather than leaving that mapping implicit in the UI only</li>
+<li>can project a lightweight simulated step screen from IRTV view/property bindings so the preview behaves like an early execution app, not only a structural model walkthrough</li>
+<li>can also project read-only artifact surfaces from task/artifact/document/model bindings, using IRTV role, view, information, ICOM, and workflow context for navigation, overlays, traceability, and feedback</li>
+<li>should treat workflow/task-pattern selection as a first-class runtime concept between process selection and step selection, rather than assuming one workplace always equals one workflow</li>
+<li>therefore, a durable runtime entity name such as <code>OperationalWorkflow</code> is preferred over <code>OperationalPreviewWorkflow</code> for the compiled workflow/task-pattern layer</li>
+<li>can also compile a workspace-specific role/task flow projection for BPMN-style walkthroughs separate from the broader inspect subtree</li>
+<li>should also emit structured feedback items when a previewed execution surface implies a required design/model change</li>
+<li>this feedback should enter a dedicated queue first rather than rewriting canonical design artifacts directly or immediately creating work items</li>
+<li>planned to expand with organization, product, and service/system relations</li>
+<li>may also include early mockups of the realization spec for walkthrough testing and early validation before full implementation</li>
+</ul>
+</li>
+<li><p><code>World Realization Spec</code></p>
+<ul>
+<li>the staged realization-definition layer derived from the world model and its operational projections</li>
+<li>includes artifacts such as:<ul>
+<li><code>Spec Document</code></li>
+<li><code>Implementation Plan</code></li>
+<li>optional <code>World App Spec</code></li>
+<li>later app/specification outputs</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>World Instance</code></p>
+<ul>
+<li>a concrete generated and configured realization of the world</li>
+<li>suitable for app/workspace operation, adaptation, deployment, and export</li>
+</ul>
+</li>
+<li><p><code>Feedback Item</code></p>
+<ul>
+<li>a captured and reviewed change signal flowing from a world instance back into the design side</li>
+<li>may originate from <code>Operational Preview</code> validation before a full world instance exists</li>
+<li>should preserve preview/workspace/task/role trace context so downstream review can target the correct design layer</li>
+</ul>
+</li>
+</ul>
+<h3>Canonical Universe Structure</h3>
+<p>The strongest current structure is:</p>
+<p><code>Universe</code>
+↓
+<code>originWorld + workspace + active subject world</code>
+↓
+<code>world.blueprint / Operational Preview / realization outputs</code>
+↓
+<code>Exported or realized instances</code></p>
+<p>More concretely:</p>
+<ol>
+<li><p><code>Universe</code></p>
+<ul>
+<li>metadata, shared workspace state, persistence container</li>
+</ul>
+</li>
+<li><p><code>originWorld</code></p>
+<ul>
+<li><code>originRef</code><ul>
+<li>reference to the shared foundation universe or promoted origin blueprint package</li>
+</ul>
+</li>
+<li><code>worldDefinition</code><ul>
+<li>inherited domain, plan, and site guidance</li>
+</ul>
+</li>
+<li><code>blueprint</code><ul>
+<li>approved workspace-generation/configuration basis derived from an AKM World</li>
+</ul>
+</li>
+<li>gives provenance and configuration context to the active workspace</li>
+</ul>
+</li>
+<li><p><code>workspace</code></p>
+<ul>
+<li>the active human and AI working environment</li>
+<li>generated or configured from <code>originWorld.blueprint</code></li>
+<li>tracks active process/task/work-item state, context profiles, context values, attachments, collaboration threads, and system prompt state</li>
+<li>works on the active subject <code>world</code></li>
+</ul>
+</li>
+<li><p><code>world</code></p>
+<ul>
+<li><code>worldDefinition</code><ul>
+<li>Domain</li>
+<li>Plan</li>
+<li>Site Content</li>
+</ul>
+</li>
+<li><code>worldModel</code><ul>
+<li>canonical modeled structures in <code>metis</code></li>
+<li>one semantic model may use named <code>Modelview</code> records to represent submodel perspectives without duplicating model objects; optional non-empty <code>allowedObjectTypeRefs[]</code> and <code>allowedRelshipTypeRefs[]</code> constrain creation palettes, while missing or empty arrays remain unrestricted</li>
+</ul>
+</li>
+<li><code>focus</code><ul>
+<li>active model/modelview/object/relationship focus for modeling and inspection</li>
+</ul>
+</li>
+<li><code>blueprint</code><ul>
+<li><code>operationalModel</code><ul>
+<li>previewable operational model for the next world</li>
+</ul>
+</li>
+<li><code>operationalFeedback</code><ul>
+<li>feedback queue from preview/testing</li>
+</ul>
+</li>
+<li>realization/spec outputs and implementation planning</li>
+</ul>
+</li>
+<li>this is the active subject World being inspected or designed through the workspace</li>
+</ul>
+</li>
+<li><p><code>World Instance</code></p>
+<ul>
+<li>exported/generated realization when a selected To-Be World is materialized</li>
+</ul>
+</li>
+</ol>
+<h3>Reflective Lifecycle</h3>
+<p>This architecture is reflective, not only generative.</p>
+<p>Downward flow:</p>
+<ul>
+<li>changes in the canonical design side update the derived realization structures and may affect generated world instances</li>
+</ul>
+<p>Upward flow:</p>
+<ul>
+<li>changes arising in a world instance are captured as feedback and reviewed for possible generic adoption</li>
+</ul>
+<p>The reflective loop is therefore:</p>
+<p><code>AKM World -&gt; originWorld.blueprint -&gt; generated/configured workspace -&gt; workspace works on subject world -&gt; worldDefinition -&gt; worldModel -&gt; world.blueprint.operationalModel / Operational Preview -&gt; Feedback Item -&gt; workspace review</code></p>
+<p><code>artifact-workflow</code> previews follow the same reflective loop, but the previewed source remains the artifact, document, trace, or model output being inspected. The Operational Preview stores derived context, overlays, diagnostics, and feedback trace, not the canonical artifact content itself.</p>
+<h3>Feedback And Change Classification</h3>
+<p>Instance-originated change should not automatically rewrite the canonical design.</p>
+<p>Each <code>Feedback Item</code> should be reviewed and classified as one of:</p>
+<ul>
+<li><code>Instance</code><ul>
+<li>local to one world instance</li>
+</ul>
+</li>
+<li><code>Blueprint</code><ul>
+<li>should improve the derived realization structure</li>
+</ul>
+</li>
+<li><code>World Model</code><ul>
+<li>should improve the canonical generic model itself</li>
+</ul>
+</li>
+</ul>
+<p>Feedback review is intended to be AI-assisted, but canonical adoption remains review-driven rather than automatic.</p>
+<p>For <code>Operational Preview</code> specifically, the current recommended flow is:</p>
+<ul>
+<li>capture structured preview feedback</li>
+<li>persist it in a dedicated preview/blueprint-side queue such as <code>world.blueprint.operationalFeedback</code></li>
+<li>triage and classify likely target models or source artifacts (<code>POPS</code>, <code>IRTV</code>, later <code>TYPE</code>, or the relevant document/model/trace artifact)</li>
+<li>promote reviewed feedback into <code>operationalFeedback.opportunities[]</code> when it represents a model, AI model-generation prompt, generation-rule, or reusable platform improvement</li>
+<li>only then promote the item into a change request / work item if needed</li>
+</ul>
+<p>An <code>Improvement Opportunity</code> is not the canonical model change itself. It is a reviewed decision record that preserves expected generated-workspace impact, proposed change, target layers, source feedback ids, diagnostics, and trace context so model edits and regeneration can remain auditable.</p>
+<h3>Blueprint</h3>
+<p>The subject <code>world.blueprint</code> remains the structured realization basis generated from the selected To-Be World, especially from <code>world.worldModel</code>.</p>
+<p>The architecture uses Blueprint recursively at two different reflective levels:</p>
+<ul>
+<li><code>originWorld.blueprint</code> is the approved basis for generating or configuring the current Mimris workspace</li>
+<li>the generated/configured <code>workspace</code> works on the active subject <code>world</code></li>
+<li>the subject <code>world</code> contains its definition, model, focus, and realization blueprint</li>
+<li>the subject <code>world.blueprint</code> contains the previewable operational model and feedback queue used to realize a World Instance</li>
+</ul>
+<p>The two blueprint roles must remain explicit. An Origin World blueprint realizes a design Workspace; a subject World blueprint realizes the operational World Instance being designed.</p>
+<p>The intended AKM production chain is:</p>
+<p><code>AKM Method / Model Authoring World -&gt; approved subject-World Blueprint -&gt; generated/promoted Origin World -&gt; empty AKM starter -&gt; new subject World</code></p>
+<p>The authoring universe remains the governed source of method/model changes and validation evidence. Generation promotes only reusable method structure, generic guided templates, structural metamodel definitions, and workspace configuration into the Origin World. Authoring/test model instances, generated outputs, example content, and Operational Preview data remain in the authoring universe and never become initial state for the new subject World.</p>
+<h3>Subject-World Perspectives</h3>
+<p><code>As-Is</code>, <code>Ought-To-Be</code>, and <code>To-Be</code> are governed roles of related subject Worlds inside one project Universe. They are not roles of <code>originWorld</code>, mutable labels on individual Metis models, or artifact review statuses.</p>
+<p>Initial scope:</p>
+<ul>
+<li>one Universe represents one organization and one top-level Domain</li>
+<li>future subdomains may be introduced, but inherit the top-level World perspective until explicit subdomain overrides are specified</li>
+<li>exactly one subject World may be the active <code>As-Is</code></li>
+<li>zero or one subject World may be the active <code>Ought-To-Be</code></li>
+<li>multiple candidate <code>To-Be</code> Worlds may coexist</li>
+<li>zero or one candidate <code>To-Be</code> may be selected for realization</li>
+<li>the current singular runtime <code>world</code> resolves the subject World opened in the workspace; it may be any perspective, although mutation rules depend on its role</li>
+</ul>
+<p>Perspective meanings:</p>
+<ul>
+<li><code>As-Is</code>: the approved representation of the Domain as currently understood; inspectable and forkable, but not mutated in place</li>
+<li><code>Ought-To-Be</code>: the current normative or ideal representation that guides evaluation and design</li>
+<li><code>To-Be</code>: a realizable future scenario based on the active As-Is and optionally guided by the active Ought-To-Be</li>
+</ul>
+<p>The Universe owns explicit assignments such as <code>activeAsIsWorldRef</code>, <code>activeOughtToBeWorldRef</code>, <code>selectedToBeWorldRef</code>, and <code>activeWorldRef</code>. Assignment changes preserve prior Worlds and assignment history. A World keeps immutable revision/provenance identity; <code>active</code> and <code>selected</code> belong to Universe-level assignments rather than to World content.</p>
+<p>Lower model layers such as POPS, IRTV, BPMN, and TYPE inherit the perspective of their containing subject World. The first implementation must not assign independent As-Is/Ought-To-Be/To-Be roles to individual model entries. A coherent World revision is the comparison and promotion boundary.</p>
+<p>Canonical relationships are:</p>
+<ul>
+<li>candidate To-Be <code>basedOnWorldRef</code> -&gt; active As-Is World revision</li>
+<li>candidate To-Be <code>guidedByWorldRef</code> -&gt; active Ought-To-Be World revision, when one exists</li>
+<li>selected To-Be -&gt; <code>world.blueprint</code> -&gt; Operational Preview -&gt; generated World Instance</li>
+</ul>
+<p>The current persisted singular <code>world.json</code> remains the active subject-World sidecar during migration. Multi-World storage, assignment history, and selection are planned extensions; loaders must retain compatibility with universes that contain only <code>worldRef</code> and no perspective assignments.</p>
+<p>However, implementation and persistence should prefer explicit staged artifacts where precision matters, such as:</p>
+<ul>
+<li>world-definition artifacts (<code>Domain</code>, <code>World Ontology</code>, <code>Plan</code>, <code>Site Content</code>)</li>
+<li><code>Operational Preview</code>, including early realization mockups for walkthrough testing</li>
+<li>world-design outputs (<code>POPS</code>, <code>IRTV</code>, <code>TYPE</code>, <code>META/SEED</code>)</li>
+<li>realization-spec artifacts (<code>Spec Document</code>, <code>Implementation Plan</code>)</li>
+<li>optional realization-spec app artifacts (<code>World App Spec</code>)</li>
+<li>realization artifacts (<code>Generated Code</code>, deployed <code>World Instance</code>)</li>
+</ul>
+<p>Suggested persisted representations under this framing are:</p>
+<ul>
+<li>sparse project folders with:<ul>
+<li><code>documents/</code></li>
+<li><code>templates/</code></li>
+<li><code>universe.json</code></li>
+</ul>
+</li>
+<li>canonical project manifest shape in:<ul>
+<li><code>server-storage-manifest-spec.md</code></li>
+</ul>
+</li>
+<li>optional exported/generated instance artifacts outside the ordinary sparse project save path</li>
+</ul>
+<h3>Export Semantics</h3>
+<ul>
+<li><p><code>Export Universe</code></p>
+<ul>
+<li>exports the reflective package needed for continued design, maintenance, and regeneration</li>
+</ul>
+</li>
+<li><p><code>Export World Instance</code></p>
+<ul>
+<li>generates and exports the concrete operational app/instance from the current <code>Operational Preview</code></li>
+<li>is not a copy of the source universe, <code>originWorld</code>, or design workspace</li>
+</ul>
+</li>
+</ul>
+<p>This means the universe remains the reflective authority, while the world instance remains the realized operational result. A world-instance export keeps provenance back to the source universe, world, preview, model ids, compiler/export version, and diagnostics, but it does not carry the source <code>originWorld</code> as an active runtime scaffold.</p>
+<p>World app export follows a generation pipeline:</p>
+<p><code>world.worldModel -&gt; Operational Preview -&gt; World App Spec -&gt; App Generation -&gt; Generated World App / World Instance</code></p>
+<p>The app generation step is explicit. It adds the runtime infrastructure needed by the generated app, such as database/schema configuration, seed/demo data when selected, routes/navigation, role/auth configuration, persistence, and deployment/runtime settings.</p>
+<p>With the current repository terminology:</p>
+<ul>
+<li><code>metis</code> remains the repository term closest to the canonical modeled definition set.</li>
+<li>legacy <code>executionModel</code> remains accepted only as transitional load/import vocabulary while the repository migrates toward the canonical <code>originWorld</code> / <code>workspace</code> / <code>world</code> framing.</li>
+<li>the persisted server-storage manifest and the running canonical store should prefer <code>originWorld</code>, <code>workspace</code>, <code>world</code>, <code>world.worldDefinition</code>, <code>world.worldModel</code>, <code>world.focus</code>, and <code>world.blueprint.operationalModel</code> over raw transitional store terms.</li>
+</ul>
+<h2 id="layer-structure">Layer Structure</h2>
+<p>Mimris follows a progressive refinement structure:</p>
+<p>Universe
+↓
+originWorld
+↓
+workspace works on world
+↓
+world.worldDefinition
+↓
+world.worldModel + world.focus
+↓
+world.blueprint.operationalModel / Operational Preview / realization spec
+↓
+World Instance</p>
+<p>Each layer builds on the previous one and introduces a more operational level of structure.</p>
+<h2 id="layer-definitions">Layer Definitions</h2>
+<h3>1. World Definition</h3>
+<p>World Definition is the authoritative starting layer for a universe.</p>
+<p>It defines the intended world/app before deeper structured model generation begins.</p>
+<p>It includes:</p>
+<ul>
+<li><code>Domain</code><ul>
+<li>the canonical domain definition and scoping basis</li>
+<li>should express intent, purpose, goals, and dream</li>
+</ul>
+</li>
+<li><code>World Ontology</code><ul>
+<li>the formal conceptual structure of the world</li>
+<li>canonical source is an ontology-role entry in <code>world.worldModel.metis.models[]</code></li>
+<li>may be previewed as Markdown for reading and review</li>
+</ul>
+</li>
+<li><code>Plan</code><ul>
+<li>the authoritative overall plan for realization</li>
+<li>detailed plans and checklists are derived from it</li>
+<li>should also express intent, purpose, goals, and dream</li>
+</ul>
+</li>
+<li><code>Site Content</code><ul>
+<li>derived orientation and entry content</li>
+<li>includes homepage, dashboard landing content, starter guides, menus, and helpful usage information</li>
+</ul>
+</li>
+</ul>
+<p>Implementation alignment:</p>
+<ul>
+<li><code>Domain Definition</code> remains the current repository term closest to <code>Domain</code>.</li>
+<li>World Ontology uses the Metis models contract and an explicit ontology metamodel; the earlier separate <code>world-ontology.json</code> proposal is superseded.</li>
+<li><code>Plan</code> is authoritative; downstream detailed plans are derived.</li>
+<li><code>Site Content</code> should be derived from authoritative sources rather than invented independently by default.</li>
+</ul>
+<h3>2. POPS World Model With IDEF0 / ICOM Semantics</h3>
+<p>The target authority and migration order are defined in IDEF0 ICOM and Mechanism Semantics: approved IDEF0 function ICOM will supersede POPS process ICOM, while POPS and recognized legacy task ICOM remain compatibility sources until explicit activation.</p>
+<p>The primary structured world model is expressed through POPS, enriched by IDEF0 / ICOM semantics.</p>
+<p>Current implementation phase:</p>
+<ul>
+<li>POPS remains the canonical source of hierarchical process structure used to generate IRTV and resolve stable IRTV <code>processRef</code> fields.</li>
+<li>ICOM remains anchored to POPS <code>Process</code> objects and supplies top-down functional context for leaf-process workplace generation.</li>
+<li>a separate first-class IDEF0 metamodel and generation stage are deferred; no current runtime or persistence flow may require one</li>
+<li>the future architecture may separate POPS world context from an IDEF0 functional model, but that separation must preserve stable process traceability and avoid creating unrelated duplicate process trees</li>
+</ul>
+<p>POPS contributes the main object structure of the modeled world, including:</p>
+<ul>
+<li>processes</li>
+<li>organizations</li>
+<li>products</li>
+<li>systems / services</li>
+</ul>
+<p>IDEF0 / ICOM contributes functional and dependency semantics across that structure:</p>
+<ul>
+<li><code>Input</code></li>
+<li><code>Control</code></li>
+<li><code>Output</code></li>
+<li><code>Mechanism</code></li>
+</ul>
+<p>ICOM may connect:</p>
+<ul>
+<li>processes</li>
+<li>organizations</li>
+<li>products</li>
+<li>systems / services</li>
+</ul>
+<p>This means the world model is not a pure process tree. It is a structured world model where processes and supporting objects are connected through functional semantics.</p>
+<p>Execution alignment:</p>
+<ul>
+<li>process decomposition remains hierarchical</li>
+<li>ICOM may be defined at multiple levels and inherited downward</li>
+<li>executable work usually attaches to leaf or near-leaf processes</li>
+<li>supporting POPS objects should preferentially connect to operationally meaningful processes rather than only to the root</li>
+</ul>
+<h3>3. IRTV Workplace Model</h3>
+<p>IRTV derives the workplace interaction structure from the world model.</p>
+<p>IRTV defines:</p>
+<ul>
+<li><code>Container</code> workplace structure</li>
+<li><code>subcontainer</code> workflow structure inside a workplace</li>
+<li><code>Information</code></li>
+<li><code>Property</code></li>
+<li><code>Role</code></li>
+<li><code>Task</code></li>
+<li><code>View</code></li>
+</ul>
+<p>The intended mapping is:</p>
+<ul>
+<li><code>Information</code> derives from ontology terms and world-model inputs/outputs</li>
+<li><code>Role</code> derives from organizational responsibility and mechanism semantics</li>
+<li><code>Task</code> derives from executable process structure and carries required binding to an executable work item through <code>taskRef</code></li>
+<li><code>View</code> shapes what information and context are relevant for a role performing a task</li>
+<li><code>Property</code> defines the fields owned by an <code>Information</code> object and bound into role/task views</li>
+</ul>
+<p>IRTV turns the structured world model into a workplace-capable interaction model.</p>
+<p>Execution alignment:</p>
+<ul>
+<li><code>Task</code> is derived from <code>IRTV</code>, similar to how <code>Process</code> is derived from <code>POPS</code></li>
+<li><code>IRTV</code> is the canonical authoring source for workflow/task-pattern structure</li>
+<li>a workplace may contain multiple workflows, represented canonically by <code>subcontainer</code> objects inside one <code>Container</code></li>
+<li>every POPS-leaf-derived IRTV <code>Container</code> carries that leaf Process id in <code>processRef</code>; contained tasks inherit it, while a task may override <code>processRef</code> when one workflow intentionally crosses POPS leaf processes</li>
+<li>legacy <code>Task hasParentProcess &lt;external POPS process id&gt;</code> links remain explicit process-mapping authority during IRTV loading. Preserve these cross-model references without inventing local process objects; unrelated dangling links and links to excluded local BPMN objects remain filtered.</li>
+<li>every canonical IRTV <code>Task</code> must use a UUID <code>id</code> and required UUID <code>taskRef</code>; when the task realizes a concrete workspace work item, <code>workItemRef</code> carries that work item&#39;s stable application id without replacing the model-owned UUID identity</li>
+<li>IRTV direction-neutral task-to-information usage is expressed with <code>Task worksOn Information</code>; explicit <code>Task hasInput Information</code> and <code>Task hasOutput Information</code> preserve carried-forward input and produced output semantics. These links complement View-to-Property I/O and are retained during loading</li>
+<li>canonical IRTV information structure is expressed with <code>Information has Property</code></li>
+<li>canonical IRTV <code>Property.name</code> is the concise field name within its owning <code>Information</code>; it must not repeat the owning Information name as a prefix (<code>Check ID</code>, not <code>Equipment Check Record: Check ID</code>)</li>
+<li>every canonical IRTV <code>Information</code> and <code>Property</code> has a non-empty, user-readable description of its business meaning; compatibility normalization may remove an owning-Information prefix and backfill a missing Property description before legacy or generated content is adopted as canonical</li>
+<li>canonical IRTV view-level input/output semantics are expressed with <code>View hasInput Property</code> and <code>View hasOutput Property</code>; <code>View hasInput Information</code> and <code>View hasOutput Information</code> must not be persisted</li>
+<li>workflow compilation should derive runtime <code>OperationalWorkflow</code> objects from IRTV rather than treating authored <code>taskPatterns</code> arrays as the long-term source of truth</li>
+<li>task-level execution bindings should carry resolved <code>Role</code>, <code>View</code>, and <code>Information</code></li>
+<li><code>ICOM</code> remains anchored to <code>Process</code>, not to <code>Task</code></li>
+<li>when a current task/work-item record carries <code>ICOM</code>, it should be treated as a misclassified leaf process during migration</li>
+<li><code>activities</code> remains a legacy compatibility term rather than the preferred canonical target term</li>
+</ul>
+<h3>4. TYPE Model</h3>
+<p>Function-level mechanism requirements resolve through the provider-neutral Mechanism Registry and Capability Resolution; provider/model identity is runtime binding data, not IDEF0, IRTV, or TYPE semantics.</p>
+<p>TYPE generation refines the modeled and workplace structures into reusable typed realization structures.</p>
+<p>TYPE draft normalization preserves explicit UUID identities for <code>Property</code> objects. Equal names alone do not authorize merging saved properties or redirecting their ownership, datatype, default or Modelview references. Authors may deliberately share one Property identity across EntityTypes; legacy symbolic duplicate repair must not collapse distinct UUID-backed properties during review.</p>
+<p>For the canonical 4EM environment, the seven Domain-defined submodels are first-class operational scopes over one compact semantic core. The core ObjectTypes are <code>Goal</code>, <code>Problem</code>, <code>Rule</code>, <code>Concept</code>, <code>Process</code>, <code>Information</code>, <code>Actor</code>, <code>Role</code>, <code>Organisation</code>, <code>Resource</code>, <code>Product</code>, <code>Service</code>, <code>System</code>, and <code>Requirement</code>. Shared elements keep one identity across Modelviews: the Technical Components and Requirements Modelview reuses Goal, Problem, and System rather than defining <code>IS ...</code> or Component aliases. Published distinctions such as threat, opportunity, external process, material set, individual, organizational unit, non-human resource, component, and feature are represented by CORE_META Properties and notation presets, not separate 4EM EntityTypes. Concept attributes use CORE_META <code>Property</code>; <code>Property</code>, <code>Datatype</code>, <code>EntityType</code>, and <code>relationshipType</code> are never duplicated as 4EM palette types. The core defines no <code>isA</code> relationship because the endpoint ObjectType and its classification already express type identity. Normal semantics are direct lowerCamelCase relationships of CORE type <code>relationshipType</code>. They use the Relationship built-ins <code>name</code>, <code>description</code>, <code>cardinalityFrom</code>, <code>cardinalityTo</code>, <code>nameFrom</code>, <code>nameTo</code>, and <code>id</code>, without relationship classification Properties. <code>decomposesTo</code>, <code>relatesTo</code>, and <code>partOf</code> replace structural names such as <code>binaryRelationship</code>, <code>and</code>/<code>or</code> variants, and <code>partOfAnd</code>/<code>partOfOr</code>/<code>partOfXor</code>. <code>RelshipType</code> objects are reserved for definitions requiring additional modeled fields beyond the built-in Relationship structure. Reflective management types including <code>SubmodelDefinition</code>, <code>ModelSubmodel</code>, <code>SubmodelMembership</code>, <code>CrossSubmodelRelationship</code>, and <code>ViewpointDefinition</code> remain outside the core component palette.</p>
+<p>This layer is responsible for introducing formal typed structures needed by downstream realization, specification, and app generation.</p>
+<p>TYPE is also the realization boundary between technology-independent IRTV information requirements and the data structures available to the generated application. Existing database, API, file, or external schemas are imported into TYPE, not into IRTV.</p>
+<p>META is the published runtime metamodel generated from approved TYPE and is used to create runtime domain models. OCIM is a separate platform-owned configuration metamodel and its populated configuration model for mechanism realization. The OCIM model exposes one populated <code>Config</code> Modelview containing ObjectViews for configuration objects and RelationshipViews for valid OCIM relationships; it does not create a separate MOMM Modelview. OCIM stores references to TYPE and provider TYPE properties in configuration fields; it does not contain copied concrete domain instances such as OrderItem or PaymentTransaction.</p>
+<p>OCIM does not author task views or ICOM semantics. POPS, and later IDEF0, remains authoritative for generic enabling mechanisms and their relationships to functions. IRTV remains authoritative for tasks, role-facing views, and information inputs/outputs. Operational Preview derives its forms and ICOM panels from IRTV and the approved model suite, then resolves required runtime behavior through OCIM assignments and the runtime registry.</p>
+<p>The first reusable operational-configuration vocabulary is platform-owned and contains:</p>
+<ul>
+<li><code>MechanismConfiguration</code>: identifies a concrete realization of a generic ICOM mechanism through <code>mechanismRef</code>, plus its non-secret target reference, configuration version, and lifecycle status.</li>
+<li><code>MechanismAssignment</code>: identifies the IRTV task, view, and I/O relationship to which an operation (<code>read</code>, <code>write</code>, <code>validate</code>, or <code>invoke</code>) applies.</li>
+<li><code>uses</code>: connects a <code>MechanismAssignment</code> to its <code>MechanismConfiguration</code>. Both its OCIM relationship name and semantic <code>typeName</code> are <code>uses</code>; Preview continues to accept legacy <code>usesConfiguration</code> records during migration. This is an OCIM relationship, not a duplicated IRTV association.</li>
+<li><code>writes</code>: connects a <code>MechanismAssignment</code> to a domain information object. Its relationship attributes carry <code>propertyRef</code> (the authoritative TYPE Property), <code>ioRelationshipRef</code> (the authoritative IRTV input/output relationship), <code>bindingMode</code>, and operation. The rendered form is, for example, <code>writes: Amount</code>; <code>Amount</code> is not a separate OCIM object or a distinct <code>writesAmount</code> relationship.</li>
+<li>Provider API/schema entities and properties are imported into the existing TYPE graph and retain provider, operation, source, and schema-version provenance. Direct mappings are relationships; merge/split/transform/concatenate mappings are first-class TYPE objects linked to their source and target properties. A dedicated TYPE Mapping Modelview arranges canonical properties on the left and provider properties on the right. OCIM may reference these mapping identities but does not duplicate mapping objects. Mappings supplement <code>writes</code> and must not replace the authoritative IRTV/TYPE target.</li>
+</ul>
+<p>OCIM references ICOM mechanisms, IRTV tasks/views/I/O, and TYPE properties across model boundaries. It does not add domain relationships between business objects or redefine IRTV input/output semantics. The <code>Config</code> Modelview holds the presentation-only ObjectViews and RelationshipViews; icons, fill and stroke remain ObjectType/ObjectView presentation attributes.</p>
+<p>These types belong to the stable OCIM configuration metamodel. They do not mutate Mimris&#39;s published TYPE-generated META and they do not need to appear as ordinary domain vocabulary in each TYPE model. Each OCIM records its source META identity and revision plus the configuration-metamodel version, so schema changes can trigger explicit mapping review. Secrets, credentials, and vendor connection values remain in secure runtime configuration outside TYPE, META, OCIM, MOMM, IDEF0, and IRTV.</p>
+<p>TYPE realization uses three distinct model roles. These roles are not independent metamodels: every TYPE model must conform to the authoritative CORE metamodel and use its permitted object types, relationship types, properties, and constraints.</p>
+<p>Runtime META is a generated realization, not another TYPE role. The authoritative transformation is Mimris&#39;s native <strong>Generate META from TYPE</strong> command, invoked while managing the approved TYPE model rather than through a separate AKM authoring task. A TYPE model may contain more than one root <code>Metamodel</code>; Mimris generates a separately selectable runtime META entry for each root while preserving their shared generation provenance. The OCIM task exposes <strong>Generate Configuration Model</strong> as the visible action: it consumes a matching published META when available, or recovers one provenance-marked META from the approved TYPE source when the persisted runtime catalogue is missing, then creates or updates the stable OCIM configuration metamodel and its mechanism-only configuration model with a populated <code>Config</code> Modelview. The action remains available for explicit regeneration. Operational Preview must test generated entries rather than treating the TYPE model or CORE_META as the target modelling language.</p>
+<ul>
+<li><code>TYPE_LOGICAL</code><ul>
+<li>derived from IRTV <code>Information</code> and <code>Property</code></li>
+<li>formalizes logical entities, properties, datatypes, relationships, identifiers, cardinality, defaults, enumerations, and validation</li>
+</ul>
+</li>
+<li><code>TYPE_PHYSICAL</code><ul>
+<li>represents imported existing databases, APIs, files, or other physical schemas</li>
+<li>records non-secret source/schema identity, physical entities, fields, operations, keys, relationships, and schema version</li>
+<li>includes provider-provenance <code>EntityType</code> and <code>Property</code> objects imported into the shared TYPE model</li>
+</ul>
+</li>
+<li><code>TYPE_MAPPING</code><ul>
+<li>represents canonical-to-physical mappings in TYPE; a dedicated Modelview presents both sides without creating a separate model</li>
+<li>records transformations, composition/splitting, key and relationship mappings, null/default handling, access capabilities, data ownership, synchronization policy, confidence/review state, and unmapped requirements</li>
+<li>imports provider <code>EntityType</code>/<code>Property</code> definitions into the existing TYPE graph with provider, operation, source, and schema-version provenance; simple mappings are relationships, while merge/split/transform/concatenate mappings are first-class TYPE objects linked to source and target properties</li>
+</ul>
+</li>
+</ul>
+<p>Generated applications may use:</p>
+<ul>
+<li><code>native</code> realization, where storage is generated from <code>TYPE_LOGICAL</code></li>
+<li><code>mapped</code> realization, where existing structures are accessed through reviewed <code>TYPE_MAPPING</code> adapters</li>
+<li><code>hybrid</code> realization, where mapped external structures are combined with generated local extension storage</li>
+</ul>
+<p>IRTV remains authoritative for operational information needs. Physical mapping constraints must not silently rewrite IRTV; unresolved conflicts produce diagnostics or explicit refinement proposals. Connection credentials are runtime secrets and must not be stored in TYPE models.</p>
+<p>CORE evolution rule:</p>
+<ul>
+<li>reuse existing CORE vocabulary for logical, physical, and mapping structures wherever it can express the required semantics</li>
+<li>distinguish TYPE roles and provenance through CORE-conformant model metadata rather than ad hoc persistent <code>typeName</code> values</li>
+<li>when a required TYPE capability cannot be represented by CORE, record a CORE capability gap and propose a reviewed CORE metamodel enhancement</li>
+<li>update the canonical CORE metamodel, validators, normalization, prompts, and compatibility rules before TYPE models persist or generate the new construct</li>
+<li>TYPE generation must not silently extend CORE or treat input-tolerated aliases as new canonical vocabulary</li>
+</ul>
+<p>Canonical trace direction:</p>
+<p><code>POPS Process / ICOM -&gt; IRTV Task / View / Information / Property -&gt; TYPE_LOGICAL -&gt; TYPE_MAPPING -&gt; TYPE_PHYSICAL or generated native storage -&gt; generated app element</code></p>
+<p>Implementation note:</p>
+<ul>
+<li>TYPE remains a first-class staged world-design output</li>
+<li>its detailed schema may evolve only within the current CORE metamodel or through an approved CORE metamodel enhancement</li>
+<li>TYPE output must conform to the CORE_META vocabulary used by the current foundation metamodel:<ul>
+<li>each TYPE draft model has exactly one domain-specific root <code>Metamodel</code> object</li>
+<li>the root <code>Metamodel</code> directly <code>contains</code> only <code>EntityType</code> objects</li>
+<li>information/class concepts are <code>EntityType</code></li>
+<li>every <code>EntityType</code> supplies presentation input that is placed on its synthesized TYPE <code>ObjectView</code>: six-digit hex <code>fillcolor</code> and <code>strokecolor</code>, positive numeric <code>strokewidth</code>, and a non-empty domain-appropriate <code>icon</code>; Mimris Generate Metamodel transfers those values to an <code>ObjectTypeView</code>, and the generated <code>ObjectType.typeviewRef</code> points to it; legacy TYPE models without presentation metadata remain readable</li>
+<li>attributes/properties are <code>Property</code></li>
+<li>property value typing uses <code>Property</code> <code>isOf</code> <code>Datatype</code></li>
+<li>datatype enumerations/defaults use <code>Datatype</code> <code>hasAllowed</code> <code>Value</code> and <code>Datatype</code> <code>isDefault</code> <code>Value</code></li>
+<li>domain relationship semantics are direct <code>relationshipType</code> relationships between source and target <code>EntityType</code> objects</li>
+<li>each domain <code>EntityType</code> has at least one direct relationship to another <code>EntityType</code>; the relationship uses a business verb that states the domain meaning</li>
+<li>the relationship <code>name</code> is the semantic verb, for example <code>Actor</code> — <code>makes</code> → <code>Decision</code></li>
+<li>each such relationship is derived from the identically directed and named relationship between the corresponding IRTV <code>Information</code> objects; TYPE does not add independent relationship semantics</li>
+<li>optional behavior/calculation/validation operations may use <code>Method</code></li>
+<li>non-core aliases such as <code>Entity</code>, <code>Attribute</code>, and <code>Relationship</code> are input-tolerated only as normalization aliases and must not persist as final <code>typeName</code> values</li>
+</ul>
+</li>
+<li>TYPE generation should be compact: generated <code>modelviews</code> are omitted and synthesized by the app, while <code>Value</code> and <code>Method</code> objects are created only from explicit enum/default or behavior/method source semantics.</li>
+<li>TYPE normalization must not preserve a generic <code>Property</code> named <code>Relationships</code> or separate <code>RelshipType</code> objects; explicit domain relationship semantics belong in directly named <code>relationshipType</code> relationships between <code>EntityType</code> objects.</li>
+<li>Mimris runtime-META generation must not copy TYPE <code>Property</code> objects named <code>name</code>, <code>description</code>, or <code>id</code> (case-insensitive) onto generated ObjectTypes. These are intrinsic Mimris object fields; regeneration also removes legacy generated duplicates while preserving domain properties such as <code>Definition</code> and <code>Status</code>.</li>
+<li>TYPE object <code>name</code> values must be CamelCase with no spaces, for example <code>CustomerOrder</code> and <code>OrderLineItem</code>.</li>
+<li>Mimris <strong>Generate Metamodel</strong> transfers each EntityType TYPE <code>ObjectView</code>&#39;s presentation into the generated <code>ObjectTypeView</code>; the generated <code>ObjectType.typeviewRef</code> points to that view. Model <code>ObjectView</code> records inherit each presentation field from the ObjectTypeView unless that individual field has an explicit non-empty ObjectView override.</li>
+<li>User-defined labels remain unchanged in authored models and Operational Preview. Generated OCIM object instances may use a deterministic label of at most 18 characters for both <code>name</code> and <code>typeName</code>; the full source type name is retained in the description. MOMM presents those objects through its ObjectViews. Reserved vocabulary and UUID/reference fields remain unchanged.</li>
+<li>A new object instantiated from a generated ObjectType defaults its object name and ObjectView name to the ObjectType name. Explicit non-empty instance names take precedence; import/render repair applies this fallback to legacy generated objects whose persisted names are blank.</li>
+<li>TYPE and other model-pipeline outputs must use UUID identifiers for models, objects, relationships, and all view records, including <code>modelviews[]</code>, <code>objectviews[]</code>, and <code>relshipviews[]</code>.</li>
+<li>Relationship records should use semantic <code>typeName</code>/<code>name</code> values. If no explicit relationship name is provided, <code>name</code> must default to <code>typeName</code>; ID-like names are not meaningful model names.</li>
+<li>BPMN is represented as canonical model JSON (<code>objects</code> + <code>relationships</code>) with participant/lane/task/event/gateway/data-object semantics, so model inspection and swimlane rendering work through the same Metis-style pipeline as POPS/IRTV/TYPE.</li>
+</ul>
+<h3>5. SEED Model</h3>
+<p>For the OSDU Seismic Interpretation integration, physical/reference and execution concerns are governed by OSDU Data Access, Versioned References, Lineage, and Controlled Publish. Operational Preview resolves and traces those requirements without external side effects under Operational Preview Mechanism Resolution and Trace.</p>
+<p><code>SEED</code> means <code>Seed Model</code>.</p>
+<p>It replaces the earlier <code>MOTM</code> wording as the preferred term for instantiated metamodel-shaped seed content.</p>
+<p>SEED content is reusable prefilled instance content that can be copied into generated apps/world instances, including:</p>
+<ul>
+<li>standard data</li>
+<li>prefilled task-pattern data</li>
+<li>other starter instance content</li>
+</ul>
+<p>This means generation may involve both:</p>
+<ul>
+<li>deriving structure from the canonical world model</li>
+<li>copying/prefilling reusable seed content from <code>SEED</code></li>
+</ul>
+<h3>6. World Realization Spec</h3>
+<p>World Realization Spec turns the world-design outputs into realization-ready specifications and plans.</p>
+<p>This layer includes artifacts such as:</p>
+<ul>
+<li><code>Operational Preview</code><ul>
+<li>an intermediate operational projection of the process/task model</li>
+<li>may include early realization mockups for walkthrough testing</li>
+</ul>
+</li>
+<li><code>Spec Document</code></li>
+<li><code>Implementation Plan</code></li>
+<li>optional <code>World App Spec</code><ul>
+<li>generated from the approved four-model suite: <code>POPS</code>, <code>IRTV</code>, <code>BPMN</code>, and <code>TYPE</code></li>
+<li>generated from the compiled <code>Operational Preview</code> realization, not from a universe copy</li>
+<li><code>POPS</code> drives operational coverage, app/module structure, and traceability to the world process map</li>
+<li><code>IRTV</code> is the executable base and drives workspaces, task/step structure, roles, views, information usage, and responsibility framing</li>
+<li><code>BPMN</code> is a required executable-flow overlay; it can disagree with IRTV, but disagreement is represented as diagnostics instead of silent correction</li>
+<li><code>TYPE</code> is a required data-semantics overlay; it hardens information/property meaning, record relationships, and validation hints without forcing the preview demo database into a strict generated schema</li>
+<li>mapping starts with explicit ids/references and falls back to normalized-name inference only with diagnostics:<ul>
+<li>one major POPS branch -&gt; one app module</li>
+<li>one IRTV <code>Container</code> -&gt; one workspace</li>
+<li>one IRTV <code>Task</code> -&gt; BPMN <code>Task</code>/activity when linked by <code>taskRef</code>, trace metadata, or inferred normalized name</li>
+<li>one IRTV <code>Role</code> -&gt; BPMN <code>Lane</code>/<code>Participant</code> when linked by role reference or inferred normalized name</li>
+<li>one IRTV <code>Information</code> -&gt; TYPE <code>EntityType</code></li>
+<li>one IRTV <code>Property</code> -&gt; TYPE <code>Property</code></li>
+</ul>
+</li>
+<li>Operational Preview compilation emits an <code>alignmentMap</code> with source/target ids, model/kind labels, confidence (<code>explicit</code> or <code>inferred</code>), and reason text for POPS-&gt;IRTV, IRTV-&gt;BPMN, and IRTV-&gt;TYPE mappings, including IRTV task-flow -&gt; BPMN sequence-flow path entries with endpoint ids.</li>
+<li>BPMN gateway/event traversal may compile into multiple executable <code>nextTaskChoices</code>; preview scenario navigation records the selected branch without rewriting the canonical model.</li>
+<li>Both canonical <code>isFollowedBy</code> and legacy <code>sequenceFlow</code> BPMN edges participate in execution and alignment tracing. Explicit saved routes remain authoritative: normalization does not invent a second route through an isolated gateway based on serialized object order. Flow-less legacy lane recovery remains available.</li>
+<li>A named TYPE mapping View scopes provider data to its explicit provider occurrences. Legacy recovery can add a single unambiguous populated provider subtree; multiple historical providers with the same direction are not combined.</li>
+<li>phase-1 output should exist as both:<ul>
+<li>machine-readable <code>World App Spec JSON</code></li>
+<li>human-readable <code>World App Spec MD</code></li>
+</ul>
+</li>
+<li>the generated app package should include app-generation configuration for database/schema, navigation, routes, roles/auth, persistence, seed/demo data, diagnostics, and deployment/runtime settings.</li>
+<li>generated app packages should preserve provenance to the source universe/model/preview and should not copy <code>originWorld</code>, AKM designer tasks, design workspace state, or reflective modeling machinery as active runtime state.</li>
+</ul>
+</li>
+</ul>
+<p>This layer is where the world design becomes realization-ready without yet being the final running app.</p>
+<h3>7. World Instance</h3>
+<p>World Instance is the concrete generated and configured realization of the world.</p>
+<p>It is the operational app/workspace result derived from the staged design and realization pipeline.</p>
+<p>A World Instance supports:</p>
+<ul>
+<li>configuration</li>
+<li>execution</li>
+<li>adaptation</li>
+<li>deployment</li>
+<li>monitoring</li>
+<li>export</li>
+</ul>
+<p>Within Workspace Execution:</p>
+<ul>
+<li>the Workbench is a task execution environment for manual and AI-assisted production</li>
+<li>execution context is grounded in the underlying world-model and workplace-model structures</li>
+<li>artifacts represent information used, produced, reviewed, or exchanged during execution</li>
+<li>deliverables may be compound products assembled from multiple artifacts produced across one or more tasks</li>
+</ul>
+<h2 id="modeling-outputs-and-productuniverse-export">Modeling Outputs And Product-Universe Export</h2>
+<p>Modeling outputs are local-first artifacts in the current universe.</p>
+<p>This means a modeling task should first persist its result as part of the current universe, where that result can be:</p>
+<ul>
+<li>reused as context for later modeling tasks</li>
+<li>reviewed or edited locally</li>
+<li>selected as input to a later product-universe export</li>
+</ul>
+<p>The same modeling result may therefore play more than one role.</p>
+<p>Examples:</p>
+<ul>
+<li><p><code>Domain Definition</code> is:</p>
+<ul>
+<li>a local modeling output artifact</li>
+<li>a context source for later modeling tasks</li>
+<li>a carried artifact in exported product universes</li>
+</ul>
+</li>
+<li><p><code>Manage Process Tree (POPS)</code> may produce:</p>
+<ul>
+<li>a local model artifact such as <code>metis.json</code></li>
+<li>compiled runnable structure for an exported universe such as <code>processes.json</code> and <code>tasks.json</code></li>
+</ul>
+</li>
+</ul>
+<p>Semantic rule:</p>
+<ul>
+<li>current-universe modeling outputs and exported product universes are distinct</li>
+<li>exported product/test universes should be materialized as separate universe roots</li>
+<li>exported universes should keep provenance linking them back to the source universe and source modeling outputs</li>
+</ul>
+<h2 id="todo-artifact-lifecycle-and-baseline-handling">TODO: Artifact Lifecycle And Baseline Handling</h2>
+<p>The current repository is moving toward explicit runtime task-artifact handling rather than relying only on continuity pointers and inferred artifact state.</p>
+<p>Planned direction:</p>
+<ul>
+<li>Treat baseline selection as a first-class runtime concept.</li>
+<li>Allow a runtime task/work-item to select a baseline from:<ul>
+<li>template</li>
+<li>current artifact version</li>
+<li>earlier artifact version</li>
+<li>upstream artifact version</li>
+</ul>
+</li>
+<li>Preserve artifact history by default when rebasing work.</li>
+<li>Add soft lifecycle state for artifacts:<ul>
+<li><code>active</code></li>
+<li><code>archived</code></li>
+<li><code>deleted</code></li>
+</ul>
+</li>
+<li>Treat template reset/rebase as non-destructive baseline selection, not as artifact/version deletion.</li>
+</ul>
+<p>See ADR:</p>
+<ul>
+<li><code>adr-artifact-lifecycle-and-baseline-driven-work-handling.md</code></li>
+</ul>
+<h2 id="complementary-role-of-idef0-and-irtv">Complementary Role Of IDEF0 And IRTV</h2>
+<p>IDEF0 and IRTV serve complementary purposes.</p>
+<ul>
+<li>IDEF0 describes functional transformations.</li>
+<li>IRTV describes work interaction with information.</li>
+</ul>
+<p>Together they connect:</p>
+<ul>
+<li>conceptual domain understanding</li>
+<li>transformation logic</li>
+<li>collaborative work structure</li>
+</ul>
+<p>IDEF0 should not be treated as a substitute for IRTV, and IRTV should not be treated as a substitute for IDEF0.</p>
+<h2 id="traceability-principle">Traceability Principle</h2>
+<p>A central principle of Mimris AI Workspace is semantic traceability.</p>
+<p>Operational elements should be traceable back to the World Definition.</p>
+<p>Traceability chain:</p>
+<p>Workspace Activity
+↓
+IRTV Task / View
+↓
+POPS Process with IDEF0 / ICOM semantics
+↓
+World Ontology Element
+↓
+World Definition</p>
+<p>Traceability supports:</p>
+<ul>
+<li>consistency across projects</li>
+<li>reuse of knowledge structures</li>
+<li>explainable modelling</li>
+<li>structured AI assistance</li>
+</ul>
+<h2 id="implementation-alignment">Implementation Alignment</h2>
+<p>The current repository implements this model only partially.</p>
+<p>Current alignment:</p>
+<ul>
+<li>World Definition:<ul>
+<li>partially implemented through Domain Definition artifacts, planning-oriented documents, and emerging site-content/template assets</li>
+</ul>
+</li>
+<li>World Ontology:<ul>
+<li>implemented experimentally as a Metis ontology-role model with local foundation revision governance; see <code>ontology-foundation-evolution-spec.md</code></li>
+</ul>
+</li>
+<li>POPS World Model With IDEF0 / ICOM Semantics:<ul>
+<li>partially represented through existing model/parity structures and generated POPS artifacts</li>
+</ul>
+</li>
+<li>IRTV Workplace Model:<ul>
+<li>partially represented through existing model/parity structures and work-item semantics</li>
+</ul>
+</li>
+<li>TYPE Model:<ul>
+<li>partially represented through model-generation pipeline structures</li>
+</ul>
+</li>
+<li>SEED Model:<ul>
+<li>conceptually clarified, but not yet formalized as a first-class persisted layer under that final name</li>
+</ul>
+</li>
+<li>World Realization Spec:<ul>
+<li>partially represented through specification, planning, and preview-oriented artifacts</li>
+</ul>
+</li>
+<li>World Instance:<ul>
+<li>implemented through the current workspace and workplace UI/state model</li>
+</ul>
+</li>
+</ul>
+<p>Architecture alignment note:</p>
+<ul>
+<li><code>metis</code> is the current repository term closest to the canonical model suite.</li>
+<li><code>operationalModel</code> is the canonical term for instantiated and locally editable runtime structure.</li>
+<li><code>executionModel</code> and legacy <code>domainModel</code> remain accepted only as load/import compatibility aliases during migration.</li>
+<li>Legacy aliases should be converted at load time and must not remain in the running Redux store.</li>
+<li>IDEF0 <code>icom</code> belongs primarily to POPS process structures and may semantically connect supporting world objects.</li>
+<li>Execution <code>task</code> should align more closely with IRTV semantics, while <code>workItem</code> is best treated as the runtime task-artifact work packet rather than as the task record itself.</li>
+<li>Runtime <code>workItem</code> context may be derived from a Task plus Artifact state rather than requiring a fully separate persisted collection during the migration.</li>
+<li><code>Task</code> should converge toward definition-only structure:<ul>
+<li>process link</li>
+<li>role/view/information bindings</li>
+<li>template/context expectations</li>
+</ul>
+</li>
+<li><code>Task</code> should not remain the canonical owner of:<ul>
+<li>runtime <code>status</code></li>
+<li>embedded <code>inputContent</code></li>
+<li>embedded <code>draftContent</code></li>
+<li>process <code>ICOM</code></li>
+</ul>
+</li>
+<li>That derived runtime <code>workItem</code> context is responsible for artifact continuity concerns such as preferred version, current artifact binding, and source-task provenance.</li>
+<li>Runtime content should instead be held through <code>artifact</code> records and referenced from <code>workItem</code>:<ul>
+<li>baseline/input artifact</li>
+<li>draft artifact</li>
+<li>approved/output artifact(s)</li>
+</ul>
+</li>
+<li>Temporary AI draft buffers are not durable modeling artifacts. A generated AI draft becomes durable only when saved as a draft artifact or approved as an output artifact. Refresh and cross-task navigation may clear unsaved AI draft buffers.</li>
+<li>The migration rule is:<ul>
+<li><code>task/workItem + ICOM</code> -&gt; <code>leaf process + task binding</code></li>
+</ul>
+</li>
+<li>Migration should prefer selector-based compatibility so UI surfaces consume semantic values rather than branching across old and new store shapes.</li>
+<li>Templates remain canonical <code>control</code> artifacts, but first-run execution may materialize a template-derived initial work artifact when no current artifact exists yet.</li>
+<li>Effective input/current-document resolution should therefore prefer:<ul>
+<li>explicit baseline/current artifact</li>
+<li>existing draft/current work artifact</li>
+<li>existing approved/output artifact when showing the saved result of a completed task</li>
+<li>template-derived first-iteration seed artifact</li>
+</ul>
+</li>
+<li>Runtime <code>documents</code> are now best understood as a derived compatibility view over <code>operationalModel.artifacts</code>; document and template bodies persist to repo markdown files, but the runtime semantic family is <code>artifacts</code>.</li>
+<li>See <code>adr-canonical-model-and-execution-universe.md</code> for the target architecture, minimal JSON shape, and migration plan.</li>
+</ul>
+<p>Persistence alignment:</p>
+<ul>
+<li>The semantic model is currently realized through a combination of persisted repo artifacts and runtime workspace state.</li>
+<li>During a session, runtime Redux/application state is the working source of truth for interaction.</li>
+<li>Explicit save, load, import, and export flows bridge between runtime state and persisted repo/snapshot representations.</li>
+<li>The canonical server-storage manifest contract in <code>server-storage-manifest-spec.md</code> is a locked boundary for both Redux canonical shape and persisted <code>universe.json</code> shape.</li>
+<li>Canonical path ownership must not change unless the manifest spec is updated as part of the same intentional schema change.</li>
+<li>Backward compatibility aliases are load/import normalization only and must not be re-persisted as canonical fields.</li>
+</ul>
+<p>This specification does not require that every layer already be implemented. It defines the intended semantic architecture and terminology for future implementation.</p>
+<h2 id="scope-notes">Scope Notes</h2>
+<p>This specification defines conceptual meaning and layer relationships.</p>
+<p>It does not define:</p>
+<ul>
+<li>detailed UI layout</li>
+<li>panel behavior</li>
+<li>modal behavior</li>
+<li>import/export mechanics</li>
+<li>persistence file formats</li>
+<li>implementation-specific data schemas</li>
+</ul>
+<p>Those concerns belong in implementation and execution specifications.</p>
+<h3>Canonical TYPE names</h3>
+<p>Canonical TYPE <code>EntityType.name</code> and <code>Property.name</code> use UpperCamelCase (PascalCase) without spaces, for example <code>LogSegmentName</code>, <code>SamplingStartIndex</code>, and <code>UnitOfMeasure</code>. Keep the readable wording in <code>displayLabel</code> when useful. Provider Properties retain exact source-schema names and paths. Renaming preserves object identity and mapping endpoints.</p>
+<p>The TYPE save boundary enforces this convention for canonical EntityTypes and Properties on both validated saves and incomplete draft saves. AI normalization applies the same rule; provider schema names remain unchanged. Object IDs and relationship endpoints are preserved, and modelview occurrence labels follow the canonical names.</p>
+<p>Relationship type names MUST contain only the semantic predicate (for example has, owns, produces, partOf). Never concatenate, prefix or suffix endpoint object type names; endpoint identities belong exclusively in from/to references. Reuse predicates across compatible endpoint pairs. Metamodel validation rejects endpoint type names embedded in predicates. Ontology palette types require icons and explicit Generalization links for inherited relationship availability.</p>
+<h2 id="references-to-modeled-entities">References to modeled entities</h2>
+<ul>
+<li>Semantic references to modeled entities MUST be represented as typed relationships with stable endpoint IDs. This applies to ownership, responsibility, provenance, membership, dependency and mappings, including references across model boundaries.</li>
+<li>Generators and metamodel authors MUST NOT encode these connections as scalar attributes such as <code>ownerRef</code>, <code>sourceRef</code>, <code>parentRef</code> or comma-separated IDs when the referenced entity exists in the model graph. Such attributes hide connections from traversal, validation and diagrams.</li>
+<li>Attributes describe intrinsic values: descriptions, dates, quantities, aspects and external locators. A source document may carry its external URL or document identifier as an attribute; an entity supported by that modeled Source connects to it through a relationship.</li>
+<li>Metis structural fields remain explicit references: <code>typeRef</code>, <code>metamodelRef</code>, relationship endpoints, ObjectView/RelationshipView bindings and other serialization/presentation identities. They are storage structure, not substitutes for semantic relationships.</li>
+<li>An existing integration contract that requires an attribute reference is an explicit compatibility exception. It MUST document the target identity, why a relationship cannot yet be used, and its migration or adapter policy. Exceptions are not precedent for new metamodels.</li>
+<li>A relationship is the single authority for each semantic connection. Do not maintain a competing attribute copy. Derived compatibility fields must be generated from the relationship and must not be independently editable.</li>
+<li>Metamodel review MUST check reference-bearing attributes and reject undocumented semantic reference attributes. Relationship type names remain predicate-only; endpoint type names belong in endpoint references.</li>
+</ul>
+<p>Implementation boundary: this is a normative authoring and review requirement. Existing reference attributes, including documented OCIM integration fields, require explicit compatibility review before migration; this specification update does not claim that all runtime validators or existing models already enforce the rule.</p>
+<p>The semantic-reference contract applies to ALL model tasks, templates, prompt helpers and generation paths: POPS, IRTV, TYPE, BPMN, Ontology, OCIM/MOMM and generated metamodels. Shared developer guidance carries the rule even when a task uses a custom template. Task-specific prompts may add compatibility exceptions but may not silently weaken this contract.</p>
+</div>

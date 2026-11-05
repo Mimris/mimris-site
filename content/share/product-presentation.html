@@ -1,0 +1,163 @@
+<nav class="share-toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#oneline-positioning">One-Line Positioning</a></li><li><a href="#the-problem">The Problem</a></li><li><a href="#the-mimris-approach">The Mimris Approach</a></li><li><a href="#what-the-product-does">What The Product Does</a></li><li><a href="#ai-as-prompt-and-context-engineering">AI As Prompt And Context Engineering</a></li><li><a href="#core-product-capabilities">Core Product Capabilities</a></li><li><a href="#why-this-matters">Why This Matters</a></li><li><a href="#target-users">Target Users</a></li><li><a href="#example-use-cases">Example Use Cases</a></li><li><a href="#differentiation">Differentiation</a></li><li><a href="#product-vision">Product Vision</a></li></ul></nav><div class="share-copy"><p>This presentation describes the product vision. Some capabilities are still under development.</p>
+<p><img src="/assets/mimris-product-architecture-infographic.png" alt="Mimris AI Workspace product architecture infographic"></p>
+<p>Mimris AI Workspace is a model-driven work and collaboration platform for turning expert knowledge into operational workspaces, executable processes, and AI-assisted deliverables.</p>
+<p>It helps organizations move from inherited knowledge and an early world definition to structured models, from those models to a blueprint, and from the blueprint to a practical operational preview where people and AI can test, refine, and execute work with shared context.</p>
+<h2 id="oneline-positioning">One-Line Positioning</h2>
+<p>Mimris AI Workspace transforms domain knowledge into structured operational work, using AI through disciplined prompt engineering, context engineering, and model-driven traceability.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>Organizations often have valuable knowledge spread across documents, expert conversations, process diagrams, templates, task lists, and informal workflows.</p>
+<p>AI can help, but most AI tools operate on isolated prompts. They lack durable context, process structure, role awareness, provenance, and a reliable way to connect generated output back to the business model.</p>
+<p>The result is familiar:</p>
+<ul>
+<li>AI outputs are useful but hard to govern.</li>
+<li>Context must be repeated manually.</li>
+<li>Process knowledge stays disconnected from daily work.</li>
+<li>Templates and methods are reused inconsistently.</li>
+<li>Operational feedback rarely improves the underlying model.</li>
+<li>Organizations get documents, not living work systems.</li>
+</ul>
+<h2 id="the-mimris-approach">The Mimris Approach</h2>
+<p>Mimris treats an organization, product, method, or service as a modeled world.</p>
+<p>The product architecture separates:</p>
+<ul>
+<li><p><code>Origin World</code>
+The inherited source or method context that informs the work, such as AKM, foundation models, templates, vocabulary, and prior domain knowledge.</p>
+</li>
+<li><p><code>Workspace</code>
+The active human and AI environment for defining, modeling, prompting, drafting, reviewing, and refining the target world.</p>
+</li>
+<li><p><code>World</code>
+The target world being built. It contains the world definition, world model, current focus, and blueprint.</p>
+</li>
+<li><p><code>Blueprint</code>
+The structured realization package inside the World. It contains the operational model and feedback queue used to preview and improve the next world.</p>
+</li>
+<li><p><code>Operational Preview</code>
+The app-like preview of the blueprint&#39;s operational model, used for testing, collaboration, feedback, and early execution validation.</p>
+</li>
+</ul>
+<p>This structure gives AI a stable operating environment. Instead of asking a model to improvise from a loose prompt, Mimris supplies the right task, context, controls, current artifact, model references, and feedback history.</p>
+<h2 id="what-the-product-does">What The Product Does</h2>
+<p>Mimris supports the full path from understanding to execution:</p>
+<ol>
+<li><p>Capture the world domain<br>Users define the target domain, goals, scope, terminology, and operating context.</p>
+</li>
+<li><p>Model the world<br>The Workspace helps users and AI structure the World using model layers such as POPS, IRTV, BPMN, and TYPE.</p>
+</li>
+<li><p>Generate a blueprint<br>Approved model outputs become a structured blueprint inside the World.</p>
+</li>
+<li><p>Preview operations<br>Operational Preview renders the blueprint&#39;s operational model as an app-like simulation of tasks, roles, views, flow, and information.</p>
+</li>
+<li><p>Execute work<br>The workspace supports manual and AI-assisted task execution, document drafting, review, approval, and artifact continuity.</p>
+</li>
+<li><p>Learn from feedback<br>Feedback from preview or execution is captured as structured change signals and routed back into design review.</p>
+</li>
+</ol>
+<h2 id="ai-as-prompt-and-context-engineering">AI As Prompt And Context Engineering</h2>
+<p>Mimris is not just a chat interface. Its AI value comes from engineering the context around every AI request.</p>
+<h3>Prompt Engineering</h3>
+<p>Mimris builds prompts from structured task semantics, not from free-form user text alone.</p>
+<p>Each AI request can include:</p>
+<ul>
+<li>the active task and objective</li>
+<li>the task template</li>
+<li>relevant controls, standards, and guidance</li>
+<li>the current working artifact</li>
+<li>approved prior outputs</li>
+<li>process and role context</li>
+<li>model references from POPS, IRTV, BPMN, and TYPE</li>
+<li>user delta instructions</li>
+<li>provider and model controls</li>
+</ul>
+<p>This makes AI behavior more repeatable, auditable, and aligned with the modeled work.</p>
+<h3>Context Engineering</h3>
+<p>Mimris manages what context should be included, reduced, reused, or refreshed.</p>
+<p>Instead of always sending everything, the platform can distinguish:</p>
+<ul>
+<li>first-run generation, where broad grounding is needed</li>
+<li>iteration, where the current artifact and focused delta instruction matter most</li>
+<li>compact domain anchors, where only the essential world context is needed</li>
+<li>rehydration, where full context is restored after domain changes, drift, or iteration thresholds</li>
+</ul>
+<p>This reduces cost and noise while preserving semantic grounding.</p>
+<h3>Model-Grounded AI</h3>
+<p>AI outputs are connected to the modeled world.</p>
+<p>For example:</p>
+<ul>
+<li>POPS grounds process structure and operational coverage.</li>
+<li>IRTV grounds tasks, roles, views, and workbench structure.</li>
+<li>BPMN grounds executable flow paths, branches, exceptions, and rework.</li>
+<li>TYPE grounds information semantics, properties, validation hints, and relationships.</li>
+</ul>
+<p>The AI does not simply produce text. It helps generate and refine structured artifacts that can be inspected, approved, persisted, previewed, and reused.</p>
+<h3>Human-Governed AI</h3>
+<p>Mimris keeps people in control.</p>
+<p>AI can draft, classify, summarize, propose changes, and help navigate the workspace. But canonical adoption remains review-driven.</p>
+<p>Generated drafts become durable only when saved or approved. Preview feedback becomes a queue item before it becomes a work item or model change. This supports responsible AI use in operational environments.</p>
+<h2 id="core-product-capabilities">Core Product Capabilities</h2>
+<h3>Domain-To-Workspace Pipeline</h3>
+<p>Mimris turns a world definition into a structured work environment. The world definition is not just background text; it becomes the source for process modeling, task generation, templates, operational preview, and guided execution.</p>
+<h3>Model-Driven Workbench</h3>
+<p>The Workbench gives users a practical execution surface for tasks, documents, model outputs, and review flows. It combines human work, AI assistance, artifact history, and modeled context in one place.</p>
+<h3>Operational Preview</h3>
+<p>Operational Preview lets teams test the blueprint before turning it into a full implementation or exported world instance. It presents an app-like runtime view with tasks, roles, workflows, views, and information bindings.</p>
+<p>This helps teams validate whether the model describes a usable operational system.</p>
+<h3>Structured Feedback Loop</h3>
+<p>Feedback is captured with context:</p>
+<ul>
+<li>selected activity</li>
+<li>resolved workspace</li>
+<li>selected task</li>
+<li>active role</li>
+<li>source model trace</li>
+<li>likely target model</li>
+</ul>
+<p>This makes feedback actionable and prevents valuable review insight from disappearing into disconnected comments.</p>
+<h3>Origin And Foundation Reuse</h3>
+<p>Mimris can use origin-world models, foundation models, templates, and method contexts without confusing them with the world currently being built.</p>
+<p>This is important for organizations that want reusable methods while still preserving the identity of each target world.</p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>Most AI productivity tools help users create isolated outputs.</p>
+<p>Mimris is designed to create continuity:</p>
+<ul>
+<li>continuity from domain knowledge to model</li>
+<li>continuity from model to blueprint</li>
+<li>continuity from blueprint to operational preview</li>
+<li>continuity from task execution to approved artifacts</li>
+<li>continuity from feedback back into design improvement</li>
+</ul>
+<p>This makes Mimris suitable for complex domains where context, traceability, and governance matter.</p>
+<h2 id="target-users">Target Users</h2>
+<p>Mimris is relevant for:</p>
+<ul>
+<li>consultants designing client operating models</li>
+<li>domain experts turning knowledge into structured methods</li>
+<li>organizations building AI-assisted internal workspaces</li>
+<li>teams creating repeatable service delivery processes</li>
+<li>product teams turning process knowledge into app specifications</li>
+<li>regulated or knowledge-heavy environments that require traceability</li>
+</ul>
+<h2 id="example-use-cases">Example Use Cases</h2>
+<h3>Consulting Delivery</h3>
+<p>A consulting team captures a client domain, models its operating processes, generates task structures, drafts deliverables with AI, and maintains traceability from advice back to the modeled domain.</p>
+<h3>Service Operations</h3>
+<p>An organization models a service workflow, previews how roles and tasks behave, captures feedback, and turns the approved blueprint into operational workspace behavior.</p>
+<h3>Product And App Specification</h3>
+<p>A product team uses Mimris to move from domain definition to world model, then to a generated world app spec with roles, workflows, screens, information entities, and task patterns.</p>
+<h3>AI-Assisted Knowledge Work</h3>
+<p>Teams use AI to draft documents and model outputs, but every AI request is grounded in the active task, current artifact, domain anchor, templates, and model context.</p>
+<h2 id="differentiation">Differentiation</h2>
+<p>Mimris differs from ordinary AI workspaces because it is:</p>
+<ul>
+<li>model-driven, not prompt-only</li>
+<li>context-engineered, not chat-only</li>
+<li>artifact-centered, not message-centered</li>
+<li>human-governed, not auto-committing</li>
+<li>reflective, not one-way generation</li>
+<li>designed for reusable domain and process knowledge</li>
+</ul>
+<h2 id="product-vision">Product Vision</h2>
+<p>Mimris aims to become an environment where organizations can design, preview, execute, and continuously improve operational worlds.</p>
+<p>AI is a core capability, but the product value is not only the model call. The value is in the engineered context around the call: the origin world, the workspace, the target world, the task, the controls, the current artifact, the structured model, the blueprint, and the feedback loop.</p>
+<p>In Mimris, prompt engineering becomes part of the product architecture, and context engineering becomes the bridge between human expertise, structured models, and reliable AI-assisted work.</p>
+</div>

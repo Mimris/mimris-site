@@ -167,6 +167,7 @@ Target public architecture:
 |-- /examples
 |   `-- /examples/coffee-shop
 |-- /articles
+|   |-- /articles/the-app-that-creates-the-app
 |   |-- /articles/my-new-coding-language
 |   |-- /articles/mimris-ecosystem
 |   |-- /articles/active-knowledge-modelling
@@ -202,6 +203,7 @@ The first permanent content set is:
 
 | Content | Purpose |
 | --- | --- |
+| Mimris: The App That Creates the App | Model-to-application generation, Operational Preview, reviewed improvement, and capability boundaries |
 | What is Mimris? | Brand and ecosystem definition |
 | What is Active Knowledge Modelling? | Category and core concept |
 | Mimris Modelling | Product definition and evidence |

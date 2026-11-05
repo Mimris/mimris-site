@@ -1,0 +1,28 @@
+.share-document { width: min(1200px, calc(100% - 48px)); margin: 0 auto; padding: 76px 0 120px; }
+.share-header { max-width: 860px; margin-bottom: 65px; padding-bottom: 42px; border-bottom: 1px solid #d9ddd3; }
+.share-eyebrow, .share-toc > p { color: #28735c; font-size: 12px; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+.share-header h1 { margin: 15px 0; font-size: clamp(38px, 5vw, 62px); line-height: 1.08; letter-spacing: -.035em; }
+.share-intro { max-width: 690px; color: #52605d; font-size: 20px; line-height: 1.55; }
+.share-layout { display: grid; grid-template-columns: 225px minmax(0, 760px); gap: clamp(48px, 7vw, 95px); align-items: start; }
+.share-toc { position: sticky; top: 92px; max-height: calc(100vh - 112px); overflow: auto; }
+.share-toc ul { list-style: none; border-left: 1px solid #ced8d0; margin: 18px 0; padding: 0; }
+.share-toc li { margin: 0; padding: 5px 0 5px 16px; }
+.share-toc a { color: #52605d; font-size: 13px; line-height: 1.4; text-decoration: none; }
+.share-toc a:hover, .share-toc a:focus-visible { color: #176348; text-decoration: underline; }
+.share-copy { min-width: 0; color: #42504e; font-size: 17px; line-height: 1.75; overflow-wrap: anywhere; }
+.share-copy > :first-child { margin-top: 0; }
+.share-copy h2 { margin: 70px 0 22px; padding-top: 18px; border-top: 1px solid #d9ddd3; color: #172b2a; font-size: clamp(27px, 2.7vw, 36px); line-height: 1.2; scroll-margin-top: 90px; }
+.share-copy h3 { margin: 40px 0 14px; color: #1f3834; font-size: 22px; line-height: 1.3; scroll-margin-top: 90px; }
+.share-copy p { margin: 0 0 22px; }
+.share-copy ul, .share-copy ol { padding-left: 1.45em; margin: 12px 0 26px; }
+.share-copy li { padding-left: .2em; margin: 7px 0; }
+.share-copy li > ul, .share-copy li > ol { margin: 7px 0 15px; }
+.share-copy li::marker { color: #318068; }
+.share-copy code { background: #e5ebe2; color: #205c4d; border-radius: 4px; padding: .12em .32em; font-size: .86em; }
+.share-copy pre { overflow: auto; background: #e5ebe2; padding: 20px; border-radius: 8px; }
+.share-copy pre code { padding: 0; }
+.share-copy img { display: block; max-width: 100%; height: auto; margin: 38px auto; border-radius: 8px; }
+.share-copy table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 28px 0; }
+.share-copy th, .share-copy td { text-align: left; padding: 12px; border: 1px solid #d9ddd3; vertical-align: top; }
+.share-copy blockquote { border-left: 3px solid #318068; margin: 30px 0; padding-left: 20px; }
+@media (max-width: 760px) { .share-document { width: min(100% - 32px, 760px); padding: 48px 0 80px; } .share-header { margin-bottom: 32px; } .share-layout { display: block; } .share-toc { position: static; max-height: none; margin-bottom: 48px; padding: 18px 20px; background: #eaf0e8; border-radius: 8px; } .share-toc ul { columns: 2; } .share-toc li { break-inside: avoid; } .share-copy { font-size: 16px; } }
