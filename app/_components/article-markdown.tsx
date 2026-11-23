@@ -17,6 +17,7 @@ const articleGroups = [
   },
   {
     label: "AI News and Commentary", links: [
+      { href: "/articles/ai-prove-correct-work", label: "AI Can Generate the Work. But Can We Prove It Is Correct?", date: "23 November 2026", dateTime: "2026-11-23" },
       { href: "/articles/my-new-coding-language", label: "My New Coding Language: “Let’s Discuss” and “Proceed”", date: "20 October 2026", dateTime: "2026-10-20" },
       { href: "/articles/governed-agent-loops", label: "Governed Agent Loops", date: "24 September 2026", dateTime: "2026-09-24" },
       { href: "/articles/from-biological-viability-to-artificial-consciousness", label: "Artificial Consciousness: A Viability-Based Hypothesis", date: "20 August 2026", dateTime: "2026-08-20" },
