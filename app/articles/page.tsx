@@ -36,15 +36,16 @@ export default function ArticlesPage() {
           <div className="article-index-main">
             <article className="editorial-card">
               <div>
-                <p className="eyebrow">AI-native software development · 10 minute read</p>
-                <h2>AI Can Generate the Code—But Who Defines What Is Correct?</h2>
+                <p className="eyebrow">Model-driven engineering · 12 minute read</p>
+                <h2>AI Can Generate the Work. But Can We Prove It Is Correct?</h2>
                 <p>
-                  Why rapidly scaling AI implementation makes independent work models, acceptance criteria, architecture, and semantic verification increasingly important.
+                  Why trustworthy AI-generated applications require explicit enterprise models, independently enforced requirements, and verifiable operational behavior.
                 </p>
               </div>
-              <ArrowLink href="/articles/ai-defines-correctness">Read the article</ArrowLink>
+              <ArrowLink href="/articles/ai-prove-correct-work">Read the article</ArrowLink>
             </article>
             <div className="article-link-grid">
+              <Link href="/articles/ai-defines-correctness"><h2>AI Can Generate the Code—But Who Defines What Is Correct?</h2><p>Why independent work models, acceptance criteria, and semantic verification matter when AI writes code.</p></Link>
               <Link href="/articles/can-the-akm-designer-design-itself"><h2>Can the AKM Designer Design Itself?</h2><p>Explore how models could make the designer’s own concepts, tasks, constraints, and feedback explicit.</p></Link>
               <Link href="/articles/the-app-that-creates-the-app"><h2>Mimris: The App That Creates the App</h2><p>How understanding the work guides a Generated Application that people can try, review, and improve.</p></Link>
               <Link href="/articles/my-new-coding-language"><h2>My New Coding Language: “Let’s Discuss” and “Proceed”</h2><p>A personal take on vibe coding, spec-driven development, and the decisions behind a few simple commands.</p></Link>
